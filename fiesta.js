@@ -38,7 +38,7 @@ var ftc = {
         {
             "color":"Old Ivory",
             "sku":"NA",
-            "hex":"#FFFFF0",
+            "hex":"#F2EFDE",
             "produced": "1936-1951"
         },
         {
@@ -101,6 +101,60 @@ var ftc = {
             "sku":"0100",
             "hex":"#FFFFFF",
             "produced": "1986-current"
+        },
+        {
+            "color":"Black",
+            "sku":"0101",
+            "hex":"#000000",
+            "produced": "1986-2014"
+        },
+        {
+            "color":"Rose",
+            "sku":"0103",
+            "hex":"#E5908D",
+            "produced": "1986-2005"
+        },
+        {
+            "color":"Apricot",
+            "sku":"0104",
+            "hex":"#EBBCA2",
+            "produced": "1986-1998"
+        },
+        {
+            "color":"Cobalt",
+            "sku":"0105",
+            "hex":"#13294B",
+            "produced": "1986-2021"
+        },
+        {
+            "color":"Yellow",
+            "sku":"0106",
+            "hex":"#EAD881",
+            "produced": "1987-2002"
+        },
+        {
+            "color":"Turquoise",
+            "sku":"0107",
+            "hex":"#56B1BD",
+            "produced": "1988-current"
+        },
+        {
+            "color":"Periwinkle Blue",
+            "sku":"0108",
+            "hex":"#7FB1D7",
+            "produced": "1989-2006"
+        },
+        {
+            "color":"Sea Mist Green",
+            "sku":"0109",
+            "hex":"#9ADFC1",
+            "produced": "1991-2005"
+        },
+        {
+            "color":"Lilac",
+            "sku":"0113",
+            "hex":"#7F68A1",
+            "produced": "1993-1995"
         }
     ]
 }

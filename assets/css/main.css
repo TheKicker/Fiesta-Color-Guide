@@ -1,9 +1,48 @@
-:root{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: rgb(217, 217, 217);
+}
+header{
+    background: black;
+    color: whitesmoke;
+    padding: 1.5rem 1rem;
+}
+footer{
+    background: black;
+    color: whitesmoke;
+    padding: 3rem 1rem;
+}
+.container{
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin: 1rem auto;
+}
+.outputOne{
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+    font-size: 30px;
+}
+.outputTwo{
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+    font-size: 30px;
+}
+.lead{
+    font-size: 18px;
+}
+.bubble{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-body{
-    background: whitesmoke;
+@media only screen and (max-width: 1000px) {
+    .containerOne{
+        width: 100%;
+    }
 }
