@@ -36,10 +36,11 @@ footer{
     width: 100%;
 }
 .bubble{
-    height: 20px;
-    width: 22px;
+    height: 26px;
+    width: 26px;
     border-radius: 50%;
     display: inline-block;
+    vertical-align: bottom;
 }
 .top{
     display: flex;
@@ -48,6 +49,7 @@ footer{
 }
 .mid{
     padding: 1rem 3rem;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 1000px) {

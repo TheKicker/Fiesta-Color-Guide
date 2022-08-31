@@ -1,7 +1,6 @@
 console.log("Hello world");
 
 var ori = ftc.original
-var nop = ftc.noProduction
 var p86 = ftc.post86
 
 var outputOne = document.querySelector(".outputOne")
