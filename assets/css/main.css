@@ -42,13 +42,23 @@ footer{
     display: inline-block;
     vertical-align: bottom;
 }
-.top{
+.d-flex{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+}
+.d-l{
+    width: 25%;
+    border-radius: 10%;
+}
+.d-r{
+    width: 75%;
+    padding: 0 1rem; 
+}
+.color{
+    font-weight: bold;
     font-size: 22px;
 }
-.mid{
-    padding: 1rem 0rem 0rem 5rem;
+.details{
     font-size: 18px;
 }
 
@@ -58,5 +68,13 @@ footer{
     }
     .outputOne, .outputTwo{
         width: 100%;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+    .d-l{
+        height: 96px;
+        width: 100%;
+        border-radius: 10px;
     }
 }

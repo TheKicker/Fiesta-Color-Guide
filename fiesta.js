@@ -1,6 +1,7 @@
 var ftc = {
     "company":"The Fiesta Tableware Company",
     "founded":"1871",
+    "founders":"Homer Laughlin",
     "address":{
         "street":"672 Fiesta Drive",
         "city":"Newell",
@@ -300,6 +301,104 @@ var ftc = {
             "hex":"#CDE651",
             "produced": "2009-current",
             "shadeOf":"Green"
+        },
+        {
+            "color":"Marigold",
+            "sku":"0333",
+            "hex":"#F8AB03",
+            "produced": "2011-2012",
+            "shadeOf":"Yellow"
+        },
+        {
+            "color":"Paprika",
+            "sku":"0334",
+            "hex":"#A14121",
+            "produced": "2010-2016",
+            "shadeOf":"Brown"
+        },
+        {
+            "color":"Flamingo",
+            "sku":"0335",
+            "hex":"#E37468",
+            "produced":"2012-2013",
+            "shadeOf":"Red"
+        },
+        {
+            "color":"Lapis",
+            "sku":"0337",
+            "hex":"#2B64A1",
+            "produced": "2013-current",
+            "shadeOf":"Blue"
+        },
+        {
+            "color":"Poppy",
+            "sku":"0338",
+            "hex":"#F24B21",
+            "produced": "2014-current",
+            "shadeOf":"Orange"
+        },
+        {
+            "color":"Slate",
+            "sku":"0339",
+            "hex":"#404040",
+            "produced": "2015-current",
+            "shadeOf":"Black"
+        },
+        {
+            "color":"Sage",
+            "sku":"0340",
+            "hex":"#4B5320",
+            "produced": "2015-2018",
+            "shadeOf":"Green"
+        },
+        {
+            "color":"Claret",
+            "sku":"0341",
+            "hex":"#5C2432",
+            "produced": "2016-2017",
+            "shadeOf":"Red"
+        },
+        {
+            "color":"Daffodil",
+            "sku":"0342",
+            "hex":"#F7C308",
+            "produced": "2017-current",
+            "shadeOf":"Yellow"
+        },
+        {
+            "color":"Mulberry",
+            "sku":"0343",
+            "hex":"#381943",
+            "produced": "2018-current",
+            "shadeOf":"Purple"
+        },
+        {
+            "color":"Meadow",
+            "sku":"0344",
+            "hex":"#5B9565",
+            "produced": "2019-current",
+            "shadeOf":"Green"
+        },
+        {
+            "color":"Butterscotch",
+            "sku":"0345",
+            "hex":"#F98300",
+            "produced": "2020-current",
+            "shadeOf":"Orange"
+        },
+        {
+            "color":"Twilight",
+            "sku":"0346",
+            "hex":"#120F71",
+            "produced": "2021-current",
+            "shadeOf":"Blue"
+        },
+        {
+            "color":"Peony",
+            "sku":"0346",
+            "hex":"#D57C74",
+            "produced": "2022-current",
+            "shadeOf":"Red"
         }
     ]
 }
