@@ -279,6 +279,27 @@ var ftc = {
             "hex":"#0B4041",
             "produced": "2007-2010",
             "shadeOf":"Green"
+        },
+        {
+            "color":"Ivory",
+            "sku":"0330",
+            "hex":"#F2E7C0",
+            "produced": "2008-current",
+            "shadeOf":"White"
+        },
+        {
+            "color":"Chocolate",
+            "sku":"0331",
+            "hex":"#481C0A",
+            "produced": "2008-2011",
+            "shadeOf":"Brown"
+        },
+        {
+            "color":"Lemongrass",
+            "sku":"0332",
+            "hex":"#CDE651",
+            "produced": "2009-current",
+            "shadeOf":"Green"
         }
     ]
 }

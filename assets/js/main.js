@@ -11,7 +11,7 @@ for (i=0;i<ori.length;i++)
                                         <span><span class="bubble" style="background-color:${ori[i].hex}"></span> ${ori[i].color}</span>
                                     </div>
                                     <div class="mid">
-                                        Produced: (${ori[i].produced})<br>
+                                        Produced: ${ori[i].produced}<br>
                                         SKU: ${ori[i].sku}
                                     </div>
                                 </div>
@@ -25,7 +25,7 @@ for (i=0;i<p86.length;i++)
                                         <span><span class="bubble" style="background-color:${p86[i].hex}"></span> ${p86[i].color}</span>
                                     </div>
                                     <div class="mid">
-                                        Produced: (${p86[i].produced})<br>
+                                        Produced: ${p86[i].produced}<br>
                                         SKU: ${p86[i].sku}
                                     </div>
                                 </div>

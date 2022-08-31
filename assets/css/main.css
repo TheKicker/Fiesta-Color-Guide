@@ -36,9 +36,9 @@ footer{
     width: 100%;
 }
 .bubble{
-    height: 26px;
-    width: 26px;
-    border-radius: 50%;
+    height: 30px;
+    width: 40px;
+    border-radius: 10%;
     display: inline-block;
     vertical-align: bottom;
 }
@@ -48,12 +48,15 @@ footer{
     font-size: 22px;
 }
 .mid{
-    padding: 1rem 3rem;
+    padding: 1rem 0rem 0rem 5rem;
     font-size: 18px;
 }
 
 @media only screen and (max-width: 1000px) {
     .containerOne{
+        width: 100%;
+    }
+    .outputOne, .outputTwo{
         width: 100%;
     }
 }
