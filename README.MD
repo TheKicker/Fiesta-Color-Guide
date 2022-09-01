@@ -8,8 +8,7 @@ This project is not endorsed by The Fiesta Tableware Company.
 
 <br>
 
-## Links
-<hr> 
+## Links 
 
 <a href="https://fiestatableware.com">The Fiesta Tableware Company site</a>
 
