@@ -15,30 +15,36 @@
 
         <div class="container">
             <div class="d-flex">
-                <label for="filterSelection">Choose a filter:</label>
-                <select id="filterSelection" name="filterSelection">
-                    <option value="None" selected>None</option>
-                    <option value="Shade">Shade</option>
-                    <option value="Year">Year</option>
-                </select>
-                <label id="shadeFilterLabel" for="shadeFilter">Choose a Shade:</label>
-                <select id="shadeFilter" name="shadeFilter">
-                    <option value="Red">Red</option>
-                    <option value="Orange">Orange</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Green">Green</option>
-                    <option value="Blue">Blue</option>
-                    <option value="Purple">Purple</option>
-                    <option value="White">White</option>
-                    <option value="Black">Black</option>
-                    <option value="Brown">Brown</option>
-                </select>
-                <label id="yearFilterLabel" for="yearFilter">Choose a year:</label>
-                <select id="yearFilter" name="yearFilter">
-                    <option value="Current">Current</option>
-                    <option value="Original">Original</option>
-                    <option value="Post86">Post86</option>
-                </select>
+                <div class="d-col">
+                    <label for="filterSelection">Choose a filter:</label>
+                    <select id="filterSelection" name="filterSelection">
+                        <option value="None" selected>None</option>
+                        <option value="Shade">Shade</option>
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+                <div class="d-col">
+                    <label id="shadeFilterLabel" for="shadeFilter">Choose a Shade:</label>
+                    <select id="shadeFilter" name="shadeFilter">
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Purple">Purple</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                    </select>
+                </div>
+                <div class="d-col">
+                    <label id="yearFilterLabel" for="yearFilter">Choose a year:</label>
+                    <select id="yearFilter" name="yearFilter">
+                        <option value="Current">Current</option>
+                        <option value="Original">Original</option>
+                        <option value="Post86">Post86</option>
+                    </select>
+                </div>
             </div>
             <div id="output"></div>
         </div>

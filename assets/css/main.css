@@ -30,9 +30,6 @@ footer{
     margin: 1rem auto;
     width: 70%;
 }
-.lead{
-    font-size: 18px;
-}
 .card{
     width: 100%;
 }
@@ -46,6 +43,11 @@ footer{
 .d-flex{
     display: flex;
     flex-direction: row;
+}
+.d-col{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
 .d-l{
     width: 25%;
@@ -65,28 +67,33 @@ footer{
 }
 label{
     font-size: 14px;
-    vertical-align: top;
-    margin: 1rem; 
+    vertical-align: top; 
 }
 select{
     font-size: 18px;
-    padding: 0.5rem 2rem;
-    margin: 1rem 0;
+    width: 10rem; 
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
 }
 
 @media only screen and (max-width: 1000px) {
-    .containerOne{
-        width: 100%;
-    }
-    .outputOne, .outputTwo{
-        width: 100%;
+    .container{
+        width: 80%;
     }
     .d-flex{
         flex-direction: column;
     }
     .d-l{
-        height: 96px;
+        height: 100px;
         width: 100%;
         border-radius: 10px;
+    }
+    .d-r{
+        width: 100%;
+    }
+    select{
+        width: 100%;
     }
 }
