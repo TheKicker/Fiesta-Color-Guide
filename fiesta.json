@@ -1,7 +1,9 @@
-var ftc = {
+{
     "company":"The Fiesta Tableware Company",
-    "founded":"1871",
-    "founders":"Homer Laughlin",
+    "founded":1871,
+    "founders":"Homer and Shakespeare Laughlin",
+    "website":"https://fiestatableware.com",
+    "retail":["https://fiestafactorydirect.com", "https://usadinnerwaredirect.com"],
     "address":{
         "street":"672 Fiesta Drive",
         "city":"Newell",
@@ -9,14 +11,19 @@ var ftc = {
         "stateShort": "WV",
         "zip": "26050",
         "countryLong": "United States of America",
-        "countryShort": "USA"
+        "countryShort": "USA",
+        "latitude": 40.620394,
+        "longitude": -80.607008,
+        "gps":["40° 37' 13.4184'' N", "80° 36' 25.2288'' W"]
     },
-    "original":[
+    "colors":[
         {
             "color":"Red",
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1936-1943 and 1959-1972",
+            "prodStart":[1936,1959],
+            "prodEnd":[1943,1972],
             "shadeOf":"Red"
         },
         {
@@ -24,6 +31,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#13294B",
             "produced": "1936-1951",
+            "prodStart": 1936,
+            "prodEnd": 1951,
             "shadeOf":"Blue"
         },
         {
@@ -31,6 +40,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#27654A",
             "produced": "1936-1951",
+            "prodStart": 1936,
+            "prodEnd": 1951,
             "shadeOf":"Green"
         },
         {
@@ -38,6 +49,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#DAAC49",
             "produced": "1936-1969",
+            "prodStart": 1936,
+            "prodEnd": 1969,
             "shadeOf":"Yellow"
         },
         {
@@ -45,6 +58,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#F2EFDE",
             "produced": "1936-1951",
+            "prodStart": 1936,
+            "prodEnd": 1951,
             "shadeOf":"White"
         },
         {
@@ -52,6 +67,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#56B1BD",
             "produced": "1937-1969",
+            "prodStart": 1937,
+            "prodEnd": 1969,
             "shadeOf":"Blue"
         },
         {
@@ -59,6 +76,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#316E15",
             "produced": "1951-1959",
+            "prodStart": 1951,
+            "prodEnd": 1959,
             "shadeOf":"Green"
         },
         {
@@ -66,6 +85,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#E5908D",
             "produced": "1951-1959",
+            "prodStart": 1951,
+            "prodEnd": 1959,
             "shadeOf":"Red"
         },
         {
@@ -73,6 +94,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#BCCC6A",
             "produced": "1951-1959",
+            "prodStart": 1951,
+            "prodEnd": 1959,
             "shadeOf":"Green"
         },
         {
@@ -80,6 +103,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#C4CFDC",
             "produced": "1951-1959",
+            "prodStart": 1951,
+            "prodEnd": 1959,
             "shadeOf":"White"
         },
         {
@@ -87,6 +112,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#4E9F51",
             "produced": "1959-1969",
+            "prodStart": 1959,
+            "prodEnd": 1969,
             "shadeOf":"Green"
         },
         {
@@ -94,6 +121,8 @@ var ftc = {
             "sku":"NA",
             "hex":"#FAC752",
             "produced": "1969-1972",
+            "prodStart": 1969,
+            "prodEnd": 1972,
             "shadeOf":"Yellow"
         },
         {
@@ -101,16 +130,17 @@ var ftc = {
             "sku":"NA",
             "hex":"#7F843C",
             "produced": "1969-1972",
+            "prodStart": 1969,
+            "prodEnd": 1972,
             "shadeOf":"Green"
-        }
-    ],
-    "noProduction":{"years":"1971-1985"}, 
-    "post86":[
+        },
         {
             "color":"White",
             "sku":"0100",
             "hex":"#FFFFFF",
             "produced": "1986-current",
+            "prodStart": 1986,
+            "prodEnd": "current",
             "shadeOf":"White"
         },
         {
@@ -118,6 +148,8 @@ var ftc = {
             "sku":"0101",
             "hex":"#000000",
             "produced": "1986-2014",
+            "prodStart": 1986,
+            "prodEnd": 2014,
             "shadeOf":"Black"
         },
         {
@@ -125,6 +157,8 @@ var ftc = {
             "sku":"0103",
             "hex":"#E5908D",
             "produced": "1986-2005",
+            "prodStart": 1986,
+            "prodEnd": 2005,
             "shadeOf":"Red"
         },
         {
@@ -132,6 +166,8 @@ var ftc = {
             "sku":"0104",
             "hex":"#EBBCA2",
             "produced": "1986-1998",
+            "prodStart": 1986,
+            "prodEnd": 1998,
             "shadeOf":"Orange"
         },
         {
@@ -139,6 +175,8 @@ var ftc = {
             "sku":"0105",
             "hex":"#13294B",
             "produced": "1986-2021",
+            "prodStart": 1986,
+            "prodEnd": 2021,
             "shadeOf":"Blue"
         },
         {
@@ -146,6 +184,8 @@ var ftc = {
             "sku":"0106",
             "hex":"#EAD881",
             "produced": "1987-2002",
+            "prodStart": 1987,
+            "prodEnd": 2002,
             "shadeOf":"Yellow"
         },
         {
@@ -153,6 +193,8 @@ var ftc = {
             "sku":"0107",
             "hex":"#56B1BD",
             "produced": "1988-current",
+            "prodStart": 1988,
+            "prodEnd": "current",
             "shadeOf":"Blue"
         },
         {
@@ -160,6 +202,8 @@ var ftc = {
             "sku":"0108",
             "hex":"#7FB1D7",
             "produced": "1989-2006",
+            "prodStart": 1989,
+            "prodEnd": 2006,
             "shadeOf":"Blue"
         },
         {
@@ -167,6 +211,8 @@ var ftc = {
             "sku":"0109",
             "hex":"#9ADFC1",
             "produced": "1991-2005",
+            "prodStart": 1991,
+            "prodEnd": 2005,
             "shadeOf":"Green"
         },
         {
@@ -174,6 +220,8 @@ var ftc = {
             "sku":"0113",
             "hex":"#7F68A1",
             "produced": "1993-1995",
+            "prodStart": 1993,
+            "prodEnd": 1995,
             "shadeOf":"Purple"
         },
         {
@@ -181,6 +229,8 @@ var ftc = {
             "sku":"0114",
             "hex":"#EC7B5F",
             "produced": "1995-2007",
+            "prodStart": 1995,
+            "prodEnd": 2007,
             "shadeOf":"Orange"
         },
         {
@@ -188,6 +238,8 @@ var ftc = {
             "sku":"0116",
             "hex":"#1F44B2",
             "produced": "1996-1997",
+            "prodStart": 1996,
+            "prodEnd": 1997,
             "shadeOf":"Blue"
         },
         {
@@ -195,6 +247,8 @@ var ftc = {
             "sku":"4465",
             "hex":"#892A33",
             "produced": "December 1997",
+            "prodStart": 1997,
+            "prodEnd": 1997,
             "shadeOf":"Red"
         },
         {
@@ -202,6 +256,8 @@ var ftc = {
             "sku":"0117",
             "hex":"#A1D63D",
             "produced": "1997-1999",
+            "prodStart": 1997,
+            "prodEnd": 1999,
             "shadeOf":"Green"
         },
         {
@@ -209,6 +265,8 @@ var ftc = {
             "sku":"0118",
             "hex":"#C9CECF",
             "produced": "1999-2001",
+            "prodStart": 1999,
+            "prodEnd": 2001,
             "shadeOf":"White"
         },
         {
@@ -216,6 +274,8 @@ var ftc = {
             "sku":"0119",
             "hex":"#2C6672",
             "produced": "1999-2001",
+            "prodStart": 1999,
+            "prodEnd": 2001,
             "shadeOf":"Blue"
         },
         {
@@ -223,6 +283,8 @@ var ftc = {
             "sku":"0102",
             "hex":"#5F1111",
             "produced": "2000-2010",
+            "prodStart": 2000,
+            "prodEnd": 2010,
             "shadeOf":"Red"
         },
         {
@@ -230,6 +292,8 @@ var ftc = {
             "sku":"0320",
             "hex":"#F8DA6D",
             "produced": "2001-current",
+            "prodStart": 2001,
+            "prodEnd": "current",
             "shadeOf":"Yellow"
         },
         {
@@ -237,6 +301,8 @@ var ftc = {
             "sku":"0323",
             "hex":"#351D54",
             "produced": "2001-2015",
+            "prodStart": 2001,
+            "prodEnd": 2015,
             "shadeOf":"Purple"
         },
         {
@@ -244,6 +310,8 @@ var ftc = {
             "sku":"0324",
             "hex":"#49AB07",
             "produced": "2002-2021",
+            "prodStart": 2002,
+            "prodEnd": 2021,
             "shadeOf":"Green"
         },
         {
@@ -251,6 +319,8 @@ var ftc = {
             "sku":"0325",
             "hex":"#F37B39",
             "produced": "2003-2017",
+            "prodStart": 2003,
+            "prodEnd": 2017,
             "shadeOf":"Orange"
         },
         {
@@ -258,6 +328,8 @@ var ftc = {
             "sku":"0326",
             "hex":"#Cf2C20",
             "produced": "2004-current",
+            "prodStart": 2004,
+            "prodEnd": "current",
             "shadeOf":"Red"
         },
         {
@@ -265,6 +337,8 @@ var ftc = {
             "sku":"0327",
             "hex":"#3792D7",
             "produced": "2005-2014",
+            "prodStart": 2005,
+            "prodEnd": 2014,
             "shadeOf":"Blue"
         },
         {
@@ -272,6 +346,8 @@ var ftc = {
             "sku":"0328",
             "hex":"#62374E",
             "produced": "2006-2008",
+            "prodStart": 2006,
+            "prodEnd": 2008,
             "shadeOf":"Purple"
         },
         {
@@ -279,6 +355,8 @@ var ftc = {
             "sku":"0329",
             "hex":"#0B4041",
             "produced": "2007-2010",
+            "prodStart": 2007,
+            "prodEnd": 2010,
             "shadeOf":"Green"
         },
         {
@@ -286,6 +364,8 @@ var ftc = {
             "sku":"0330",
             "hex":"#F2E7C0",
             "produced": "2008-current",
+            "prodStart": 2008,
+            "prodEnd": "current",
             "shadeOf":"White"
         },
         {
@@ -293,6 +373,8 @@ var ftc = {
             "sku":"0331",
             "hex":"#481C0A",
             "produced": "2008-2011",
+            "prodStart": 2008,
+            "prodEnd": 2011,
             "shadeOf":"Brown"
         },
         {
@@ -300,6 +382,8 @@ var ftc = {
             "sku":"0332",
             "hex":"#CDE651",
             "produced": "2009-current",
+            "prodStart": 2009,
+            "prodEnd": "current",
             "shadeOf":"Green"
         },
         {
@@ -307,6 +391,8 @@ var ftc = {
             "sku":"0333",
             "hex":"#F8AB03",
             "produced": "2011-2012",
+            "prodStart": 2011,
+            "prodEnd": 2012,
             "shadeOf":"Yellow"
         },
         {
@@ -314,6 +400,8 @@ var ftc = {
             "sku":"0334",
             "hex":"#A14121",
             "produced": "2010-2016",
+            "prodStart": 2010,
+            "prodEnd": 2016,
             "shadeOf":"Brown"
         },
         {
@@ -321,6 +409,8 @@ var ftc = {
             "sku":"0335",
             "hex":"#E37468",
             "produced":"2012-2013",
+            "prodStart": 2012,
+            "prodEnd": 2013,
             "shadeOf":"Red"
         },
         {
@@ -328,6 +418,8 @@ var ftc = {
             "sku":"0337",
             "hex":"#2B64A1",
             "produced": "2013-current",
+            "prodStart": 2013,
+            "prodEnd": "current",
             "shadeOf":"Blue"
         },
         {
@@ -335,6 +427,8 @@ var ftc = {
             "sku":"0338",
             "hex":"#F24B21",
             "produced": "2014-current",
+            "prodStart": 2014,
+            "prodEnd": "current",
             "shadeOf":"Orange"
         },
         {
@@ -342,6 +436,8 @@ var ftc = {
             "sku":"0339",
             "hex":"#404040",
             "produced": "2015-current",
+            "prodStart": 2015,
+            "prodEnd": "current",
             "shadeOf":"Black"
         },
         {
@@ -349,6 +445,8 @@ var ftc = {
             "sku":"0340",
             "hex":"#4B5320",
             "produced": "2015-2018",
+            "prodStart": 2015,
+            "prodEnd": 2018,
             "shadeOf":"Green"
         },
         {
@@ -356,6 +454,8 @@ var ftc = {
             "sku":"0341",
             "hex":"#5C2432",
             "produced": "2016-2017",
+            "prodStart": 2016,
+            "prodEnd": 2017,
             "shadeOf":"Red"
         },
         {
@@ -363,6 +463,8 @@ var ftc = {
             "sku":"0342",
             "hex":"#F7C308",
             "produced": "2017-current",
+            "prodStart": 2017,
+            "prodEnd": "current",
             "shadeOf":"Yellow"
         },
         {
@@ -370,6 +472,8 @@ var ftc = {
             "sku":"0343",
             "hex":"#381943",
             "produced": "2018-current",
+            "prodStart": 2018,
+            "prodEnd": "current",
             "shadeOf":"Purple"
         },
         {
@@ -377,6 +481,8 @@ var ftc = {
             "sku":"0344",
             "hex":"#5B9565",
             "produced": "2019-current",
+            "prodStart": 2019,
+            "prodEnd": "current",
             "shadeOf":"Green"
         },
         {
@@ -384,6 +490,8 @@ var ftc = {
             "sku":"0345",
             "hex":"#F98300",
             "produced": "2020-current",
+            "prodStart": 2020,
+            "prodEnd": "current",
             "shadeOf":"Orange"
         },
         {
@@ -391,6 +499,8 @@ var ftc = {
             "sku":"0346",
             "hex":"#120F71",
             "produced": "2021-current",
+            "prodStart": 2021,
+            "prodEnd": "current",
             "shadeOf":"Blue"
         },
         {
@@ -398,6 +508,8 @@ var ftc = {
             "sku":"0346",
             "hex":"#D57C74",
             "produced": "2022-current",
+            "prodStart": 2022,
+            "prodEnd": "current",
             "shadeOf":"Red"
         }
     ]
