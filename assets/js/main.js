@@ -1,10 +1,15 @@
 console.log("Hello world");
 
-// Include Fiesta.js ABOVE this file in DOM
-var col = ftc.original
+async function fetchAPI(){
+    const response = await fetch("https://thekicker.github.io/FTC-Colors/fiesta.json");
+    var data = await response.json();
+    showData(data)
+}
 
-var output = document.querySelector(".output")
-for (i=0;i<col.length;i++)
+function showData(data){
+    var output = document.querySelector(".output")
+    var col = data.colors
+    for (i=0;i<col.length;i++)
     {
         output.innerHTML += `<div class="d-flex">
                                     <div class="d-l" style="background-color: ${col[i].hex}"></div>
@@ -13,10 +18,12 @@ for (i=0;i<col.length;i++)
                                             ${col[i].color}
                                         </p>
                                         <p class="details">
-                                            Produced: ${col[i].produced} <br>
+                                            Produced: ${col[i].prodStart} to ${col[i].prodEnd} <br>
                                             SKU: ${col[i].sku}
                                         </p>
                                     </div>
                                 </div>
                                 <br>`
     }
+}
+fetchAPI()
