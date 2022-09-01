@@ -1,6 +1,6 @@
 # Fiesta Tableware Company
 
-Unofficial color guide for Fiesta Colors from the beginning in 1936 to today, includes original and post 86 colors.  Uses internal resources, pictures, and online bloggers (linked below).  
+Unofficial color guide for Fiesta Dinnerware Colors from the beginning in 1936 to today, includes original and post 86 colors.  Uses internal resources, pictures, and online bloggers (linked below).  
 
 <div align="center">
 This project is not endorsed by The Fiesta Tableware Company. 
