@@ -13,6 +13,17 @@ footer{
     background: black;
     color: whitesmoke;
     padding: 3rem 1rem;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+}
+footer a{
+    color: white;
+    margin: 0.5rem 0;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 .container{
     display: block;

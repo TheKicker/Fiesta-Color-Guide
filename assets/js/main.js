@@ -28,7 +28,7 @@ async function renderAllColors(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                <strong>Produced:</strong> ${d[i].prodStart} to ${d[i].prodEnd} <br>
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
                                                 <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
@@ -49,8 +49,8 @@ async function renderRed(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -70,8 +70,8 @@ async function renderOrange(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -91,8 +91,8 @@ async function renderYellow(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -112,8 +112,8 @@ async function renderGreen(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -133,8 +133,8 @@ async function renderBlue(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -154,8 +154,8 @@ async function renderPurple(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -175,8 +175,8 @@ async function renderWhite(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -196,8 +196,8 @@ async function renderBlack(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -217,8 +217,8 @@ async function renderBrown(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -238,8 +238,8 @@ async function renderCurrent(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -259,8 +259,8 @@ async function renderOriginal(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>
@@ -280,8 +280,8 @@ async function renderPost86(){
                                                 ${d[i].color}
                                             </p>
                                             <p class="details">
-                                                Produced: ${d[i].prodStart} to ${d[i].prodEnd} <br>
-                                                SKU: ${d[i].sku}
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
                                             </p>
                                         </div>
                                     </div>

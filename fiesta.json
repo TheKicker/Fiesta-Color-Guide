@@ -156,8 +156,8 @@
             "color":"Rose",
             "sku":"0103",
             "hex":"#E5908D",
-            "produced": "1986-2005",
-            "prodStart": 1986,
+            "produced": "1987-2005",
+            "prodStart": 1987,
             "prodEnd": 2005,
             "shadeOf":"Red"
         },
@@ -174,8 +174,8 @@
             "color":"Cobalt",
             "sku":"0105",
             "hex":"#13294B",
-            "produced": "1986-2021",
-            "prodStart": 1986,
+            "produced": "1987-2021",
+            "prodStart": 1987,
             "prodEnd": 2021,
             "shadeOf":"Blue"
         },
@@ -228,9 +228,9 @@
             "color":"Persimmon",
             "sku":"0114",
             "hex":"#EC7B5F",
-            "produced": "1995-2007",
+            "produced": "1995-2008",
             "prodStart": 1995,
-            "prodEnd": 2007,
+            "prodEnd": 2008,
             "shadeOf":"Orange"
         },
         {
@@ -273,8 +273,8 @@
             "color":"Juniper",
             "sku":"0119",
             "hex":"#2C6672",
-            "produced": "1999-2001",
-            "prodStart": 1999,
+            "produced": "2000-2001",
+            "prodStart": 2000,
             "prodEnd": 2001,
             "shadeOf":"Blue"
         },
@@ -390,8 +390,8 @@
             "color":"Marigold",
             "sku":"0333",
             "hex":"#F8AB03",
-            "produced": "2011-2012",
-            "prodStart": 2011,
+            "produced": "2008-2012",
+            "prodStart": 2008,
             "prodEnd": 2012,
             "shadeOf":"Yellow"
         },
