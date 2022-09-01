@@ -61,6 +61,16 @@ footer{
 .details{
     font-size: 18px;
 }
+label{
+    font-size: 14px;
+    vertical-align: top;
+    margin: 1rem; 
+}
+select{
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
 
 @media only screen and (max-width: 1000px) {
     .containerOne{
