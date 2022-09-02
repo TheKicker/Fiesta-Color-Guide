@@ -1,5 +1,3 @@
-console.log("Hello world");
-var shades = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "White", "Black", "Brown"]
 var shadeFilter = document.getElementById("shadeFilter")
 var shadeFilterLabel = document.getElementById("shadeFilterLabel")
 var yearFilter = document.getElementById("yearFilter")
@@ -121,9 +119,29 @@ async function renderPost86(){
         }
     }
 }
-async function renderYear(year){
-    let baseYear = year // 1940
-    let endYear = baseYear + 9 // 1949
+function createDec(decade) {
+    var a = decade;
+    var b = a + 9;
+    var arr = [...Array(b - a + 1).keys()].map((x) => x + a);
+    console.log(`createDec: ${arr}`)
+    return arr
+}
+function createArr(a, b) {
+    console.log(`A: ${a} // B: ${b}`)
+    var arr = [...Array(b - a + 1).keys()].map((x) => x + a);
+    console.log(`createArr: ${arr}`)
+    return arr
+}
+function check(decade, prodStar, prodEnd){
+    var decadeArr = createDec(decade)
+    var producArr = createArr(prodStar, prodEnd)
+    // Need logic to check if color was produced in decade 
+    console.log(decadeArr, producArr)
+}
+
+async function renderYear(decade){
+    let baseYear = decade // 1940 for example
+    let endYear = baseYear + 9 // 1949 for example
     let data = await fetchAPI()
     // Need to figure out formula, right now "current" breaks it toward modern colors
     let d = data.colors.filter(color=>color.prodStart <= endYear && color.prodEnd >= baseYear)

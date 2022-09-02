@@ -21,9 +21,9 @@
             "color":"Red",
             "sku":"NA",
             "hex":"#D2042D",
-            "produced": "1936-1943 and 1959-1972",
-            "prodStart":[1936,1959],
-            "prodEnd":[1943,1972],
+            "produced": "1936-1943",
+            "prodStart":[1936],
+            "prodEnd":[1943],
             "shadeOf":"Red"
         },
         {
@@ -115,6 +115,15 @@
             "prodStart": 1959,
             "prodEnd": 1969,
             "shadeOf":"Green"
+        },
+        {
+            "color":"Red",
+            "sku":"NA",
+            "hex":"#D2042D",
+            "produced": "1959-1972",
+            "prodStart":[1959],
+            "prodEnd":[1972],
+            "shadeOf":"Red"
         },
         {
             "color":"Antique Gold",
