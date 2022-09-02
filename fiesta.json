@@ -22,8 +22,8 @@
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1936-1943",
-            "prodStart":[1936],
-            "prodEnd":[1943],
+            "prodStart":1936,
+            "prodEnd":1943,
             "shadeOf":"Red"
         },
         {
