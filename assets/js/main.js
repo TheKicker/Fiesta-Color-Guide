@@ -37,177 +37,9 @@ async function renderAllColors(){
         }
     }
 }
-async function renderRed(){
+async function render(c){
     let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Red")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderOrange(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Orange")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderYellow(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Yellow")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderGreen(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Green")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderBlue(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Blue")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderPurple(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Purple")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderWhite(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "White")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderBlack(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Black")
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
-}
-async function renderBrown(){
-    let data = await fetchAPI()
-    let d = data.colors.filter(color=>color.shadeOf == "Brown")
+    let d = data.colors.filter(color=>color.shadeOf == c)
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -289,7 +121,30 @@ async function renderPost86(){
         }
     }
 }
-
+async function renderYear(year){
+    let baseYear = year // 1940
+    let endYear = baseYear + 9 // 1949
+    let data = await fetchAPI()
+    // Need to figure out formula, right now "current" breaks it toward modern colors
+    let d = data.colors.filter(color=>color.prodStart <= endYear && color.prodEnd >= baseYear)
+    for (i=0;i<d.length;i++){
+        {
+            output.innerHTML += `<div class="d-flex">
+                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
+                                        <div class="d-r">
+                                            <p class="color">
+                                                ${d[i].color}
+                                            </p>
+                                            <p class="details">
+                                                <strong>Produced:</strong> ${d[i].produced} <br>
+                                                <strong>SKU:</strong> ${d[i].sku}
+                                            </p>
+                                        </div>
+                                    </div>
+                                <br>`
+        }
+    }
+}
 function hideAllFields(){
     shadeFilterLabel.style.display = "none"
     shadeFilter.style.display = "none"
@@ -335,17 +190,17 @@ function displayColors(f){
     if(f == "All"){
         renderAllColors()
     } else if (f == "Shade"){
-        renderRed()
+        render("Red")
         document.getElementById("shadeFilter").addEventListener("change", function(){
             switch(this.value){
                 case "Red":
                     clearOutput()
-                    renderRed()
+                    render("Red")
                     console.log("Red rendered");
                     break;
                 case "Orange":
                     clearOutput()
-                    renderOrange()
+                    render("Orange")
                     console.log("Orange rendered");
                     break;
                 case "Yellow":
@@ -355,32 +210,32 @@ function displayColors(f){
                     break;
                 case "Green":
                     clearOutput()
-                    renderGreen()
+                    render("Green")
                     console.log("Green");
                     break;
                 case "Blue":
                     clearOutput()
-                    renderBlue()
+                    render("Blue")
                     console.log("Blue");
                     break;
                 case "Purple":
                     clearOutput()
-                    renderPurple()
+                    render("Purple")
                     console.log("Purple");
                     break;
                 case "White":
                     clearOutput()
-                    renderWhite()
+                    render("White")
                     console.log("White");
                     break;
                 case "Black":
                     clearOutput()
-                    renderBlack()
+                    render("Black")
                     console.log("Black");
                     break;
                 case "Brown":
                     clearOutput()
-                    renderBrown()
+                    render("Brown")
                     console.log("Brown");
                     break;
             }
@@ -392,17 +247,54 @@ function displayColors(f){
                 case "Current":
                     clearOutput()
                     renderCurrent()
-                    console.log("Current");
                     break;
                 case "Original":
                     clearOutput()
                     renderOriginal()
-                    console.log("Original");
                     break;
                 case "Post86":
                     clearOutput()
                     renderPost86()
-                    console.log("Post86");
+                    break;
+                case "1930":
+                    clearOutput()
+                    renderYear(1930)
+                    break;
+                case "1940":
+                    clearOutput()
+                    renderYear(1940)
+                    break;
+                case "1950":
+                    clearOutput()
+                    renderYear(1950)
+                    break;
+                case "1960":
+                    clearOutput()
+                    renderYear(1960)
+                    break;
+                case "1970":
+                    clearOutput()
+                    renderYear(1970)
+                    break;
+                case "1980":
+                    clearOutput()
+                    renderYear(1980)
+                    break;
+                case "1990":
+                    clearOutput()
+                    renderYear(1990)
+                    break;
+                case "2000":
+                    clearOutput()
+                    renderYear(2000)
+                    break;
+                case "2010":
+                    clearOutput()
+                    renderYear(2010)
+                    break;
+                case "2020":
+                    clearOutput()
+                    renderYear(2020)
                     break;
             }
         })
