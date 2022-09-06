@@ -225,38 +225,38 @@ function displayColors(f){
                     break;
                 case "Yellow":
                     clearOutput()
-                    renderYellow()
+                    render("Yellow")
                     console.log("Yellow rendered");
                     break;
                 case "Green":
                     clearOutput()
                     render("Green")
-                    console.log("Green");
+                    console.log("Green rendered");
                     break;
                 case "Blue":
                     clearOutput()
                     render("Blue")
-                    console.log("Blue");
+                    console.log("Blue rendered");
                     break;
                 case "Purple":
                     clearOutput()
                     render("Purple")
-                    console.log("Purple");
+                    console.log("Purple rendered");
                     break;
                 case "White":
                     clearOutput()
                     render("White")
-                    console.log("White");
+                    console.log("White rendered");
                     break;
                 case "Black":
                     clearOutput()
                     render("Black")
-                    console.log("Black");
+                    console.log("Black rendered");
                     break;
                 case "Brown":
                     clearOutput()
                     render("Brown")
-                    console.log("Brown");
+                    console.log("Brown rendered");
                     break;
             }
         })
