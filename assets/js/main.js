@@ -127,24 +127,26 @@ function createDec(decade) {
     return arr
 }
 function createArr(a, b) {
-    console.log(`A: ${a} // B: ${b}`)
     var arr = [...Array(b - a + 1).keys()].map((x) => x + a);
+    console.log(`A: ${a} // B: ${b}`)
     console.log(`createArr: ${arr}`)
     return arr
 }
-function check(decade, prodStar, prodEnd){
+function check(decade, prodStart, prodEnd){
     var decadeArr = createDec(decade)
-    var producArr = createArr(prodStar, prodEnd)
+    var productionArr = createArr(prodStart, prodEnd)
     // Need logic to check if color was produced in decade 
-    console.log(decadeArr, producArr)
+    //
+    //
+    //
+    //
+    //
 }
 
-async function renderYear(decade){
-    let baseYear = decade // 1940 for example
-    let endYear = baseYear + 9 // 1949 for example
-    let data = await fetchAPI()
-    // Need to figure out formula, right now "current" breaks it toward modern colors
-    let d = data.colors.filter(color=>color.prodStart <= endYear && color.prodEnd >= baseYear)
+async function renderYear(decadeStart){
+    var decadeEndYear = decadeStart + 9 // 1949 for example
+    var data = await fetchAPI()
+    var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart)
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">

@@ -443,7 +443,7 @@
         {
             "color":"Slate",
             "sku":"0339",
-            "hex":"#404040",
+            "hex":"#343434",
             "produced": "2015-current",
             "prodStart": 2015,
             "prodEnd": "current",
@@ -457,6 +457,15 @@
             "prodStart": 2015,
             "prodEnd": 2018,
             "shadeOf":"Green"
+        },
+        {
+            "color":"Foundry",
+            "sku":"20000",
+            "hex":"#141414",
+            "produced": "2016-current",
+            "prodStart": 2016,
+            "prodEnd": "current",
+            "shadeOf":"Black"
         },
         {
             "color":"Claret",
