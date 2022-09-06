@@ -76,6 +76,12 @@ footer a:hover{
 .details{
     font-size: 18px;
 }
+.lead{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
+}
 label{
     font-size: 14px;
     vertical-align: top; 
