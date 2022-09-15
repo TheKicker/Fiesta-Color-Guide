@@ -2,8 +2,6 @@
     "company":"The Fiesta Tableware Company",
     "founded":1871,
     "founders":"Homer and Shakespeare Laughlin",
-    "website":"https://fiestatableware.com",
-    "retail":["https://fiestafactorydirect.com", "https://usadinnerwaredirect.com"],
     "address":{
         "street":"672 Fiesta Drive",
         "city":"Newell",
@@ -16,6 +14,43 @@
         "longitude": -80.607008,
         "gps":["40° 37' 13.4184'' N", "80° 36' 25.2288'' W"]
     },
+    "website":"https://fiestatableware.com",
+    "retailWebsites":[
+        {
+            "name":"Fiesta Factory Direct",
+            "url":"https://fiestafactorydirect.com"
+        },
+        {
+            "name":"USA Dinnerware Direct",
+            "url":"https://usadinnerwaredirect.com"
+        }],
+    "retailLocations":[
+        {
+            "name":"Factory Outlet",
+            "street":"672 Fiesta Drive",
+            "city":"Newell",
+            "stateLong": "West Virginia",
+            "stateShort": "WV",
+            "zip": "26050",
+            "countryLong": "United States of America",
+            "countryShort": "USA",
+            "latitude": 40.620394,
+            "longitude": -80.607008,
+            "phone":"304-387-1300"
+        },
+        {
+            "name":"Everything Fiesta",
+            "street":"52 Skidmore Lane",
+            "city":"Sutton",
+            "stateLong": "West Virginia",
+            "stateShort": "WV",
+            "zip": "26601",
+            "countryLong": "United States of America",
+            "countryShort": "USA",
+            "latitude": 38.703900,
+            "longitude": -80.666954,
+            "phone":"304-765-5384"
+        }],
     "colors":[
         {
             "color":"Red",
@@ -443,7 +478,7 @@
         {
             "color":"Slate",
             "sku":"0339",
-            "hex":"#343434",
+            "hex":"#1a1a1a",
             "produced": "2015-current",
             "prodStart": 2015,
             "prodEnd": "current",

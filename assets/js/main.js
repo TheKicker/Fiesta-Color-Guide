@@ -145,8 +145,10 @@ function check(decade, prodStart, prodEnd){
 
 async function renderYear(decadeStart){
     var decadeEndYear = decadeStart + 9 // 1949 for example
+    let deca = createArr(decadeStart,decadeEndYear)
     var data = await fetchAPI()
-    var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart)
+    // Kind of works, breaks when color is still current
+    var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">

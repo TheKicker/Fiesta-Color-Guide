@@ -8,6 +8,21 @@ header{
     background: black;
     color: whitesmoke;
     padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#made-in-usa{
+    display: inline-block;
+    margin: auto 0;
+    height: 60px;
+    width: 140px;
+}
+ .made-in-usa{
+    display: inline-block;
+    margin: auto;
+    height: 60px;
+    width: 140px;
 }
 footer{
     background: black;
@@ -96,6 +111,9 @@ select{
 }
 
 @media only screen and (max-width: 1000px) {
+    #made-in-usa{
+        display: none;
+    }
     .container{
         width: 80%;
     }
