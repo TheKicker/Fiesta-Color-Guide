@@ -1,7 +1,40 @@
 {
     "company":"The Fiesta Tableware Company",
+    "description":"The Fiesta Tableware Company is an American ceramics manufacturer located in Newell, West Virginia, United States. Established in 1871, it is widely known for its Art Deco glazed dinnerware line, Fiesta.",
+    "ticker": null,
     "founded":1871,
+    "president":"Elizabeth McIlvain",
+    "ceo":"Elizabeth McIlvain",
+    "coo":"Matthew Wicks",
+    "cfo":"William Danley",
     "founders":"Homer and Shakespeare Laughlin",
+    "leadership":[
+        "Homer Laughlin",
+        "William Edwin Wells",
+        "Louis I. Aaron",
+        "Joseph M. Wells Sr.",
+        "Marcus Aaron",
+        "Joseph M. Wells Jr.",
+        "Marcus Lester Aaron",
+        "Marcus (Pete) Aaron II",
+        "Joseph Wells III",
+        "Jean Wicks",
+        "Elizabeth McIlvain"
+    ],
+    "designers":[
+        "Frederick Hurten Rhead",
+        "Edwin Wonder",
+        "Chris Park",
+        "Mickler Bowdler",
+        "David Neer"
+    ],
+    "companyAliases":[
+        "Laughlin Pottery",
+        "The Homer Laughlin China Company",
+        "The HLC Family of Companies"
+    ],
+    "industry":"Ceramics Manufacturer",
+    "employees":"501-1000",
     "address":{
         "street":"672 Fiesta Drive",
         "city":"Newell",
@@ -24,6 +57,36 @@
             "name":"USA Dinnerware Direct",
             "url":"https://usadinnerwaredirect.com"
         }],
+    "socialMedia":[
+        {
+            "name":"Facebook",
+            "url":"https://www.facebook.com/FiestaTableware"
+        },
+        {
+            "name":"Instagram",
+            "url":"https://www.instagram.com/fiestatablewarecompany/"
+        },
+        {
+            "name":"Pinterest",
+            "url":"https://www.pinterest.com/fiestadishes/"
+        },
+        {
+            "name":"Tiktok",
+            "url":"https://www.tiktok.com/@fiestadinnerware"
+        },
+        {
+            "name":"LinkedIn",
+            "url":"https://www.linkedin.com/company/the-fiesta-tableware-company"
+        },
+        {
+            "name":"Twitter",
+            "url":"https://twitter.com/fiestatableware"
+        },
+        {
+            "name":"Youtube",
+            "url":"https://www.youtube.com/c/thefiestatablewareco"
+        }
+    ],
     "retailLocations":[
         {
             "name":"Factory Outlet",
@@ -36,12 +99,21 @@
             "countryShort": "USA",
             "latitude": 40.620394,
             "longitude": -80.607008,
-            "phone":"304-387-1300"
+            "phone":"304-387-1300",
+            "hours":{
+                "Monday":"9:00am to 5:00pm",
+                "Tuesday":"9:00am to 5:00pm",
+                "Wednesday":"9:00am to 5:00pm",
+                "Thursday":"9:00am to 5:00pm",
+                "Friday":"9:00am to 5:00pm",
+                "Saturday":"9:00am to 5:00pm",
+                "Sunday":"11:00pm to 5:00pm"
+            }
         },
         {
             "name":"Everything Fiesta",
             "street":"52 Skidmore Lane",
-            "city":"Sutton",
+            "city":"Sutton (Flatwoods)",
             "stateLong": "West Virginia",
             "stateShort": "WV",
             "zip": "26601",
@@ -49,7 +121,16 @@
             "countryShort": "USA",
             "latitude": 38.703900,
             "longitude": -80.666954,
-            "phone":"304-765-5384"
+            "phone":"304-765-5384",
+            "hours":{
+                "Monday":"10:00am to 5:00pm",
+                "Tuesday":"10:00am to 5:00pm",
+                "Wednesday":"10:00am to 5:00pm",
+                "Thursday":"10:00am to 5:00pm",
+                "Friday":"10:00am to 5:00pm",
+                "Saturday":"10:00am to 5:00pm",
+                "Sunday":"12:00pm to 5:00pm"
+            }
         }],
     "colors":[
         {
