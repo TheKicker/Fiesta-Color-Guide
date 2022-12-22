@@ -135,6 +135,7 @@
     "colors":[
         {
             "color":"Red",
+            "description":"",
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1936-1943",
@@ -144,6 +145,7 @@
         },
         {
             "color":"Blue (Cobalt)",
+            "description":"",
             "sku":"NA",
             "hex":"#13294B",
             "produced": "1936-1951",
@@ -153,6 +155,7 @@
         },
         {
             "color":"Green (Light)",
+            "description":"",
             "sku":"NA",
             "hex":"#27654A",
             "produced": "1936-1951",
@@ -162,6 +165,7 @@
         },
         {
             "color":"Yellow",
+            "description":"",
             "sku":"NA",
             "hex":"#DAAC49",
             "produced": "1936-1969",
@@ -171,6 +175,7 @@
         },
         {
             "color":"Old Ivory",
+            "description":"",
             "sku":"NA",
             "hex":"#F2EFDE",
             "produced": "1936-1951",
@@ -180,6 +185,7 @@
         },
         {
             "color":"Turquoise",
+            "description":"",
             "sku":"NA",
             "hex":"#56B1BD",
             "produced": "1937-1969",
@@ -189,6 +195,7 @@
         },
         {
             "color":"Forest Green",
+            "description":"",
             "sku":"NA",
             "hex":"#316E15",
             "produced": "1951-1959",
@@ -198,6 +205,7 @@
         },
         {
             "color":"Rose",
+            "description":"",
             "sku":"NA",
             "hex":"#E5908D",
             "produced": "1951-1959",
@@ -207,6 +215,7 @@
         },
         {
             "color":"Chartreuse",
+            "description":"",
             "sku":"NA",
             "hex":"#BCCC6A",
             "produced": "1951-1959",
@@ -216,6 +225,7 @@
         },
         {
             "color":"Gray",
+            "description":"",
             "sku":"NA",
             "hex":"#C4CFDC",
             "produced": "1951-1959",
@@ -225,6 +235,7 @@
         },
         {
             "color":"Medium Green",
+            "description":"",
             "sku":"NA",
             "hex":"#4E9F51",
             "produced": "1959-1969",
@@ -234,6 +245,7 @@
         },
         {
             "color":"Red",
+            "description":"",
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1959-1972",
@@ -243,6 +255,7 @@
         },
         {
             "color":"Antique Gold",
+            "description":"",
             "sku":"NA",
             "hex":"#FAC752",
             "produced": "1969-1972",
@@ -252,6 +265,7 @@
         },
         {
             "color":"Turf Green",
+            "description":"",
             "sku":"NA",
             "hex":"#7F843C",
             "produced": "1969-1972",
@@ -261,6 +275,7 @@
         },
         {
             "color":"White",
+            "description":"",
             "sku":"0100",
             "hex":"#FFFFFF",
             "produced": "1986-current",
@@ -270,6 +285,7 @@
         },
         {
             "color":"Black",
+            "description":"",
             "sku":"0101",
             "hex":"#000000",
             "produced": "1986-2014",
@@ -279,6 +295,7 @@
         },
         {
             "color":"Rose",
+            "description":"",
             "sku":"0103",
             "hex":"#E5908D",
             "produced": "1987-2005",
@@ -288,6 +305,7 @@
         },
         {
             "color":"Apricot",
+            "description":"",
             "sku":"0104",
             "hex":"#EBBCA2",
             "produced": "1986-1998",
@@ -297,6 +315,7 @@
         },
         {
             "color":"Cobalt",
+            "description":"",
             "sku":"0105",
             "hex":"#13294B",
             "produced": "1987-2021",
@@ -306,6 +325,7 @@
         },
         {
             "color":"Yellow",
+            "description":"",
             "sku":"0106",
             "hex":"#EAD881",
             "produced": "1987-2002",
@@ -315,6 +335,7 @@
         },
         {
             "color":"Turquoise",
+            "description":"",
             "sku":"0107",
             "hex":"#56B1BD",
             "produced": "1988-current",
@@ -324,6 +345,7 @@
         },
         {
             "color":"Periwinkle Blue",
+            "description":"",
             "sku":"0108",
             "hex":"#7FB1D7",
             "produced": "1989-2006",
@@ -333,6 +355,7 @@
         },
         {
             "color":"Sea Mist Green",
+            "description":"",
             "sku":"0109",
             "hex":"#9ADFC1",
             "produced": "1991-2005",
@@ -342,6 +365,7 @@
         },
         {
             "color":"Lilac",
+            "description":"",
             "sku":"0113",
             "hex":"#7F68A1",
             "produced": "1993-1995",
@@ -351,6 +375,7 @@
         },
         {
             "color":"Persimmon",
+            "description":"",
             "sku":"0114",
             "hex":"#EC7B5F",
             "produced": "1995-2008",
@@ -360,6 +385,7 @@
         },
         {
             "color":"Sapphire",
+            "description":"",
             "sku":"0116",
             "hex":"#1F44B2",
             "produced": "1996-1997",
@@ -369,6 +395,7 @@
         },
         {
             "color":"Raspberry",
+            "description":"",
             "sku":"4465",
             "hex":"#892A33",
             "produced": "December 1997",
@@ -378,6 +405,7 @@
         },
         {
             "color":"Chartreuse",
+            "description":"",
             "sku":"0117",
             "hex":"#A1D63D",
             "produced": "1997-1999",
@@ -387,6 +415,7 @@
         },
         {
             "color":"Pearl Gray",
+            "description":"",
             "sku":"0118",
             "hex":"#C9CECF",
             "produced": "1999-2001",
@@ -396,6 +425,7 @@
         },
         {
             "color":"Juniper",
+            "description":"",
             "sku":"0119",
             "hex":"#2C6672",
             "produced": "2000-2001",
@@ -405,6 +435,7 @@
         },
         {
             "color":"Cinnabar",
+            "description":"",
             "sku":"0102",
             "hex":"#5F1111",
             "produced": "2000-2010",
@@ -414,6 +445,7 @@
         },
         {
             "color":"Sunflower",
+            "description":"",
             "sku":"0320",
             "hex":"#F8DA6D",
             "produced": "2001-current",
@@ -423,6 +455,7 @@
         },
         {
             "color":"Plum",
+            "description":"Made by The Fiesta Tableware Company from 2001 to 2015, Plum is a dark, rich shade of purple. It is often used in fashion and interior design to add a touch of sophistication, richness, and depth to any tablescape color palette.  Many Fiesta fans around the world find that it can be used to create a bold and dramatic look when paired with other, lighter shades.",
             "sku":"0323",
             "hex":"#351D54",
             "produced": "2001-2015",
@@ -432,6 +465,7 @@
         },
         {
             "color":"Shamrock",
+            "description":"",
             "sku":"0324",
             "hex":"#49AB07",
             "produced": "2002-2021",
@@ -441,6 +475,7 @@
         },
         {
             "color":"Tangerine",
+            "description":"",
             "sku":"0325",
             "hex":"#F37B39",
             "produced": "2003-2017",
@@ -450,6 +485,7 @@
         },
         {
             "color":"Scarlet",
+            "description":"",
             "sku":"0326",
             "hex":"#Cf2C20",
             "produced": "2004-current",
@@ -459,6 +495,7 @@
         },
         {
             "color":"Peacock",
+            "description":"",
             "sku":"0327",
             "hex":"#3792D7",
             "produced": "2005-2014",
@@ -468,6 +505,7 @@
         },
         {
             "color":"Heather",
+            "description":"",
             "sku":"0328",
             "hex":"#62374E",
             "produced": "2006-2008",
@@ -477,6 +515,7 @@
         },
         {
             "color":"Evergreen",
+            "description":"",
             "sku":"0329",
             "hex":"#0B4041",
             "produced": "2007-2010",
@@ -486,6 +525,7 @@
         },
         {
             "color":"Ivory",
+            "description":"",
             "sku":"0330",
             "hex":"#F2E7C0",
             "produced": "2008-current",
@@ -495,6 +535,7 @@
         },
         {
             "color":"Chocolate",
+            "description":"",
             "sku":"0331",
             "hex":"#481C0A",
             "produced": "2008-2011",
@@ -504,6 +545,7 @@
         },
         {
             "color":"Lemongrass",
+            "description":"",
             "sku":"0332",
             "hex":"#CDE651",
             "produced": "2009-current",
@@ -513,6 +555,7 @@
         },
         {
             "color":"Marigold",
+            "description":"",
             "sku":"0333",
             "hex":"#F8AB03",
             "produced": "2008-2012",
@@ -522,6 +565,7 @@
         },
         {
             "color":"Paprika",
+            "description":"",
             "sku":"0334",
             "hex":"#A14121",
             "produced": "2010-2016",
@@ -531,6 +575,7 @@
         },
         {
             "color":"Flamingo",
+            "description":"",
             "sku":"0335",
             "hex":"#E37468",
             "produced":"2012-2013",
@@ -540,6 +585,7 @@
         },
         {
             "color":"Lapis",
+            "description":"",
             "sku":"0337",
             "hex":"#2B64A1",
             "produced": "2013-current",
@@ -549,6 +595,7 @@
         },
         {
             "color":"Poppy",
+            "description":"",
             "sku":"0338",
             "hex":"#F24B21",
             "produced": "2014-current",
@@ -558,15 +605,17 @@
         },
         {
             "color":"Slate",
+            "description":"Made in the USA by The Fiesta Tableware Company from 2015 to 2022, Slate is a dark, almost bluish-gray color.  A neutral presence, many Fiesta fans use it in design and decorating as it can be combined with a wide range of other colors to create a variety of different looks and styles. Some common associations with the color slate include sophistication, intelligence, stability, and timelessness - a true Fiesta original. ",
             "sku":"0339",
             "hex":"#1a1a1a",
-            "produced": "2015-current",
+            "produced": "2015-2022",
             "prodStart": 2015,
-            "prodEnd": "current",
+            "prodEnd": 2022,
             "shadeOf":"Black"
         },
         {
             "color":"Sage",
+            "description":"",
             "sku":"0340",
             "hex":"#4B5320",
             "produced": "2015-2018",
@@ -576,6 +625,7 @@
         },
         {
             "color":"Foundry",
+            "description":"",
             "sku":"20000",
             "hex":"#141414",
             "produced": "2016-current",
@@ -585,6 +635,7 @@
         },
         {
             "color":"Claret",
+            "description":"",
             "sku":"0341",
             "hex":"#5C2432",
             "produced": "2016-2017",
@@ -594,6 +645,7 @@
         },
         {
             "color":"Daffodil",
+            "description":"",
             "sku":"0342",
             "hex":"#F7C308",
             "produced": "2017-current",
@@ -603,6 +655,7 @@
         },
         {
             "color":"Mulberry",
+            "description":"",
             "sku":"0343",
             "hex":"#381943",
             "produced": "2018-current",
@@ -612,6 +665,7 @@
         },
         {
             "color":"Meadow",
+            "description":"",
             "sku":"0344",
             "hex":"#5B9565",
             "produced": "2019-current",
@@ -621,6 +675,7 @@
         },
         {
             "color":"Butterscotch",
+            "description":"",
             "sku":"0345",
             "hex":"#F98300",
             "produced": "2020-current",
@@ -630,6 +685,7 @@
         },
         {
             "color":"Twilight",
+            "description":"",
             "sku":"0346",
             "hex":"#120F71",
             "produced": "2021-current",
@@ -639,6 +695,7 @@
         },
         {
             "color":"Peony",
+            "description":"",
             "sku":"0346",
             "hex":"#D57C74",
             "produced": "2022-current",
