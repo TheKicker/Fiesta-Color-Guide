@@ -111,7 +111,7 @@
             }
         },
         {
-            "name":"Everything Fiesta",
+            "name":"Everything Fiesta - Flatwoods",
             "street":"52 Skidmore Lane",
             "city":"Sutton (Flatwoods)",
             "stateLong": "West Virginia",
@@ -131,7 +131,30 @@
                 "Saturday":"10:00am to 5:00pm",
                 "Sunday":"12:00pm to 5:00pm"
             }
-        }],
+        },
+        {
+            "name":"Everything Fiesta - Hartville Marketplace",
+            "street":"1289 Edison St NW",
+            "city":"Hartville",
+            "stateLong": "Ohio",
+            "stateShort": "OH",
+            "zip": "44632",
+            "countryLong": "United States of America",
+            "countryShort": "USA",
+            "latitude": 40.97537550869318,
+            "longitude": -81.36138350092224,
+            "phone":"N/A",
+            "hours":{
+                "Monday":"9:00am to 5:00pm",
+                "Tuesday":"CLOSED",
+                "Wednesday":"CLOSED",
+                "Thursday":"9:00am to 5:00pm",
+                "Friday":"9:00am to 5:00pm",
+                "Saturday":"9:00am to 5:00pm",
+                "Sunday":"CLOSED"
+            }
+        }
+    ],
     "colors":[
         {
             "color":"Red",
@@ -485,7 +508,7 @@
         },
         {
             "color":"Scarlet",
-            "description":"",
+            "description":"A bright, bold shade of red - Scarlet has been produced by The Fiesta Tableware Company since 2004. This shade of red is a vibrant, eye-catching color that is known for its bold, playful nature. It is often used to add a pop of color to a room or table and can be paired with a variety of other colors to create a range of different looks. Some common associations with the color scarlet include love, passion, and strength - truly Fiesta.",
             "sku":"0326",
             "hex":"#Cf2C20",
             "produced": "2004-current",
