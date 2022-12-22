@@ -488,7 +488,7 @@
         },
         {
             "color":"Shamrock",
-            "description":"",
+            "description":"Designed to invoke feelings of springtime, renewal, and growth - meet Shamrock. Made by The Fiesta Tableware Company from 2002 to 2021, it has been a Fiesta fan-favorite for decades. It can complement any tablescape, or mix with shades of red around Christmas for a whole new fun Fiesta feel.",
             "sku":"0324",
             "hex":"#49AB07",
             "produced": "2002-2021",
@@ -498,7 +498,7 @@
         },
         {
             "color":"Tangerine",
-            "description":"",
+            "description":"A color named after the fruit of the same name, Tangerine is a fan-favorite for its bright, vibrant, attention-grabbing nature. Made in Newell, West Virginia, by The Fiesta Tableware Company from 2003 to 2017 - it is often used to add a pop of bright color to any cabinet or tablescape. ",
             "sku":"0325",
             "hex":"#F37B39",
             "produced": "2003-2017",
@@ -508,7 +508,7 @@
         },
         {
             "color":"Scarlet",
-            "description":"A bright, bold shade of red - Scarlet has been produced by The Fiesta Tableware Company since 2004. This shade of red is a vibrant, eye-catching color that is known for its bold, playful nature. It is often used to add a pop of color to a room or table and can be paired with a variety of other colors to create a range of different looks. Some common associations with the color scarlet include love, passion, and strength - truly Fiesta.",
+            "description": "A bright, bold shade of red - Scarlet has been produced by The Fiesta Tableware Company since 2004. Scarlet is a vibrant, eye-catching color that is often used to add a pop of color to a room or table and can be paired with a variety of other colors to create a range of different looks. Some common associations with the color scarlet include love, passion, and strength - truly Fiesta.",
             "sku":"0326",
             "hex":"#Cf2C20",
             "produced": "2004-current",
@@ -518,7 +518,7 @@
         },
         {
             "color":"Peacock",
-            "description":"",
+            "description":"A Fiesta favorite that can be combined with almost every other color - Peacock is a shade of blue named after the vibrant, colorful feathers of the bird. The Fiesta Tableware Company produced Peacock from 2005 to 2014 in its factory on the banks of the Ohio River.  Often associated with luxury, sophistication, and elegance, Peacock is often used in interior design to add a touch of glamour and drama to any table.",
             "sku":"0327",
             "hex":"#3792D7",
             "produced": "2005-2014",
@@ -528,7 +528,7 @@
         },
         {
             "color":"Heather",
-            "description":"",
+            "description":"A color that is typically described as a muted, medium to light shade of purple, Heather is named after the flowering plant of the same name. A Fiesta fan favorite for its softness, warmth, and femininity - it is often used in table design to add a touch of subtle color and depth.  Heather was made by The Fiesta Tableware Company in a limited run from 2006 to 2008 and can be hard to find.",
             "sku":"0328",
             "hex":"#62374E",
             "produced": "2006-2008",
