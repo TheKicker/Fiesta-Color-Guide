@@ -725,6 +725,16 @@
             "prodStart": 2022,
             "prodEnd": "current",
             "shadeOf":"Red"
+        },
+        {
+            "color":"New Color",
+            "description":"To be announced on Jan 10, 2023 at 09:00:00 EST, using White as default hex code. ",
+            "sku":"TBA",
+            "hex":"#FFF",
+            "produced": "2023-current",
+            "prodStart": 2023,
+            "prodEnd": "current",
+            "shadeOf":"TBA"
         }
     ]
 }
