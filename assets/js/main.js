@@ -27,7 +27,8 @@ async function renderAllColors(){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
@@ -48,7 +49,8 @@ async function render(c){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
@@ -69,7 +71,8 @@ async function renderCurrent(){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
@@ -90,7 +93,8 @@ async function renderOriginal(){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
@@ -111,7 +115,8 @@ async function renderPost86(){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
@@ -159,7 +164,8 @@ async function renderYear(decadeStart){
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku}
+                                                <strong>SKU:</strong> ${d[i].sku} <br>
+                                                <strong>DESC:</strong> ${d[i].description}
                                             </p>
                                         </div>
                                     </div>
