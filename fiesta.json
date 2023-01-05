@@ -298,7 +298,7 @@
         },
         {
             "color":"White",
-            "description":"",
+            "description":"One of the original colors in Fiesta's 1986 return to the marketplace, and is still in production to this day - meet White.  It is often used to create a sense of purity and simplicity and is often paired with other Fiesta colors to create a clean, fresh look. A classical favorite, start making memories with Fiesta White at your table!",
             "sku":"0100",
             "hex":"#FFFFFF",
             "produced": "1986-current",
@@ -308,7 +308,7 @@
         },
         {
             "color":"Black",
-            "description":"",
+            "description":"A strong, powerful, mysterious statement at every table - meet Black.  Made by The Fiesta Tableware Company from 1986 to 2014, Fiesta Black is often used to make a table design more sophisticated and dramatic.  Similar to Slate, many Fiesta fans love to mix it with other colors to create contrast and glamour.",
             "sku":"0101",
             "hex":"#000000",
             "produced": "1986-2014",
@@ -318,7 +318,7 @@
         },
         {
             "color":"Rose",
-            "description":"",
+            "description":"A Fiesta color often associated with femininity, love, and romance - introducing Rose. It is a soft, delicate pink color often used in table design and decoration to convey a romantic or playful atmosphere. Rose was made in the USA by The Fiesta Tableware Company from 1987 to 2005, and remains a popular and sought after color to this day.  ",
             "sku":"0103",
             "hex":"#E5908D",
             "produced": "1987-2005",
@@ -328,7 +328,7 @@
         },
         {
             "color":"Apricot",
-            "description":"",
+            "description":"Often described as one of our softer colors, Apricot is a warm orange-pink color similar to the fruit of the same name.  It is a cheerful, sunny color often used in table design and decoration to convey a friendly and welcoming atmosphere.  In production from 1986 to 1998, Apricot was a fan favorite for a long time - begin making memories with it at your table today!",
             "sku":"0104",
             "hex":"#EBBCA2",
             "produced": "1986-1998",
@@ -378,7 +378,7 @@
         },
         {
             "color":"Sea Mist Green",
-            "description":"",
+            "description":"A soft, muted green color often associated with the foggy atmosphere of the sea - meet Sea Mist Green.  In production by The Fiesta Tableware Company from 1991 to 2005, it tends to convey a sense of tranquility and relaxation to every table.  It can also be paired with other colors to create a neutral palette for a fresh, clean look. ",
             "sku":"0109",
             "hex":"#9ADFC1",
             "produced": "1991-2005",
@@ -408,7 +408,7 @@
         },
         {
             "color":"Sapphire",
-            "description":"",
+            "description":"One of the rarest colors to ever be produced by The Fiesta Tableware Company, meet Sapphire. A deep, rich blue color that is often associated with the gemstone of the same name - it was made for only one year from 1996 to 1997. The color Sapphire is often associated with trust, loyalty, and stability, and it is often used in table design and decor to add a touch of sophistication and refinement.",
             "sku":"0116",
             "hex":"#1F44B2",
             "produced": "1996-1997",
@@ -418,7 +418,7 @@
         },
         {
             "color":"Raspberry",
-            "description":"",
+            "description":"In 1997, to celebrate the 500 millionth piece of Fiesta produced since 1936, The Fiesta Tableware Company produced 500 Raspberry Presentation Bowls.  The bowls were presented to owners and shareholders of the privately held company, and this color will never again be reproduced for public sale.  ",
             "sku":"4465",
             "hex":"#892A33",
             "produced": "December 1997",
@@ -428,7 +428,7 @@
         },
         {
             "color":"Chartreuse",
-            "description":"",
+            "description":"A bright and vibrant yellow-green color, meet Chartreuse! Produced by The Fiesta Tableware Company from 1997 to 1999 - it's a lively, energetic color used in table design and decoration to create a bold, eye-catching look.  Use it alone, or combine it with other Fiesta colors to create a pop of color to an otherwise neutral palette for an upbeat atmosphere. ",
             "sku":"0117",
             "hex":"#A1D63D",
             "produced": "1997-1999",
@@ -438,7 +438,7 @@
         },
         {
             "color":"Pearl Gray",
-            "description":"",
+            "description":"Introducing Pearl Gray by The Fiesta Tableware Company.  It is a soft, muted gray color that is often associated with the iridescent surface of pearls often used in tablescape design and decoration to create a sense of sophistication and refinement. Mix and match it with other Fiesta colors, or use it alone to create a subtle, neutral space.  ",
             "sku":"0118",
             "hex":"#C9CECF",
             "produced": "1999-2001",
