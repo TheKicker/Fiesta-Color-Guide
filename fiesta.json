@@ -736,5 +736,59 @@
             "prodEnd": "current",
             "shadeOf":"TBA"
         }
+    ],
+    "products":[
+        {
+            "prod":"Bakeware",
+            "desc":"Bakeware made in the USA by The Fiesta Tableware Company is a top choice for home bakers and professional chefs alike. These high-quality products are crafted with attention to detail and a commitment to excellence, and they are designed to withstand the rigors of everyday use. From baking trays and loaf pans to covered casseroles and pie dishes, you can find a wide range of options and colors to choose from."
+        },
+        {
+            "prod":"Bouillon & Ramekins",
+            "desc":"Bouillons and ramekins are essential kitchen tools that are perfect for a wide range of cooking and serving needs. Bouillons, also known as broth cups or consommé cups, are small, shallow dishes that are typically used for serving broth or other liquids. Ramekins, on the other hand, are small, cylindrical dishes that are often used for baking and serving individual portions of food, such as creme brulee or baked eggs. The Fiesta Tableware Company proudly produces both in a wide range of sizes, colors, and styles, making them suitable for use in a variety of settings."
+        },
+        {
+            "prod":"Bowls & Dishes",
+            "desc":"From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to bowls and dishes made in the USA by The Fiesta Tableware Company. So whether you are looking for a simple, elegant design or something bold and striking, you can find the perfect option to suit your needs!"
+        },
+        {
+            "prod":"Canisters & Crocks",
+            "desc":"Canisters and crocks made in the USA by The Fiesta Tableware Company are high-quality products that are perfect for a wide range of kitchen storage needs.  Whether you are looking for Fiesta canisters to store dry goods like flour, sugar, and coffee, or crocks to hold utensils, gadgets, and other kitchen tools, you can find a wide range of options to choose from."
+        },
+        {
+            "prod":"Drinkware",
+            "desc":"From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to American-made drinkware by The Fiesta Tableware Company.  Whether you are looking for mugs for your morning coffee, glasses for your evening cocktail, or tumblers for your daily hydration - you can find a wide range of options to choose from when it comes to our high-quality drinkware."
+        },
+        {
+            "prod":"Ornaments",
+            "desc":"Ceramic Christmas tree ornaments made in the USA by The Fiesta Tableware Company are high-quality, handcrafted products that are perfect for adding a touch of holiday cheer to your home. Whether you are looking for a specific theme, color scheme, or style, you can trust that these ornaments are made with the same attention to detail and a commitment to excellence we've had since 1871."
+        },
+        {
+            "prod":"Pitchers & Carafes",
+            "desc":"An icon of the Fiesta Tableware Company - our Disk Pitchers, regular pitchers, and carafes are high-quality, handcrafted products that are perfect for serving a wide range of beverages. Many of our Fiesta fans love to collect the mini disks for every new color that is released. Our pitchers and carafes can be used to celebrate holidays, mark special occasions, or simply add a touch of beauty to any space."
+        },
+        {
+            "prod":"Plates",
+            "desc":"Made by The Fiesta Tableware Company since 1871, and created with the finest materials and techniques, our plates are designed to be durable and long-lasting for generations to come. From classic and traditional styles to modern and contemporary designs, you can find a wide range of sizes, capacities, and colors to choose from for your table. "
+        },
+        {
+            "prod":"",
+            "desc":""
+        },
+        {
+            "prod":"",
+            "desc":""
+        },
+        {
+            "prod":"",
+            "desc":""
+        },
+        {
+            "prod":"",
+            "desc":""
+        },
+        {
+            "prod":"",
+            "desc":""
+        }
     ]
 }
