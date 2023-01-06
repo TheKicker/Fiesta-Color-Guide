@@ -739,6 +739,10 @@
     ],
     "products":[
         {
+            "prod":"Accessories",
+            "desc":""
+        },
+        {
             "prod":"Bakeware",
             "desc":"Bakeware made in the USA by The Fiesta Tableware Company is a top choice for home bakers and professional chefs alike. These high-quality products are crafted with attention to detail and a commitment to excellence, and they are designed to withstand the rigors of everyday use. From baking trays and loaf pans to covered casseroles and pie dishes, you can find a wide range of options and colors to choose from."
         },
@@ -771,21 +775,30 @@
             "desc":"Made by The Fiesta Tableware Company since 1871, and created with the finest materials and techniques, our plates are designed to be durable and long-lasting for generations to come. From classic and traditional styles to modern and contemporary designs, you can find a wide range of sizes, capacities, and colors to choose from for your table. "
         },
         {
-            "prod":"",
+            "prod":"Platters & Trays",
             "desc":""
         },
         {
-            "prod":"",
+            "prod":"Square Dinnerware",
             "desc":""
         },
         {
-            "prod":"",
+            "prod":"3 Piece Place Settings",
             "desc":""
         },
         {
-            "prod":"",
+            "prod":"4 Piece Place Settings",
             "desc":""
         },
+        {
+            "prod":"5 Piece Place Settings",
+            "desc":""
+        },
+        {
+            "prod":"Utensils",
+            "desc":""
+        }
+        ,
         {
             "prod":"",
             "desc":""
