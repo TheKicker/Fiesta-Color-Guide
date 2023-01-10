@@ -158,63 +158,69 @@
     "colors":[
         {
             "color":"Red",
-            "description":"",
+            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Red.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Red is a stunning color sure to add a pop to every table.",
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1936-1943",
             "prodStart":1936,
             "prodEnd":1943,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"Red.jpg"
         },
         {
             "color":"Blue (Cobalt)",
-            "description":"",
+            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Cobalt.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - a rich shade of blue, Cobalt would later be revived post-86 when Fiesta returned to the marketplace.",
             "sku":"NA",
             "hex":"#13294B",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"Cobalt.jpg"
         },
         {
             "color":"Green (Light)",
-            "description":"",
+            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Light Green.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Light Green is one of four shades produced during the original run, but that doesn't mean it wasn't a fan favorite!",
             "sku":"NA",
             "hex":"#27654A",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"LightGreen.jpg"
         },
         {
             "color":"Yellow",
-            "description":"",
+            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Yellow.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Yellow is a whimsical color made to bring a sense of joy to every table!",
             "sku":"NA",
             "hex":"#DAAC49",
             "produced": "1936-1969",
             "prodStart": 1936,
             "prodEnd": 1969,
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"Yellow.jpg"
         },
         {
             "color":"Old Ivory",
-            "description":"",
+            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Old Ivory.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Old Ivory would later be revived by the current Ivory in post-86 when Fiesta returned to the marketplace.",
             "sku":"NA",
             "hex":"#F2EFDE",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"White"
+            "shadeOf":"White",
+            "image":"OldIvory.jpg"
         },
         {
             "color":"Turquoise",
-            "description":"",
+            "description":"Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family.  Turquoise (a shade of teal) would later be revived post-86 and is one of the most popular Fiesta colors ever. ",
             "sku":"NA",
             "hex":"#56B1BD",
             "produced": "1937-1969",
             "prodStart": 1937,
             "prodEnd": 1969,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"Turquoise.jpg"
         },
         {
             "color":"Forest Green",
@@ -224,7 +230,8 @@
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"ForestGreen.jpg"
         },
         {
             "color":"Rose",
@@ -234,7 +241,8 @@
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"Rose.jpg"
         },
         {
             "color":"Chartreuse",
@@ -244,7 +252,8 @@
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"Chartreuse.jpg"
         },
         {
             "color":"Gray",
@@ -254,7 +263,8 @@
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"White"
+            "shadeOf":"White",
+            "image":"Gray.jpg"
         },
         {
             "color":"Medium Green",
@@ -264,7 +274,8 @@
             "produced": "1959-1969",
             "prodStart": 1959,
             "prodEnd": 1969,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"MediumGreen.jpg"
         },
         {
             "color":"Red",
@@ -272,9 +283,10 @@
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1959-1972",
-            "prodStart":[1959],
-            "prodEnd":[1972],
-            "shadeOf":"Red"
+            "prodStart": 1959,
+            "prodEnd": 1972,
+            "shadeOf":"Red",
+            "image":"Red.jpg"
         },
         {
             "color":"Antique Gold",
@@ -284,7 +296,8 @@
             "produced": "1969-1972",
             "prodStart": 1969,
             "prodEnd": 1972,
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"AntiqueGold.jpg"
         },
         {
             "color":"Turf Green",
@@ -294,7 +307,8 @@
             "produced": "1969-1972",
             "prodStart": 1969,
             "prodEnd": 1972,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"TurfGreen.jpg"
         },
         {
             "color":"White",
@@ -304,7 +318,8 @@
             "produced": "1986-current",
             "prodStart": 1986,
             "prodEnd": "current",
-            "shadeOf":"White"
+            "shadeOf":"White",
+            "image":"0100.jpg"
         },
         {
             "color":"Black",
@@ -314,7 +329,8 @@
             "produced": "1986-2014",
             "prodStart": 1986,
             "prodEnd": 2014,
-            "shadeOf":"Black"
+            "shadeOf":"Black",
+            "image":"0101.jpg"
         },
         {
             "color":"Rose",
@@ -324,7 +340,8 @@
             "produced": "1987-2005",
             "prodStart": 1987,
             "prodEnd": 2005,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0103.jpg"
         },
         {
             "color":"Apricot",
@@ -334,7 +351,8 @@
             "produced": "1986-1998",
             "prodStart": 1986,
             "prodEnd": 1998,
-            "shadeOf":"Orange"
+            "shadeOf":"Orange",
+            "image":"0104.jpg"
         },
         {
             "color":"Cobalt",
@@ -344,7 +362,8 @@
             "produced": "1987-2021",
             "prodStart": 1987,
             "prodEnd": 2021,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0105.jpg"
         },
         {
             "color":"Yellow",
@@ -354,7 +373,8 @@
             "produced": "1987-2002",
             "prodStart": 1987,
             "prodEnd": 2002,
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"0106.jpg"
         },
         {
             "color":"Turquoise",
@@ -364,7 +384,8 @@
             "produced": "1988-current",
             "prodStart": 1988,
             "prodEnd": "current",
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0107.jpg"
         },
         {
             "color":"Periwinkle Blue",
@@ -374,7 +395,8 @@
             "produced": "1989-2006",
             "prodStart": 1989,
             "prodEnd": 2006,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0108.jpg"
         },
         {
             "color":"Sea Mist Green",
@@ -384,7 +406,8 @@
             "produced": "1991-2005",
             "prodStart": 1991,
             "prodEnd": 2005,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0109.jpg"
         },
         {
             "color":"Lilac",
@@ -394,7 +417,8 @@
             "produced": "1993-1995",
             "prodStart": 1993,
             "prodEnd": 1995,
-            "shadeOf":"Purple"
+            "shadeOf":"Purple",
+            "image":"0113.jpg"
         },
         {
             "color":"Persimmon",
@@ -404,7 +428,8 @@
             "produced": "1995-2008",
             "prodStart": 1995,
             "prodEnd": 2008,
-            "shadeOf":"Orange"
+            "shadeOf":"Orange",
+            "image":"0114.jpg"
         },
         {
             "color":"Sapphire",
@@ -414,7 +439,8 @@
             "produced": "1996-1997",
             "prodStart": 1996,
             "prodEnd": 1997,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0116.jpg"
         },
         {
             "color":"Raspberry",
@@ -424,7 +450,8 @@
             "produced": "December 1997",
             "prodStart": 1997,
             "prodEnd": 1997,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"4465.jpg"
         },
         {
             "color":"Chartreuse",
@@ -434,7 +461,8 @@
             "produced": "1997-1999",
             "prodStart": 1997,
             "prodEnd": 1999,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0117.jpg"
         },
         {
             "color":"Pearl Gray",
@@ -444,7 +472,8 @@
             "produced": "1999-2001",
             "prodStart": 1999,
             "prodEnd": 2001,
-            "shadeOf":"White"
+            "shadeOf":"White",
+            "image":"0118.jpg"
         },
         {
             "color":"Juniper",
@@ -454,7 +483,8 @@
             "produced": "2000-2001",
             "prodStart": 2000,
             "prodEnd": 2001,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0119.jpg"
         },
         {
             "color":"Cinnabar",
@@ -464,7 +494,8 @@
             "produced": "2000-2010",
             "prodStart": 2000,
             "prodEnd": 2010,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0102.jpg"
         },
         {
             "color":"Sunflower",
@@ -474,7 +505,8 @@
             "produced": "2001-current",
             "prodStart": 2001,
             "prodEnd": "current",
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"0320.jpg"
         },
         {
             "color":"Plum",
@@ -484,7 +516,8 @@
             "produced": "2001-2015",
             "prodStart": 2001,
             "prodEnd": 2015,
-            "shadeOf":"Purple"
+            "shadeOf":"Purple",
+            "image":"0323.jpg"
         },
         {
             "color":"Shamrock",
@@ -494,7 +527,8 @@
             "produced": "2002-2021",
             "prodStart": 2002,
             "prodEnd": 2021,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0324.jpg"
         },
         {
             "color":"Tangerine",
@@ -504,7 +538,8 @@
             "produced": "2003-2017",
             "prodStart": 2003,
             "prodEnd": 2017,
-            "shadeOf":"Orange"
+            "shadeOf":"Orange",
+            "image":"0325.jpg"
         },
         {
             "color":"Scarlet",
@@ -514,7 +549,8 @@
             "produced": "2004-current",
             "prodStart": 2004,
             "prodEnd": "current",
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0326.jpg"
         },
         {
             "color":"Peacock",
@@ -524,7 +560,8 @@
             "produced": "2005-2014",
             "prodStart": 2005,
             "prodEnd": 2014,
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0327.jpg"
         },
         {
             "color":"Heather",
@@ -534,7 +571,8 @@
             "produced": "2006-2008",
             "prodStart": 2006,
             "prodEnd": 2008,
-            "shadeOf":"Purple"
+            "shadeOf":"Purple",
+            "image":"0328.jpg"
         },
         {
             "color":"Evergreen",
@@ -544,7 +582,8 @@
             "produced": "2007-2010",
             "prodStart": 2007,
             "prodEnd": 2010,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0329.jpg"
         },
         {
             "color":"Ivory",
@@ -554,7 +593,8 @@
             "produced": "2008-current",
             "prodStart": 2008,
             "prodEnd": "current",
-            "shadeOf":"White"
+            "shadeOf":"White",
+            "image":"0330.jpg"
         },
         {
             "color":"Chocolate",
@@ -564,7 +604,8 @@
             "produced": "2008-2011",
             "prodStart": 2008,
             "prodEnd": 2011,
-            "shadeOf":"Brown"
+            "shadeOf":"Brown",
+            "image":"0331.jpg"
         },
         {
             "color":"Lemongrass",
@@ -574,7 +615,8 @@
             "produced": "2009-current",
             "prodStart": 2009,
             "prodEnd": "current",
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0332.jpg"
         },
         {
             "color":"Marigold",
@@ -584,7 +626,8 @@
             "produced": "2008-2012",
             "prodStart": 2008,
             "prodEnd": 2012,
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"0333.jpg"
         },
         {
             "color":"Paprika",
@@ -594,7 +637,8 @@
             "produced": "2010-2016",
             "prodStart": 2010,
             "prodEnd": 2016,
-            "shadeOf":"Brown"
+            "shadeOf":"Brown",
+            "image":"0334.jpg"
         },
         {
             "color":"Flamingo",
@@ -604,7 +648,8 @@
             "produced":"2012-2013",
             "prodStart": 2012,
             "prodEnd": 2013,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0335.jpg"
         },
         {
             "color":"Lapis",
@@ -614,7 +659,8 @@
             "produced": "2013-current",
             "prodStart": 2013,
             "prodEnd": "current",
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0337.jpg"
         },
         {
             "color":"Poppy",
@@ -624,7 +670,8 @@
             "produced": "2014-current",
             "prodStart": 2014,
             "prodEnd": "current",
-            "shadeOf":"Orange"
+            "shadeOf":"Orange",
+            "image":"0338.jpg"
         },
         {
             "color":"Slate",
@@ -634,7 +681,8 @@
             "produced": "2015-2022",
             "prodStart": 2015,
             "prodEnd": 2022,
-            "shadeOf":"Black"
+            "shadeOf":"Black",
+            "image":"0339.jpg"
         },
         {
             "color":"Sage",
@@ -644,7 +692,8 @@
             "produced": "2015-2018",
             "prodStart": 2015,
             "prodEnd": 2018,
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0340.jpg"
         },
         {
             "color":"Foundry",
@@ -654,7 +703,8 @@
             "produced": "2016-current",
             "prodStart": 2016,
             "prodEnd": "current",
-            "shadeOf":"Black"
+            "shadeOf":"Black",
+            "image":"20000.jpg"
         },
         {
             "color":"Claret",
@@ -664,7 +714,8 @@
             "produced": "2016-2017",
             "prodStart": 2016,
             "prodEnd": 2017,
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0341.jpg"
         },
         {
             "color":"Daffodil",
@@ -674,7 +725,8 @@
             "produced": "2017-current",
             "prodStart": 2017,
             "prodEnd": "current",
-            "shadeOf":"Yellow"
+            "shadeOf":"Yellow",
+            "image":"0342.jpg"
         },
         {
             "color":"Mulberry",
@@ -684,7 +736,8 @@
             "produced": "2018-current",
             "prodStart": 2018,
             "prodEnd": "current",
-            "shadeOf":"Purple"
+            "shadeOf":"Purple",
+            "image":"0343.jpg"
         },
         {
             "color":"Meadow",
@@ -694,7 +747,8 @@
             "produced": "2019-current",
             "prodStart": 2019,
             "prodEnd": "current",
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0344.jpg"
         },
         {
             "color":"Butterscotch",
@@ -704,7 +758,8 @@
             "produced": "2020-current",
             "prodStart": 2020,
             "prodEnd": "current",
-            "shadeOf":"Orange"
+            "shadeOf":"Orange",
+            "image":"0345.jpg"
         },
         {
             "color":"Twilight",
@@ -714,7 +769,8 @@
             "produced": "2021-current",
             "prodStart": 2021,
             "prodEnd": "current",
-            "shadeOf":"Blue"
+            "shadeOf":"Blue",
+            "image":"0346.jpg"
         },
         {
             "color":"Peony",
@@ -724,7 +780,8 @@
             "produced": "2022-current",
             "prodStart": 2022,
             "prodEnd": "current",
-            "shadeOf":"Red"
+            "shadeOf":"Red",
+            "image":"0347.jpg"
         },
         {
             "color":"Jade",
@@ -734,13 +791,18 @@
             "produced": "2023-current",
             "prodStart": 2023,
             "prodEnd": "current",
-            "shadeOf":"Green"
+            "shadeOf":"Green",
+            "image":"0348.jpg"
         }
     ],
     "products":[
         {
             "prod":"Accessories",
-            "desc":""
+            "desc":"Bring style and function to your kitchen with accessories made in the USA by The Fiesta Tableware Company. Our handcrafted American-made accessories are designed to make your daily cooking tasks easier and more efficient. From Fiesta Dancing Lady cookie jars to soap dishes and everything in between, our accessories are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home decorator, our accessories will elevate every experience. "
+        },
+        {
+            "prod":"Bar Ware",
+            "desc":"Add a pop of color to your bar with bar ware made in the USA by The Fiesta Tableware Company. Our handcrafted American-made bar ware is designed to bring a touch of fun and style to your next cocktail party or dinner gathering. From glasses to shakers, our Fiesta bar ware collection is made with your favorite vibrant colors and durable materials, ensuring they will last for years to come. Our barware is perfect for adding a touch of color to any occasion. "
         },
         {
             "prod":"Bakeware",
@@ -776,32 +838,225 @@
         },
         {
             "prod":"Platters & Trays",
-            "desc":""
+            "desc":"Enhance your dining experience with beautifully crafted ceramic platters and trays made in the USA by The Fiesta Tableware Company. Our hand-finished ceramic pieces are designed with durability and style in mind, ensuring that they will be a staple in your kitchen for years to come. Whether you're hosting a dinner party or simply looking to elevate your everyday meals, our American-made ceramic platters and trays are the perfect addition to your table setting. Shop now and bring a touch of elegance to your table!"
         },
         {
             "prod":"Square Dinnerware",
-            "desc":""
+            "desc":"Elevate your dining experience with unique square-shaped ceramic plates and bowls made in the USA by The Fiesta Tableware Company.  The square shape of our plates and bowls offers a modern and contemporary look that will add a touch of elegance to any table setting. Whether you're hosting a dinner party or simply enjoying a meal at home, our square-shaped ceramic plates and bowls are the perfect addition to your collection. Shop now and add a touch of sophistication to your table."
         },
         {
             "prod":"3 Piece Place Settings",
-            "desc":""
+            "desc":"Transform your table setting with a beautiful ceramic 3-piece place setting made in the USA by The Fiesta Tableware Company. Our handcrafted American-made ceramic pieces include a dinner plate, salad plate, and bowl - perfect for creating a cohesive and elegant look at your table. Made with durability in mind, these pieces are sure to be a staple in your kitchen for years to come. Whether you're hosting a formal dinner party or simply enjoying a meal at home, our ceramic 3-piece place settings are the perfect choice."
         },
         {
             "prod":"4 Piece Place Settings",
-            "desc":""
+            "desc":"Complete your table setting with a stunning 4-piece place setting made in the USA by The Fiesta Tableware Company. Each of our handcrafted American-made sets include a dinner plate, salad plate, mug, and a bowl - perfect for setting a table for your next special occasion or for everyday dining. These pieces are made with durability and style in mind, ensuring that they will be a staple in your home for years to come. The elegant and timeless design of our 4-piece place settings will elevate any dining experience."
         },
         {
             "prod":"5 Piece Place Settings",
-            "desc":""
+            "desc":"Experience luxury dining with our handcrafted ceramic 5-piece place settings made in the USA by The Fiesta Tableware Company. Each set includes a dinner plate, salad plate, salad bowl, soup bowl, and mug - providing everything you need for a complete table setting. Made with an attention to detail, these pieces are not only durable but also an elegant addition to any table setting. Our American-made 5-piece place settings are the epitome of sophistication that will elevate your dining experience. "
         },
         {
             "prod":"Utensils",
-            "desc":""
-        }
-        ,
+            "desc":"Upgrade your cooking experience with kitchen utensils made in the USA by The Fiesta Tableware Company. From bread knives to ladles and everything in between, our utensils are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home cook, our utensils are perfect for all your kitchen needs. With a wide range of styles, sizes, colors, and designs, you'll find the perfect utensils to suit your cooking style."
+        },
         {
-            "prod":"",
-            "desc":""
+            "prod":"The Fiesta Vault",
+            "desc":"An American icon since its introduction in 1936, Fiesta has adorned tables across the country in a multitude of colors.  The popular appeal lies in its colors, durability, affordability, and design.  The retired Fiesta wares offered here on USA Dinnerware Direct are a variety of shapes and colors no longer in production. Due to limited availability, these won't last long!"
+        }
+    ],
+    "history":[
+        {
+            "date":"1840s",
+            "desc":"The pottery industry in East Liverpool begins with the manufacture of yellow ware from the rich deposits of local clay; utilizing the Ohio River to transport products throughout the region."
+        },
+        {
+            "date":"1870-1879",
+            "desc":"Public preference shifts to a more sophisticated white ware imported from England. East Liverpool City Council offered $5,000 in seed money to someone who would build and operate a pottery for the production of white ware."
+        },
+        {
+            "date":"1871",
+            "desc":"The Laughlin Brothers (Homer and Shakespeare) form a partnership to sell pottery to which their proposal is accepted by the East Liverpool city council. They build a two-kiln plant on the banks of the Ohio River to produce white ware as the alternative to yellow."
+        },
+        {
+            "date":"1877",
+            "desc":"Shakespeare pursues other interests; the business continues under Homer’s direction and becomes: The Homer Laughlin China Works."
+        },
+        {
+            "date":"1880-1889",
+            "desc":"Homer Laughlin becomes one of the better-known manufacturers of ceramic dinnerware and toilet ware in the country. In 1889 a young bookkeeper from Steubenville, Ohio, William Edwin Wells, is hired to manage the books and eventually, the business."
+        },
+        {
+            "date":"1897-1899",
+            "desc":"Homer Laughlin retires and sells the business to Wells and a financial partner, Louis I. Aaron of Pittsburgh. Two more plants are built to support operations. A key customer contributing to the company's rapid growth included the F.W. Woolworth Company, the country's fastest growing variety (5 & 10 cent) store chain and the American Cereal Company of Chicago, who was packing oatmeal bowls in Mother's Oats boxes."
+        },
+        {
+            "date":"1902-1909",
+            "desc":"A tract of land on the opposite side of the Ohio River (today known as Newell, W.Va.) is purchased from the Newell family. A subsidiary company, the North American Manufacturing Company, is formed to develop the town. Lots are laid out, water and sewer systems are installed, electric power is secured, and a suspension bridge is built across the Ohio River, connecting the new community with East Liverpool and a trolley line is built to transport workers across the river. Plant No. 4 is constructed in 1905-1906, the largest pottery plant ever built, bringing production to 300,000 pieces per day, (10% of the U. S. production capacity). The company officially moves its headquarters and operations to the Newell location."
+        },
+        {
+            "date":"1910-1914",
+            "desc":"Louis Aaron retires and is succeeded as president by his son, Marcus Aaron, as rapid growth continues. Plant No. 5 opens with 16 additional kilns—78 ware and 60 decorating."
+        },
+        {
+            "date":"1917",
+            "desc":"W.E. Wells writes to the Woolworth Company “...this is the first time in history that the purchases of any one concern from any one pottery firm have reached the million mark in one year.”"
+        },
+        {
+            "date":"1920-1928",
+            "desc":"The early 1920’s marked the most revolutionary change that had ever hit the pottery industry. Homer Laughlin replaces intermittent kilns with continuous firing tunnel kilns at Plant Nos. 4 and 5 to increase production. New Plant Nos. 6 and 7 open. Plants on the East End are phased out in favor of the largest Homer Laughlin plant, No. 8. with 800 employees and a total capacity equal to 160 upright kilns, all for making ware for Woolworth’s, at an average price of 72 cents per dozen. That amounts to 16.7 million pieces of ware sold to one customer in one year."
+        },
+        {
+            "date":"1927",
+            "desc":"Frederick Hurten Rhead is hired as design director in 1927. Rhead's 15-year reign proved to be the most prolific period of new product introductions in the company's history. Rhead designed Virginia Rose as well as the several Eggshell shapes. Rhead's most noted accomplishment was Fiesta®. Fiesta shapes were created in an Art Deco style with concentric circles highlighting the bright colors."
+        },
+        {
+            "date":"1930",
+            "desc":"W.E. Wells retires, and is replaced by his eldest son, Joseph M. Wells, Sr."
+        },
+        {
+            "date":"1936",
+            "desc":"With great fanfare, The Homer Laughlin China Company introduces Fiesta at the Pittsburgh China & Glass Show in January 1936. Shapes are created in an Art Deco style with concentric circles highlighting the bright colors. Color pallet includes Red, Yellow, Cobalt Blue, Green, and Ivory – at the Pittsburgh China & Glass Show."
+        },
+        {
+            "date":"1938",
+            "desc":"One million dozen pieces of Fiesta are produced!"
+        },
+        {
+            "date":"1939",
+            "desc":"Automatic jiggering replaces hand jiggering, further revolutionizing production."
+        },
+        {
+            "date":"1940-1949",
+            "desc":"World War II begins. Homer Laughlin produces china for the armed forces, post-war production peaks. The company employs 3,000 and produces over 10 million dozen pieces of ware."
+        },
+        {
+            "date":"1940",
+            "desc":"Marcus Aaron retires as president and is succeeded by his son, Marcus Lester Aaron (M. L. Aaron) who serves as president for 48 years."
+        },
+        {
+            "date":"1950-1959",
+            "desc":"The 1950s sees a large increase in imported dinnerware produced in countries with very low labor costs. This competition takes its toll on the American industry; many potteries do not survive the decade. Homer Laughlin's management decides to shift its emphasis from consumer dinnerware to commercial ware for the hotel and restaurant trade, introducing the “Best China” brand of vitrified hotel china. Fashion dictates a change in Fiesta’s color palette; softer pastels emerge. In 1959 J.M. Wells, Sr., retires, turning over the management of the company to the third generation of his family, Joe Wells, Jr."
+        },
+        {
+            "date":"1960-1970",
+            "desc":"Color trends move back to brighter colors and Fiesta follows. Homer Laughlin continues its hospitality push."
+        },
+        {
+            "date":"1973",
+            "desc":"Fiesta retires after 37 years of production."
+        },
+        {
+            "date":"1980-1985",
+            "desc":"The company begins to produce lead-free china for the hospitality industry, setting an industry standard and the stage for today’s Fiesta."
+        },
+        {
+            "date":"1983",
+            "desc":"Produced the last semi-vitrified supermarket promotion for Alpha Beta in California."
+        },
+        {
+            "date":"1986",
+            "desc":"Fiesta is reintroduced in March of 1986 at the Charleston, WV, as a Cultural Center as a vitrified body, lead-free, in new updated colors: White, Black, Cobalt, Rose, and Apricot.  Joe Wells, Jr., retires and is replaced as executive vice president by his son, Joe Wells, III.  Limited collections are produced in Lilac and Chartreuse. Sapphire is produced for 16 months exclusively for Bloomingdales and to local West Virginia retailers.  M.L. Aaron retires as president and is succeeded by his son, Marcus (Pete) Aaron, II. The company is now in the hands of both families’ 4th generation."
+        },
+        {
+            "date":"1997",
+            "desc":"The 500 millionth piece of Fiesta is produced. Five hundred numbered Raspberry Presentation Bowls are produced to commemorate the event."
+        },
+        {
+            "date":"1998",
+            "desc":"Fifteen Raspberry Bowls are donated to three charity auctions held in the Newell/East Liverpool area in June and August of 1998. The $75,000+ proceeds of these auctions go to designated educational scholarship funds."
+        },
+        {
+            "date":"2000s",
+            "desc":"As Fiesta begins to flourish in the retail sector and Homer Laughlin becomes a leading force in the foodservice china industry, the aging factories undergo many changes. In 2002-2005 state-of-the- art computerized kilns are installed throughout plants 6, 7 and 8. Much-needed new forming and glazing equipment is installed and a self-contained 'plant within a plant' is built at Plant #8. Homer Laughlin prepares to enter the new millennium as the industry leader in both the foodservice and retail businesses."
+        },
+        {
+            "date":"2000",
+            "desc":"Juniper and Cinnabar are introduced."
+        },
+        {
+            "date":"2001",
+            "desc":"Sunflower and Plum are introduced. Pearl Grey and Juniper retire."
+        },
+        {
+            "date":"2002",
+            "desc":"Joe Wells, III, with his sisters, Jean Wicks and Elizabeth McIlvain, with the purchase of the Aaron’s stockholder interests, end a 104-year partnership with the Aaron family. Joe Wells, III, is elected president and chief executive officer.  Shamrock is introduced, Yellow retires."
+        },
+        {
+            "date":"2005",
+            "desc":"Peacock is introduced, Rose retires."
+        },
+        {
+            "date":"2006",
+            "desc":"Heather is introduced, Periwinkle Blue retires."
+        },
+        {
+            "date":"2007",
+            "desc":"Evergreen emerges on the Fiesta color palette. Fiesta makes the transition to a lifestyle brand with new items like bakeware, adding licensing partners in glassware, table linens, cutlery, gadgets, and more.  Fiesta opens its first Fiesta branded showroom in the Tabletop Market building, 41 Madison Ave, NY, NY, 16th Floor."
+        },
+        {
+            "date":"2008",
+            "desc":"Homer Laughlin gears up for its 75th Anniversary year with a new item and color, 3-Piece Baking Bowl Set in Marigold.  It’s the first year that two colors are introduced to define a color statement with Ivory making a comeback! Heather and Persimmon retire. Chocolate debuts in the fall. New shape “Square” is introduced. Fiesta® Christmas Tree Collection is introduced, ushering in a prolific period beginning of decaled decorating."
+        },
+        {
+            "date":"2009",
+            "desc":"Lemongrass is introduced, Heather retires.  The second item in the 75th Anniversary series is unveiled: a Large Oval Serving Platter."
+        },
+        {
+            "date":"2010",
+            "desc":"Homer Laughlin China purchases The Hall China Company, East Liverpool, Ohio, to expand its food service and Fiesta production.  Homer Laughlin introduces a new collection: America’s Diner/Bistro, based on its original checked and banded patterns produced in the mid-1900s. Paprika is introduced. Evergreen and Cinnabar retire. The third item in the 75th Anniversary series is introduced: 2PC Prep Baking Bowl Set."
+        },
+        {
+            "date":"2011",
+            "desc":"The official 75th Anniversary year! The dinnerware collection is available in limited edition anniversary color, Marigold, as well as limited edition Soup Tureen. Chocolate retires."
+        },
+        {
+            "date":"2012",
+            "desc":"Flamingo is introduced, Marigold retires."
+        },
+        {
+            "date":"2013",
+            "desc":"Lapis is the new color for 2013. Flamingo retires.  Elizabeth McIlvain succeeds her brother, Joe Wells, III, as the new president of Homer Laughlin. After 50 years of service, Wells takes his father’s place as chairman of the board."
+        },
+        {
+            "date":"2014",
+            "desc":"Poppy is introduced as the new color of 2014; Black and Peacock retire. New shape family “Bistro Collection” is introduced, including Dinner and Salad Plates."
+        },
+        {
+            "date":"2015",
+            "desc":"Two colors are introduced in the same year, in the same season: Sage and Slate. Plum retires."
+        },
+        {
+            "date":"2016",
+            "desc":"Fiesta celebrates its 80th Anniversary and Homer Laughlin China Company celebrates its 145th year! New color Claret is introduced. Plum retires."
+        },
+        {
+            "date":"2017",
+            "desc":"Daffodil is introduced as the new color of 2017. Claret and Tangerine retire. Fiesta introduces the Floral Bouquet pattern - becomes #11th ranking bridal pattern consisting of a 9” Luncheon Plate and Java Mug."
+        },
+        {
+            "date":"2018",
+            "desc":"Fiesta first opens the 2nd exclusive showroom in the Atlanta’s AmericasMart Market building, Bldg. 2, 9th floor.  Mulberry is introduced as the 2018 new color, marking the 50th Fiesta color. Sage retires."
+        },
+        {
+            "date":"2019",
+            "desc":"Meadow is introduced as the new color of 2019."
+        },
+        {
+            "date":"2020",
+            "desc":"The Homer Laughlin China Company takes a bold step and returns to its roots, focusing solely on manufacturing dinnerware for the home. The foodservice divisions and brand names of The Homer Laughlin China Company (HLC) and the Hall China Company are acquired by Steelite International. The Homer Laughlin China Company is renamed and is henceforth known as The Fiesta® Tableware Company.  Butterscotch is introduced as the new color of 2020. The Dinner Bowl Plate is introduced."
+        },
+        {
+            "date":"2021",
+            "desc":"The Fiesta Tableware Company celebrates 150 Years of American Craftsmanship 1871-2021. Fiesta celebrates its 85th Anniversary, bringing to market the Pedestal Cake Plate in Twilight. Twilight is introduced as the new color of 2021; Cobalt and Shamrock retire.  Luncheon Bowl Plate and Stackable Mugs are introduced."
+        },
+        {
+            "date":"2022",
+            "desc":"The Fiesta Tableware Company opens its third outlet at The Hartville Marketplace in Hartville, Ohio. Peony is introduced, Slate retires."
+        },
+        {
+            "date":"2023",
+            "desc":"Jade is introduced as the new color of 2023."
         }
     ]
 }
