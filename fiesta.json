@@ -727,14 +727,14 @@
             "shadeOf":"Red"
         },
         {
-            "color":"New Color",
-            "description":"To be announced on Jan 10, 2023 at 09:00:00 EST, using White as default hex code. ",
-            "sku":"TBA",
-            "hex":"#FFF",
+            "color":"Jade",
+            "description":"Named after the stone prized for its durability, beauty, and symbolism - meet Jade.  The 2023 color of the year and produced in Newell, West Virginia - it's a darker shade of green than its Meadow and Shamrock relatives.  Jade is used most often in tablescape design and decoration to produce feelings of sophistication and elegance - or mix it with Scarlet for a perfect Christmas charm during the holidays.  Make memories with Jade today!",
+            "sku":"0348",
+            "hex":"#1D4729",
             "produced": "2023-current",
             "prodStart": 2023,
             "prodEnd": "current",
-            "shadeOf":"TBA"
+            "shadeOf":"Green"
         }
     ],
     "products":[
