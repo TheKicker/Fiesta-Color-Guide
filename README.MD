@@ -16,7 +16,7 @@ Unofficial color guide for Fiesta Dinnerware Colors from the beginning in 1936 t
 
 <a href="https://usadinnerwaredirect.com">USA Dinnerware Direct retail site</a>
 
-<a href="https://everythingfiesta">Everything Fiesta outlet site</a>
+<a href="https://everythingfiesta.com">Everything Fiesta outlet site</a>
 
 <a href="https://www.post86referenceguide.com/home/colortimeline/">Post86 Reference Guide</a>
 
