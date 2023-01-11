@@ -235,7 +235,7 @@
         },
         {
             "color":"Rose",
-            "description":"",
+            "description":"Produced from 1951 to 1959, Fiesta's Rose is a shade of pink that is associated with love, romance, and femininity. It is a delicate and soft color that is often used in flowers, particularly roses, which is how the color got its name.",
             "sku":"NA",
             "hex":"#E5908D",
             "produced": "1951-1959",
@@ -246,7 +246,7 @@
         },
         {
             "color":"Chartreuse",
-            "description":"",
+            "description":"A shade of green-yellow color, it is a bright and lively color that is considered to be a tertiary color - meet Chartreuse. Produced by The Fiesta Tableware Company from 1951 to 1959, it is a fan favorite known for its ability to appear different depending on the lighting and other surrounding colors.",
             "sku":"NA",
             "hex":"#BCCC6A",
             "produced": "1951-1959",
@@ -279,7 +279,7 @@
         },
         {
             "color":"Red",
-            "description":"",
+            "description":"Bright, bold, and a shade lighter than current day's Scarlet - meet Red.  Produced from 1959 to 1972 by The Fiesta Tableware Company, it can evoke a range of emotions, but is commonly associated with hunger. ",
             "sku":"NA",
             "hex":"#D2042D",
             "produced": "1959-1972",
@@ -290,7 +290,7 @@
         },
         {
             "color":"Antique Gold",
-            "description":"",
+            "description":"Retired decades ago, but a fan favorite to this day - introducing Antique Gold. One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  A whimsical shade of yellow, Antique Gold brought a certain contrast and happiness to ever table it touched.",
             "sku":"NA",
             "hex":"#FAC752",
             "produced": "1969-1972",
@@ -301,7 +301,7 @@
         },
         {
             "color":"Turf Green",
-            "description":"",
+            "description":"Similar to the color of a fresh cut lawn, meet Turf Green.  One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  Turf Green is a rich and saturated shade of green that is often used in sports fields, golf courses, and other landscapes where a lush, green appearance is desired. ",
             "sku":"NA",
             "hex":"#7F843C",
             "produced": "1969-1972",
