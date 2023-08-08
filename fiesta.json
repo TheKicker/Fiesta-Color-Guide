@@ -159,7 +159,7 @@
         {
             "color":"Red",
             "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Red.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Red is a stunning color sure to add a pop to every table.",
-            "sku":"NA",
+            "sku":"ORG-Red",
             "hex":"#D2042D",
             "produced": "1936-1943",
             "prodStart":1936,
@@ -224,7 +224,7 @@
         },
         {
             "color":"Forest Green",
-            "description":"",
+            "description":"A cherished collection crafted between 1951 and 1959 - this deep and rich green hue opens the door to a world of design possibilities, making a bold statement on your dining table. Pair Forest Green with earthy tones like rustic brown or warm beige for a cozy and inviting atmosphere, or create a striking contrast by combining it with crisp white or elegant black.",
             "sku":"NA",
             "hex":"#316E15",
             "produced": "1951-1959",
@@ -257,7 +257,7 @@
         },
         {
             "color":"Gray",
-            "description":"",
+            "description":"Produced between 1951 and 1959, Fiesta Gray offers versatile design opportunities. Its neutral yet sophisticated shade serves as a foundation for various tablescapes. Pair Gray with vibrant hues like deep red or royal blue for a striking contrast, or create an elegant monochromatic theme by combining it with different shades of gray and silver.",
             "sku":"NA",
             "hex":"#C4CFDC",
             "produced": "1951-1959",
@@ -268,7 +268,7 @@
         },
         {
             "color":"Medium Green",
-            "description":"",
+            "description":"Crafted between 1959 and 1969 - this iconic color choice opens the door to creative table arrangements, as its balanced green hue adds a refreshing touch to your dining setting. Combine Medium Green with complementary colors like crisp white or sunny yellow for a lively and cheerful ambiance, or create a nature-inspired theme by pairing it with earthy browns and subtle creams. ",
             "sku":"NA",
             "hex":"#4E9F51",
             "produced": "1959-1969",
