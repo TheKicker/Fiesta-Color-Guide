@@ -919,6 +919,10 @@
             "desc":"With great fanfare, The Homer Laughlin China Company introduces Fiesta at the Pittsburgh China & Glass Show in January 1936. Shapes are created in an Art Deco style with concentric circles highlighting the bright colors. Color pallet includes Red, Yellow, Cobalt Blue, Green, and Ivory – at the Pittsburgh China & Glass Show."
         },
         {
+            "date":"1937",
+            "desc":"Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family."
+        },
+        {
             "date":"1938",
             "desc":"One million dozen pieces of Fiesta are produced!"
         },
@@ -935,12 +939,28 @@
             "desc":"Marcus Aaron retires as president and is succeeded by his son, Marcus Lester Aaron (M. L. Aaron) who serves as president for 48 years."
         },
         {
-            "date":"1950-1959",
-            "desc":"The 1950s sees a large increase in imported dinnerware produced in countries with very low labor costs. This competition takes its toll on the American industry; many potteries do not survive the decade. Homer Laughlin's management decides to shift its emphasis from consumer dinnerware to commercial ware for the hotel and restaurant trade, introducing the “Best China” brand of vitrified hotel china. Fashion dictates a change in Fiesta’s color palette; softer pastels emerge. In 1959 J.M. Wells, Sr., retires, turning over the management of the company to the third generation of his family, Joe Wells, Jr."
+            "date":"1943",
+            "desc":"One of the original colors, Red, is officially retired. "
+        },
+        {
+            "date":"1950",
+            "desc":"The 1950s sees a large increase in imported dinnerware produced in countries with very low labor costs. This competition takes its toll on the American industry; many potteries do not survive the decade. Homer Laughlin's management decides to shift its emphasis from consumer dinnerware to commercial ware for the hotel and restaurant trade, introducing the “Best China” brand of vitrified hotel china. Fashion dictates a change in Fiesta’s color palette; softer pastels emerge. In 1959 J.M. Wells, Sr., retires, turning over the management of the company to the third generation of his family, Joe Wells, Jr.  "
+        },
+        {
+            "date":"1951",
+            "desc":"Two of the original colors, Cobalt and White Old Ivory are retired.  Green, Chartreuse, and Rose are officially introduced."
+        },
+        {
+            "date":"1959",
+            "desc":"Just a short 8 years after introduction - Green, Chartreuse, and Rose are officially retired. "
         },
         {
             "date":"1960-1970",
             "desc":"Color trends move back to brighter colors and Fiesta follows. Homer Laughlin continues its hospitality push."
+        },
+        {
+            "date":"1969",
+            "desc":"Two of the original colors, Yellow and Turquoise, are retired."
         },
         {
             "date":"1973",
@@ -956,15 +976,47 @@
         },
         {
             "date":"1986",
-            "desc":"Fiesta is reintroduced in March of 1986 at the Charleston, WV, as a Cultural Center as a vitrified body, lead-free, in new updated colors: White, Black, Cobalt, Rose, and Apricot.  Joe Wells, Jr., retires and is replaced as executive vice president by his son, Joe Wells, III.  Limited collections are produced in Lilac and Chartreuse. Sapphire is produced for 16 months exclusively for Bloomingdales and to local West Virginia retailers.  M.L. Aaron retires as president and is succeeded by his son, Marcus (Pete) Aaron, II. The company is now in the hands of both families’ 4th generation."
+            "desc":"Fiesta is reintroduced in March of 1986 at the Charleston, WV, as a Cultural Center as a vitrified body, lead-free, in new updated colors: White, Black, and Apricot.  Joe Wells, Jr., retires and is replaced as executive vice president by his son, Joe Wells, III.  Limited collections are produced in Lilac and Chartreuse. Sapphire is produced for 16 months exclusively for Bloomingdales and to local West Virginia retailers.  M.L. Aaron retires as president and is succeeded by his son, Marcus (Pete) Aaron, II. The company is now in the hands of both families’ 4th generation."
+        },
+        {
+            "date":"1987",
+            "desc":"Post 86 Cobalt, Rose, and Yellow are introduced"
+        },
+        {
+            "date":"1988",
+            "desc":"Post 86 Turquoise is introduced. "
+        },
+        {
+            "date":"1989",
+            "desc":"Periwinkle Blue is introduced. "
+        },
+        {
+            "date":"1991",
+            "desc":"Sea Mist Green is introduced."
+        },
+        {
+            "date":"1993",
+            "desc":"Lilac is introduced."
+        },
+        {
+            "date":"1995",
+            "desc":"Persimmon is introduced, Lilac is retired."
+        },
+        {
+            "date":"1996",
+            "desc":"Sapphire is introduced"
         },
         {
             "date":"1997",
-            "desc":"The 500 millionth piece of Fiesta is produced. Five hundred numbered Raspberry Presentation Bowls are produced to commemorate the event."
+            "desc":"In 1997, to celebrate the 500 millionth piece of Fiesta produced since 1936, The Fiesta Tableware Company produced 500 Raspberry Presentation Bowls. The bowls were presented to owners and shareholders of the privately held company, and this color will never again be reproduced for public sale. Chartreuse is introduced; and after one year of production, Sapphire is retired. "
         },
         {
             "date":"1998",
-            "desc":"Fifteen Raspberry Bowls are donated to three charity auctions held in the Newell/East Liverpool area in June and August of 1998. The $75,000+ proceeds of these auctions go to designated educational scholarship funds."
+            "desc":"Fifteen Raspberry Bowls are donated to three charity auctions held in the Newell/East Liverpool area in June and August of 1998. The $75,000+ proceeds of these auctions go to designated educational scholarship funds. Apricot retires. "
+        },
+        {
+            "date":"1999",
+            "desc":"Pearl Gray is introduced, Chartreuse is retired."
         },
         {
             "date":"2000s",
@@ -983,8 +1035,16 @@
             "desc":"Joe Wells, III, with his sisters, Jean Wicks and Elizabeth McIlvain, with the purchase of the Aaron’s stockholder interests, end a 104-year partnership with the Aaron family. Joe Wells, III, is elected president and chief executive officer.  Shamrock is introduced, Yellow retires."
         },
         {
+            "date":"2003",
+            "desc":"Tangerine is introduced."
+        },
+        {
+            "date":"2004",
+            "desc":"Scarlet is introduced."
+        },
+        {
             "date":"2005",
-            "desc":"Peacock is introduced, Rose retires."
+            "desc":"Peacock is introduced, Rose and Sea Mist Green retire."
         },
         {
             "date":"2006",
@@ -996,7 +1056,7 @@
         },
         {
             "date":"2008",
-            "desc":"Homer Laughlin gears up for its 75th Anniversary year with a new item and color, 3-Piece Baking Bowl Set in Marigold.  It’s the first year that two colors are introduced to define a color statement with Ivory making a comeback! Heather and Persimmon retire. Chocolate debuts in the fall. New shape “Square” is introduced. Fiesta® Christmas Tree Collection is introduced, ushering in a prolific period beginning of decaled decorating."
+            "desc":"Homer Laughlin gears up for its 75th Anniversary year with a new item and color, 3-Piece Baking Bowl Set in Marigold.  It’s the first year that three colors are introduced to define a color statement with Ivory making a comeback! Heather and Persimmon retire. Chocolate debuts in the fall. New shape “Square” is introduced. Fiesta® Christmas Tree Collection is introduced, ushering in a prolific period beginning of decaled decorating."
         },
         {
             "date":"2009",
@@ -1004,7 +1064,7 @@
         },
         {
             "date":"2010",
-            "desc":"Homer Laughlin China purchases The Hall China Company, East Liverpool, Ohio, to expand its food service and Fiesta production.  Homer Laughlin introduces a new collection: America’s Diner/Bistro, based on its original checked and banded patterns produced in the mid-1900s. Paprika is introduced. Evergreen and Cinnabar retire. The third item in the 75th Anniversary series is introduced: 2PC Prep Baking Bowl Set."
+            "desc":"Homer Laughlin China purchases The Hall China Company, East Liverpool, Ohio, to expand its food service and Fiesta production.  Homer Laughlin introduces a new collection: America’s Diner/Bistro, based on its original checked and banded patterns produced in the mid-1900s. The third item in the 75th Anniversary series is introduced: 2PC Prep Baking Bowl Set. Paprika is introduced. Evergreen and Cinnabar retire."
         },
         {
             "date":"2011",
@@ -1016,7 +1076,7 @@
         },
         {
             "date":"2013",
-            "desc":"Lapis is the new color for 2013. Flamingo retires.  Elizabeth McIlvain succeeds her brother, Joe Wells, III, as the new president of Homer Laughlin. After 50 years of service, Wells takes his father’s place as chairman of the board."
+            "desc":"Lapis is the new color for 2013. After one year of production, Flamingo retires.  Elizabeth McIlvain succeeds her brother, Joe Wells, III, as the new president of Homer Laughlin. After 50 years of service, Wells takes his father’s place as chairman of the board."
         },
         {
             "date":"2014",
@@ -1028,7 +1088,7 @@
         },
         {
             "date":"2016",
-            "desc":"Fiesta celebrates its 80th Anniversary and Homer Laughlin China Company celebrates its 145th year! New color Claret is introduced. Plum retires."
+            "desc":"Fiesta celebrates its 80th Anniversary and Homer Laughlin China Company celebrates its 145th year! New color Claret is introduced; Paprika and Plum retire.  A new and unique glazing process is introduced to produce Foundry. "
         },
         {
             "date":"2017",
@@ -1052,11 +1112,15 @@
         },
         {
             "date":"2022",
-            "desc":"The Fiesta Tableware Company opens its third outlet at The Hartville Marketplace in Hartville, Ohio. Peony is introduced, Slate retires."
+            "desc":"The Fiesta Tableware Company opens its third outlet at The Hartville Marketplace in Hartville, Ohio. Peony is introduced; Slate retires."
         },
         {
             "date":"2023",
             "desc":"Jade is introduced as the new color of 2023."
+        },
+        {
+            "date":"2024",
+            "desc":"___________________ is introduced as the new color of 2023."
         }
     ]
 }
