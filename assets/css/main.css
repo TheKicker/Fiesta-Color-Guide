@@ -91,11 +91,26 @@ footer a:hover{
 .details{
     font-size: 18px;
 }
+.jumbo{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 0; 
+}
+.jumbo-half{
+    width: 50%;
+    padding: 1rem;
+}
+.jumbo-image{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
 .lead{
     font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    line-height: 26px;
+    text-align: left;
+    line-height: 22px;
 }
 label{
     font-size: 14px;
@@ -110,25 +125,50 @@ select{
     padding: 0.5rem 1rem;
 }
 
+.btn-black{
+    background: black;
+    color: white;
+    padding: 10px 48px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
 @media only screen and (max-width: 1000px) {
     #made-in-usa{
         display: none;
     }
     .container{
-        width: 80%;
+        width: 90%;
+        margin: auto;
     }
     .d-flex{
         flex-direction: column;
     }
     .d-l{
-        height: 100px;
+        height: 125px;
         width: 100%;
         border-radius: 10px;
     }
     .d-r{
-        width: 100%;
+        width: 90%;
     }
     select{
         width: 100%;
+    }
+    .jumbo{
+        flex-direction: column;
+        padding: 2rem; 
+    }
+    .jumbo-half{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .jumbo-image{
+        width: 100%;
+    }
+    .lead{
+        font-size: 18px;
+        line-height: 20px;
     }
 }
