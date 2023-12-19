@@ -1,6 +1,6 @@
 # Fiesta Tableware Company
 
-<img src="assets/images/Fiesta-Plate-Stack-2023.png">
+<img src="assets/images/Fiesta-Plate-Stack-2023.png" height=192>
 
 <br>
 

@@ -133,6 +133,13 @@ select{
     border-radius: 30px;
 }
 
+.bottom-stack{
+    display: block; 
+    max-width: 100%; 
+    height: 125px; 
+    margin: 3rem auto;
+}
+
 @media only screen and (max-width: 1000px) {
     #made-in-usa{
         display: none;
@@ -170,5 +177,12 @@ select{
     .lead{
         font-size: 18px;
         line-height: 20px;
+    }
+    .bottom-stack{
+        display: block; 
+        max-width: 100%;
+        height: auto; 
+        max-height: 125px; 
+        margin: 3rem auto;
     }
 }
