@@ -793,6 +793,17 @@
             "prodEnd": "current",
             "shadeOf":"Green",
             "image":"0348.jpg"
+        },
+        {
+            "color":"Sky",
+            "description":"Introducing Sky, a serene and timeless hue inspired by the vast expanse above. Crafted in Newell, West Virginia, this ethereal shade, a shade lighter than our beloved Lapis, effortlessly blends into various tablescapes, offering a sense of peaceful sophistication. Much like the boundless sky that inspires its name, Sky is versatile and adaptable, allowing you to create moments of tranquility and beauty that last a lifetime.",
+            "sku":"0349",
+            "hex":"#B4D6DF",
+            "produced": "2024-current",
+            "prodStart": 2024,
+            "prodEnd": "current",
+            "shadeOf":"Blue",
+            "image":"0348.jpg"
         }
     ],
     "products":[
