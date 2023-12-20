@@ -24,7 +24,8 @@ async function renderAllColors(){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
@@ -46,7 +47,8 @@ async function render(c){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
@@ -68,7 +70,8 @@ async function renderCurrent(){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
@@ -90,7 +93,8 @@ async function renderOriginal(){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
@@ -112,7 +116,8 @@ async function renderPost86(){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
@@ -162,7 +167,8 @@ async function renderYear(decadeStart){
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
-                                                ${d[i].color}
+                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
+                                                &nbsp; ${d[i].color}
                                             </p>
                                             <p class="details">
                                                 <strong>Produced:</strong> ${d[i].produced} <br>
