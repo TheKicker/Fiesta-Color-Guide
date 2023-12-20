@@ -5,7 +5,8 @@ var yearFilterLabel = document.getElementById("yearFilterLabel")
 var output = document.getElementById("output")
 
 async function fetchAPI(){
-    let url = "https://thekicker.github.io/FTC-Colors/fiesta.json"
+    // let url = "https://thekicker.github.io/FTC-Colors/fiesta.json"
+    let url = "fiesta.json"
     try {
         let res = await fetch(url)
         return await res.json()
@@ -149,11 +150,12 @@ function check(decade, prodStart, prodEnd){
 }
 
 async function renderYear(decadeStart){
-    var decadeEndYear = decadeStart + 9 // 1949 for example
-    let deca = createArr(decadeStart,decadeEndYear)
-    var data = await fetchAPI()
+    // var decadeEndYear = decadeStart + 9 // 1949 for example
+    // let deca = createArr(decadeStart,decadeEndYear)
     // Kind of works, breaks when color is still current
-    var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart);
+    // var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart);
+    var data = await fetchAPI()
+    var d = data.colors.filter(color=>color.prodStart > parseInt(decadeStart) && color.prodStart < parseInt(decadeStart) + 10);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
