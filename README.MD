@@ -1,7 +1,6 @@
 # FTC Color Guide
 
-<img src="assets/images/Fiesta-Plate-Stack-2023.png" height=192>
-
+<img src="assets/images/Fiesta-Plate-Stack-2023.png" height=150>
 <br> 
 
 Often touted as 'The Most Famous Dinnerware in the World', Fiesta dinnerware has been a fan-favorite and an American icon since its introduction at the annual Pottery and Glass Exhibit in Pittsburgh during January of 1936. Designed in the bold Art Deco styling by Frederick Hurten Rhead, Fiesta dinnerware encourages you to mix and match for the perfect tablescape with their variety of colors.

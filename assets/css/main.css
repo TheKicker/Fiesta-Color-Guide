@@ -142,7 +142,7 @@ select{
 }
 
 .thumb{
-    height: 45px;
+    height: 60px;
 }
 
 @media only screen and (max-width: 1000px) {
