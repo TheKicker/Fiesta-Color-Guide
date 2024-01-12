@@ -1,7 +1,12 @@
 {
     "company":"The Fiesta Tableware Company",
     "description":"The Fiesta Tableware Company is an American ceramics manufacturer located in Newell, West Virginia, United States. Established in 1871, it is widely known for its Art Deco glazed dinnerware line, Fiesta.",
+    "NAICS_Category":"327110 - Pottery, Ceramics, and Plumbing Fixture Manufacturing",
     "ticker": null,
+    "UEI":"SN5DSLZLA8N9",
+    "WV_SOS_org_number":"62426",
+    "WV_SOS_link":"https://apps.wv.gov/SOS/BusinessEntitySearch/Details.aspx?Id=2VV6Rw0F295T8U2a47F/+g==",
+    "entity_type":"C",
     "founded":1871,
     "president":"Elizabeth McIlvain",
     "ceo":"Elizabeth McIlvain",
