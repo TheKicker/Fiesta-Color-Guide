@@ -63,12 +63,12 @@ The Fiesta Tableware Company, since the reintroduction of Fiesta® dinnerware in
 
 <a href="https://usadinnerwaredirect.com">USA Dinnerware Direct retail site</a>
 
-<a href="https://twitter.com/FiestaOutlets" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Twitter_white.png?raw=true" width=45></a>
-<a href="https://www.facebook.com/fiestatablewarecompany/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Facebook_white.png?raw=true" width=45></a>
-<a href="https://www.pinterest.com/fiestadishes/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Pinterest_white.png?raw=true" width=45></a>
-<a href="https://www.instagram.com/fiestadinnerware/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Instagram_white.png?raw=true" width=45></a>
-<a href="https://www.youtube.com/user/HLCHINA" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Youtube_white.png?raw=true" width=45></a>
-<a href="https://www.tiktok.com/@fiestadinnerware" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/White/Tik%20Tok_white.png?raw=true" width=45></a>
+<a href="https://twitter.com/FiestaOutlets" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Twitter_black.png?raw=true" width=45></a>
+<a href="https://www.facebook.com/fiestatablewarecompany/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Facebook_black.png?raw=true" width=45></a>
+<a href="https://www.pinterest.com/fiestadishes/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Pinterest_black.png?raw=true" width=45></a>
+<a href="https://www.instagram.com/fiestadinnerware/" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Instagram_black.png?raw=true" width=45></a>
+<a href="https://www.youtube.com/user/HLCHINA" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Youtube_black.png?raw=true" width=45></a>
+<a href="https://www.tiktok.com/@fiestadinnerware" style="padding: 1rem;"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Tik%20Tok_black.png?raw=true" width=45></a>
 
 <br>
 
