@@ -75,12 +75,15 @@ footer a:hover{
     margin: 1rem;
 }
 .d-l{
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
+    border-color: black;
+    border-width: 0.5px;
+    border-style: solid;
     max-width: 300px;
 }
 .d-r{
-    width: 75%;
+    width: 70%;
     padding: 0 1rem; 
 }
 .color{
@@ -160,6 +163,7 @@ select{
         height: 125px;
         width: 100%;
         border-radius: 10px;
+        max-width: 100%;
     }
     .d-r{
         width: 90%;
