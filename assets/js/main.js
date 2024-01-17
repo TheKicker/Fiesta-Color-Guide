@@ -341,5 +341,18 @@ function displayColors(f){
     }
 }
 
+async function fetchHistory(){
+    let output = document.getElementById("history")
+    let data = await fetchAPI()
+    data = data.history 
+
+    for(i = 0; i < data.length; i++)
+    {
+        output.innerHTML += `<li><h3>${data[i].date}</h3><p>${data[i].desc}</p></li>`
+    }
+    // console.log(data)
+}
+
+fetchHistory()
 hideAllFields()
 displayColors("All")
