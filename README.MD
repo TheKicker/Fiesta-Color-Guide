@@ -110,9 +110,8 @@ The Fiesta Tableware Company, since the reintroduction of Fiesta® dinnerware in
 
 <br>
 
-<a href="https://www.macys.com/shop/dining-entertaining/fiesta/Special_offers/Sales%20%26%20Discounts?id=28954" style="padding: 1rem"><img src="assets/images/retailers/macys.png" width=225></a>
-<a href="https://www.dillards.com/brand/Fiesta/home" style="padding: 2rem"><img src="assets/images/retailers/dillards.png" width=225></a>
-
+<a href="https://www.macys.com/shop/dining-entertaining/fiesta/Special_offers/Sales%20%26%20Discounts?id=28954" style="padding: 2rem"><img src="assets/images/retailers/macys.png" width=225></a>
+<a href="https://www.walmart.com/brand/fiesta/10007290" style="padding: 2rem"><img src="assets/images/retailers/walmart.png" width=225></a>
 <br>
 
 <a href="https://www.belk.com/br/fiesta/?brand=Fiesta%C2%AE" style="padding: 2rem"><img src="assets/images/retailers/belk.png" width=225></a>
@@ -122,4 +121,8 @@ The Fiesta Tableware Company, since the reintroduction of Fiesta® dinnerware in
 
 <a href="https://www.replacements.com/fiesta" style="padding: 2rem"><img src="assets/images/retailers/replacements.png" width=225></a>
 <a href="https://www.zola.com/shop/brand/fiesta" style="padding: 2rem"><img src="assets/images/retailers/zola.png" width=225></a>
+
+<br>
+
+<a href="https://www.dillards.com/brand/Fiesta/home" style="padding: 2rem"><img src="assets/images/retailers/dillards.png" width=225></a>
 </div>
