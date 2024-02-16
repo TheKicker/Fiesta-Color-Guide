@@ -2,7 +2,7 @@ var shadeFilter = document.getElementById("shadeFilter")
 var shadeFilterLabel = document.getElementById("shadeFilterLabel")
 var yearFilter = document.getElementById("yearFilter")
 var yearFilterLabel = document.getElementById("yearFilterLabel")
-var output = document.getElementById("output")
+const output = document.getElementById("output")
 
 async function fetchAPI(){
     let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
@@ -341,18 +341,5 @@ function displayColors(f){
     }
 }
 
-async function fetchHistory(){
-    let output = document.getElementById("history")
-    let data = await fetchAPI()
-    data = data.history 
-
-    for(i = 0; i < data.length; i++)
-    {
-        output.innerHTML += `<li><h3>${data[i].date}</h3><p>${data[i].desc}</p></li>`
-    }
-    // console.log(data)
-}
-
-fetchHistory()
 hideAllFields()
 displayColors("All")

@@ -3,14 +3,6 @@ body{
     padding: 0;
     min-width: 340px;
 }
-header{
-    background: black;
-    color: whitesmoke;
-    padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 #made-in-usa{
     display: inline-block;
     margin: auto 0;

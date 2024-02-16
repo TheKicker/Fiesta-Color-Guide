@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/main.css">
 
         <!-- SEO Canonical -->
         <link rel="canonical" href="https://thekicker.github.io/Fiesta-Color-Guide">
@@ -58,6 +57,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     </head>
     <body>
+
         <div class="bg-black text-light">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 px-2 border-bottom">
               <div class="col-md-3 mb-2 mb-md-0 h5">
@@ -99,53 +99,14 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex">
-                <div class="d-col">
-                    <label for="filterSelection">Choose a filter:</label>
-                    <select id="filterSelection" name="filterSelection">
-                        <option value="None" selected>None</option>
-                        <option value="Shade">Shade</option>
-                        <option value="Year">Year</option>
-                        <option value="Current">Current</option>
-                    </select>
-                </div>
-                <div class="d-col">
-                    <label id="shadeFilterLabel" for="shadeFilter">Choose a Shade:</label>
-                    <select id="shadeFilter" name="shadeFilter">
-                        <option value="Red">Red</option>
-                        <option value="Orange">Orange</option>
-                        <option value="Yellow">Yellow</option>
-                        <option value="Green">Green</option>
-                        <option value="Blue">Blue</option>
-                        <option value="Purple">Purple</option>
-                        <option value="White">White</option>
-                        <option value="Black">Black</option>
-                        <option value="Brown">Brown</option>
-                    </select>
-                </div>
-                <div class="d-col">
-                    <label id="yearFilterLabel" for="yearFilter">Choose a year:</label>
-                    <select id="yearFilter" name="yearFilter">
-                        <option value="Current">Current</option>
-                        <option value="Original">Original</option>
-                        <option value="Post86">Post86</option>
-                        <option value="1930">1930s</option>
-                        <option value="1940">1940s</option>
-                        <option value="1950">1950s</option>
-                        <option value="1960">1960s</option>
-                        <option value="1970">1970s</option>
-                        <option value="1980">1980s</option>
-                        <option value="1990">1990s</option>
-                        <option value="2000">2000s</option>
-                        <option value="2010">2010s</option>
-                        <option value="2020">2020s</option>
-                    </select>
-                </div>
-            </div>
-            <div id="output"></div>
-        </div>
 
-        <img src="assets/images/Fiesta-Plate-Stack-2023.png" class="bottom-stack" alt="A horizontal stack of Fiesta's plates aligned in a colorful rainbow. "/>
+            <h2>Company History</h2>
+            <p>Not very many companies can brag about being around since the 1870s. Even fewer have had such a positive impact on every home they have been invited into - from holiday dinners, summer cookouts, or that cozy cup of coffee, the Fiesta Tableware Company has been there. There may be errors in this, it's a work in progress.</p>
+            
+            <ul id="history"></ul>
+
+            <img src="assets/images/Fiesta-Plate-Stack-2023.png" class="bottom-stack" alt="A horizontal stack of Fiesta's plates aligned in a colorful rainbow. "/>
+        </div>
 
         <footer>
             <img src="assets/images/made-in-usa.png" class="made-in-usa" alt="Fiesta 'Made in the USA' sticker, an American flag with text">
@@ -158,7 +119,8 @@
 
         <!-- Bootstrap 5 JS w/Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <script src="assets/js/index.js" async defer></script>
+        
+        <script src="assets/js/history.js" async defer></script>
         <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="cavlemasters" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting, buy me a coffee?" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     </body>
 </html>
