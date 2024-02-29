@@ -81,15 +81,13 @@ footer a:hover{
     margin: 1.5rem;
 }
 .d-l{
-    width: 30%;
+    width: 35%;
     border-radius: 10px;
-    border-color: black;
-    border-width: 0.5px;
-    border-style: solid;
+    border: 1px dotted black;
     max-width: 300px;
 }
 .d-r{
-    width: 70%;
+    width: 65%;
     padding: 0 1rem; 
 }
 .color{
