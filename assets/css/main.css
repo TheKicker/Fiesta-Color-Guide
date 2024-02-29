@@ -3,6 +3,20 @@ body{
     padding: 0;
     min-width: 340px;
 }
+  
+  /* Ensure color boxes fill the width equally */
+#color-ribbon {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.color-box {
+    display: inline-block;
+    height: 65px; /* Adjust height as needed */
+    width: calc(100% / var(--box-count));
+    border: 1px dotted black;
+}
+  
 #made-in-usa{
     display: inline-block;
     margin: auto 0;
@@ -64,7 +78,7 @@ footer a:hover{
 .d-col{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 .d-l{
     width: 30%;

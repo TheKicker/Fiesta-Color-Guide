@@ -18,6 +18,7 @@ async function fetchAPI(){
 async function renderAllColors(){
     let data = await fetchAPI()
     let d = data.colors
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -41,6 +42,7 @@ async function renderAllColors(){
 async function render(c){
     let data = await fetchAPI()
     let d = data.colors.filter(color=>color.shadeOf == c)
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -64,6 +66,7 @@ async function render(c){
 async function renderCurrent(){
     let data = await fetchAPI()
     let d = data.colors.filter(color=>color.prodEnd == "current")
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -87,6 +90,7 @@ async function renderCurrent(){
 async function renderOriginal(){
     let data = await fetchAPI()
     let d = data.colors.filter(color=>color.prodEnd < 1973)
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -110,6 +114,7 @@ async function renderOriginal(){
 async function renderPost86(){
     let data = await fetchAPI()
     let d = data.colors.filter(color=>color.prodStart >= 1986)
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -161,6 +166,7 @@ async function renderYear(decadeStart){
     // var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart);
     var data = await fetchAPI()
     var d = data.colors.filter(color=>color.prodStart > parseInt(decadeStart) && color.prodStart < parseInt(decadeStart) + 10);
+    createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
             output.innerHTML += `<div class="d-flex">
@@ -225,6 +231,28 @@ document.getElementById("filterSelection").addEventListener("change", function()
             break;
     }
 })
+
+// Function to clear the color ribbon
+function clearColorRibbon() {
+    const colorRibbon = document.getElementById('color-ribbon');
+    colorRibbon.innerHTML = '';
+  }
+  
+ // Function to create color boxes
+function createColorBoxes(colors) {
+    clearColorRibbon(); // Clear existing color ribbon
+    
+    const colorRibbon = document.getElementById('color-ribbon');
+    colorRibbon.style.setProperty('--box-count', colors.length); // Set custom property
+  
+    colors.forEach(color => {
+      const colorBox = document.createElement('div');
+      colorBox.className = 'color-box';
+      colorBox.style.backgroundColor = color.hex;
+      colorBox.ariaLabel = `${color.color} #${color.sku}`;
+      colorRibbon.appendChild(colorBox);
+    });
+  }
 
 function displayColors(f){
     if(f == "All"){
