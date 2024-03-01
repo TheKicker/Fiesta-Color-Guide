@@ -5,8 +5,8 @@ var yearFilterLabel = document.getElementById("yearFilterLabel")
 const output = document.getElementById("output")
 
 async function fetchAPI(){
-    let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
-    // let url = "fiesta.json"
+    // let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
+    let url = "fiesta.json"
     try {
         let res = await fetch(url)
         return await res.json()
@@ -21,7 +21,7 @@ async function renderAllColors(){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -45,7 +45,7 @@ async function render(c){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -69,7 +69,7 @@ async function renderCurrent(){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -93,7 +93,7 @@ async function renderOriginal(){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -117,7 +117,7 @@ async function renderPost86(){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -169,7 +169,7 @@ async function renderYear(decadeStart){
     createColorBoxes(d);
     for (i=0;i<d.length;i++){
         {
-            output.innerHTML += `<div class="d-flex">
+            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
                                         <div class="d-l" style="background-color: ${d[i].hex}"></div>
                                         <div class="d-r">
                                             <p class="color">
@@ -238,7 +238,7 @@ function clearColorRibbon() {
     colorRibbon.innerHTML = '';
   }
   
- // Function to create color boxes
+// Function to create color boxes
 function createColorBoxes(colors) {
     clearColorRibbon(); // Clear existing color ribbon
     
@@ -246,13 +246,25 @@ function createColorBoxes(colors) {
     colorRibbon.style.setProperty('--box-count', colors.length); // Set custom property
   
     colors.forEach(color => {
-      const colorBox = document.createElement('div');
+      const colorBox = document.createElement('a'); // Change div to anchor tag
+      colorBox.href = '#' + color.sku; // Set href to SKU ID
       colorBox.className = 'color-box';
       colorBox.style.backgroundColor = color.hex;
-      colorBox.ariaLabel = `${color.color} #${color.sku}`;
+      colorBox.title = `${color.sku} - ${color.color}`;
+      
+      // Add click event listener
+      colorBox.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetElement = document.getElementById(color.sku);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+      
       colorRibbon.appendChild(colorBox);
     });
   }
+  
 
 function displayColors(f){
     if(f == "All"){
