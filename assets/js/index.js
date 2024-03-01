@@ -5,8 +5,8 @@ var yearFilterLabel = document.getElementById("yearFilterLabel")
 const output = document.getElementById("output")
 
 async function fetchAPI(){
-    // let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
-    let url = "fiesta.json"
+    let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
+    // let url = "fiesta.json"
     try {
         let res = await fetch(url)
         return await res.json()
