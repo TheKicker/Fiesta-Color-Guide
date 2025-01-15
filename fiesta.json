@@ -868,6 +868,18 @@
             "prodEnd": "current",
             "shadeOf":"Blue",
             "image":"0349.jpg"
+        },
+        {
+            "color":"Linen",
+            "description":"Introducing Linen, Fiesta's new color for 2025, continuing into current production. This light cream hue offers a quiet sophistication, echoing the charm of Ivory with a modern twist. Linen is ideal for a serene tablescape; pair it with colors like Sage for calm, or Scarlet for a bold contrast, perfect for all dining occasions.",
+            "sku":"350",
+            "hex":"#EBE4D2",
+            "hsv":"hsv(45, 11%, 92%)",
+            "produced": "2025-current",
+            "prodStart": 2025,
+            "prodEnd": "current",
+            "shadeOf":"White",
+            "image":"0350.png"
         }
     ],
     "products":[
@@ -1196,6 +1208,10 @@
         {
             "date":"2024",
             "desc":"Sky is introduced as the new color of 2024. Three colors are retired - Lemongrass, Mulberry, and Butterscotch. "
+        },
+        {
+            "date":"2025",
+            "desc":"Linen is introduced as the new color of 2025."
         }
     ]
 }
