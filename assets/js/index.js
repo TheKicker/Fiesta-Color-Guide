@@ -4,16 +4,15 @@ var yearFilter = document.getElementById("yearFilter")
 var yearFilterLabel = document.getElementById("yearFilterLabel")
 const output = document.getElementById("output")
 
-async function fetchAPI(){
-    let url = "https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json"
-    // let url = "fiesta.json"
-    try {
-        let res = await fetch(url)
-        return await res.json()
-    } catch (error) {
-        console.log(error)
-    }
+let fiestaData = null;
+
+async function fetchAPI() {
+  if (fiestaData) return fiestaData;
+  const res = await fetch("https://thekicker.github.io/Fiesta-Color-Guide/fiesta.json");
+  fiestaData = await res.json();
+  return fiestaData;
 }
+
 
 async function renderAllColors(){
     let data = await fetchAPI()
@@ -159,34 +158,41 @@ function check(decade, prodStart, prodEnd){
     //
 }
 
-async function renderYear(decadeStart){
-    // var decadeEndYear = decadeStart + 9 // 1949 for example
-    // let deca = createArr(decadeStart,decadeEndYear)
-    // Kind of works, breaks when color is still current
-    // var d = data.colors.filter(color=>color.prodStart <= decadeEndYear && color.prodEnd >= decadeStart);
-    var data = await fetchAPI()
-    var d = data.colors.filter(color=>color.prodStart > parseInt(decadeStart) && color.prodStart < parseInt(decadeStart) + 10);
+async function renderYear(decadeStart) {
+    clearOutput();
+
+    const decadeStartYear = parseInt(decadeStart);
+    const decadeEndYear = decadeStartYear + 9;
+    const currentYear = new Date().getFullYear();
+
+    const data = await fetchAPI();
+
+    const d = data.colors.filter(color => {
+        const start = parseInt(color.prodStart);
+        const end = color.prodEnd === "current" ? currentYear : parseInt(color.prodEnd);
+        return start <= decadeEndYear && end >= decadeStartYear;
+    });
+
     createColorBoxes(d);
-    for (i=0;i<d.length;i++){
-        {
-            output.innerHTML += `<div class="d-flex" id="${d[i].sku}">
-                                        <div class="d-l" style="background-color: ${d[i].hex}"></div>
-                                        <div class="d-r">
-                                            <p class="color">
-                                                <img src="assets/colors/${d[i].image}" class="thumb" alt="${d[i].color} #${d[i].sku} by The Fiesta Tableware Company"/>
-                                                &nbsp; ${d[i].color}
-                                            </p>
-                                            <p class="details">
-                                                <strong>Produced:</strong> ${d[i].produced} <br>
-                                                <strong>SKU:</strong> ${d[i].sku} <br>
-                                                <strong>DESC:</strong> ${d[i].description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                <br>`
-        }
-    }
+
+    d.forEach(color => {
+        output.innerHTML += `<div class="d-flex" id="${color.sku}">
+            <div class="d-l" style="background-color: ${color.hex}"></div>
+            <div class="d-r">
+                <p class="color">
+                    <img src="assets/colors/${color.image}" class="thumb" alt="${color.color} #${color.sku} by The Fiesta Tableware Company"/>
+                    &nbsp; ${color.color}
+                </p>
+                <p class="details">
+                    <strong>Produced:</strong> ${color.produced} <br>
+                    <strong>SKU:</strong> ${color.sku} <br>
+                    <strong>DESC:</strong> ${color.description}
+                </p>
+            </div>
+        </div><br>`;
+    });
 }
+
 function hideAllFields(){
     shadeFilterLabel.style.display = "none"
     shadeFilter.style.display = "none"

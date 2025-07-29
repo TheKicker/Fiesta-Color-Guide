@@ -70,7 +70,7 @@
               </div>
         
               <div class="col-md-3 text-end">
-                <img src="assets/images/made-in-usa.png" id="made-in-usa" alt="Fiesta 'Made in the USA' sticker, an American flag with text">
+                <img src="assets/images/made-in-usa.png" class="made-in-usa" alt="Fiesta 'Made in the USA' sticker, an American flag with text">
               </div>
             </header>
         </div>
@@ -93,9 +93,9 @@
                     </p>
                     <br> 
                     <div class="d-flex">
-                        <a href="https://fiestafactorydirect.com" target="_blank" class="btn-black"><i class="fas fa-external"></i> Shop Now</a>
+                        <a href="https://fiestafactorydirect.com" target="_blank" class="btn-black mx-1"><i class="fas fa-external"></i> Shop Now</a>
                         
-                        <a href="https://github.com/TheKicker/Fiesta-Color-Guide" target="_blank" class="btn-black"><i class="fab fa-github"></i> Github</a>
+                        <a href="https://github.com/TheKicker/Fiesta-Color-Guide" target="_blank" class="btn-black mx-1"><i class="fab fa-github"></i> Github</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
             <div class="d-flex">
                 <div class="d-col">
                     <label for="filterSelection">Choose a filter:</label>
-                    <select id="filterSelection" name="filterSelection">
+                    <select id="filterSelection" name="filterSelection" aria-label="Main filter options">
                         <option value="None" selected>None</option>
                         <option value="Shade">Shade</option>
                         <option value="Year">Year</option>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="d-col">
                     <label id="shadeFilterLabel" for="shadeFilter">Choose a Shade:</label>
-                    <select id="shadeFilter" name="shadeFilter">
+                    <select id="shadeFilter" name="shadeFilter" aria-label="Shade color filter">
                         <option value="Red">Red</option>
                         <option value="Orange">Orange</option>
                         <option value="Yellow">Yellow</option>
@@ -130,8 +130,8 @@
                     </select>
                 </div>
                 <div class="d-col">
-                    <label id="yearFilterLabel" for="yearFilter">Choose a year:</label>
-                    <select id="yearFilter" name="yearFilter">
+                    <label id="yearFilterLabel" for="yearFilter">Available during what decade:</label>
+                    <select id="yearFilter" name="yearFilter" aria-label="Decade filter">
                         <option value="Current">Current</option>
                         <option value="Original">Original</option>
                         <option value="Post86">Post86</option>
@@ -148,7 +148,7 @@
                     </select>
                 </div>
             </div>
-            <div id="output"></div>
+            <div id="output" aria-live="polite"></div>
         </div>
 
         <img src="assets/images/Fiesta-Plate-Stack-2023.png" class="bottom-stack" alt="A horizontal stack of Fiesta's plates aligned in a colorful rainbow. "/>
