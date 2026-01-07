@@ -535,13 +535,13 @@
         },
         {
             "color":"Sunflower",
-            "description":"Introducing Sunflower, made by The Fiesta Tableware Company from 2001 to current production. It's a cheerful and vibrant shade of yellow, reminiscent of bright sunflowers swaying in the summer breeze. Sunflower adds a burst of energy and warmth to any tablescape. Mix and match Sunflower with colors like Cobalt and Shamrock for a lively and dynamic table setting, or pair it with Plum and Slate for a more subdued yet sophisticated combination.",
+            "description":"Introducing Sunflower, made by The Fiesta Tableware Company from 2001 to 2026. It's a cheerful and vibrant shade of yellow, reminiscent of bright sunflowers swaying in the summer breeze. Sunflower adds a burst of energy and warmth to any tablescape. Mix and match Sunflower with colors like Cobalt and Shamrock for a lively and dynamic table setting, or pair it with Plum and Slate for a more subdued yet sophisticated combination.",
             "sku":"320",
             "hex":"#F8DA6D",
             "hsv":"hsv(47.05, 56.05%, 97.25%)",
-            "produced": "2001-current",
+            "produced": "2001-2026",
             "prodStart": 2001,
-            "prodEnd": "current",
+            "prodEnd": 2026,
             "shadeOf":"Yellow",
             "image":"0320.jpg"
         },
@@ -823,13 +823,13 @@
         },
         {
             "color":"Twilight",
-            "description":"Introducing Twilight, made by The Fiesta Tableware Company from 2021 to current production. It's a deep and enchanting shade of blue, reminiscent of the captivating hues of twilight sky. Twilight adds a touch of elegance and sophistication to any tablescape. Mix and match Twilight with colors like Ivory and Meadow for a serene and romantic table setting, or pair it with Plum and Poppy for a more dramatic and luxurious combination.",
+            "description":"Introducing Twilight, made by The Fiesta Tableware Company from 2021 to 2026. It's a deep and enchanting shade of blue, reminiscent of the captivating hues of twilight sky. Twilight adds a touch of elegance and sophistication to any tablescape. Mix and match Twilight with colors like Ivory and Meadow for a serene and romantic table setting, or pair it with Plum and Poppy for a more dramatic and luxurious combination.",
             "sku":"346",
             "hex":"#120F71",
             "hsv":"hsv(241.84, 86.73%, 44.31%)",
-            "produced": "2021-current",
+            "produced": "2021-2026",
             "prodStart": 2021,
-            "prodEnd": "current",
+            "prodEnd": 2026,
             "shadeOf":"Blue",
             "image":"0346.jpg"
         },
@@ -1212,6 +1212,10 @@
         {
             "date":"2025",
             "desc":"Linen is introduced as the new color of 2025."
+        },
+        {
+            "date":"2026",
+            "desc":"__________ is introduced as the new color of 2026. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
         }
     ]
 }
