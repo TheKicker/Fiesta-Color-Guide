@@ -880,6 +880,18 @@
             "prodEnd": "current",
             "shadeOf":"White",
             "image":"0350.png"
+        },
+        {
+            "color":"Lavender",
+            "description":"Meet Lavender, Fiesta’s new color for 2026, and 90th anniversary color, continuing into current production. Inspired by the soft and delicate beauty, this gentle tone adds a sense of calm to everyday dining and creates a kitchen atmosphere that feels fresh, welcoming, and effortlessly timeless. Pair Lavender with colors like Linen or Sky for a soft, harmonious look - for a more striking contrast try Plum or Mulberry.",
+            "sku":"351",
+            "hex":"#9694B8",
+            "hsv":"hsv(243, 20%, 72%)",
+            "produced": "2026-current",
+            "prodStart": 2026,
+            "prodEnd": "current",
+            "shadeOf":"Purple",
+            "image":"0351.png"
         }
     ],
     "products":[
@@ -1211,11 +1223,11 @@
         },
         {
             "date":"2025",
-            "desc":"Linen is introduced as the new color of 2025."
+            "desc":"Linen is introduced as the new color of 2025.  The outlet store in Hartville, Ohio is closed after two years of operation. "
         },
         {
             "date":"2026",
-            "desc":"__________ is introduced as the new color of 2026. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
+            "desc":"Lavender is introduced as the new color of 2026, and Fiesta celebrates it's 90th Anniversary. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
         }
     ]
 }
