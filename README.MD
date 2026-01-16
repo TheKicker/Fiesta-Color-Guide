@@ -8,14 +8,14 @@ Often touted as 'The Most Famous Dinnerware in the World', Fiesta dinnerware has
 This is an Unofficial Color Guide for Fiesta Dinnerware Colors from the beginning in 1936 to today, includes original and post 86 colors.  Uses publicly available resources, pictures, and online bloggers (linked below). 
 
 <div align="center">
-    *This project is not endorsed or supported by The Fiesta Tableware Company. 
+    * This project is not endorsed or supported by The Fiesta Tableware Company. 
 </div>
 
 ## Get Involved
 
-This project is a hobby of mine, I've worked at The Fiesta Tableware Company (formerly Homer Laughlin) since 2014 in a variety of capacities. My father worked here before me since the 90's, and my mother was an employee of Hall China for a period of time. The release of the new colors every year has been something I've enjoyed both from the outside as a customer and fan, to now behind the scenes as Digital Marketing and Software Development takes me right into the mix of information/planning and release. 
+This project is a hobby of mine and closely tied to my history with The Fiesta Tableware Company (formerly Homer Laughlin), where I worked from June 2014 to March 2024 in a variety of roles. It’s very much a family affair—my father spent 25 years there, my mother worked at Hall China for five years, and many friends and relatives have worked within these companies as well. Fiesta is a true staple of our community and one we hold in deep admiration. Over the years, I’ve enjoyed the annual release of new colors both as a passionate customer and fan, and from behind the scenes in my roles in Digital Marketing and Software Development.
 
-Though I am an employee at The Fiesta Tableware Company, this project is not affiliated with or endorsed by them in any way.  I have been super careful not to accidentally release information about the new color every year, and have done a great deal of research to build this.  
+Though I am a previous employee of The Fiesta Tableware Company, this project is not affiliated with or endorsed by them in any way.  I have been super careful not to accidentally release information about the new color every year, and have done a great deal of research to build this project.  
 
 If you love this project and want to help out - feel free to submit a Pull Request or send me a message on new features you'd like to see.
 
