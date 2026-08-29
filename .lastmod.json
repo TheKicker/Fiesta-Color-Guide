@@ -1,0 +1,310 @@
+{
+  "": {
+    "hash": "06ed36baa0b72f2d",
+    "date": "2026-08-29"
+  },
+  "history.html": {
+    "hash": "e25571d19438f9fa",
+    "date": "2026-08-29"
+  },
+  "about.html": {
+    "hash": "482bd79474fa3aa2",
+    "date": "2026-08-29"
+  },
+  "privacy.html": {
+    "hash": "5e9a14bc3d72f506",
+    "date": "2026-08-29"
+  },
+  "colors/shade/black/": {
+    "hash": "87917364919a74c9",
+    "date": "2026-08-29"
+  },
+  "colors/shade/blue/": {
+    "hash": "04bad9fe691cd62e",
+    "date": "2026-08-29"
+  },
+  "colors/shade/brown/": {
+    "hash": "2f517f721760728a",
+    "date": "2026-08-29"
+  },
+  "colors/shade/green/": {
+    "hash": "baaae16eb3c87cc1",
+    "date": "2026-08-29"
+  },
+  "colors/shade/orange/": {
+    "hash": "b71b920ca885324e",
+    "date": "2026-08-29"
+  },
+  "colors/shade/purple/": {
+    "hash": "0a403445eebaa8b2",
+    "date": "2026-08-29"
+  },
+  "colors/shade/red/": {
+    "hash": "932feeda4e602f66",
+    "date": "2026-08-29"
+  },
+  "colors/shade/white/": {
+    "hash": "206c2593624d3cbf",
+    "date": "2026-08-29"
+  },
+  "colors/shade/yellow/": {
+    "hash": "d02800af80ec6822",
+    "date": "2026-08-29"
+  },
+  "colors/era/vintage/": {
+    "hash": "74d437cbba66ef2d",
+    "date": "2026-08-29"
+  },
+  "colors/era/post-86/": {
+    "hash": "1cb8b887545bc4d1",
+    "date": "2026-08-29"
+  },
+  "colors/era/in-production/": {
+    "hash": "e3449b5c96cb9005",
+    "date": "2026-08-29"
+  },
+  "colors/red-1936/": {
+    "hash": "97c630bc56bff9bb",
+    "date": "2026-08-29"
+  },
+  "colors/blue-cobalt/": {
+    "hash": "674183ed58ebab49",
+    "date": "2026-08-29"
+  },
+  "colors/green-light/": {
+    "hash": "103ac1abc0ee15ba",
+    "date": "2026-08-29"
+  },
+  "colors/yellow-1936/": {
+    "hash": "91eb352060436fea",
+    "date": "2026-08-29"
+  },
+  "colors/old-ivory/": {
+    "hash": "16d4203ae5430602",
+    "date": "2026-08-29"
+  },
+  "colors/turquoise-1937/": {
+    "hash": "0ec6271ab5fdc22c",
+    "date": "2026-08-29"
+  },
+  "colors/forest-green/": {
+    "hash": "9b0a0228de2dc45e",
+    "date": "2026-08-29"
+  },
+  "colors/rose-1951/": {
+    "hash": "d91f66e0b7f4536c",
+    "date": "2026-08-29"
+  },
+  "colors/chartreuse-1951/": {
+    "hash": "8cb4b26b98c75dd5",
+    "date": "2026-08-29"
+  },
+  "colors/gray/": {
+    "hash": "72190eeb7d5a98b3",
+    "date": "2026-08-29"
+  },
+  "colors/medium-green/": {
+    "hash": "7cb6b464342449b9",
+    "date": "2026-08-29"
+  },
+  "colors/red-1959/": {
+    "hash": "4524686d1a5e0ab0",
+    "date": "2026-08-29"
+  },
+  "colors/antique-gold/": {
+    "hash": "ac36d599da145ee0",
+    "date": "2026-08-29"
+  },
+  "colors/turf-green/": {
+    "hash": "0fe087e9868bec04",
+    "date": "2026-08-29"
+  },
+  "colors/white/": {
+    "hash": "f903390b2d147ea5",
+    "date": "2026-08-29"
+  },
+  "colors/black/": {
+    "hash": "24154b5061984967",
+    "date": "2026-08-29"
+  },
+  "colors/rose-1987/": {
+    "hash": "6e9c8cb0854f07d6",
+    "date": "2026-08-29"
+  },
+  "colors/apricot/": {
+    "hash": "ad37d8b0895bb46f",
+    "date": "2026-08-29"
+  },
+  "colors/cobalt/": {
+    "hash": "7f32e5e3769355b5",
+    "date": "2026-08-29"
+  },
+  "colors/yellow-1987/": {
+    "hash": "410f67f4c9a1db71",
+    "date": "2026-08-29"
+  },
+  "colors/turquoise-1988/": {
+    "hash": "05a16db68e876377",
+    "date": "2026-08-29"
+  },
+  "colors/periwinkle-blue/": {
+    "hash": "66e19e3129152a00",
+    "date": "2026-08-29"
+  },
+  "colors/sea-mist-green/": {
+    "hash": "604a331d46957b41",
+    "date": "2026-08-29"
+  },
+  "colors/lilac/": {
+    "hash": "3f23cdbaa1324a68",
+    "date": "2026-08-29"
+  },
+  "colors/persimmon/": {
+    "hash": "17708eed5d59d69f",
+    "date": "2026-08-29"
+  },
+  "colors/sapphire/": {
+    "hash": "d3ba3086610ec362",
+    "date": "2026-08-29"
+  },
+  "colors/raspberry/": {
+    "hash": "8dcf4e4b2fec8ca9",
+    "date": "2026-08-29"
+  },
+  "colors/chartreuse-1997/": {
+    "hash": "619ad775b01860e1",
+    "date": "2026-08-29"
+  },
+  "colors/pearl-gray/": {
+    "hash": "671c1c283972fafa",
+    "date": "2026-08-29"
+  },
+  "colors/juniper/": {
+    "hash": "6995a3052edbdeef",
+    "date": "2026-08-29"
+  },
+  "colors/cinnabar/": {
+    "hash": "1fb733e372d7f540",
+    "date": "2026-08-29"
+  },
+  "colors/sunflower/": {
+    "hash": "39c1aef14b7d5136",
+    "date": "2026-08-29"
+  },
+  "colors/plum/": {
+    "hash": "a604e573f48a5201",
+    "date": "2026-08-29"
+  },
+  "colors/shamrock/": {
+    "hash": "75b7fa326851ca6b",
+    "date": "2026-08-29"
+  },
+  "colors/tangerine/": {
+    "hash": "41831342b5dde649",
+    "date": "2026-08-29"
+  },
+  "colors/scarlet/": {
+    "hash": "055a24a14a9ff895",
+    "date": "2026-08-29"
+  },
+  "colors/peacock/": {
+    "hash": "779c0b8086aac973",
+    "date": "2026-08-29"
+  },
+  "colors/heather/": {
+    "hash": "0194ed446b4a8722",
+    "date": "2026-08-29"
+  },
+  "colors/evergreen/": {
+    "hash": "a5ca7bbc2718f703",
+    "date": "2026-08-29"
+  },
+  "colors/ivory/": {
+    "hash": "57ce6748339cc941",
+    "date": "2026-08-29"
+  },
+  "colors/chocolate/": {
+    "hash": "4e655e7b1066ea08",
+    "date": "2026-08-29"
+  },
+  "colors/lemongrass/": {
+    "hash": "70f0fb0302307817",
+    "date": "2026-08-29"
+  },
+  "colors/marigold/": {
+    "hash": "75f2fa0135cdb762",
+    "date": "2026-08-29"
+  },
+  "colors/paprika/": {
+    "hash": "b2df3e0f4b468ac2",
+    "date": "2026-08-29"
+  },
+  "colors/flamingo/": {
+    "hash": "609b5bc230f074f3",
+    "date": "2026-08-29"
+  },
+  "colors/lapis/": {
+    "hash": "434e2871c8b3db42",
+    "date": "2026-08-29"
+  },
+  "colors/poppy/": {
+    "hash": "e55b1b2f03ff46a4",
+    "date": "2026-08-29"
+  },
+  "colors/slate/": {
+    "hash": "f5f6e6c38d4916f6",
+    "date": "2026-08-29"
+  },
+  "colors/sage/": {
+    "hash": "6b913c1f99cb3d18",
+    "date": "2026-08-29"
+  },
+  "colors/foundry/": {
+    "hash": "0dd35af714b0871d",
+    "date": "2026-08-29"
+  },
+  "colors/claret/": {
+    "hash": "8b90def702571239",
+    "date": "2026-08-29"
+  },
+  "colors/daffodil/": {
+    "hash": "4e19b5a130b56c79",
+    "date": "2026-08-29"
+  },
+  "colors/mulberry/": {
+    "hash": "f0bb39ca84144710",
+    "date": "2026-08-29"
+  },
+  "colors/meadow/": {
+    "hash": "ece5dd85a1d3d595",
+    "date": "2026-08-29"
+  },
+  "colors/butterscotch/": {
+    "hash": "b7e77f1219f06219",
+    "date": "2026-08-29"
+  },
+  "colors/twilight/": {
+    "hash": "b8ecbb38e9491eed",
+    "date": "2026-08-29"
+  },
+  "colors/peony/": {
+    "hash": "b40eaed8151999bf",
+    "date": "2026-08-29"
+  },
+  "colors/jade/": {
+    "hash": "46250ef8053cf194",
+    "date": "2026-08-29"
+  },
+  "colors/sky/": {
+    "hash": "a804ed4a22687c07",
+    "date": "2026-08-29"
+  },
+  "colors/linen/": {
+    "hash": "41935e5c3d208bc0",
+    "date": "2026-08-29"
+  },
+  "colors/lavender/": {
+    "hash": "6932c90dcf820fbc",
+    "date": "2026-08-29"
+  }
+}

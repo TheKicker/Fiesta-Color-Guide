@@ -1,0 +1,758 @@
+{
+  "assets/colors/0100.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0101.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0102.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0103.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0104.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0105.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0106.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0107.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0108.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0109.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0113.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0114.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0116.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0117.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0118.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0119.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0320.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0323.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0324.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0325.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0326.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0327.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0328.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0329.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0330.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0331.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0332.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0333.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0334.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0335.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0337.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0338.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0339.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0340.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0341.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0342.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0343.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0344.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0345.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/0346.jpg": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/colors/0347.jpg": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/colors/0348.jpg": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/colors/0349.jpg": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/colors/0350.png": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/colors/0351.png": {
+    "w": 636,
+    "h": 574
+  },
+  "assets/colors/20000.jpg": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/colors/4465.jpg": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/colors/AntiqueGold.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Chartreuse.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Cobalt.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/ForestGreen.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Gray.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/LightGreen.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/MediumGreen.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/OldIvory.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Red.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Rose.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/TurfGreen.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Turquoise.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/colors/Yellow.jpg": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/images/FeaturesBenefits.jpg": {
+    "w": 1500,
+    "h": 1500
+  },
+  "assets/images/Fiesta-Plate-Stack-2023.png": {
+    "w": 4114,
+    "h": 900
+  },
+  "assets/images/made-in-usa.png": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/colors/0100.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0101.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0102.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0103.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0104.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0105.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0106.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0107.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0108.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0109.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0113.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0114.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0116.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0117.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0118.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0119.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0320.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0323.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0324.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0325.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0326.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0327.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0328.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0329.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0330.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0331.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0332.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0333.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0334.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0335.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0337.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0338.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0339.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0340.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0341.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0342.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0343.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0344.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0345.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/0346.webp": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/opt/colors/0347.webp": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/opt/colors/0348.webp": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/opt/colors/0349.webp": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/opt/colors/0350.webp": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/opt/colors/0351.webp": {
+    "w": 320,
+    "h": 289
+  },
+  "assets/opt/colors/20000.webp": {
+    "w": 100,
+    "h": 87
+  },
+  "assets/opt/colors/4465.webp": {
+    "w": 250,
+    "h": 250
+  },
+  "assets/opt/colors/AntiqueGold.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Chartreuse.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Cobalt.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/ForestGreen.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Gray.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/LightGreen.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/MediumGreen.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/OldIvory.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Red.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Rose.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/TurfGreen.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Turquoise.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/colors/Yellow.webp": {
+    "w": 100,
+    "h": 85
+  },
+  "assets/opt/features-1040.webp": {
+    "w": 1040,
+    "h": 1040
+  },
+  "assets/opt/made-in-usa-236.webp": {
+    "w": 236,
+    "h": 124
+  },
+  "assets/opt/og-card.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/plate-stack-1200.webp": {
+    "w": 1200,
+    "h": 263
+  },
+  "assets/opt/plate-stack-2000.webp": {
+    "w": 2000,
+    "h": 438
+  },
+  "assets/opt/social/antique-gold.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/apricot.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/black.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/blue-cobalt.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/butterscotch.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/chartreuse-1951.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/chartreuse-1997.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/chocolate.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/cinnabar.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/claret.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/cobalt.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/daffodil.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/evergreen.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/flamingo.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/forest-green.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/foundry.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/gray.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/green-light.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/heather.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/ivory.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/jade.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/juniper.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/lapis.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/lavender.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/lemongrass.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/lilac.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/linen.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/marigold.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/meadow.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/medium-green.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/mulberry.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/old-ivory.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/paprika.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/peacock.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/pearl-gray.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/peony.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/periwinkle-blue.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/persimmon.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/plum.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/poppy.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/raspberry.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/red-1936.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/red-1959.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/rose-1951.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/rose-1987.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/sage.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/sapphire.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/scarlet.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/sea-mist-green.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/shamrock.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/sky.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/slate.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/sunflower.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/tangerine.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/turf-green.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/turquoise-1937.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/turquoise-1988.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/twilight.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/white.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/yellow-1936.jpg": {
+    "w": 1200,
+    "h": 630
+  },
+  "assets/opt/social/yellow-1987.jpg": {
+    "w": 1200,
+    "h": 630
+  }
+}

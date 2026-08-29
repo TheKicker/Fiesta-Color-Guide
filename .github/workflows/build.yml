@@ -1,0 +1,61 @@
+# Rebuild the static site whenever the data or the templates change, and fail
+# the run if the output has a dead link, a missing alt attribute, an unlabelled
+# control, a broken heading order or invalid structured data.
+#
+# The generated HTML is committed back to the branch so GitHub Pages can serve
+# it directly -- editing fiesta.json in the GitHub web UI is enough to publish
+# a new color.
+name: Build site
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'fiesta.json'
+      - 'site.config.json'
+      - 'src/**'
+      - 'assets/css/**'
+      - 'assets/js/**'
+      - 'build.mjs'
+      - 'tools/**'
+      - '.github/workflows/build.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Test color math and data integrity
+        run: node tools/test-color.mjs
+
+      - name: Build
+        run: node build.mjs
+
+      - name: Check output
+        run: node tools/check.mjs
+
+      - name: Commit generated pages
+        if: github.event_name == 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html history.html about.html privacy.html 404.html \
+                  colors sitemap.xml robots.txt .lastmod.json \
+                  assets/images/site.webmanifest
+          git add ads.txt 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to the generated site."
+          else
+            git commit -m "Rebuild site from fiesta.json [skip ci]"
+            git push
+          fi

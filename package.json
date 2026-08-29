@@ -1,0 +1,25 @@
+{
+  "name": "fiesta-color-guide",
+  "version": "2.0.0",
+  "private": true,
+  "description": "The Unofficial Fiesta Color Guide - a static reference to every Fiesta dinnerware color from 1936 to today.",
+  "homepage": "https://thekicker.github.io/Fiesta-Color-Guide",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheKicker/Fiesta-Color-Guide.git"
+  },
+  "author": "Cav Lemasters (https://cavlemasters.com)",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node tools/check.mjs",
+    "test:color": "node tools/test-color.mjs",
+    "test": "node tools/test-color.mjs && node build.mjs && node tools/check.mjs",
+    "images": "python tools/optimize-images.py",
+    "serve": "node build.mjs && npx --yes http-server . -p 8080 -c-1 -o"
+  }
+}

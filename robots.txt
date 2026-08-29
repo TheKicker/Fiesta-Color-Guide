@@ -1,0 +1,15 @@
+# The Unofficial Fiesta Color Guide
+User-agent: *
+Allow: /
+
+# Search is an unbounded URL space -- every query string is a new URL that
+# returns a subset of the same 61 colors. Block it.
+Disallow: /*?q=
+
+# The shade, era, status, decade and sort parameters are deliberately NOT
+# blocked. They are a small, finite set, every one of them declares the
+# homepage as its canonical, and blocking a URL stops a crawler reading the
+# canonical tag that would have consolidated it. The indexable version of each
+# facet is a real page under /colors/shade/ and /colors/era/.
+
+Sitemap: https://thekicker.github.io/Fiesta-Color-Guide/sitemap.xml

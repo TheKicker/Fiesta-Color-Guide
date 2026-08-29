@@ -1,0 +1,29 @@
+{
+  "siteName": "The Unofficial Fiesta Color Guide",
+  "shortName": "Fiesta Color Guide",
+
+  "_comment_baseUrl": "No trailing slash. Change this one line when you move to a custom domain -- every canonical, sitemap and Open Graph URL follows it.",
+  "baseUrl": "https://thekicker.github.io/Fiesta-Color-Guide",
+
+  "locale": "en_US",
+  "author": {
+    "name": "Cav Lemasters",
+    "url": "https://cavlemasters.com"
+  },
+  "buyMeACoffee": "cavlemasters",
+  "googleSiteVerification": "MIr6g1JGCFPrUQBIekqgeLUGX-2HAP2S31UZnubSfO4",
+
+  "analytics": {
+    "ga4": "G-7E26HLBVC6"
+  },
+
+  "_comment_adsense": "Set enabled=true and fill in client (ca-pub-XXXXXXXXXXXXXXXX) after AdSense approval. Slot IDs come from the AdSense unit you create. Until then no ad script is emitted at all, which is what you want while the site is under review.",
+  "adsense": {
+    "enabled": false,
+    "client": "",
+    "slots": {
+      "leaderboard": "",
+      "rectangle": ""
+    }
+  }
+}
