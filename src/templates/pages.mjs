@@ -1017,11 +1017,9 @@ export function privacy({ site, base = '', updated }) {
 
           <h2>Advertising</h2>
           <p>
-            This site ${
-              site.adsense?.enabled
-                ? 'displays ads served by Google AdSense'
-                : 'may in future display ads served by Google AdSense'
-            }. Where ads are shown:
+            This site uses Google AdSense. Google's ad script loads on every page here, and may set
+            cookies and show ads whether or not a particular page has an ad slot placed on it. Where ads
+            are shown:
           </p>
           <ul>
             <li>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this or other websites.</li>

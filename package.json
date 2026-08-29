@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "description": "The Unofficial Fiesta Color Guide - a static reference to every Fiesta dinnerware color from 1936 to today.",
-  "homepage": "https://thekicker.github.io/Fiesta-Color-Guide",
+  "homepage": "https://fiesta-color-guide.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheKicker/Fiesta-Color-Guide.git"

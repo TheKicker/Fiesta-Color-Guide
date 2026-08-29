@@ -145,8 +145,10 @@ function siteFooter({ site, base, year }) {
 
 /** AdSense slot. Only emitted once a publisher ID is configured. */
 export function adSlot(site, { format = 'leaderboard', slot } = {}) {
-  if (!site.adsense?.enabled || !site.adsense?.client) return '';
+  if (!site.adsense?.client) return '';
   const slotId = slot || site.adsense.slots?.[format];
+  // No slot ID yet: render nothing. An empty reserved box on a site awaiting
+  // review is exactly the kind of thing that reads as an unfinished page.
   if (!slotId) return '';
   return `<aside class="ad-slot ad-slot--${esc(format)}" aria-label="Advertisement">
         <span class="ad-slot__label">Advertisement</span>
@@ -213,12 +215,21 @@ export function page(o) {
         )}</script>`
       : '';
 
-  const adsenseHead =
-    site.adsense?.enabled && site.adsense?.client
-      ? `\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(
-          site.adsense.client
-        )}" crossorigin="anonymous"></script>`
-      : '';
+  /**
+   * AdSense site verification, on every page.
+   *
+   * The meta tag and the loader script are what Google looks for when it
+   * reviews a site, and together they are also all Auto ads needs. Neither
+   * depends on a manual ad unit existing, so both ship as soon as there is a
+   * publisher ID -- which is the state a site is in while it waits for
+   * approval.
+   */
+  const adsenseHead = site.adsense?.client
+    ? `\n    <meta name="google-adsense-account" content="${esc(site.adsense.client)}">` +
+      `\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(
+        site.adsense.client
+      )}" crossorigin="anonymous"></script>`
+    : '';
 
   const analytics = site.analytics?.ga4
     ? `

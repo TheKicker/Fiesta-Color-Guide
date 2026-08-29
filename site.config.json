@@ -2,8 +2,8 @@
   "siteName": "The Unofficial Fiesta Color Guide",
   "shortName": "Fiesta Color Guide",
 
-  "_comment_baseUrl": "No trailing slash. Change this one line when you move to a custom domain -- every canonical, sitemap and Open Graph URL follows it.",
-  "baseUrl": "https://thekicker.github.io/Fiesta-Color-Guide",
+  "_comment_baseUrl": "No trailing slash, and no www -- this is the canonical origin every page declares. Every canonical, Open Graph URL, sitemap entry, schema @id and robots.txt line is built from it. Must match the CNAME file at the repo root.",
+  "baseUrl": "https://fiesta-color-guide.com",
 
   "locale": "en_US",
   "author": {
@@ -11,16 +11,17 @@
     "url": "https://cavlemasters.com"
   },
   "buyMeACoffee": "cavlemasters",
+
+  "_comment_googleSiteVerification": "This token belongs to the old thekicker.github.io Search Console property and will NOT verify fiesta-color-guide.com. Either paste the token for the new property here, or verify the domain by DNS TXT record (which covers every subdomain and survives template changes) and set this to \"\".",
   "googleSiteVerification": "MIr6g1JGCFPrUQBIekqgeLUGX-2HAP2S31UZnubSfO4",
 
   "analytics": {
     "ga4": "G-7E26HLBVC6"
   },
 
-  "_comment_adsense": "Set enabled=true and fill in client (ca-pub-XXXXXXXXXXXXXXXX) after AdSense approval. Slot IDs come from the AdSense unit you create. Until then no ad script is emitted at all, which is what you want while the site is under review.",
+  "_comment_adsense": "Two independent stages. Setting `client` puts the AdSense loader script and the google-adsense-account meta tag in the head of every page and writes ads.txt -- that is what site verification and Auto ads need, and it is all you need before approval. Filling in a `slots` entry additionally renders that manual <ins> unit in its reserved box; leave a slot empty and nothing is emitted for it. To turn everything off, clear `client`.",
   "adsense": {
-    "enabled": false,
-    "client": "",
+    "client": "ca-pub-4126541105328321",
     "slots": {
       "leaderboard": "",
       "rectangle": ""

@@ -2,7 +2,7 @@
 
 <img src="assets/images/Fiesta-Plate-Stack-2023.png" height="150" alt="A stack of Fiesta plates arranged as a rainbow">
 
-**[thekicker.github.io/Fiesta-Color-Guide](https://thekicker.github.io/Fiesta-Color-Guide)**
+**[fiesta-color-guide.com](https://fiesta-color-guide.com)**
 
 Every Fiesta® dinnerware color from 1936 to today — 61 glazes with color numbers,
 production years, photographs of the fired ware, and table-setting combinations built only
@@ -150,37 +150,75 @@ asks for.
 
 ---
 
-## Moving to a custom domain
+## The domain
 
-Change one line in `site.config.json`:
+The site is canonical at **https://fiesta-color-guide.com**. Two files decide that:
+
+| File | Role |
+| --- | --- |
+| `site.config.json` &rarr; `baseUrl` | The canonical origin. Every canonical tag, Open Graph URL, sitemap entry, schema `@id` and the `Sitemap:` line in `robots.txt` is built from it. |
+| `CNAME` | What GitHub Pages serves the site as. Must match `baseUrl`'s host. |
+
+All internal links are relative, so the site works from a domain root or a project subpath
+without changes. `npm run check` fails if any absolute URL points at a `github.io` host, so a
+half-finished domain move can't ship.
+
+### DNS
+
+For an apex domain on GitHub Pages, point `fiesta-color-guide.com` at GitHub's Pages IPs with
+four `A` records and four `AAAA` records, and add a `CNAME` record for `www` pointing at
+`thekicker.github.io`. **Take the current IP addresses from
+[GitHub's own docs](https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)**
+rather than from any tutorial — they have changed before.
+
+Then in the repository: **Settings &rarr; Pages &rarr; Custom domain**, enter the domain, and
+tick **Enforce HTTPS** once the certificate is issued (it can take up to an hour).
+
+Because `CNAME` holds the apex, GitHub redirects `www` to the apex automatically, so there is
+one canonical host rather than two competing for the same pages.
+
+### What does not move by itself
+
+GitHub Pages 301-redirects `thekicker.github.io/Fiesta-Color-Guide/*` to the custom domain
+once the domain is set, so existing links and any accumulated ranking follow. Three things
+are manual:
+
+- **Search Console** — the token in `site.config.json` belongs to the old property and will
+  not verify the new domain. Add `fiesta-color-guide.com` as a property, ideally verifying by
+  DNS TXT record (it covers every subdomain and survives template changes), then submit
+  `https://fiesta-color-guide.com/sitemap.xml`.
+- **Google Analytics** — the measurement ID keeps working, but update the data stream's URL in
+  the GA4 admin so reports and referral exclusions are right.
+- **AdSense** — add the site as `fiesta-color-guide.com`. This is also the fix for the
+  `ads.txt` problem: it now serves from the domain root, which is where AdSense looks for it.
+
+## AdSense
+
+Two independent stages, both driven by `site.config.json`.
+
+**Stage 1 — verification and Auto ads.** Setting `client` puts the `google-adsense-account`
+meta tag and the AdSense loader script in the `<head>` of *every* page, and writes a matching
+`ads.txt`. That is everything Google needs to review the site, and everything Auto ads needs
+once approved:
 
 ```json
-"baseUrl": "https://fiestacolorguide.com"
+"adsense": { "client": "ca-pub-XXXXXXXXXXXXXXXX", "slots": { "leaderboard": "", "rectangle": "" } }
 ```
 
-Then add a `CNAME` file with the bare domain and rebuild. Every canonical URL, Open Graph
-tag and sitemap entry follows. All internal links are relative, so they keep working either
-way.
+**Stage 2 — manual placements.** After approval, create ad units in AdSense and paste their
+slot IDs into `slots`. Each filled slot renders an `<ins>` unit in a box whose height is
+already reserved, so an ad can never shift the layout as it loads. An empty slot emits
+nothing at all — a page under review should not contain empty ad containers.
 
-## Enabling AdSense
+To turn everything off, clear `client`.
 
-Ad slots are already positioned and have reserved height so an ad can never shift the layout
-after it loads. Nothing ad-related is emitted until you configure it:
+`npm run check` fails if any page is missing either tag or has them outside `<head>`, so a
+template change can't silently break verification. A [privacy policy](privacy.html) covering
+advertising cookies is published and linked from every page, which AdSense requires.
 
-```json
-"adsense": {
-  "enabled": true,
-  "client": "ca-pub-XXXXXXXXXXXXXXXX",
-  "slots": { "leaderboard": "1234567890", "rectangle": "0987654321" }
-}
-```
-
-Rebuild and the loader script, the `<ins>` units and a matching `ads.txt` all appear.
-A [privacy policy](privacy.html) covering advertising cookies is already published, which
-AdSense requires.
-
-Worth knowing before you apply: AdSense wants a site on a domain you control, and
-`github.io` is a shared subdomain. Getting a custom domain first is the safer path.
+`ads.txt` is generated at the site root, which on `fiesta-color-guide.com` is exactly where
+AdSense looks for it. Add the site to AdSense under the custom domain, not the old
+`github.io` address.
 
 ---
 

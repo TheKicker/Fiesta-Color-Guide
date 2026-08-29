@@ -260,8 +260,11 @@ Sitemap: ${site.baseUrl}/sitemap.xml
         name: site.siteName,
         short_name: site.shortName,
         description: `Every Fiesta dinnerware color from ${data.firstYear} to today, with hex codes and production years.`,
-        start_url: `${site.baseUrl}/`,
-        scope: `${site.baseUrl}/`,
+        // Root-relative, so the manifest is not a second place the domain
+        // has to be kept in sync.
+        start_url: '/',
+        scope: '/',
+        id: '/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#ff813f',
@@ -292,8 +295,13 @@ Sitemap: ${site.baseUrl}/sitemap.xml
   console.log(`  ${changed} page(s) whose content changed today`);
   console.log(`  ${urls.length} URLs in sitemap.xml`);
   console.log(`  ${data.colors.length} colors, ${data.current.length} in production`);
+  const filledSlots = Object.values(site.adsense?.slots || {}).filter(Boolean).length;
   console.log(
-    `  ads: ${site.adsense?.enabled && site.adsense?.client ? 'enabled (' + site.adsense.client + ')' : 'not enabled'}`
+    `  adsense: ${
+      site.adsense?.client
+        ? `${site.adsense.client} on all pages, ${filledSlots} ad unit${filledSlots === 1 ? '' : 's'} placed`
+        : 'not configured'
+    }`
   );
   console.log(`  base URL: ${site.baseUrl}\n`);
 }

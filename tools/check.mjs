@@ -59,6 +59,10 @@ async function main() {
   console.log(`Checking ${files.length} HTML files...\n`);
 
   const model = await loadData(join(ROOT, 'fiesta.json'));
+  const site = JSON.parse(await readFile(join(ROOT, 'site.config.json'), 'utf8'));
+  const siteHost = new URL(site.baseUrl).host;
+  // Hosts the site legitimately links out to that happen to be on github.io.
+  const knownExternalHosts = new Set([]);
 
   /* Counts the copy is allowed to state. Anything else is stale text. */
   const shadeCounts = new Map();
@@ -104,6 +108,43 @@ async function main() {
 
     if (!/<link rel="canonical"/.test(html)) fail(name, 'missing canonical');
     if (!/<html lang="/.test(html)) fail(name, 'missing lang on <html>');
+
+    /* --- AdSense verification ------------------------------------------
+       Google checks for these on the pages it crawls, and a page that quietly
+       lost them fails review with no obvious cause. Both must be present, and
+       both must be inside <head>, on every page. */
+    if (site.adsense?.client) {
+      const headEnd = html.indexOf('</head>');
+      const metaAt = html.indexOf(`content="${site.adsense.client}"`);
+      const loaderAt = html.indexOf('pagead2.googlesyndication.com');
+
+      if (!/<meta name="google-adsense-account"/.test(html)) {
+        fail(name, 'missing the google-adsense-account meta tag');
+      } else if (metaAt > headEnd) {
+        fail(name, 'google-adsense-account meta tag is outside <head>');
+      }
+
+      if (loaderAt === -1) fail(name, 'missing the AdSense loader script');
+      else if (loaderAt > headEnd) fail(name, 'AdSense loader script is outside <head>');
+    }
+
+    /* --- absolute URLs --------------------------------------------------
+       Every absolute link back into this site must point at the configured
+       baseUrl. A hardcoded host is how a domain move leaves canonicals,
+       Open Graph URLs or schema @ids quietly aimed at the old address. */
+    for (const m of html.matchAll(/(?:href|content|src)="(https?:\/\/[^"]+)"/g)) {
+      const url = m[1];
+      let host;
+      try {
+        host = new URL(url).host;
+      } catch {
+        continue;
+      }
+      if (host === siteHost) continue;
+      if (!knownExternalHosts.has(host) && /github\.io$/.test(host)) {
+        fail(name, `absolute URL points at an old host: ${url}`);
+      }
+    }
 
     /* --- responsive ---------------------------------------------------- */
     const viewport = attr((html.match(/<meta name="viewport"[^>]*>/) || [''])[0], 'content');
@@ -263,7 +304,6 @@ async function main() {
   /* --- sitemap ----------------------------------------------------------- */
   const sitemap = await readFile(join(ROOT, 'sitemap.xml'), 'utf8');
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  const site = JSON.parse(await readFile(join(ROOT, 'site.config.json'), 'utf8'));
 
   for (const loc of locs) {
     const path = loc.replace(site.baseUrl + '/', '');

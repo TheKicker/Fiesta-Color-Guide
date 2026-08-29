@@ -12,4 +12,4 @@ Disallow: /*?q=
 # canonical tag that would have consolidated it. The indexable version of each
 # facet is a real page under /colors/shade/ and /colors/era/.
 
-Sitemap: https://thekicker.github.io/Fiesta-Color-Guide/sitemap.xml
+Sitemap: https://fiesta-color-guide.com/sitemap.xml

@@ -2,708 +2,708 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/</loc>
+    <loc>https://fiesta-color-guide.com/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/history.html</loc>
+    <loc>https://fiesta-color-guide.com/history.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/about.html</loc>
+    <loc>https://fiesta-color-guide.com/about.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/privacy.html</loc>
+    <loc>https://fiesta-color-guide.com/privacy.html</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/black/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/black/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/blue/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/blue/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/brown/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/brown/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/green/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/green/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/orange/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/orange/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/purple/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/purple/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/red/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/red/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/white/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/white/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shade/yellow/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shade/yellow/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/era/vintage/</loc>
+    <loc>https://fiesta-color-guide.com/colors/era/vintage/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/era/post-86/</loc>
+    <loc>https://fiesta-color-guide.com/colors/era/post-86/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/era/in-production/</loc>
+    <loc>https://fiesta-color-guide.com/colors/era/in-production/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/red-1936/</loc>
+    <loc>https://fiesta-color-guide.com/colors/red-1936/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Red.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Red.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Red (#D2042D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/blue-cobalt/</loc>
+    <loc>https://fiesta-color-guide.com/colors/blue-cobalt/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Cobalt.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Cobalt.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Blue (Cobalt) (#13294B)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/green-light/</loc>
+    <loc>https://fiesta-color-guide.com/colors/green-light/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/LightGreen.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/LightGreen.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Green (Light) (#27654A)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/yellow-1936/</loc>
+    <loc>https://fiesta-color-guide.com/colors/yellow-1936/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Yellow.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Yellow.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Yellow (#DAAC49)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/old-ivory/</loc>
+    <loc>https://fiesta-color-guide.com/colors/old-ivory/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/OldIvory.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/OldIvory.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Old Ivory (#F2EFDE)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/turquoise-1937/</loc>
+    <loc>https://fiesta-color-guide.com/colors/turquoise-1937/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Turquoise.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Turquoise.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Turquoise (#56B1BD)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/forest-green/</loc>
+    <loc>https://fiesta-color-guide.com/colors/forest-green/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/ForestGreen.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/ForestGreen.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Forest Green (#316E15)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/rose-1951/</loc>
+    <loc>https://fiesta-color-guide.com/colors/rose-1951/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Rose.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Rose.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Rose (#E5908D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/chartreuse-1951/</loc>
+    <loc>https://fiesta-color-guide.com/colors/chartreuse-1951/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Chartreuse.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Chartreuse.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Chartreuse (#BCCC6A)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/gray/</loc>
+    <loc>https://fiesta-color-guide.com/colors/gray/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Gray.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Gray.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Gray (#C4CFDC)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/medium-green/</loc>
+    <loc>https://fiesta-color-guide.com/colors/medium-green/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/MediumGreen.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/MediumGreen.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Medium Green (#4E9F51)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/red-1959/</loc>
+    <loc>https://fiesta-color-guide.com/colors/red-1959/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/Red.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/Red.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Red (#D2042D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/antique-gold/</loc>
+    <loc>https://fiesta-color-guide.com/colors/antique-gold/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/AntiqueGold.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/AntiqueGold.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Antique Gold (#FAC752)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/turf-green/</loc>
+    <loc>https://fiesta-color-guide.com/colors/turf-green/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/TurfGreen.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/TurfGreen.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Turf Green (#7F843C)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/white/</loc>
+    <loc>https://fiesta-color-guide.com/colors/white/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0100.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0100.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in White (#FFFFFF)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/black/</loc>
+    <loc>https://fiesta-color-guide.com/colors/black/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0101.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0101.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Black (#000000)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/rose-1987/</loc>
+    <loc>https://fiesta-color-guide.com/colors/rose-1987/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0103.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0103.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Rose (#E5908D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/apricot/</loc>
+    <loc>https://fiesta-color-guide.com/colors/apricot/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0104.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0104.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Apricot (#EBBCA2)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/cobalt/</loc>
+    <loc>https://fiesta-color-guide.com/colors/cobalt/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0105.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0105.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Cobalt (#13294B)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/yellow-1987/</loc>
+    <loc>https://fiesta-color-guide.com/colors/yellow-1987/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0106.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0106.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Yellow (#EAD881)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/turquoise-1988/</loc>
+    <loc>https://fiesta-color-guide.com/colors/turquoise-1988/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0107.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0107.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Turquoise (#56B1BD)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/periwinkle-blue/</loc>
+    <loc>https://fiesta-color-guide.com/colors/periwinkle-blue/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0108.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0108.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Periwinkle Blue (#7FB1D7)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/sea-mist-green/</loc>
+    <loc>https://fiesta-color-guide.com/colors/sea-mist-green/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0109.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0109.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Sea Mist Green (#9ADFC1)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/lilac/</loc>
+    <loc>https://fiesta-color-guide.com/colors/lilac/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0113.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0113.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Lilac (#7F68A1)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/persimmon/</loc>
+    <loc>https://fiesta-color-guide.com/colors/persimmon/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0114.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0114.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Persimmon (#EC7B5F)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/sapphire/</loc>
+    <loc>https://fiesta-color-guide.com/colors/sapphire/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0116.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0116.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Sapphire (#1F44B2)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/raspberry/</loc>
+    <loc>https://fiesta-color-guide.com/colors/raspberry/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/4465.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/4465.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Raspberry (#892A33)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/chartreuse-1997/</loc>
+    <loc>https://fiesta-color-guide.com/colors/chartreuse-1997/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0117.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0117.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Chartreuse (#A1D63D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/pearl-gray/</loc>
+    <loc>https://fiesta-color-guide.com/colors/pearl-gray/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0118.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0118.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Pearl Gray (#C9CECF)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/juniper/</loc>
+    <loc>https://fiesta-color-guide.com/colors/juniper/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0119.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0119.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Juniper (#2C6672)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/cinnabar/</loc>
+    <loc>https://fiesta-color-guide.com/colors/cinnabar/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0102.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0102.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Cinnabar (#5F1111)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/sunflower/</loc>
+    <loc>https://fiesta-color-guide.com/colors/sunflower/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0320.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0320.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Sunflower (#F8DA6D)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/plum/</loc>
+    <loc>https://fiesta-color-guide.com/colors/plum/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0323.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0323.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Plum (#351D54)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/shamrock/</loc>
+    <loc>https://fiesta-color-guide.com/colors/shamrock/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0324.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0324.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Shamrock (#49AB07)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/tangerine/</loc>
+    <loc>https://fiesta-color-guide.com/colors/tangerine/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0325.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0325.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Tangerine (#F37B39)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/scarlet/</loc>
+    <loc>https://fiesta-color-guide.com/colors/scarlet/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0326.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0326.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Scarlet (#CF2C20)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/peacock/</loc>
+    <loc>https://fiesta-color-guide.com/colors/peacock/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0327.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0327.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Peacock (#3792D7)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/heather/</loc>
+    <loc>https://fiesta-color-guide.com/colors/heather/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0328.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0328.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Heather (#62374E)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/evergreen/</loc>
+    <loc>https://fiesta-color-guide.com/colors/evergreen/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0329.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0329.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Evergreen (#0B4041)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/ivory/</loc>
+    <loc>https://fiesta-color-guide.com/colors/ivory/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0330.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0330.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Ivory (#F2E7C0)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/chocolate/</loc>
+    <loc>https://fiesta-color-guide.com/colors/chocolate/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0331.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0331.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Chocolate (#481C0A)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/lemongrass/</loc>
+    <loc>https://fiesta-color-guide.com/colors/lemongrass/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0332.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0332.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Lemongrass (#CDE651)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/marigold/</loc>
+    <loc>https://fiesta-color-guide.com/colors/marigold/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0333.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0333.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Marigold (#F8AB03)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/paprika/</loc>
+    <loc>https://fiesta-color-guide.com/colors/paprika/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0334.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0334.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Paprika (#A14121)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/flamingo/</loc>
+    <loc>https://fiesta-color-guide.com/colors/flamingo/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0335.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0335.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Flamingo (#E37468)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/lapis/</loc>
+    <loc>https://fiesta-color-guide.com/colors/lapis/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0337.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0337.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Lapis (#2B64A1)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/poppy/</loc>
+    <loc>https://fiesta-color-guide.com/colors/poppy/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0338.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0338.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Poppy (#F24B21)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/slate/</loc>
+    <loc>https://fiesta-color-guide.com/colors/slate/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0339.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0339.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Slate (#2F2F2F)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/sage/</loc>
+    <loc>https://fiesta-color-guide.com/colors/sage/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0340.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0340.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Sage (#4B5320)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/foundry/</loc>
+    <loc>https://fiesta-color-guide.com/colors/foundry/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/20000.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/20000.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Foundry (#111111)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/claret/</loc>
+    <loc>https://fiesta-color-guide.com/colors/claret/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0341.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0341.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Claret (#5C2432)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/daffodil/</loc>
+    <loc>https://fiesta-color-guide.com/colors/daffodil/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0342.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0342.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Daffodil (#F7C308)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/mulberry/</loc>
+    <loc>https://fiesta-color-guide.com/colors/mulberry/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0343.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0343.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Mulberry (#381943)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/meadow/</loc>
+    <loc>https://fiesta-color-guide.com/colors/meadow/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0344.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0344.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Meadow (#5B9565)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/butterscotch/</loc>
+    <loc>https://fiesta-color-guide.com/colors/butterscotch/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0345.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0345.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Butterscotch (#F98300)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/twilight/</loc>
+    <loc>https://fiesta-color-guide.com/colors/twilight/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0346.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0346.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Twilight (#120F71)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/peony/</loc>
+    <loc>https://fiesta-color-guide.com/colors/peony/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0347.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0347.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Peony (#D57C74)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/jade/</loc>
+    <loc>https://fiesta-color-guide.com/colors/jade/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0348.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0348.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Jade (#1D4729)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/sky/</loc>
+    <loc>https://fiesta-color-guide.com/colors/sky/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0349.jpg</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0349.jpg</image:loc>
       <image:caption>Fiesta dinnerware glazed in Sky (#B4D6DF)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/linen/</loc>
+    <loc>https://fiesta-color-guide.com/colors/linen/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0350.png</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0350.png</image:loc>
       <image:caption>Fiesta dinnerware glazed in Linen (#EBE4D2)</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://thekicker.github.io/Fiesta-Color-Guide/colors/lavender/</loc>
+    <loc>https://fiesta-color-guide.com/colors/lavender/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://thekicker.github.io/Fiesta-Color-Guide/assets/colors/0351.png</image:loc>
+      <image:loc>https://fiesta-color-guide.com/assets/colors/0351.png</image:loc>
       <image:caption>Fiesta dinnerware glazed in Lavender (#9694B8)</image:caption>
     </image:image>
   </url>
