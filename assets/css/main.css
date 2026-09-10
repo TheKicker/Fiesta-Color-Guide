@@ -450,6 +450,47 @@ a:hover { color: var(--accent-hover); }
   :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
 }
 
+/* The header had no responsive rule at all: a single non-wrapping flex row of
+   brand + nav + toggle. With four nav items that is comfortably wider than a
+   320px screen, and because the body clips horizontal overflow it would have
+   silently cut the theme toggle off rather than scrolling to it.
+
+   Below 700px the nav drops to its own full-width row. --header-h moves with
+   it so the sticky toolbar, which pins itself directly under the header, keeps
+   landing in the right place. */
+@media (max-width: 700px) {
+  /* Two rows: the toggle sets row one, a nav link sets row two. 6rem clears
+     the ~93px they actually need, so the sticky toolbar -- which pins itself
+     to --header-h -- cannot tuck under the header edge. */
+  :root {
+    --header-h: 6.25rem;
+  }
+
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    gap: 0.5rem;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  /* Four labels have to fit 288px at the narrowest supported width. */
+  .site-nav a {
+    padding-inline: 0.4rem;
+    white-space: nowrap;
+  }
+
+  /* Repeated verbatim in the footer on every page, so nothing is lost. */
+  .brand__sub {
+    display: none;
+  }
+}
+
 /* 5. Hero & stats --------------------------------------------------------- */
 
 .hero { padding-block: clamp(2rem, 1.2rem + 3.5vw, 4rem) clamp(1.25rem, 1rem + 1.5vw, 2rem); }

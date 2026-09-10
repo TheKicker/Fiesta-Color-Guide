@@ -181,15 +181,15 @@ export async function loadData(jsonPath, { currentYear = new Date().getFullYear(
       slug: 'vintage',
       start: firstYear,
       end: VINTAGE_END,
-      short: `Vintage ${firstYear}–${VINTAGE_END}`,
-      full: `Vintage (${firstYear}–${VINTAGE_END})`,
+      short: `Vintage ${firstYear}-${VINTAGE_END}`,
+      full: `Vintage (${firstYear}-${VINTAGE_END})`,
     },
     post86: {
       key: 'post86',
       slug: 'post-86',
       start: POST86_START,
-      short: `Post 86, ${POST86_START}–today`,
-      full: `Post 86 (${POST86_START}–today)`,
+      short: `Post 86, ${POST86_START}-today`,
+      full: `Post 86 (${POST86_START}-today)`,
     },
   };
 

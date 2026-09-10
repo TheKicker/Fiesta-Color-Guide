@@ -44,8 +44,29 @@ async function emit(relPath, contents) {
   written.push({ path: relPath.replace(/\\/g, '/'), bytes: Buffer.byteLength(contents) });
 }
 
-function today() {
-  return new Date().toISOString().slice(0, 10);
+/**
+ * <lastmod> value for a page whose content changed in this build.
+ *
+ * The sitemap protocol takes W3C Datetime, which may be a bare date or a full
+ * timestamp with an offset. A timestamp is more precise, and Google reads
+ * either, so this emits one.
+ *
+ * `--stamp <datetime>` overrides it for every page. That is for the case this
+ * exists to serve: a deploy that genuinely rewrote the whole site, where one
+ * shared timestamp is the accurate answer rather than a fiction. Do not reach
+ * for it to nudge a crawler -- a lastmod that does not correspond to a real
+ * change is the thing that teaches Google to ignore the field.
+ */
+function nowStamp() {
+  const flag = process.argv.indexOf('--stamp');
+  if (flag !== -1 && process.argv[flag + 1]) {
+    const given = process.argv[flag + 1];
+    if (Number.isNaN(Date.parse(given))) {
+      throw new Error(`--stamp is not a parseable date: ${given}`);
+    }
+    return given;
+  }
+  return new Date().toISOString().replace(/\.\d{3}Z$/, '+00:00');
 }
 
 /**
@@ -73,7 +94,9 @@ function contentHash(html) {
 async function main() {
   const site = JSON.parse(await readFile(p('site.config.json'), 'utf8'));
   const data = await loadData(p('fiesta.json'));
-  const stamp = today();
+  const stamp = nowStamp();
+  // With --stamp, every page is restamped whether or not its hash moved.
+  const stampAll = process.argv.includes('--stamp');
   const year = new Date().getFullYear();
   const previous = await loadLastmod();
   const lastmod = {};
@@ -123,7 +146,7 @@ async function main() {
     await emit(file, html);
     const hash = contentHash(html);
     const before = previous[url];
-    const date = before && before.hash === hash ? before.date : stamp;
+    const date = !stampAll && before && before.hash === hash ? before.date : stamp;
     lastmod[url] = { hash, date };
 
     if (/<meta name="robots" content="noindex/.test(html)) {

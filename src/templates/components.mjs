@@ -7,10 +7,10 @@ import { esc } from './layout.mjs';
 
 /** "1936-1943" or "2026-present" -- never the raw "current" string. */
 export function producedLabel(color) {
-  if (color.current) return `${color.startYear}–present`;
+  if (color.current) return `${color.startYear}-present`;
   // A color that arrived and left inside one year should say the year once.
   if (color.endYear === color.startYear) return String(color.startYear);
-  return `${color.startYear}–${color.endYear}`;
+  return `${color.startYear}-${color.endYear}`;
 }
 
 export function statusPill(color) {
@@ -223,7 +223,7 @@ export function contextProse(color, ctx, base) {
       ? `took over from ${link(p.color)} as Fiesta's ${family}`
       : `arrived while ${link(p.color)} was still in production`;
     sentences.push(
-      `${esc(color.color)} ${relation}, and is ${p.phrase} than it &mdash; ` +
+      `${esc(color.color)} ${relation}, and is ${p.phrase} than it - ` +
         `${p.separation} rather than a reformulation (&Delta;E&nbsp;${p.delta.toFixed(1)}).`
     );
   } else if (ctx.familySize > 1) {
@@ -235,7 +235,7 @@ export function contextProse(color, ctx, base) {
 
   if (ctx.longevity === 'long') {
     sentences.push(
-      `It has been in production ${ctx.run} years against a median of ${ctx.median} for its era &mdash; ` +
+      `It has been in production ${ctx.run} years against a median of ${ctx.median} for its era - ` +
         `one of the colors the company kept.`
     );
   } else if (ctx.longevity === 'short') {

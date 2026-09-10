@@ -92,9 +92,9 @@ export function home({ site, data, base = '' }) {
     {
       q: 'How many Fiesta colors have there been?',
       a: `This guide documents <strong>${colors.length}</strong> Fiesta colors: ${vintage.length} from the
-          original ${data.eras.vintage.start}&ndash;${data.eras.vintage.end} run and ${post86.length} from the
-          Post 86 line that began with the ${data.eras.post86.start} reintroduction. Colors that were made in both eras under the same name &mdash; Red, Rose,
-          Yellow, Turquoise and Chartreuse &mdash; are listed separately, because the glaze recipes and the
+          original ${data.eras.vintage.start}-${data.eras.vintage.end} run and ${post86.length} from the
+          Post 86 line that began with the ${data.eras.post86.start} reintroduction. Colors that were made in both eras under the same name - Red, Rose,
+          Yellow, Turquoise and Chartreuse - are listed separately, because the glaze recipes and the
           resulting colors are not the same.`,
     },
     {
@@ -120,30 +120,30 @@ export function home({ site, data, base = '' }) {
     {
       q: 'What is the difference between vintage Fiesta and Post 86?',
       a: `Vintage Fiesta ran from 1936 until the line was retired in 1973. Fiesta returned in March 1986 for
-          its 50th anniversary in a vitrified, lead-free body with an updated palette &mdash; collectors call
+          its 50th anniversary in a vitrified, lead-free body with an updated palette - collectors call
           everything from that point on "Post 86." Post 86 pieces carry a color number (Lapis is No. 337, for
           example); vintage pieces predate that numbering entirely.`,
     },
     {
       q: 'Which Fiesta colors go together?',
       a: `Every color page ends with a set of table-setting combinations built only from colors Fiesta has
-          actually made &mdash; starting, where one exists, with the pairing named in that color's own
+          actually made - starting, where one exists, with the pairing named in that color's own
           description, then combinations built on opposite hues, tonal ladders and neutral anchors. Each
           swatch says whether you can still buy it, so you know which sets you can finish today.
           <a href="${base}about.html#pairings">How the combinations are built &rarr;</a>`,
     },
     {
       q: 'What do the Fiesta color numbers mean?',
-      a: `Every Post 86 color carries a number &mdash; Lapis is No.&nbsp;337, Scarlet is No.&nbsp;326,
-          Lavender is No.&nbsp;351 &mdash; and it is the fastest way to identify a modern piece or order a
+      a: `Every Post 86 color carries a number - Lapis is No.&nbsp;337, Scarlet is No.&nbsp;326,
+          Lavender is No.&nbsp;351 - and it is the fastest way to identify a modern piece or order a
           replacement. The numbers run roughly in order of introduction. Vintage colors from the
-          ${firstYear}&ndash;1972 run predate the system entirely and have no number.`,
+          ${firstYear}-1972 run predate the system entirely and have no number.`,
     },
     {
       q: 'How do I tell which Fiesta color I have?',
       a: `Compare your piece to the swatches here in daylight, then check the shape and the backstamp. Narrow
           the field with the shade filter above, then open a color page for the full production years and
-          nearby colors &mdash; a lot of Fiesta identification comes down to separating two colors that are only
+          nearby colors - a lot of Fiesta identification comes down to separating two colors that are only
           a few &Delta;E apart, like <a href="${base}colors/turquoise-1988/">Turquoise</a> and
           <a href="${base}colors/sky/">Sky</a>.`,
     },
@@ -161,7 +161,7 @@ export function home({ site, data, base = '' }) {
   const body = `      <section class="wrap hero">
         <div class="hero__grid">
           <div>
-            <p class="eyebrow">Unofficial reference &middot; ${firstYear}&ndash;${currentYear}</p>
+            <p class="eyebrow">Unofficial reference &middot; ${firstYear}-${currentYear}</p>
             <h1>Every Fiesta color, ${firstYear} to today</h1>
             <p class="hero__lede">
               ${colors.length} glazes across ${years} years of American dinnerware. Look up a color by
@@ -177,8 +177,8 @@ export function home({ site, data, base = '' }) {
             <dl class="stats">
               <div class="stat"><dd>${colors.length}</dd><dt>colors documented</dt></div>
               <div class="stat"><dd>${current.length}</dd><dt>in production now</dt></div>
-              <div class="stat"><dd>${vintage.length}</dd><dt>vintage, ${firstYear}&ndash;${data.eras.vintage.end}</dt></div>
-              <div class="stat"><dd>${post86.length}</dd><dt>Post 86, ${data.eras.post86.start}&ndash;today</dt></div>
+              <div class="stat"><dd>${vintage.length}</dd><dt>vintage, ${firstYear}-${data.eras.vintage.end}</dt></div>
+              <div class="stat"><dd>${post86.length}</dd><dt>Post 86, ${data.eras.post86.start}-today</dt></div>
             </dl>
           </div>
         </div>
@@ -212,7 +212,7 @@ export function home({ site, data, base = '' }) {
               <div class="search">
                 ${icon('search')}
                 <label class="visually-hidden" for="q">Search colors by name, number or hex code</label>
-                <input type="search" id="q" name="q" autocomplete="off" placeholder="Search ${colors.length} colors — try &quot;lapis&quot;, &quot;337&quot; or &quot;#2B64A1&quot;">
+                <input type="search" id="q" name="q" autocomplete="off" placeholder="Search ${colors.length} colors - try &quot;lapis&quot;, &quot;337&quot; or &quot;#2B64A1&quot;">
                 <button type="button" class="search__clear" id="q-clear" hidden>
                   ${icon('close')}<span class="visually-hidden">Clear search</span>
                 </button>
@@ -249,7 +249,7 @@ export function home({ site, data, base = '' }) {
                 <span class="select"><select id="sort" name="sort">
                   <option value="chrono">Oldest first</option>
                   <option value="recent">Newest first</option>
-                  <option value="name">Name A&ndash;Z</option>
+                  <option value="name">Name A-Z</option>
                   <option value="hue">Hue (rainbow)</option>
                   <option value="light">Light to dark</option>
                 </select></span>
@@ -313,8 +313,8 @@ ${shades
         </ul>
         <ul class="link-list" style="margin-top:1.25rem">
           <li><a href="${base}colors/era/in-production/">Colors in production now (${current.length})</a></li>
-          <li><a href="${base}colors/era/vintage/">Vintage colors, ${firstYear}&ndash;${data.eras.vintage.end} (${vintage.length})</a></li>
-          <li><a href="${base}colors/era/post-86/">Post 86 colors, ${data.eras.post86.start}&ndash;today (${post86.length})</a></li>
+          <li><a href="${base}colors/era/vintage/">Vintage colors, ${firstYear}-${data.eras.vintage.end} (${vintage.length})</a></li>
+          <li><a href="${base}colors/era/post-86/">Post 86 colors, ${data.eras.post86.start}-today (${post86.length})</a></li>
           <li><a href="${base}colors/rainbow/">ROYGBIV: every color sorted by the rainbow</a></li>
         </ul>
       </section>
@@ -358,7 +358,7 @@ ${plateStackBand(base)}
       '@type': 'CollectionPage',
       '@id': `${site.baseUrl}/#webpage`,
       url: `${site.baseUrl}/`,
-      name: `Fiesta Color Guide: all ${colors.length} colors, ${firstYear}–${currentYear}`,
+      name: `Fiesta Color Guide: all ${colors.length} colors, ${firstYear}-${currentYear}`,
       isPartOf: { '@id': `${site.baseUrl}/#website` },
       about: { '@id': `${site.baseUrl}/#termset` },
       inLanguage: 'en-US',
@@ -391,8 +391,8 @@ ${plateStackBand(base)}
   ];
 
   return {
-    title: `Fiesta Color Guide: All ${colors.length} Colors, ${firstYear}–${currentYear}`,
-    description: `Every Fiesta dinnerware color from ${firstYear} to today — ${colors.length} glazes with hex codes, production years and photos. Filter by shade, era or decade. Unofficial reference.`,
+    title: `Fiesta Color Guide: All ${colors.length} Colors, ${firstYear}-${currentYear}`,
+    description: `Every Fiesta dinnerware color from ${firstYear} to today - ${colors.length} glazes with hex codes, production years and photos. Filter by shade, era or decade. Unofficial reference.`,
     body,
     schema,
     navKey: 'colors',
@@ -439,7 +439,7 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
         ? `${currentYear - color.startYear}+ and counting`
         : `${Math.max(1, color.endYear - color.startYear)}`,
     ],
-    ['Color number', color.sku ? `No. ${color.sku}` : 'None — predates Fiesta color numbering'],
+    ['Color number', color.sku ? `No. ${color.sku}` : 'None - predates Fiesta color numbering'],
     ['Shade family', color.shadeOf],
     [
       'Era',
@@ -530,7 +530,7 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
                      alt="A piece of Fiesta dinnerware glazed in ${esc(color.color)}">
               </picture>
               <figcaption>
-                Photographed ware in ${esc(color.color)}. Fired glaze varies between runs &mdash; the flat
+                Photographed ware in ${esc(color.color)}. Fired glaze varies between runs - the flat
                 swatch above is the reference value, this is what it looks like on a plate.
               </figcaption>
             </figure>
@@ -583,7 +583,7 @@ ${contextProse(color, ctx, base)}
               <h2 id="similar-heading">Closest colors in the palette</h2>
               <p>
                 Ranked by CIEDE2000 (&Delta;E) against ${esc(color.color)}. Under about &Delta;E&nbsp;5 two
-                colors are hard to tell apart side by side &mdash; useful when you are identifying an unmarked piece.
+                colors are hard to tell apart side by side - useful when you are identifying an unmarked piece.
               </p>
             </div>
           </div>
@@ -644,7 +644,7 @@ ${pager}
       '@type': 'WebPage',
       '@id': `${site.baseUrl}/${canonicalPath}#webpage`,
       url: `${site.baseUrl}/${canonicalPath}`,
-      name: `Fiesta ${color.color} — ${color.hex}`,
+      name: `Fiesta ${color.color} - ${color.hex}`,
       description: desc,
       isPartOf: { '@id': `${site.baseUrl}/#website` },
       inLanguage: 'en-US',
@@ -681,7 +681,7 @@ ${pager}
   ];
 
   return {
-    title: `Fiesta ${color.color} — ${color.hex} (${producedLabel(color)})`,
+    title: `Fiesta ${color.color} - ${color.hex} (${producedLabel(color)})`,
     description: desc,
     body,
     schema,
@@ -831,8 +831,8 @@ export function history({ site, data, base = '' }) {
         <div class="prose" style="margin-top:1rem">
           <p>
             Not many companies can point to a run that starts in the 1870s. Fewer still have ended up in
-            as many kitchens. This is a working timeline of The Fiesta Tableware Company &mdash; formerly
-            The Homer Laughlin China Company &mdash; from the clay banks of East Liverpool, Ohio through
+            as many kitchens. This is a working timeline of The Fiesta Tableware Company - formerly
+            The Homer Laughlin China Company - from the clay banks of East Liverpool, Ohio through
             ${data.colors.length} colors of Fiesta dinnerware.
           </p>
           <p class="muted">
@@ -914,35 +914,35 @@ export function about({ site, data, base = '' }) {
             published reference material and comparison against physical pieces where I have them.
           </p>
           <p>
-            That hex is then the single source of truth. Everything else the site derives from a color &mdash;
+            That hex is then the single source of truth. Everything else the site derives from a color -
             the CIELAB coordinates behind the closest-color rankings, the pairing suggestions, and the
-            black-or-white label chosen for each swatch &mdash; is
+            black-or-white label chosen for each swatch - is
             <strong>calculated from it at build time</strong> in sRGB with a D65 white point. Nothing is typed
             in twice, and nothing can drift out of step with the swatch beside it.
           </p>
           <div class="callout">
             <p><strong>The honest caveat.</strong> A fired ceramic glaze is not a flat color. It varies with the
             production run, the thickness of the glaze, the shape underneath it and the light you are standing
-            in &mdash; and then your screen adds its own interpretation. A swatch here will get you close enough
+            in - and then your screen adds its own interpretation. A swatch here will get you close enough
             to identify a piece or plan a table. It will not match a plate exactly, and no hex code could.</p>
           </div>
 
           <h2 id="dates">Production dates</h2>
           <p>
             Introduction and retirement years come from company announcements, collector references and
-            contemporary press. Where sources disagree &mdash; and for a few of the vintage colors they do &mdash;
+            contemporary press. Where sources disagree - and for a few of the vintage colors they do -
             the guide uses the date most commonly cited by the collector community and the timeline on the
             <a href="${base}history.html">history page</a> gives the surrounding context.
           </p>
           <p>
-            Colors that were produced in both eras under the same name &mdash; Red, Rose, Yellow, Turquoise and
-            Chartreuse &mdash; get separate entries. The names carried over; the glaze recipes did not.
+            Colors that were produced in both eras under the same name - Red, Rose, Yellow, Turquoise and
+            Chartreuse - get separate entries. The names carried over; the glaze recipes did not.
           </p>
 
           <h2 id="pairings">How the table-setting combinations are built</h2>
           <p>
             Each color page suggests a handful of combinations. The first, where one exists, is simply the
-            pairing <strong>named in that color's own description</strong> &mdash; a person wrote that down, so
+            pairing <strong>named in that color's own description</strong> - a person wrote that down, so
             it outranks anything a formula produces, and the page labels it as such.
           </p>
           <p>
@@ -951,7 +951,7 @@ export function about({ site, data, base = '' }) {
             Colors closer than &Delta;E&nbsp;12 are never put in the same set, because near-identical glazes
             side by side read as a mistake rather than a choice; and neutrality is measured by
             <strong>LCh chroma, not HSL saturation</strong>, since saturation badly misjudges very light and
-            very dark colors &mdash; it scores Old Ivory at 43%, when perceptually it is almost colorless.
+            very dark colors - it scores Old Ivory at 43%, when perceptually it is almost colorless.
           </p>
           <p>
             Every combination is made only of colors Fiesta has actually produced, and each swatch says whether
@@ -963,7 +963,7 @@ export function about({ site, data, base = '' }) {
             The closest-color list on each page is computed with <strong>CIEDE2000</strong>, the current
             standard for perceptual color difference. Values under roughly &Delta;E&nbsp;2 are near-identical to
             the eye, under &Delta;E&nbsp;5 are easy to confuse side by side, and above &Delta;E&nbsp;10 read as
-            clearly different colors. It is calculated from the hex values, so it inherits their caveats &mdash;
+            clearly different colors. It is calculated from the hex values, so it inherits their caveats -
             but it is a genuinely useful first pass when you are trying to tell two blues apart.
           </p>
 
@@ -971,7 +971,7 @@ export function about({ site, data, base = '' }) {
           <p>
             The whole dataset is one file: <a href="${base}fiesta.json"><code>fiesta.json</code></a>. Colors,
             production years, shade families, descriptions and the company timeline all live there, and this
-            site is generated from it. You are welcome to use it &mdash; a link back is appreciated.
+            site is generated from it. You are welcome to use it - a link back is appreciated.
           </p>
           <p>
             Corrections are genuinely welcome. If a date or a color looks wrong to you, please
@@ -989,16 +989,16 @@ export function about({ site, data, base = '' }) {
           </p>
           <p>
             If something here does not work with your assistive technology, that is a bug I want to hear about
-            &mdash; please <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">report it</a>.
+            - please <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">report it</a>.
           </p>
 
           <h2 id="sources">Sources</h2>
           <ul>
-            <li><a href="https://www.post86referenceguide.com/home/colortimeline/" rel="noopener nofollow" target="_blank">Post 86 Reference Guide &mdash; color timeline</a></li>
+            <li><a href="https://www.post86referenceguide.com/home/colortimeline/" rel="noopener nofollow" target="_blank">Post 86 Reference Guide - color timeline</a></li>
             <li><a href="https://www.ftcco.org/" rel="noopener nofollow" target="_blank">Fiesta Tableware Company Collectors Organization</a></li>
             <li><a href="https://www.hlcca.org/" rel="noopener nofollow" target="_blank">Homer Laughlin China Collectors Association</a></li>
-            <li><a href="https://www.texascooking.com/fiestaware/" rel="noopener nofollow" target="_blank">Texas Cooking &mdash; Fiestaware</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Fiesta_(dinnerware)" rel="noopener nofollow" target="_blank">Wikipedia &mdash; Fiesta (dinnerware)</a></li>
+            <li><a href="https://www.texascooking.com/fiestaware/" rel="noopener nofollow" target="_blank">Texas Cooking - Fiestaware</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Fiesta_(dinnerware)" rel="noopener nofollow" target="_blank">Wikipedia - Fiesta (dinnerware)</a></li>
             <li><a href="https://fiestadocumentary.com/links.html" rel="noopener nofollow" target="_blank">DISHES: a Fiesta documentary</a></li>
             <li><a href="https://fiestatableware.com" rel="noopener nofollow" target="_blank">The Fiesta Tableware Company</a></li>
           </ul>
@@ -1024,7 +1024,7 @@ export function about({ site, data, base = '' }) {
       </section>`;
 
   return {
-    title: 'About the Fiesta Color Guide — Sources, Method and Accuracy',
+    title: 'About the Fiesta Color Guide - Sources, Method and Accuracy',
     description:
       'How this guide is built: where the hex values come from, how production dates are sourced, how color matches are calculated, and what accuracy to expect.',
     body,
@@ -1051,37 +1051,52 @@ export function about({ site, data, base = '' }) {
 export function privacy({ site, base = '', updated }) {
   const body = `      <section class="wrap section--tight">
         <p class="eyebrow">Updated ${esc(updated)}</p>
-        <h1>Privacy &amp; cookies</h1>
+        <h1>Privacy</h1>
+        <p class="hero__lede" style="margin-top:1rem">
+          The short version: this is a hobby site about dinnerware. It has no accounts, no
+          newsletter, no contact form and nothing to sell you. It does not want your data and has
+          no use for it.
+        </p>
       </section>
 
       <section class="wrap wrap--narrow">
         <div class="prose">
+          <h2 id="device">What is stored on your device</h2>
           <p>
-            The Unofficial Fiesta Color Guide is a personal, non-commercial reference site. It has no accounts,
-            no newsletter and no contact form, and it never asks you for personal information.
+            One thing, and only if you use it: your light or dark theme preference is saved in your
+            browser's <code>localStorage</code> under the key <code>fcg-theme</code>. It stays on
+            your device, is never transmitted anywhere, and clearing your site data removes it.
+            There is no login, no profile and no shopping cart, so there is nothing else to store.
           </p>
 
-          <h2>What is stored on your device</h2>
+          <h2 id="analytics">Google Analytics</h2>
           <p>
-            One item, and only if you use it: your light or dark theme choice is saved in your browser's
-            <code>localStorage</code> under the key <code>fcg-theme</code>. It stays on your device, is never
-            sent anywhere, and clearing your site data removes it.
+            This site uses Google Analytics 4 to count visits and see which colors people look at.
+            That is the entire purpose - it tells me that four hundred people read the page
+            about Medium Green last month, not who any of them are.
           </p>
-
-          <h2>Analytics</h2>
           <p>
-            This site uses Google Analytics 4 to count visits and see which colors people look at. Google
-            Analytics sets cookies and processes a truncated version of your IP address. It tells me how many
-            people visited a page, not who they are. You can opt out with the
-            <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener nofollow" target="_blank">Google Analytics opt-out add-on</a>,
-            or by using a browser or extension that blocks it.
+            <strong>GA4 anonymizes IP addresses by default.</strong> Google truncates the address
+            before it is stored, and nothing on this site turns that off. I would rather be precise
+            than reassuring, though: anonymized IPs are not the same as no data at all. GA4 still
+            records approximate region, device type, browser, referring page and which pages were
+            visited, and it sets cookies to recognise a returning browser. None of that is joined to
+            a name here, and none of it is sold, shared or exported by me to anyone.
           </p>
+          <div class="callout">
+            <p><strong>To opt out entirely</strong>, install Google's official
+            <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener nofollow" target="_blank">Google
+            Analytics Opt-out Browser Add-on</a>. It works across every site using Analytics, not
+            just this one. A content blocker or a browser with tracking protection does the same job.</p>
+            <p>Nothing here breaks if you block it. Every page is static HTML and works with scripts
+            disabled entirely.</p>
+          </div>
 
-          <h2>Advertising</h2>
+          <h2 id="advertising">Advertising</h2>
           <p>
             This site uses Google AdSense. Google's ad script loads on every page here, and may set
-            cookies and show ads whether or not a particular page has an ad slot placed on it. Where ads
-            are shown:
+            cookies and show ads whether or not a particular page has an ad slot placed on it. Where
+            ads are shown:
           </p>
           <ul>
             <li>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this or other websites.</li>
@@ -1090,26 +1105,57 @@ export function privacy({ site, base = '', updated }) {
             <li>You can opt out of a third-party vendor's use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices/" rel="noopener nofollow" target="_blank">aboutads.info/choices</a> or <a href="https://www.youronlinechoices.com/" rel="noopener nofollow" target="_blank">youronlinechoices.com</a>.</li>
           </ul>
 
-          <h2>Third-party links</h2>
+          <h2 id="position">Where I stand</h2>
           <p>
-            Pages here link to retailers, collector organizations and the company's own sites. Those sites have
-            their own privacy policies, and this one does not cover them.
+            I believe in the Constitution of the United States, and in the plain idea behind the
+            Fourth Amendment: that people are entitled to go about their lives without being
+            catalogued by default. Running analytics on a dinnerware site is a long way from a search
+            and seizure, and I am not going to pretend otherwise. But the principle scales down as
+            well as up, and the least I can do on my own website is collect nothing I do not need,
+            hand nothing over, and tell you plainly what is happening.
+          </p>
+          <p>
+            The opt-out above is a real control, and I would rather you used it than not. It does not
+            solve the whole situation - no single setting does - but it covers most of the
+            bases that are mine to cover.
           </p>
 
-          <h2>Children</h2>
+          <h2 id="awareness">A note that has nothing to do with dinnerware</h2>
           <p>
-            This site is not directed at children under 13 and does not knowingly collect information from them.
+            While we are on the subject: the tracking that worries me is not the kind that counts page
+            views. Automated licence plate readers are now installed across a great many American
+            towns, photographing vehicles and logging where they were and when - often without a
+            public vote, and often without residents knowing they are there.
+            <a href="https://deflock.me" rel="noopener nofollow" target="_blank">DeFlock</a> maps where
+            those cameras have been found and documents how the systems work.
+          </p>
+          <p>
+            Whatever you make of it, it is worth knowing whether your own town has them. That strikes
+            me as a thing to stay awake to as our children grow up inside it - rather more than a
+            cookie remembering you prefer dark mode.
           </p>
 
-          <h2>Your rights</h2>
+          <h2 id="third-party">Third-party links</h2>
           <p>
-            If you are in the EEA, the UK or California, you have rights over personal data held about you.
-            Because this site holds none itself, requests about analytics or advertising data should go to
-            Google, whose policies are at
+            Pages here link to retailers, collector organizations and the company's own sites. Those
+            sites have their own privacy policies, and this one does not cover them.
+          </p>
+
+          <h2 id="children">Children</h2>
+          <p>
+            This site is not directed at children under 13 and does not knowingly collect information
+            from them.
+          </p>
+
+          <h2 id="rights">Your rights</h2>
+          <p>
+            If you are in the EEA, the UK or California, you have rights over personal data held about
+            you. Because this site holds none of its own, requests about analytics or advertising data
+            should go to Google, whose policies are at
             <a href="https://policies.google.com/privacy" rel="noopener nofollow" target="_blank">policies.google.com/privacy</a>.
           </p>
 
-          <h2>Questions</h2>
+          <h2 id="questions">Questions</h2>
           <p>
             Reach me through <a href="${esc(site.author.url)}" rel="noopener" target="_blank">${esc(site.author.url)}</a>
             or by opening an issue on
@@ -1119,9 +1165,9 @@ export function privacy({ site, base = '', updated }) {
       </section>`;
 
   return {
-    title: 'Privacy & Cookies — The Unofficial Fiesta Color Guide',
+    title: 'Privacy - The Unofficial Fiesta Color Guide',
     description:
-      'What this site stores, what Google Analytics collects, how advertising cookies are used, and how to opt out.',
+      'What this site stores, what Google Analytics collects and how it is anonymized, how to opt out of it completely, and how advertising cookies are used.',
     body,
     navKey: '',
     path: 'privacy.html',
@@ -1154,7 +1200,7 @@ ${picks.map((c) => relatedCard(c, base, producedLabel(c))).join('\n')}
       </section>`;
 
   return {
-    title: 'Page not found — The Unofficial Fiesta Color Guide',
+    title: 'Page not found - The Unofficial Fiesta Color Guide',
     description: 'That page could not be found. Browse every Fiesta dinnerware color instead.',
     body,
     navKey: '',
@@ -1290,8 +1336,8 @@ ${data.shades
       <div class="wrap section--tight">${disclaimer(base)}</div>`;
 
   return {
-    title: `Fiesta ${shade} Colors — All ${colors.length}, ${colors[0].startYear} to Today`,
-    description: `Every ${shade.toLowerCase()} Fiesta dinnerware color — ${colors.length} glazes from ${
+    title: `Fiesta ${shade} Colors - All ${colors.length}, ${colors[0].startYear} to Today`,
+    description: `Every ${shade.toLowerCase()} Fiesta dinnerware color - ${colors.length} glazes from ${
       colors[0].startYear
     } onward, with hex codes, production years and photos of the fired glaze.`,
     body,
@@ -1348,12 +1394,12 @@ function eraMeta(data) {
     vintage: {
       slug: eras.vintage.slug,
       colors: vintage,
-      heading: `Vintage Fiesta colors, ${eras.vintage.start}–${eras.vintage.end}`,
-      title: `Vintage Fiesta Colors (${eras.vintage.start}–${eras.vintage.end}) — All ${vintage.length}`,
+      heading: `Vintage Fiesta colors, ${eras.vintage.start}-${eras.vintage.end}`,
+      title: `Vintage Fiesta Colors (${eras.vintage.start}-${eras.vintage.end}) - All ${vintage.length}`,
       eyebrow: 'The original run',
       lede: `The colors of the original Fiesta line, from its debut at the Pittsburgh China &amp; Glass Show in
         January ${firstYear} to the retirement of the line in 1973. These pieces predate Fiesta's color numbering
-        entirely, so a vintage color is identified by its name, its shape and its glaze &mdash; never by a number
+        entirely, so a vintage color is identified by its name, its shape and its glaze - never by a number
         on the back.`,
       description: `All ${vintage.length} vintage Fiesta colors from ${eras.vintage.start} to ${eras.vintage.end}, with production years, photos of the fired glaze and the combinations they were made to sit alongside.`,
     },
@@ -1361,7 +1407,7 @@ function eraMeta(data) {
       slug: eras.post86.slug,
       colors: post86,
       heading: `Post 86 Fiesta colors, ${eras.post86.start} to today`,
-      title: `Post 86 Fiesta Colors — All ${post86.length} Since the ${eras.post86.start} Relaunch`,
+      title: `Post 86 Fiesta Colors - All ${post86.length} Since the ${eras.post86.start} Relaunch`,
       eyebrow: 'The modern line',
       lede: `Fiesta returned in March ${eras.post86.start} for its 50th anniversary, in a vitrified, lead-free body
         with an updated palette. Collectors call everything from that point on "Post 86." Each of these carries a
@@ -1372,10 +1418,10 @@ function eraMeta(data) {
       slug: 'in-production',
       colors: current,
       heading: 'Fiesta colors in production right now',
-      title: `Current Fiesta Colors — All ${current.length} In Production Now`,
+      title: `Current Fiesta Colors - All ${current.length} In Production Now`,
       eyebrow: 'Available today',
       lede: `The colors The Fiesta Tableware Company is making today. Fiesta typically introduces one new color
-        each year and retires one or more at the same time, so this list changes every spring &mdash; which is
+        each year and retires one or more at the same time, so this list changes every spring - which is
         exactly why a retired color becomes worth hunting for.`,
       description: `The ${current.length} Fiesta dinnerware colors in production today, with color numbers, photos and the combinations they set well with.`,
     },
@@ -1515,12 +1561,16 @@ export function rainbow({ site, data, base = '../../' }) {
     items.length
       ? `          <ul class="related-strip">
 ${items
-  .map(({ color, disagrees }) =>
+  .map(({ color, disagrees, byEye }) =>
     relatedCard(
       color,
       base,
       `${producedLabel(color)}${
-        disagrees ? ` &middot; <em>named ${esc(color.shadeOf.toLowerCase())}</em>` : ''
+        byEye
+          ? ' &middot; <em>placed by eye</em>'
+          : disagrees
+            ? ` &middot; <em>named ${esc(color.shadeOf.toLowerCase())}</em>`
+            : ''
       }`
     )
   )
@@ -1530,6 +1580,20 @@ ${items
 
   const bandSections = bands
     .map((band) => {
+      const byEye = band.colors.filter((c) => c.byEye);
+      const eyeNote = byEye.length
+        ? byEye
+            .map(
+              (e) =>
+                `<p class="callout" style="margin-top:1rem"><strong><a href="${base}colors/${
+                  e.color.slug
+                }/">${esc(e.color.color)}</a> is here by eye, not by angle.</strong> ${esc(
+                  e.byEye
+                )}</p>`
+            )
+            .join('\n')
+        : '';
+
       const odd = band.colors.filter((c) => c.disagrees);
       const oddNote = odd.length
         ? `<p class="callout" style="margin-top:1rem">Measured by hue, ${odd
@@ -1547,7 +1611,7 @@ ${items
       return `        <section class="wrap section--tight" aria-labelledby="band-${band.key}">
           <div class="section-head">
             <div>
-              <p class="eyebrow">${band.letter} &middot; ${band.from}&deg;&ndash;${band.to}&deg;
+              <p class="eyebrow">${band.letter} &middot; ${band.from}&deg;-${band.to}&deg;
                 &middot; ${band.colors.length} Fiesta ${band.colors.length === 1 ? 'color' : 'colors'}</p>
               <h2 id="band-${band.key}">${band.name}</h2>
             </div>
@@ -1559,6 +1623,7 @@ ${items
           </div>
 ${swatchList(band.colors)}
           ${oddNote}
+          ${eyeNote}
         </section>`;
     })
     .join('\n');
@@ -1578,14 +1643,14 @@ ${swatchList(band.colors)}
         <p class="hero__lede" style="margin-top:1rem">
           ROYGBIV is the acronym for the seven colors Newton named in the spectrum. Sorting
           Fiesta's ${data.colors.length} glazes into those bands by <strong>measured hue angle</strong>
-          rather than by the name on the box turns up some surprises &mdash; several colors do not
+          rather than by the name on the box turns up some surprises - several colors do not
           sit where their names put them.
         </p>
         <div class="prose" style="margin-top:1.25rem">
           <p>
             Each glaze below is placed by the hue of its hex value, using the conventional band
-            boundaries printed with each section. Colors carrying almost no hue &mdash; the whites,
-            grays and blacks &mdash; are listed separately at the end, because putting them on a
+            boundaries printed with each section. Colors carrying almost no hue - the whites,
+            grays and blacks - are listed separately at the end, because putting them on a
             rainbow would be arbitrary.
           </p>
           <p>
@@ -1594,6 +1659,15 @@ ${swatchList(band.colors)}
             count match the notes of a scale. And the meanings below are conventions of design and
             marketing, which are observable, rather than claims about what colors do to your
             nervous system, which are not well supported.
+          </p>
+          <p>
+            One more, and it is the honest one. A hue angle is precise, but precision is not the
+            same thing as being right. Pale colors are the worst offenders: wash enough color out
+            of something and people stop naming it by wavelength and start naming it by family.
+            Where the number and my eye genuinely disagree I have said so on the swatch and given
+            the reason, with the measurement printed alongside so you can take the other side.
+            Anyone who has argued with their spouse about whether a shirt is mustard or dark gold
+            already knows how this goes.
           </p>
         </div>
       </section>
@@ -1609,7 +1683,7 @@ ${bandSections}
         </div>
         <div class="prose" style="margin-bottom:1.25rem">
           <p>
-            These carry so little chroma that their hue angle is meaningless &mdash; a measurement
+            These carry so little chroma that their hue angle is meaningless - a measurement
             of almost nothing. They are the grounds the rest of the palette sits on, and Fiesta has
             always kept at least one in production.
           </p>
@@ -1649,8 +1723,7 @@ ${data.shades
     title: 'ROYGBIV: Every Fiesta Color Sorted by the Rainbow',
     description: `All ${data.colors.length} Fiesta glazes sorted into the seven ROYGBIV bands by measured hue, with what each color conventionally means and where the names disagree with the spectrum.`,
     body,
-    navKey: 'colors',
-    navExact: false,
+    navKey: 'rainbow',
     depth: 2,
     path,
     scripts: ['assets/js/app.js'],

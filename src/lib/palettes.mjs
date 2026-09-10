@@ -161,8 +161,8 @@ function describedRecipe(color, all) {
   const named = describedPairings(color, all);
   if (named.length < 2) return null;
 
-  // Descriptions offer alternatives rather than one five-piece set -- "pair it
-  // with Linen or Sky ... or try Plum or Mulberry" -- so showing every name at
+  // Descriptions offer alternatives rather than one five-piece set - "pair it
+  // with Linen or Sky ... or try Plum or Mulberry" - so showing every name at
   // once would invent a combination the text never proposed. Keep the ones
   // that read as distinct colors, in the order they are mentioned.
   const colors = dedupe([color, ...named]).slice(0, 5);
@@ -294,7 +294,7 @@ function analogousRecipe(color, all) {
   };
 }
 
-/** Only colors you can still buy -- the most actionable set for a shopper. */
+/** Only colors you can still buy - the most actionable set for a shopper. */
 function inProductionRecipe(color, all) {
   const current = all.filter((c) => c.slug !== color.slug && c.current);
   if (current.length < 3) return null;
@@ -307,7 +307,7 @@ function inProductionRecipe(color, all) {
     name: color.current ? 'All still in production' : 'Buy these to go with it',
     why: color.current
       ? `Every color in this set is being made right now, so you can complete the whole table today.`
-      : `${color.color} was retired in ${color.endYear}, but these are all in production now -- the set you can actually finish buying.`,
+      : `${color.color} was retired in ${color.endYear}, but these are all in production now - the set you can actually finish buying.`,
     colors,
   };
 }
@@ -345,7 +345,7 @@ function spectrumRecipe(color, all) {
   return {
     id: 'spectrum',
     name: 'A ground for bright colors',
-    why: `${color.color} carries almost no hue of its own, which makes it the ground the rest of the table sits on. These are the boldest colors in the palette, spread right around the wheel -- the mix-and-match look Fiesta was designed for.`,
+    why: `${color.color} carries almost no hue of its own, which makes it the ground the rest of the table sits on. These are the boldest colors in the palette, spread right around the wheel - the mix-and-match look Fiesta was designed for.`,
     colors: [color, ...chosen],
   };
 }

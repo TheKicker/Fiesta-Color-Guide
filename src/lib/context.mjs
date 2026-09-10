@@ -193,7 +193,7 @@ export function tablescape(color) {
 
   const roleText = {
     lead: `carries enough color to lead a table on its own. Use it for the plates and let quieter pieces do the rest; two or three settings of it go a long way.`,
-    accent: `has enough color to be noticed without taking over, which makes it a good second or third piece &mdash; a salad plate or a serving bowl rather than the whole setting.`,
+    accent: `has enough color to be noticed without taking over, which makes it a good second or third piece - a salad plate or a serving bowl rather than the whole setting.`,
     quiet: `is soft enough to sit beside almost anything. It works as a bridge between two stronger colors that would otherwise argue.`,
     ground: `carries almost no color of its own, so it is the layer everything else sits on. Build the table out of it and add one loud piece.`,
   }[role];

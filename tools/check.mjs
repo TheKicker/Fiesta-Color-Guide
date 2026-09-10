@@ -188,6 +188,23 @@ async function main() {
       if (!h.text) fail(name, `empty h${h.level}`);
     }
 
+    /* --- dashes ----------------------------------------------------------
+       House style is a single hyphen with spaces around it, the way a person
+       types. Em and en dashes and a literal double hyphen all read as someone
+       else's punctuation, and "--" in particular is a rendering bug rather than
+       a style choice: it means a source string meant an em dash and never got
+       one. */
+    const visible = mainRegion
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/&mdash;/g, '—')
+      .replace(/&ndash;/g, '–');
+    const emCount = (visible.match(/—/g) || []).length;
+    const enCount = (visible.match(/–/g) || []).length;
+    const dashDash = (visible.match(/--/g) || []).length;
+    if (emCount) fail(name, `${emCount} em dash(es) in visible text; house style is " - "`);
+    if (enCount) fail(name, `${enCount} en dash(es) in visible text; house style is "-"`);
+    if (dashDash) fail(name, `${dashDash} literal "--" in visible text (a dash that never rendered)`);
+
     /* --- claimed counts -------------------------------------------------
        A title like "All 14, With Hex Codes" is a promise about the dataset and
        the first thing to rot when a color is added.

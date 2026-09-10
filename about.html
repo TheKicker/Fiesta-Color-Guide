@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>About the Fiesta Color Guide — Sources, Method and Accuracy</title>
+    <title>About the Fiesta Color Guide - Sources, Method and Accuracy</title>
     <meta name="description" content="How this guide is built: where the hex values come from, how production dates are sourced, how color matches are calculated, and what accuracy to expect.">
     <link rel="canonical" href="https://fiesta-color-guide.com/about.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -33,14 +33,14 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fiesta-color-guide.com/about.html">
-    <meta property="og:title" content="About the Fiesta Color Guide — Sources, Method and Accuracy">
+    <meta property="og:title" content="About the Fiesta Color Guide - Sources, Method and Accuracy">
     <meta property="og:description" content="How this guide is built: where the hex values come from, how production dates are sourced, how color matches are calculated, and what accuracy to expect.">
     <meta property="og:image" content="https://fiesta-color-guide.com/assets/opt/og-card.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Fiesta dinnerware plates arranged as a rainbow of colors.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About the Fiesta Color Guide — Sources, Method and Accuracy">
+    <meta name="twitter:title" content="About the Fiesta Color Guide - Sources, Method and Accuracy">
     <meta name="twitter:description" content="How this guide is built: where the hex values come from, how production dates are sourced, how color matches are calculated, and what accuracy to expect.">
     <meta name="twitter:image" content="https://fiesta-color-guide.com/assets/opt/og-card.jpg">
     <meta name="twitter:image:alt" content="Fiesta dinnerware plates arranged as a rainbow of colors.">
@@ -71,12 +71,13 @@
       <div class="wrap site-header__inner">
         <a class="brand" href="./">
           <span class="brand__mark" aria-hidden="true"><span style="background:#CF2C20"></span><span style="background:#F24B21"></span><span style="background:#F7C308"></span><span style="background:#1D4729"></span><span style="background:#B4D6DF"></span><span style="background:#9694B8"></span></span>
-          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936&ndash;today</span></span>
+          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936-today</span></span>
         </a>
         <nav class="site-nav" aria-label="Main">
             <a href="./">Colors</a>
             <a href="history.html">History</a>
             <a href="about.html" aria-current="page">About</a>
+            <a href="colors/rainbow/">ROYGBIV</a>
         </nav>
         <button type="button" class="theme-toggle" id="theme-toggle">
           <span class="visually-hidden">Switch to dark theme</span>
@@ -112,35 +113,35 @@
             published reference material and comparison against physical pieces where I have them.
           </p>
           <p>
-            That hex is then the single source of truth. Everything else the site derives from a color &mdash;
+            That hex is then the single source of truth. Everything else the site derives from a color -
             the CIELAB coordinates behind the closest-color rankings, the pairing suggestions, and the
-            black-or-white label chosen for each swatch &mdash; is
+            black-or-white label chosen for each swatch - is
             <strong>calculated from it at build time</strong> in sRGB with a D65 white point. Nothing is typed
             in twice, and nothing can drift out of step with the swatch beside it.
           </p>
           <div class="callout">
             <p><strong>The honest caveat.</strong> A fired ceramic glaze is not a flat color. It varies with the
             production run, the thickness of the glaze, the shape underneath it and the light you are standing
-            in &mdash; and then your screen adds its own interpretation. A swatch here will get you close enough
+            in - and then your screen adds its own interpretation. A swatch here will get you close enough
             to identify a piece or plan a table. It will not match a plate exactly, and no hex code could.</p>
           </div>
 
           <h2 id="dates">Production dates</h2>
           <p>
             Introduction and retirement years come from company announcements, collector references and
-            contemporary press. Where sources disagree &mdash; and for a few of the vintage colors they do &mdash;
+            contemporary press. Where sources disagree - and for a few of the vintage colors they do -
             the guide uses the date most commonly cited by the collector community and the timeline on the
             <a href="history.html">history page</a> gives the surrounding context.
           </p>
           <p>
-            Colors that were produced in both eras under the same name &mdash; Red, Rose, Yellow, Turquoise and
-            Chartreuse &mdash; get separate entries. The names carried over; the glaze recipes did not.
+            Colors that were produced in both eras under the same name - Red, Rose, Yellow, Turquoise and
+            Chartreuse - get separate entries. The names carried over; the glaze recipes did not.
           </p>
 
           <h2 id="pairings">How the table-setting combinations are built</h2>
           <p>
             Each color page suggests a handful of combinations. The first, where one exists, is simply the
-            pairing <strong>named in that color's own description</strong> &mdash; a person wrote that down, so
+            pairing <strong>named in that color's own description</strong> - a person wrote that down, so
             it outranks anything a formula produces, and the page labels it as such.
           </p>
           <p>
@@ -149,7 +150,7 @@
             Colors closer than &Delta;E&nbsp;12 are never put in the same set, because near-identical glazes
             side by side read as a mistake rather than a choice; and neutrality is measured by
             <strong>LCh chroma, not HSL saturation</strong>, since saturation badly misjudges very light and
-            very dark colors &mdash; it scores Old Ivory at 43%, when perceptually it is almost colorless.
+            very dark colors - it scores Old Ivory at 43%, when perceptually it is almost colorless.
           </p>
           <p>
             Every combination is made only of colors Fiesta has actually produced, and each swatch says whether
@@ -161,7 +162,7 @@
             The closest-color list on each page is computed with <strong>CIEDE2000</strong>, the current
             standard for perceptual color difference. Values under roughly &Delta;E&nbsp;2 are near-identical to
             the eye, under &Delta;E&nbsp;5 are easy to confuse side by side, and above &Delta;E&nbsp;10 read as
-            clearly different colors. It is calculated from the hex values, so it inherits their caveats &mdash;
+            clearly different colors. It is calculated from the hex values, so it inherits their caveats -
             but it is a genuinely useful first pass when you are trying to tell two blues apart.
           </p>
 
@@ -169,7 +170,7 @@
           <p>
             The whole dataset is one file: <a href="fiesta.json"><code>fiesta.json</code></a>. Colors,
             production years, shade families, descriptions and the company timeline all live there, and this
-            site is generated from it. You are welcome to use it &mdash; a link back is appreciated.
+            site is generated from it. You are welcome to use it - a link back is appreciated.
           </p>
           <p>
             Corrections are genuinely welcome. If a date or a color looks wrong to you, please
@@ -187,16 +188,16 @@
           </p>
           <p>
             If something here does not work with your assistive technology, that is a bug I want to hear about
-            &mdash; please <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">report it<span class="visually-hidden"> (opens in a new tab)</span></a>.
+            - please <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">report it<span class="visually-hidden"> (opens in a new tab)</span></a>.
           </p>
 
           <h2 id="sources">Sources</h2>
           <ul>
-            <li><a href="https://www.post86referenceguide.com/home/colortimeline/" rel="noopener nofollow" target="_blank">Post 86 Reference Guide &mdash; color timeline<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.post86referenceguide.com/home/colortimeline/" rel="noopener nofollow" target="_blank">Post 86 Reference Guide - color timeline<span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://www.ftcco.org/" rel="noopener nofollow" target="_blank">Fiesta Tableware Company Collectors Organization<span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://www.hlcca.org/" rel="noopener nofollow" target="_blank">Homer Laughlin China Collectors Association<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://www.texascooking.com/fiestaware/" rel="noopener nofollow" target="_blank">Texas Cooking &mdash; Fiestaware<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Fiesta_(dinnerware)" rel="noopener nofollow" target="_blank">Wikipedia &mdash; Fiesta (dinnerware)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.texascooking.com/fiestaware/" rel="noopener nofollow" target="_blank">Texas Cooking - Fiestaware<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Fiesta_(dinnerware)" rel="noopener nofollow" target="_blank">Wikipedia - Fiesta (dinnerware)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://fiestadocumentary.com/links.html" rel="noopener nofollow" target="_blank">DISHES: a Fiesta documentary<span class="visually-hidden"> (opens in a new tab)</span></a></li>
             <li><a href="https://fiestatableware.com" rel="noopener nofollow" target="_blank">The Fiesta Tableware Company<span class="visually-hidden"> (opens in a new tab)</span></a></li>
           </ul>
@@ -229,8 +230,8 @@
             <ul>
               <li><a href="./">All colors</a></li>
               <li><a href="colors/era/in-production/">In production now</a></li>
-              <li><a href="colors/era/vintage/">Vintage (1936&ndash;1972)</a></li>
-              <li><a href="colors/era/post-86/">Post 86 (1986&ndash;today)</a></li>
+              <li><a href="colors/era/vintage/">Vintage (1936-1972)</a></li>
+              <li><a href="colors/era/post-86/">Post 86 (1986-today)</a></li>
               <li><a href="history.html">Company history</a></li>
             </ul>
           </div>

@@ -70,7 +70,7 @@ function siteHeader({ site, base, nav, markColors }) {
       <div class="wrap site-header__inner">
         <a class="brand" href="${esc(base || './')}">
           ${brandMark(markColors)}
-          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936&ndash;today</span></span>
+          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936-today</span></span>
         </a>
         <nav class="site-nav" aria-label="Main">
             ${links}
@@ -93,8 +93,8 @@ function siteFooter({ site, base, year }) {
             <ul>
               <li><a href="${home}">All colors</a></li>
               <li><a href="${base}colors/era/in-production/">In production now</a></li>
-              <li><a href="${base}colors/era/vintage/">Vintage (1936&ndash;1972)</a></li>
-              <li><a href="${base}colors/era/post-86/">Post 86 (1986&ndash;today)</a></li>
+              <li><a href="${base}colors/era/vintage/">Vintage (1936-1972)</a></li>
+              <li><a href="${base}colors/era/post-86/">Post 86 (1986-today)</a></li>
               <li><a href="${base}history.html">Company history</a></li>
             </ul>
           </div>
@@ -225,6 +225,7 @@ export function page(o) {
     { label: 'Colors', href: '', key: 'colors' },
     { label: 'History', href: 'history.html', key: 'history' },
     { label: 'About', href: 'about.html', key: 'about' },
+    { label: 'ROYGBIV', href: 'colors/rainbow/', key: 'rainbow' },
   ].map((n) => ({ ...n, current: n.key === navKey, exact: n.key === navKey && navExact }));
 
   const graph =

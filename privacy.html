@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Privacy &amp; Cookies — The Unofficial Fiesta Color Guide</title>
-    <meta name="description" content="What this site stores, what Google Analytics collects, how advertising cookies are used, and how to opt out.">
+    <title>Privacy - The Unofficial Fiesta Color Guide</title>
+    <meta name="description" content="What this site stores, what Google Analytics collects and how it is anonymized, how to opt out of it completely, and how advertising cookies are used.">
     <link rel="canonical" href="https://fiesta-color-guide.com/privacy.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -33,15 +33,15 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fiesta-color-guide.com/privacy.html">
-    <meta property="og:title" content="Privacy &amp; Cookies — The Unofficial Fiesta Color Guide">
-    <meta property="og:description" content="What this site stores, what Google Analytics collects, how advertising cookies are used, and how to opt out.">
+    <meta property="og:title" content="Privacy - The Unofficial Fiesta Color Guide">
+    <meta property="og:description" content="What this site stores, what Google Analytics collects and how it is anonymized, how to opt out of it completely, and how advertising cookies are used.">
     <meta property="og:image" content="https://fiesta-color-guide.com/assets/opt/og-card.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Fiesta dinnerware plates arranged as a rainbow of colors.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Privacy &amp; Cookies — The Unofficial Fiesta Color Guide">
-    <meta name="twitter:description" content="What this site stores, what Google Analytics collects, how advertising cookies are used, and how to opt out.">
+    <meta name="twitter:title" content="Privacy - The Unofficial Fiesta Color Guide">
+    <meta name="twitter:description" content="What this site stores, what Google Analytics collects and how it is anonymized, how to opt out of it completely, and how advertising cookies are used.">
     <meta name="twitter:image" content="https://fiesta-color-guide.com/assets/opt/og-card.jpg">
     <meta name="twitter:image:alt" content="Fiesta dinnerware plates arranged as a rainbow of colors.">
     <meta name="google-site-verification" content="MIr6g1JGCFPrUQBIekqgeLUGX-2HAP2S31UZnubSfO4">
@@ -61,12 +61,13 @@
       <div class="wrap site-header__inner">
         <a class="brand" href="./">
           <span class="brand__mark" aria-hidden="true"><span style="background:#CF2C20"></span><span style="background:#F24B21"></span><span style="background:#F7C308"></span><span style="background:#1D4729"></span><span style="background:#B4D6DF"></span><span style="background:#9694B8"></span></span>
-          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936&ndash;today</span></span>
+          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936-today</span></span>
         </a>
         <nav class="site-nav" aria-label="Main">
             <a href="./">Colors</a>
             <a href="history.html">History</a>
             <a href="about.html">About</a>
+            <a href="colors/rainbow/">ROYGBIV</a>
         </nav>
         <button type="button" class="theme-toggle" id="theme-toggle">
           <span class="visually-hidden">Switch to dark theme</span>
@@ -76,38 +77,53 @@
     </header>
     <main id="main">
       <section class="wrap section--tight">
-        <p class="eyebrow">Updated 2026-09-10</p>
-        <h1>Privacy &amp; cookies</h1>
+        <p class="eyebrow">Updated 2026-09-09T22:30:00-04:00</p>
+        <h1>Privacy</h1>
+        <p class="hero__lede" style="margin-top:1rem">
+          The short version: this is a hobby site about dinnerware. It has no accounts, no
+          newsletter, no contact form and nothing to sell you. It does not want your data and has
+          no use for it.
+        </p>
       </section>
 
       <section class="wrap wrap--narrow">
         <div class="prose">
+          <h2 id="device">What is stored on your device</h2>
           <p>
-            The Unofficial Fiesta Color Guide is a personal, non-commercial reference site. It has no accounts,
-            no newsletter and no contact form, and it never asks you for personal information.
+            One thing, and only if you use it: your light or dark theme preference is saved in your
+            browser's <code>localStorage</code> under the key <code>fcg-theme</code>. It stays on
+            your device, is never transmitted anywhere, and clearing your site data removes it.
+            There is no login, no profile and no shopping cart, so there is nothing else to store.
           </p>
 
-          <h2>What is stored on your device</h2>
+          <h2 id="analytics">Google Analytics</h2>
           <p>
-            One item, and only if you use it: your light or dark theme choice is saved in your browser's
-            <code>localStorage</code> under the key <code>fcg-theme</code>. It stays on your device, is never
-            sent anywhere, and clearing your site data removes it.
+            This site uses Google Analytics 4 to count visits and see which colors people look at.
+            That is the entire purpose - it tells me that four hundred people read the page
+            about Medium Green last month, not who any of them are.
           </p>
-
-          <h2>Analytics</h2>
           <p>
-            This site uses Google Analytics 4 to count visits and see which colors people look at. Google
-            Analytics sets cookies and processes a truncated version of your IP address. It tells me how many
-            people visited a page, not who they are. You can opt out with the
-            <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener nofollow" target="_blank">Google Analytics opt-out add-on<span class="visually-hidden"> (opens in a new tab)</span></a>,
-            or by using a browser or extension that blocks it.
+            <strong>GA4 anonymizes IP addresses by default.</strong> Google truncates the address
+            before it is stored, and nothing on this site turns that off. I would rather be precise
+            than reassuring, though: anonymized IPs are not the same as no data at all. GA4 still
+            records approximate region, device type, browser, referring page and which pages were
+            visited, and it sets cookies to recognise a returning browser. None of that is joined to
+            a name here, and none of it is sold, shared or exported by me to anyone.
           </p>
+          <div class="callout">
+            <p><strong>To opt out entirely</strong>, install Google's official
+            <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener nofollow" target="_blank">Google
+            Analytics Opt-out Browser Add-on<span class="visually-hidden"> (opens in a new tab)</span></a>. It works across every site using Analytics, not
+            just this one. A content blocker or a browser with tracking protection does the same job.</p>
+            <p>Nothing here breaks if you block it. Every page is static HTML and works with scripts
+            disabled entirely.</p>
+          </div>
 
-          <h2>Advertising</h2>
+          <h2 id="advertising">Advertising</h2>
           <p>
             This site uses Google AdSense. Google's ad script loads on every page here, and may set
-            cookies and show ads whether or not a particular page has an ad slot placed on it. Where ads
-            are shown:
+            cookies and show ads whether or not a particular page has an ad slot placed on it. Where
+            ads are shown:
           </p>
           <ul>
             <li>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this or other websites.</li>
@@ -116,26 +132,57 @@
             <li>You can opt out of a third-party vendor's use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices/" rel="noopener nofollow" target="_blank">aboutads.info/choices<span class="visually-hidden"> (opens in a new tab)</span></a> or <a href="https://www.youronlinechoices.com/" rel="noopener nofollow" target="_blank">youronlinechoices.com<span class="visually-hidden"> (opens in a new tab)</span></a>.</li>
           </ul>
 
-          <h2>Third-party links</h2>
+          <h2 id="position">Where I stand</h2>
           <p>
-            Pages here link to retailers, collector organizations and the company's own sites. Those sites have
-            their own privacy policies, and this one does not cover them.
+            I believe in the Constitution of the United States, and in the plain idea behind the
+            Fourth Amendment: that people are entitled to go about their lives without being
+            catalogued by default. Running analytics on a dinnerware site is a long way from a search
+            and seizure, and I am not going to pretend otherwise. But the principle scales down as
+            well as up, and the least I can do on my own website is collect nothing I do not need,
+            hand nothing over, and tell you plainly what is happening.
+          </p>
+          <p>
+            The opt-out above is a real control, and I would rather you used it than not. It does not
+            solve the whole situation - no single setting does - but it covers most of the
+            bases that are mine to cover.
           </p>
 
-          <h2>Children</h2>
+          <h2 id="awareness">A note that has nothing to do with dinnerware</h2>
           <p>
-            This site is not directed at children under 13 and does not knowingly collect information from them.
+            While we are on the subject: the tracking that worries me is not the kind that counts page
+            views. Automated licence plate readers are now installed across a great many American
+            towns, photographing vehicles and logging where they were and when - often without a
+            public vote, and often without residents knowing they are there.
+            <a href="https://deflock.me" rel="noopener nofollow" target="_blank">DeFlock<span class="visually-hidden"> (opens in a new tab)</span></a> maps where
+            those cameras have been found and documents how the systems work.
+          </p>
+          <p>
+            Whatever you make of it, it is worth knowing whether your own town has them. That strikes
+            me as a thing to stay awake to as our children grow up inside it - rather more than a
+            cookie remembering you prefer dark mode.
           </p>
 
-          <h2>Your rights</h2>
+          <h2 id="third-party">Third-party links</h2>
           <p>
-            If you are in the EEA, the UK or California, you have rights over personal data held about you.
-            Because this site holds none itself, requests about analytics or advertising data should go to
-            Google, whose policies are at
+            Pages here link to retailers, collector organizations and the company's own sites. Those
+            sites have their own privacy policies, and this one does not cover them.
+          </p>
+
+          <h2 id="children">Children</h2>
+          <p>
+            This site is not directed at children under 13 and does not knowingly collect information
+            from them.
+          </p>
+
+          <h2 id="rights">Your rights</h2>
+          <p>
+            If you are in the EEA, the UK or California, you have rights over personal data held about
+            you. Because this site holds none of its own, requests about analytics or advertising data
+            should go to Google, whose policies are at
             <a href="https://policies.google.com/privacy" rel="noopener nofollow" target="_blank">policies.google.com/privacy<span class="visually-hidden"> (opens in a new tab)</span></a>.
           </p>
 
-          <h2>Questions</h2>
+          <h2 id="questions">Questions</h2>
           <p>
             Reach me through <a href="https://cavlemasters.com" rel="noopener" target="_blank">https://cavlemasters.com<span class="visually-hidden"> (opens in a new tab)</span></a>
             or by opening an issue on
@@ -152,8 +199,8 @@
             <ul>
               <li><a href="./">All colors</a></li>
               <li><a href="colors/era/in-production/">In production now</a></li>
-              <li><a href="colors/era/vintage/">Vintage (1936&ndash;1972)</a></li>
-              <li><a href="colors/era/post-86/">Post 86 (1986&ndash;today)</a></li>
+              <li><a href="colors/era/vintage/">Vintage (1936-1972)</a></li>
+              <li><a href="colors/era/post-86/">Post 86 (1986-today)</a></li>
               <li><a href="history.html">Company history</a></li>
             </ul>
           </div>

@@ -57,8 +57,8 @@ export const BANDS = [
     from: 45,
     to: 70,
     swatch: '#F7C308',
-    meaning: `Yellow is the lightest of the saturated hues -- at full chroma it
-      reflects more light than any other -- which is why warning signage and
+    meaning: `Yellow is the lightest of the saturated hues - at full chroma it
+      reflects more light than any other - which is why warning signage and
       taxis use it and why it catches the eye first on a shelf. The same
       brightness makes it tiring in quantity, so it tends to be used as an
       accent rather than a ground.`,
@@ -75,7 +75,7 @@ export const BANDS = [
     swatch: '#5B9565',
     meaning: `Human vision peaks in sensitivity right in the middle of the green
       band, around 555 nanometres, which is a measurable fact rather than a
-      slogan -- we simply see more gradations of green than of anything else.
+      slogan - we simply see more gradations of green than of anything else.
       Brands use it for growth, health and money, and it is the default for
       anything claiming to be natural or sustainable.`,
     brands: 'Starbucks, Whole Foods, Animal Planet, John Deere',
@@ -90,7 +90,7 @@ export const BANDS = [
     to: 250,
     swatch: '#2B64A1',
     meaning: `Blue is the most widely preferred color in cross-cultural surveys,
-      and the default for any brand selling trust -- finance, healthcare and
+      and the default for any brand selling trust - finance, healthcare and
       technology are saturated with it. It is also almost absent from natural
       food, which is why it is rare in food packaging and why it makes such a
       clean ground for a plate.`,
@@ -107,7 +107,7 @@ export const BANDS = [
     swatch: '#351D54',
     meaning: `Indigo is the contested one. Newton added it to make the count
       seven, matching the notes of a musical scale, and most people cannot
-      reliably separate it from blue or violet -- it occupies barely twenty
+      reliably separate it from blue or violet - it occupies barely twenty
       degrees of hue. Where brands use it deliberately it reads as blue's
       seriousness with something more premium and less corporate behind it.`,
     brands: 'Samsung, IBM, HP',
@@ -122,8 +122,8 @@ export const BANDS = [
     to: 345,
     swatch: '#9694B8',
     meaning: `Violet's association with luxury is not a marketing invention.
-      Tyrian purple was ruinously expensive in the ancient world -- thousands of
-      sea snails for a single garment -- and the color carried that cost as
+      Tyrian purple was ruinously expensive in the ancient world - thousands of
+      sea snails for a single garment - and the color carried that cost as
       status for centuries. Modern brands inherit the association and use it for
       premium, creative or indulgent positioning.`,
     brands: 'Hallmark, Cadbury, FedEx’s "Ex", Twitch',
@@ -139,8 +139,47 @@ export const BANDS = [
  */
 export const NEUTRAL_CHROMA = 12;
 
+/**
+ * Where a person overrules the protractor.
+ *
+ * Hue angle is precise but it is not the same thing as seeing. A pale colour
+ * sitting a few degrees inside one band can read unmistakably as the next one
+ * along, because we name pale colours by family rather than by wavelength.
+ *
+ * Rather than quietly nudge a band boundary until the answer comes out right --
+ * which would move every other glaze near that boundary too, to fix one -- these
+ * are stated as what they are: a human call, with the reason attached, shown as
+ * such on the page. The measurement is still printed next to it so a reader can
+ * disagree.
+ *
+ * Keyed by slug. Add one when the angle and your eye genuinely part company.
+ */
+export const HUMAN_CALLS = {
+  evergreen: {
+    band: 'green',
+    why: `Measures 181 degrees, which is sixteen degrees past where this page cuts
+      green off from blue, and that cut point is a convention rather than a
+      discovery. Two things settle it. At L* 24 it is the darkest glaze Fiesta has
+      made outside the blacks, and at that depth the blue in it reads as weight
+      rather than as hue. And it is a low-chroma color, so there is not much hue
+      there to argue about in the first place. Deep teals are the most contested
+      ground in color naming and always have been. This one is green.`,
+  },
+  lavender: {
+    band: 'violet',
+    why: `Measures 243 degrees, which is inside the blue band, but nobody has held a
+      Lavender plate and called it blue. It is a violet with most of the color washed
+      out of it, and the pale ones are exactly where hue angle stops matching how we
+      name things.`,
+  },
+};
+
 export function bandOf(color) {
   if (color.derived.lch.c < NEUTRAL_CHROMA) return null;
+
+  const call = HUMAN_CALLS[color.slug];
+  if (call) return BANDS.find((b) => b.key === call.band) || null;
+
   const h = color.derived.hsl.h;
   return (
     BANDS.find(({ from, to }) => (from > to ? h >= from || h < to : h >= from && h < to)) || null
@@ -165,11 +204,14 @@ export function spectrum(colors) {
       continue;
     }
     const target = bands.find((b) => b.key === band.key);
+    const call = HUMAN_CALLS[color.slug];
     target.colors.push({
       color,
+      byEye: call ? call.why.replace(/\s+/g, ' ').trim() : null,
       // Shade families map onto bands one-for-one except for the neutrals and
       // Brown, which is a dark orange by hue and has no band of its own.
       disagrees:
+        !call &&
         color.shadeOf.toLowerCase() !== band.name.toLowerCase() &&
         !(color.shadeOf === 'Brown' && band.key === 'orange') &&
         !(color.shadeOf === 'Purple' && (band.key === 'violet' || band.key === 'indigo')),
