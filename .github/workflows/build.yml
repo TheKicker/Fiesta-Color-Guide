@@ -35,6 +35,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Verify prose against the data
+        run: node tools/verify-facts.mjs
+
       - name: Test color math and data integrity
         run: node tools/test-color.mjs
 
@@ -50,7 +53,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html history.html about.html privacy.html 404.html \
-                  colors sitemap.xml robots.txt .lastmod.json \
+                  colors sitemap.xml robots.txt .lastmod.json README.MD \
                   assets/images/site.webmanifest
           git add ads.txt 2>/dev/null || true
           if git diff --staged --quiet; then

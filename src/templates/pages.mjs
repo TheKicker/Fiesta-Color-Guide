@@ -13,8 +13,12 @@ import {
   webpName,
   skuLabel,
   paletteBlock,
+  contextProse,
+  disambiguate,
 } from './components.mjs';
+import { buildContext, tablescape } from '../lib/context.mjs';
 import { buildPalettes } from '../lib/palettes.mjs';
+import { spectrum } from '../lib/spectrum.mjs';
 
 const n = (x, d = 0) => x.toFixed(d);
 
@@ -22,11 +26,15 @@ const n = (x, d = 0) => x.toFixed(d);
    Shared bits
    ---------------------------------------------------------------------- */
 
-const DISCLAIMER = `<aside class="callout">
-          <p><strong>About these colors.</strong> Hex values on this site are a best-effort digital
-          match, not official specifications. Fiesta glaze is a fired ceramic finish: it shifts with
-          the production run, the thickness of the glaze, the light in your room and the calibration
-          of your screen. Treat a swatch as a close reference, and a physical piece as the truth.</p>
+/**
+ * Repeated on every colour page and hub, so it is kept to one sentence and a
+ * link. The long version lives once, on the About page, where it can be read
+ * properly instead of skimmed 61 times.
+ */
+const disclaimer = (base) => `<aside class="callout">
+          <p><strong>Swatches are a close reference, not a specification.</strong> Fired glaze
+          shifts with the production run, the light in your room and your screen.
+          <a href="${base}about.html#colors">How these values are derived &rarr;</a></p>
         </aside>`;
 
 function plateStackBand(base) {
@@ -295,7 +303,7 @@ ${shades
             <a class="related-card" href="${base}colors/shade/${s.toLowerCase()}/">
               <span class="related-card__swatch" style="background-color:${esc(pick.hex)}"></span>
               <span class="related-card__body">
-                <span class="related-card__name">${esc(s)}</span>
+                <span class="related-card__name">${esc(s)}<span class="visually-hidden"> family</span></span>
                 <span class="related-card__meta">${family.length} color${family.length === 1 ? '' : 's'}</span>
               </span>
             </a>
@@ -307,6 +315,7 @@ ${shades
           <li><a href="${base}colors/era/in-production/">Colors in production now (${current.length})</a></li>
           <li><a href="${base}colors/era/vintage/">Vintage colors, ${firstYear}&ndash;${data.eras.vintage.end} (${vintage.length})</a></li>
           <li><a href="${base}colors/era/post-86/">Post 86 colors, ${data.eras.post86.start}&ndash;today (${post86.length})</a></li>
+          <li><a href="${base}colors/rainbow/">ROYGBIV: every color sorted by the rainbow</a></li>
         </ul>
       </section>
 
@@ -316,7 +325,7 @@ ${shades
           <div class="faq" style="margin-top:1.25rem">
 ${faqHtml}
           </div>
-          <div style="margin-top:1.5rem">${DISCLAIMER}</div>
+          <div style="margin-top:1.5rem">${disclaimer(base)}</div>
         </div>
       </section>
 
@@ -401,6 +410,8 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
   const textColor = color.derived.text.color;
   const canonicalPath = `colors/${color.slug}/`;
 
+  const ctx = buildContext(color, data);
+  const table = tablescape(color);
   const palettes = buildPalettes(color, data.colors);
   const paletteHtml = palettes.map((p) => paletteBlock(p, color, base)).join('\n');
 
@@ -430,12 +441,18 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
     ],
     ['Color number', color.sku ? `No. ${color.sku}` : 'None — predates Fiesta color numbering'],
     ['Shade family', color.shadeOf],
-    ['Era', data.eras[color.era].full],
+    [
+      'Era',
+      `<a href="${base}colors/era/${color.era === 'vintage' ? 'vintage' : 'post-86'}/">${esc(
+        data.eras[color.era].full
+      )}</a>`,
+      { html: true },
+    ],
   ]
     .map(
-      ([k, v]) => `          <div class="spec">
+      ([k, v, opts]) => `          <div class="spec">
             <span class="spec__label">${esc(k)}</span>
-            <span class="spec__value">${esc(v)}</span>
+            <span class="spec__value">${opts?.html ? v : esc(v)}</span>
           </div>`
     )
     .join('\n');
@@ -467,7 +484,9 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
         <nav aria-label="Breadcrumb">
           <ol>
             <li><a href="${base || './'}">Colors</a></li>
-            <li><a href="${base}colors/shade/${esc(color.shadeOf.toLowerCase())}/">${esc(color.shadeOf)}</a></li>
+            <li><a href="${base}colors/shade/${esc(
+              color.shadeOf.toLowerCase()
+            )}/">${esc(color.shadeOf)}<span class="visually-hidden"> family</span></a></li>
             <li aria-current="page">${esc(color.color)}</li>
           </ol>
         </nav>
@@ -488,9 +507,11 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
             )} &middot; <span class="mono">${esc(color.hex)}</span></span>
           </div>
           <div>
-            <p class="eyebrow">${esc(color.shadeOf)} family &middot; ${
-              color.era === 'vintage' ? 'Vintage' : 'Post 86'
-            }</p>
+            <p class="eyebrow"><a href="${base}colors/shade/${esc(
+              color.shadeOf.toLowerCase()
+            )}/">${esc(color.shadeOf)} family</a> &middot; <a href="${base}colors/era/${
+              color.era === 'vintage' ? 'vintage' : 'post-86'
+            }/">${color.era === 'vintage' ? 'Vintage' : 'Post 86'}</a></p>
             <div class="color-hero__title">
               <h1>${esc(color.color)}</h1>
               ${statusPill(color)}
@@ -516,13 +537,27 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
           </div>
         </div>
 
+${
+          color.notes.length
+            ? `        <section class="wrap wrap--narrow section--tight" aria-labelledby="notes-heading">
+          <div class="section-head">
+            <div><h2 id="notes-heading">Notes on ${esc(color.color)}</h2></div>
+          </div>
+          <div class="prose">
+${color.notes.map((p) => `            <p>${esc(p)}</p>`).join('\n')}
+          </div>
+        </section>
+`
+            : ''
+        }
         <section class="wrap section--tight" aria-labelledby="pairs-heading">
           <div class="section-head">
             <div>
-              <h2 id="pairs-heading">If you own ${esc(color.color)}, set the table with these</h2>
+              <h2 id="pairs-heading">Using ${esc(color.color)} on a table</h2>
+              <p>${table.sentences.join(' ')}</p>
               <p>
-                ${palettes.length} combinations, every one built only from colors Fiesta has actually
-                produced. Each says which rule it follows, and which pieces you can still buy today.
+                Below, ${palettes.length} combinations built only from colors Fiesta has actually produced.
+                Each says which rule it follows, and which pieces you can still buy today.
               </p>
             </div>
           </div>
@@ -539,6 +574,8 @@ ${paletteHtml}
 ${facts}
           </div>
         </section>
+
+${contextProse(color, ctx, base)}
 
         <section class="wrap section--tight" aria-labelledby="similar-heading">
           <div class="section-head">
@@ -575,7 +612,7 @@ ${contemporaryHtml}
         </section>
 
         <div class="wrap section--tight">
-          ${DISCLAIMER}
+          ${disclaimer(base)}
         </div>
 
         <div class="wrap">
@@ -583,14 +620,24 @@ ${pager}
         </div>
       </article>`;
 
-  const lead = `Fiesta ${color.color}${color.sku ? ` (No. ${color.sku})` : ''} is ${color.hex}, ${
-    color.current ? `in production since ${color.startYear}` : `produced ${producedLabel(color)}`
+  const lead = `Fiesta ${color.color}${color.sku ? ` (No. ${color.sku})` : ''}, ${
+    color.current ? `in production since ${color.startYear}` : producedLabel(color)
   }.`;
-  const desc = [
-    `${lead} Hex, RGB, HSL and CIELAB values, a photo of the fired glaze, and the closest matches in the Fiesta palette.`,
-    `${lead} Hex, RGB and CIELAB values, plus the closest matches in the Fiesta palette.`,
-    lead,
-  ].find((candidate) => candidate.length <= 160) || lead.slice(0, 157) + '...';
+
+  // Prefer the opening of the hand-written note: it is the most specific thing
+  // the site says about this color, and a snippet written for the page beats a
+  // template every time.
+  const noteOpening = color.notes.length ? firstSentence(color.notes[0], 200) : '';
+  const desc =
+    [
+      noteOpening && `${lead} ${noteOpening}`,
+      noteOpening && noteOpening.length >= 80 ? noteOpening : null,
+      `${lead} Color values, production history, a photo of the fired glaze and the combinations it sets well with.`,
+      lead,
+    ]
+      .filter(Boolean)
+      .find((candidate) => candidate.length >= 70 && candidate.length <= 160) ||
+    `${lead} Production years, color values and table-setting combinations.`;
 
   const schema = [
     {
@@ -640,6 +687,7 @@ ${pager}
     schema,
     navKey: 'colors',
     navExact: false,
+    noindex: color.originalWords < (site.content?.minOriginalWords ?? 0),
     depth: 2,
     path: canonicalPath,
     ogImage: `${site.baseUrl}/assets/opt/social/${color.slug}.jpg`,
@@ -725,6 +773,19 @@ function linkColorNames(text, entryYear, colors, base, currentYear) {
   let html = '';
   for (const mark of marks) {
     html += esc(text.slice(cursor, mark.from));
+    // Two Reds, two Roses, two Yellows: without the years in the accessible
+    // name, a list of links on this page reads "Red, Red" going to different
+    // pages (WCAG 2.4.4).
+    const matched = text.slice(mark.from, mark.to).toLowerCase();
+    const sharesText = colors.filter(
+      (o) =>
+        o.color.toLowerCase() === matched ||
+        (o.color.match(/^([A-Za-z]+)\s*\(([^)]+)\)$/) || [])[2]?.toLowerCase() === matched
+    ).length;
+    const years =
+      mark.color.ambiguousName || sharesText > 1
+        ? `<span class="visually-hidden">, ${producedLabel(mark.color)}</span>`
+        : '';
     html +=
       '<a href="' +
       base +
@@ -732,6 +793,7 @@ function linkColorNames(text, entryYear, colors, base, currentYear) {
       mark.color.slug +
       '/">' +
       esc(text.slice(mark.from, mark.to)) +
+      years +
       '</a>';
     cursor = mark.to;
   }
@@ -885,7 +947,7 @@ export function about({ site, data, base = '' }) {
           </p>
           <p>
             The rest are derived, and each one states its rule: opposite hues, a single-family tonal ladder,
-            three evenly spaced hues, neighbouring hues, or a neutral anchor. Two guards keep them usable.
+            three evenly spaced hues, neighboring hues, or a neutral anchor. Two guards keep them usable.
             Colors closer than &Delta;E&nbsp;12 are never put in the same set, because near-identical glazes
             side by side read as a mistake rather than a choice; and neutrality is measured by
             <strong>LCh chroma, not HSL saturation</strong>, since saturation badly misjudges very light and
@@ -1030,7 +1092,7 @@ export function privacy({ site, base = '', updated }) {
 
           <h2>Third-party links</h2>
           <p>
-            Pages here link to retailers, collector organisations and the company's own sites. Those sites have
+            Pages here link to retailers, collector organizations and the company's own sites. Those sites have
             their own privacy policies, and this one does not cover them.
           </p>
 
@@ -1126,20 +1188,21 @@ function shadeIntro(shade, colors, currentYear, base) {
   return `Fiesta has used <strong>${colors.length}</strong> ${shade.toLowerCase()} glaze${
     colors.length === 1 ? '' : 's'
   } since ${oldest.startYear}, starting with
-    <a href="${base}colors/${oldest.slug}/">${esc(oldest.color)}</a> and most recently
-    <a href="${base}colors/${newest.slug}/">${esc(newest.color)}</a> in ${newest.startYear}.
+    <a href="${base}colors/${oldest.slug}/">${esc(oldest.color)}${disambiguate(oldest)}</a> and most recently
+    <a href="${base}colors/${newest.slug}/">${esc(newest.color)}${disambiguate(newest)}</a> in ${newest.startYear}.
     ${
       inProduction.length
         ? `${inProduction.length} ${inProduction.length === 1 ? 'is' : 'are'} in production today: ${inProduction
-            .map((c) => `<a href="${base}colors/${c.slug}/">${esc(c.color)}</a>`)
+            .map((c) => `<a href="${base}colors/${c.slug}/">${esc(c.color)}${disambiguate(c)}</a>`)
             .join(', ')}.`
         : 'None are in production today.'
     }
     ${
       colors.length > 2
-        ? `They run from <a href="${base}colors/${lightest.slug}/">${esc(lightest.color)}</a> at the
-           light end to <a href="${base}colors/${darkest.slug}/">${esc(darkest.color)}</a> at the dark end;
-           <a href="${base}colors/${longest.slug}/">${esc(longest.color)}</a> has had the longest run.`
+        ? `They run from <a href="${base}colors/${lightest.slug}/">${esc(lightest.color)}${disambiguate(lightest)}</a> at the
+           light end to <a href="${base}colors/${darkest.slug}/">${esc(darkest.color)}${disambiguate(darkest)}</a> at the dark end;
+           <a href="${base}colors/${longest.slug}/">${esc(longest.color)}${disambiguate(longest)}</a> has had the longest run of
+           any ${shade.toLowerCase()}.`
         : ''
     }`;
 }
@@ -1149,6 +1212,11 @@ export function shadeHub({ site, data, shade, base = '../../../' }) {
   const colors = data.timeline.filter((c) => c.shadeOf === shade);
   const slug = shade.toLowerCase();
   const path = `colors/shade/${slug}/`;
+
+  // A hub with no written intro is a filtered view of the homepage. Useful to
+  // navigate, but not something to ask Google to index as a page of its own.
+  const note = (data.shadeNotes || {})[shade];
+  const noteWords = note ? String(note).split(/\s+/).filter(Boolean).length : 0;
 
   const cards = colors
     .map((c, i) => colorCard(c, base, currentYear, { index: i, eager: i < 4 }))
@@ -1166,7 +1234,17 @@ export function shadeHub({ site, data, shade, base = '../../../' }) {
       <section class="wrap section--tight">
         <p class="eyebrow">Shade family</p>
         <h1>Fiesta ${esc(shade.toLowerCase())} colors</h1>
-        <p class="hero__lede" style="margin-top:1rem">${shadeIntro(shade, colors, currentYear, base)}</p>
+        ${
+          note
+            ? `<p class="hero__lede" style="margin-top:1rem">${esc(note)}</p>
+        <p class="muted" style="margin-top:1rem;max-width:var(--measure)">${shadeIntro(
+          shade,
+          colors,
+          currentYear,
+          base
+        )}</p>`
+            : `<p class="hero__lede" style="margin-top:1rem">${shadeIntro(shade, colors, currentYear, base)}</p>`
+        }
       </section>
 
       <section class="wrap section--tight" aria-labelledby="grid-heading">
@@ -1190,7 +1268,7 @@ ${data.shades
           <a class="related-card" href="${base}colors/shade/${s.toLowerCase()}/">
             <span class="related-card__swatch" style="background-color:${esc(pick.hex)}"></span>
             <span class="related-card__body">
-              <span class="related-card__name">${esc(s)}</span>
+              <span class="related-card__name">${esc(s)}<span class="visually-hidden"> family</span></span>
               <span class="related-card__meta">${family.length} color${family.length === 1 ? '' : 's'}</span>
             </span>
           </a>
@@ -1200,7 +1278,16 @@ ${data.shades
         </ul>
       </section>
 
-      <div class="wrap section--tight">${DISCLAIMER}</div>`;
+      <section class="wrap section--tight">
+        <div class="callout">
+          <p><strong>${esc(shade)} is Fiesta's own grouping, not a measurement.</strong>
+          Sorted by hue angle instead, some colors land in a different band than their name
+          suggests. <a href="${base}colors/rainbow/">See the whole palette sorted by the
+          rainbow &rarr;</a></p>
+        </div>
+      </section>
+
+      <div class="wrap section--tight">${disclaimer(base)}</div>`;
 
   return {
     title: `Fiesta ${shade} Colors — All ${colors.length}, ${colors[0].startYear} to Today`,
@@ -1210,6 +1297,7 @@ ${data.shades
     body,
     navKey: 'colors',
     navExact: false,
+    noindex: site.content?.requireShadeNotes ? noteWords === 0 : false,
     depth: 3,
     path,
     scripts: ['assets/js/app.js'],
@@ -1355,7 +1443,12 @@ ${data.shades
         </ul>
       </section>
 
-      <div class="wrap section--tight">${DISCLAIMER}</div>`;
+      <div class="wrap section--tight">
+        <p class="muted"><a href="${base}colors/rainbow/">Or see every color sorted by the
+        rainbow (ROYGBIV) &rarr;</a></p>
+      </div>
+
+      <div class="wrap section--tight">${disclaimer(base)}</div>`;
 
   return {
     title: meta.title,
@@ -1400,3 +1493,185 @@ ${data.shades
 }
 
 export { eraMeta };
+
+/* -------------------------------------------------------------------------
+   ROYGBIV
+
+   One page, not seven. Seven thin pages of color psychology would be
+   indistinguishable from every other color-meaning listicle on the internet;
+   one page that sorts a real 61-glaze palette by measured hue is something no
+   other site can publish, because no other site has the palette.
+
+   The associations are stated as design and marketing convention -- which is
+   observable and true -- rather than as claims about human physiology, which
+   are not well supported and would undercut everything else the site says.
+   ---------------------------------------------------------------------- */
+
+export function rainbow({ site, data, base = '../../' }) {
+  const { bands, neutrals } = spectrum(data.colors);
+  const path = 'colors/rainbow/';
+
+  const swatchList = (items) =>
+    items.length
+      ? `          <ul class="related-strip">
+${items
+  .map(({ color, disagrees }) =>
+    relatedCard(
+      color,
+      base,
+      `${producedLabel(color)}${
+        disagrees ? ` &middot; <em>named ${esc(color.shadeOf.toLowerCase())}</em>` : ''
+      }`
+    )
+  )
+  .join('\n')}
+          </ul>`
+      : '          <p class="muted">Fiesta has never made a glaze that measures into this band.</p>';
+
+  const bandSections = bands
+    .map((band) => {
+      const odd = band.colors.filter((c) => c.disagrees);
+      const oddNote = odd.length
+        ? `<p class="callout" style="margin-top:1rem">Measured by hue, ${odd
+            .map(
+              (o) =>
+                `<a href="${base}colors/${o.color.slug}/">${esc(
+                  o.color.color
+                )}</a> (${o.color.derived.hsl.h.toFixed(0)}&deg;)`
+            )
+            .join(', ')} ${odd.length === 1 ? 'lands' : 'land'} here, though ${
+            odd.length === 1 ? 'its name says' : 'their names say'
+          } otherwise.</p>`
+        : '';
+
+      return `        <section class="wrap section--tight" aria-labelledby="band-${band.key}">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">${band.letter} &middot; ${band.from}&deg;&ndash;${band.to}&deg;
+                &middot; ${band.colors.length} Fiesta ${band.colors.length === 1 ? 'color' : 'colors'}</p>
+              <h2 id="band-${band.key}">${band.name}</h2>
+            </div>
+          </div>
+          <div class="prose" style="margin-bottom:1.25rem">
+            <p>${band.meaning}</p>
+            <p class="muted"><strong>Brands that lean on it:</strong> ${band.brands}<br>
+              <strong>On a table:</strong> ${band.onTable}</p>
+          </div>
+${swatchList(band.colors)}
+          ${oddNote}
+        </section>`;
+    })
+    .join('\n');
+
+  const body = `      <div class="wrap breadcrumb">
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="${base}">Colors</a></li>
+            <li aria-current="page">ROYGBIV</li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="wrap section--tight">
+        <p class="eyebrow">Red, Orange, Yellow, Green, Blue, Indigo, Violet</p>
+        <h1>ROYGBIV, and where every Fiesta color actually falls</h1>
+        <p class="hero__lede" style="margin-top:1rem">
+          ROYGBIV is the acronym for the seven colors Newton named in the spectrum. Sorting
+          Fiesta's ${data.colors.length} glazes into those bands by <strong>measured hue angle</strong>
+          rather than by the name on the box turns up some surprises &mdash; several colors do not
+          sit where their names put them.
+        </p>
+        <div class="prose" style="margin-top:1.25rem">
+          <p>
+            Each glaze below is placed by the hue of its hex value, using the conventional band
+            boundaries printed with each section. Colors carrying almost no hue &mdash; the whites,
+            grays and blacks &mdash; are listed separately at the end, because putting them on a
+            rainbow would be arbitrary.
+          </p>
+          <p>
+            Two caveats worth stating. Newton's seven bands are a convention, not a natural
+            division: indigo occupies barely twenty degrees, and he arguably added it to make the
+            count match the notes of a scale. And the meanings below are conventions of design and
+            marketing, which are observable, rather than claims about what colors do to your
+            nervous system, which are not well supported.
+          </p>
+        </div>
+      </section>
+
+${bandSections}
+
+      <section class="wrap section--tight" aria-labelledby="neutrals-heading">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">No band &middot; ${neutrals.length} colors</p>
+            <h2 id="neutrals-heading">The ones with no place on the rainbow</h2>
+          </div>
+        </div>
+        <div class="prose" style="margin-bottom:1.25rem">
+          <p>
+            These carry so little chroma that their hue angle is meaningless &mdash; a measurement
+            of almost nothing. They are the grounds the rest of the palette sits on, and Fiesta has
+            always kept at least one in production.
+          </p>
+        </div>
+        <ul class="related-strip">
+${neutrals.map((c) => relatedCard(c, base, producedLabel(c))).join('\n')}
+        </ul>
+      </section>
+
+      ${adSlot(site, { format: 'leaderboard' })}
+
+      <section class="wrap section--tight" aria-labelledby="families-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="families-heading">Browse by Fiesta's own families instead</h2>
+            <p>
+              The company groups its colors by name rather than by hue angle. Those groupings are
+              the ones used everywhere else on this site.
+            </p>
+          </div>
+        </div>
+        <ul class="link-list">
+${data.shades
+  .map(
+    (s) =>
+      `          <li><a href="${base}colors/shade/${s.toLowerCase()}/">Fiesta ${esc(
+        s.toLowerCase()
+      )} colors</a></li>`
+  )
+  .join('\n')}
+        </ul>
+      </section>
+
+      <div class="wrap section--tight">${disclaimer(base)}</div>`;
+
+  return {
+    title: 'ROYGBIV: Every Fiesta Color Sorted by the Rainbow',
+    description: `All ${data.colors.length} Fiesta glazes sorted into the seven ROYGBIV bands by measured hue, with what each color conventionally means and where the names disagree with the spectrum.`,
+    body,
+    navKey: 'colors',
+    navExact: false,
+    depth: 2,
+    path,
+    scripts: ['assets/js/app.js'],
+    schema: [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${site.baseUrl}/${path}#webpage`,
+        url: `${site.baseUrl}/${path}`,
+        name: 'ROYGBIV and the Fiesta palette',
+        isPartOf: { '@id': `${site.baseUrl}/#website` },
+        inLanguage: 'en-US',
+        breadcrumb: { '@id': `${site.baseUrl}/${path}#breadcrumb` },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${site.baseUrl}/${path}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Colors', item: `${site.baseUrl}/` },
+          { '@type': 'ListItem', position: 2, name: 'ROYGBIV' },
+        ],
+      },
+    ],
+  };
+}

@@ -1,19 +1,19 @@
 {
-    "company":"The Fiesta Tableware Company",
-    "description":"The Fiesta Tableware Company is an American ceramics manufacturer located in Newell, West Virginia, United States. Established in 1871, it is widely known for its Art Deco glazed dinnerware line, Fiesta.",
-    "NAICS_Category":"327110 - Pottery, Ceramics, and Plumbing Fixture Manufacturing",
+    "company": "The Fiesta Tableware Company",
+    "description": "The Fiesta Tableware Company is an American ceramics manufacturer located in Newell, West Virginia, United States. Established in 1871, it is widely known for its Art Deco glazed dinnerware line, Fiesta.",
+    "NAICS_Category": "327110 - Pottery, Ceramics, and Plumbing Fixture Manufacturing",
     "ticker": null,
-    "UEI":"SN5DSLZLA8N9",
-    "WV_SOS_org_number":"62426",
-    "WV_SOS_link":"https://apps.wv.gov/SOS/BusinessEntitySearch/Details.aspx?Id=2VV6Rw0F295T8U2a47F/+g==",
-    "entity_type":"C",
-    "founded":1871,
-    "president":"Elizabeth McIlvain",
-    "ceo":"Elizabeth McIlvain",
-    "coo":"Matthew Wicks",
-    "cfo":"William Danley",
-    "founders":"Homer and Shakespeare Laughlin",
-    "leadership":[
+    "UEI": "SN5DSLZLA8N9",
+    "WV_SOS_org_number": "62426",
+    "WV_SOS_link": "https://apps.wv.gov/SOS/BusinessEntitySearch/Details.aspx?Id=2VV6Rw0F295T8U2a47F/+g==",
+    "entity_type": "C",
+    "founded": 1871,
+    "president": "Elizabeth McIlvain",
+    "ceo": "Elizabeth McIlvain",
+    "coo": "Matthew Wicks",
+    "cfo": "William Danley",
+    "founders": "Homer and Shakespeare Laughlin",
+    "leadership": [
         "Homer Laughlin",
         "William Edwin Wells",
         "Louis I. Aaron",
@@ -26,23 +26,23 @@
         "Jean Wicks",
         "Elizabeth McIlvain"
     ],
-    "designers":[
+    "designers": [
         "Frederick Hurten Rhead",
         "Edwin Wonder",
         "Chris Park",
         "Mickler Bowdler",
         "David Neer"
     ],
-    "companyAliases":[
+    "companyAliases": [
         "Laughlin Pottery",
         "The Homer Laughlin China Company",
         "The HLC Family of Companies"
     ],
-    "industry":"Ceramics Manufacturer",
-    "employees":"501-1000",
-    "address":{
-        "street":"672 Fiesta Drive",
-        "city":"Newell",
+    "industry": "Ceramics Manufacturer",
+    "employees": "501-1000",
+    "address": {
+        "street": "672 Fiesta Drive",
+        "city": "Newell",
         "stateLong": "West Virginia",
         "stateShort": "WV",
         "zip": "26050",
@@ -50,53 +50,57 @@
         "countryShort": "USA",
         "latitude": 40.620394,
         "longitude": -80.607008,
-        "gps":["40° 37' 13.4184'' N", "80° 36' 25.2288'' W"]
+        "gps": [
+            "40° 37' 13.4184'' N",
+            "80° 36' 25.2288'' W"
+        ]
     },
-    "website":"https://fiestatableware.com",
-    "retailWebsites":[
+    "website": "https://fiestatableware.com",
+    "retailWebsites": [
         {
-            "name":"Fiesta Factory Direct",
-            "url":"https://fiestafactorydirect.com"
+            "name": "Fiesta Factory Direct",
+            "url": "https://fiestafactorydirect.com"
         },
         {
-            "name":"USA Dinnerware Direct",
-            "url":"https://usadinnerwaredirect.com"
-        }],
-    "socialMedia":[
-        {
-            "name":"Facebook",
-            "url":"https://www.facebook.com/FiestaTableware"
-        },
-        {
-            "name":"Instagram",
-            "url":"https://www.instagram.com/fiestatablewarecompany/"
-        },
-        {
-            "name":"Pinterest",
-            "url":"https://www.pinterest.com/fiestadishes/"
-        },
-        {
-            "name":"Tiktok",
-            "url":"https://www.tiktok.com/@fiestadinnerware"
-        },
-        {
-            "name":"LinkedIn",
-            "url":"https://www.linkedin.com/company/the-fiesta-tableware-company"
-        },
-        {
-            "name":"Twitter",
-            "url":"https://twitter.com/fiestatableware"
-        },
-        {
-            "name":"Youtube",
-            "url":"https://www.youtube.com/c/thefiestatablewareco"
+            "name": "USA Dinnerware Direct",
+            "url": "https://usadinnerwaredirect.com"
         }
     ],
-    "retailLocations":[
+    "socialMedia": [
         {
-            "name":"Factory Outlet",
-            "street":"672 Fiesta Drive",
-            "city":"Newell",
+            "name": "Facebook",
+            "url": "https://www.facebook.com/FiestaTableware"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/fiestatablewarecompany/"
+        },
+        {
+            "name": "Pinterest",
+            "url": "https://www.pinterest.com/fiestadishes/"
+        },
+        {
+            "name": "Tiktok",
+            "url": "https://www.tiktok.com/@fiestadinnerware"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/the-fiesta-tableware-company"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/fiestatableware"
+        },
+        {
+            "name": "Youtube",
+            "url": "https://www.youtube.com/c/thefiestatablewareco"
+        }
+    ],
+    "retailLocations": [
+        {
+            "name": "Factory Outlet",
+            "street": "672 Fiesta Drive",
+            "city": "Newell",
             "stateLong": "West Virginia",
             "stateShort": "WV",
             "zip": "26050",
@@ -104,43 +108,43 @@
             "countryShort": "USA",
             "latitude": 40.620394,
             "longitude": -80.607008,
-            "phone":"304-387-1300",
-            "hours":{
-                "Monday":"9:00am to 5:00pm",
-                "Tuesday":"9:00am to 5:00pm",
-                "Wednesday":"9:00am to 5:00pm",
-                "Thursday":"9:00am to 5:00pm",
-                "Friday":"9:00am to 5:00pm",
-                "Saturday":"9:00am to 5:00pm",
-                "Sunday":"11:00pm to 5:00pm"
+            "phone": "304-387-1300",
+            "hours": {
+                "Monday": "9:00am to 5:00pm",
+                "Tuesday": "9:00am to 5:00pm",
+                "Wednesday": "9:00am to 5:00pm",
+                "Thursday": "9:00am to 5:00pm",
+                "Friday": "9:00am to 5:00pm",
+                "Saturday": "9:00am to 5:00pm",
+                "Sunday": "11:00pm to 5:00pm"
             }
         },
         {
-            "name":"Everything Fiesta - Flatwoods",
-            "street":"52 Skidmore Lane",
-            "city":"Sutton (Flatwoods)",
+            "name": "Everything Fiesta - Flatwoods",
+            "street": "52 Skidmore Lane",
+            "city": "Sutton (Flatwoods)",
             "stateLong": "West Virginia",
             "stateShort": "WV",
             "zip": "26601",
             "countryLong": "United States of America",
             "countryShort": "USA",
-            "latitude": 38.703900,
+            "latitude": 38.7039,
             "longitude": -80.666954,
-            "phone":"304-765-5384",
-            "hours":{
-                "Monday":"10:00am to 5:00pm",
-                "Tuesday":"10:00am to 5:00pm",
-                "Wednesday":"10:00am to 5:00pm",
-                "Thursday":"10:00am to 5:00pm",
-                "Friday":"10:00am to 5:00pm",
-                "Saturday":"10:00am to 5:00pm",
-                "Sunday":"12:00pm to 5:00pm"
+            "phone": "304-765-5384",
+            "hours": {
+                "Monday": "10:00am to 5:00pm",
+                "Tuesday": "10:00am to 5:00pm",
+                "Wednesday": "10:00am to 5:00pm",
+                "Thursday": "10:00am to 5:00pm",
+                "Friday": "10:00am to 5:00pm",
+                "Saturday": "10:00am to 5:00pm",
+                "Sunday": "12:00pm to 5:00pm"
             }
         },
         {
-            "name":"Everything Fiesta - Hartville Marketplace",
-            "street":"1289 Edison St NW",
-            "city":"Hartville",
+            "name": "Everything Fiesta - Hartville Marketplace",
+            "street": "1289 Edison St NW",
+            "city": "Hartville",
             "stateLong": "Ohio",
             "stateShort": "OH",
             "zip": "44632",
@@ -148,1086 +152,1158 @@
             "countryShort": "USA",
             "latitude": 40.97537550869318,
             "longitude": -81.36138350092224,
-            "phone":"N/A",
-            "hours":{
-                "Monday":"9:00am to 5:00pm",
-                "Tuesday":"CLOSED",
-                "Wednesday":"CLOSED",
-                "Thursday":"9:00am to 5:00pm",
-                "Friday":"9:00am to 5:00pm",
-                "Saturday":"9:00am to 5:00pm",
-                "Sunday":"CLOSED"
+            "phone": "N/A",
+            "hours": {
+                "Monday": "9:00am to 5:00pm",
+                "Tuesday": "CLOSED",
+                "Wednesday": "CLOSED",
+                "Thursday": "9:00am to 5:00pm",
+                "Friday": "9:00am to 5:00pm",
+                "Saturday": "9:00am to 5:00pm",
+                "Sunday": "CLOSED"
             }
         }
     ],
-    "colors":[
+    "colors": [
         {
-            "color":"Red",
-            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Red.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Red is a stunning color sure to add a pop to every table.",
-            "sku":"N/A",
-            "hex":"#D2042D",
-            "hsv":"hsv(348.06, 98.1%, 82.35%)",
+            "color": "Red",
+            "description": "Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Red.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Red is a stunning color sure to add a pop to every table.",
+            "sku": "N/A",
+            "hex": "#D2042D",
+            "hsv": "hsv(348.06, 98.1%, 82.35%)",
             "produced": "1936-1943",
-            "prodStart":1936,
-            "prodEnd":1943,
-            "shadeOf":"Red",
-            "image":"Red.jpg"
+            "prodStart": 1936,
+            "prodEnd": 1943,
+            "shadeOf": "Red",
+            "image": "Red.jpg",
+            "notes": "This is the one everybody asks about. Fiesta Red was in the very first lineup at the Pittsburgh show in January 1936, and it's the color that made the line famous — a genuinely loud orange-red at a time when most American dinnerware was white or pastel. It's also the reason vintage Fiesta has a reputation it can't quite shake: the glaze used uranium oxide, and in 1943 the government requisitioned the country's uranium supply for the war effort. Red went off the shelf and stayed off for sixteen years. It came back in 1959 with a reformulated glaze. If you own a piece and you're wondering: pre-1943 Red is the one people mean when they talk about it."
         },
         {
-            "color":"Blue (Cobalt)",
-            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Cobalt.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - a rich shade of blue, Cobalt would later be revived post-86 when Fiesta returned to the marketplace.",
-            "sku":"N/A",
-            "hex":"#13294B",
-            "hsv":"hsv(216.43, 74.67%, 29.41%)",
+            "color": "Blue (Cobalt)",
+            "description": "Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Cobalt.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - a rich shade of blue, Cobalt would later be revived post-86 when Fiesta returned to the marketplace.",
+            "sku": "N/A",
+            "hex": "#13294B",
+            "hsv": "hsv(216.43, 74.67%, 29.41%)",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"Blue",
-            "image":"Cobalt.jpg"
+            "shadeOf": "Blue",
+            "image": "Cobalt.jpg",
+            "notes": "Cobalt was one of the five colors Fiesta launched with in 1936, and it's the darkest of them by a long way — deep enough that it reads almost navy in low light. That depth is the point. Set against Old Ivory and Yellow, which arrived the same day, it gave the original palette a weight it would otherwise have lacked. It ran fifteen years and was retired in 1951 alongside Old Ivory, when Fiesta swapped its 1930s look for the softer Gray, Chartreuse and Rose. Cobalt came back after the 1986 relaunch as a Post 86 color under the plain name Cobalt — a different glaze on a different body, and the two are worth telling apart."
         },
         {
-            "color":"Green (Light)",
-            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Light Green.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Light Green is one of four shades produced during the original run, but that doesn't mean it wasn't a fan favorite!",
-            "sku":"N/A",
-            "hex":"#27654A",
-            "hsv":"hsv(153.87, 61.39%, 39.61%)",
+            "color": "Green (Light)",
+            "description": "Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Light Green.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Light Green is one of four shades produced during the original run, but that doesn't mean it wasn't a fan favorite!",
+            "sku": "N/A",
+            "hex": "#27654A",
+            "hsv": "hsv(153.87, 61.39%, 39.61%)",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"Green",
-            "image":"LightGreen.jpg"
+            "shadeOf": "Green",
+            "image": "LightGreen.jpg",
+            "notes": "Light Green was in the original 1936 five, and it's the ancestor of what became Fiesta's biggest family — thirteen greens have followed it. It's a mid-depth green with a little blue in it, which is why it sits so comfortably next to Cobalt. Fifteen years on the shelf, then retired in 1951 in the same clear-out that took Cobalt and Old Ivory. Worth knowing if you're identifying a piece: it's close enough to modern Jade to confuse the two at a glance, though Jade is noticeably darker in hand. The name is a period one — nothing to do with the later Medium Green, which is a different and much scarcer color."
         },
         {
-            "color":"Yellow",
-            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Yellow.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Yellow is a whimsical color made to bring a sense of joy to every table!",
-            "sku":"N/A",
-            "hex":"#DAAC49",
-            "hsv":"hsv(40.97, 66.51%, 85.49%)",
+            "color": "Yellow",
+            "description": "Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Yellow.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Yellow is a whimsical color made to bring a sense of joy to every table!",
+            "sku": "N/A",
+            "hex": "#DAAC49",
+            "hsv": "hsv(40.97, 66.51%, 85.49%)",
             "produced": "1936-1969",
             "prodStart": 1936,
             "prodEnd": 1969,
-            "shadeOf":"Yellow",
-            "image":"Yellow.jpg"
+            "shadeOf": "Yellow",
+            "image": "Yellow.jpg",
+            "notes": "Of the original five, Yellow lasted the longest — thirty-three years, from the 1936 launch right through to 1969, which makes it one of the most common vintage colors you'll come across. It's a warmer, more mustard yellow than anything Fiesta makes now; put it next to Daffodil and the modern one looks almost neon. That longevity is the useful part for a collector: Yellow overlapped nearly every vintage color that ever existed, so it's the safe piece to build a mixed vintage table around. It was retired in 1969 alongside Turquoise, leaving Antique Gold to carry yellow for the line's final three years."
         },
         {
-            "color":"Old Ivory",
-            "description":"Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Old Ivory.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Old Ivory would later be revived by the current Ivory in post-86 when Fiesta returned to the marketplace.",
-            "sku":"N/A",
-            "hex":"#F2EFDE",
-            "hsv":"hsv(51, 8.26%, 94.9%)",
+            "color": "Old Ivory",
+            "description": "Introduced at the annual Pottery and Glass Exhibit in Pittsburgh, Pennsylvania in January 1936 - meet Old Ivory.  One of the original colors of Fiesta drawn up by Frederick Hurten Rhead himself - Old Ivory would later be revived by the current Ivory in post-86 when Fiesta returned to the marketplace.",
+            "sku": "N/A",
+            "hex": "#F2EFDE",
+            "hsv": "hsv(51, 8.26%, 94.9%)",
             "produced": "1936-1951",
             "prodStart": 1936,
             "prodEnd": 1951,
-            "shadeOf":"White",
-            "image":"OldIvory.jpg"
+            "shadeOf": "White",
+            "image": "OldIvory.jpg",
+            "notes": "Old Ivory is the quiet one of the original five, and the one doing the most work. It's a warm off-white — genuinely creamy rather than gray — and it was there to keep Red, Cobalt, Green and Yellow from shouting over each other. Fifteen years, then retired in 1951. If you're trying to identify a piece, this is where it gets tricky: Old Ivory sits within a few ΔE of both the modern Ivory and Linen, close enough that a photograph won't settle it. Shape and backstamp will. The later Ivory, introduced in 2008, is the closest modern stand-in if you're filling gaps in a vintage table."
         },
         {
-            "color":"Turquoise",
-            "description":"Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family.  Turquoise (a shade of teal) would later be revived post-86 and is one of the most popular Fiesta colors ever. ",
-            "sku":"N/A",
-            "hex":"#56B1BD",
-            "hsv":"hsv(186.99, 54.5%, 74.12%)",
+            "color": "Turquoise",
+            "description": "Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family.  Turquoise (a shade of teal) would later be revived post-86 and is one of the most popular Fiesta colors ever. ",
+            "sku": "N/A",
+            "hex": "#56B1BD",
+            "hsv": "hsv(186.99, 54.5%, 74.12%)",
             "produced": "1937-1969",
             "prodStart": 1937,
             "prodEnd": 1969,
-            "shadeOf":"Blue",
-            "image":"Turquoise.jpg"
+            "shadeOf": "Blue",
+            "image": "Turquoise.jpg",
+            "notes": "Turquoise wasn't in the original launch — Rhead added it in 1937, a year after the first five, once it was clear Fiesta was going to be a hit. It's a soft blue-green with far less punch than Cobalt, and it was there to lighten the palette. It worked: thirty-two years on the shelf, retired in 1969, and then brought back after the 1986 relaunch. That makes Turquoise the only Fiesta color made in both eras that's still in production today. The vintage and Post 86 versions are close but not identical, and since both are common, it's one of the more useful pairs to learn to tell apart by hand."
         },
         {
-            "color":"Forest Green",
-            "description":"A cherished collection crafted between 1951 and 1959 - this deep and rich green hue opens the door to a world of design possibilities, making a bold statement on your dining table. Pair Forest Green with earthy tones like rustic brown or warm beige for a cozy and inviting atmosphere, or create a striking contrast by combining it with crisp white or elegant black.",
-            "sku":"N/A",
-            "hex":"#316E15",
-            "hsv":"hsv(101.12, 80.91%, 43.14%)",
+            "color": "Forest Green",
+            "description": "A cherished collection crafted between 1951 and 1959 - this deep and rich green hue opens the door to a world of design possibilities, making a bold statement on your dining table. Pair Forest Green with earthy tones like rustic brown or warm beige for a cozy and inviting atmosphere, or create a striking contrast by combining it with crisp white or elegant black.",
+            "sku": "N/A",
+            "hex": "#316E15",
+            "hsv": "hsv(101.12, 80.91%, 43.14%)",
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Green",
-            "image":"ForestGreen.jpg"
+            "shadeOf": "Green",
+            "image": "ForestGreen.jpg",
+            "notes": "Forest Green came in with the 1951 reset and it's the deepest green Fiesta had made to that point — a good deal more saturated than the Light Green it replaced. Eight years on the shelf, retired in 1959 alongside Chartreuse and Rose. It's a genuinely dark plate, which is worth knowing before you buy a set: pale food reads beautifully on it and anything brown or green disappears. If you like it but want something you can still buy, modern Jade is the closest thing Fiesta currently makes, though Jade is cooler and a touch darker again."
         },
         {
-            "color":"Rose",
-            "description":"Produced from 1951 to 1959, Fiesta's Rose is a shade of pink that is associated with love, romance, and femininity. It is a delicate and soft color that is often used in flowers, particularly roses, which is how the color got its name.",
-            "sku":"N/A",
-            "hex":"#E5908D",
-            "hsv":"hsv(2.05, 38.43%, 89.8%)",
+            "color": "Rose",
+            "description": "Produced from 1951 to 1959, Fiesta's Rose is a shade of pink that is associated with love, romance, and femininity. It is a delicate and soft color that is often used in flowers, particularly roses, which is how the color got its name.",
+            "sku": "N/A",
+            "hex": "#E5908D",
+            "hsv": "hsv(2.05, 38.43%, 89.8%)",
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Red",
-            "image":"Rose.jpg"
+            "shadeOf": "Red",
+            "image": "Rose.jpg",
+            "notes": "Vintage Rose is a soft, dusty pink — much closer to salmon than to anything shocking — and it arrived in 1951 as part of the mid-century trio with Gray and Chartreuse. Eight years, retired 1959. It reads as unmistakably fifties, and that's most of its appeal now. The name was reused for a Post 86 color in 1987 that ran nearly twenty years, so listings need reading carefully: if it says Rose and the seller says vintage, the years are what settle it. Modern Peony is the closest thing currently in production, and it's close enough that the two mix on a table without looking like a mistake."
         },
         {
-            "color":"Chartreuse",
-            "description":"A shade of green-yellow color, it is a bright and lively color that is considered to be a tertiary color - meet Chartreuse. Produced by The Fiesta Tableware Company from 1951 to 1959, it is a fan favorite known for its ability to appear different depending on the lighting and other surrounding colors.",
-            "sku":"N/A",
-            "hex":"#BCCC6A",
-            "hsv":"hsv(69.8, 48.04%, 80%)",
+            "color": "Chartreuse",
+            "description": "A shade of green-yellow color, it is a bright and lively color that is considered to be a tertiary color - meet Chartreuse. Produced by The Fiesta Tableware Company from 1951 to 1959, it is a fan favorite known for its ability to appear different depending on the lighting and other surrounding colors.",
+            "sku": "N/A",
+            "hex": "#BCCC6A",
+            "hsv": "hsv(69.8, 48.04%, 80%)",
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"Green",
-            "image":"Chartreuse.jpg"
+            "shadeOf": "Green",
+            "image": "Chartreuse.jpg",
+            "notes": "Chartreuse arrived in 1951 as part of Fiesta's mid-century reset, alongside Gray and Rose, replacing the 1930s palette. It's a yellow-green that behaves oddly under different light — genuinely so, not marketing copy. Under warm bulbs it leans yellow, under daylight it goes distinctly green, which is why two people can describe the same piece differently. Eight years, retired in 1959. The name came back for a Post 86 color in 1997 that's a much brighter, more acid green, so if you're searching listings, check the years rather than the name. Of the 1951 trio this is the one that most obviously dates a table to the fifties."
         },
         {
-            "color":"Gray",
-            "description":"Produced between 1951 and 1959, Fiesta Gray offers versatile design opportunities. Its neutral yet sophisticated shade serves as a foundation for various tablescapes. Pair Gray with vibrant hues like deep red or royal blue for a striking contrast, or create an elegant monochromatic theme by combining it with different shades of gray and silver.",
-            "sku":"N/A",
-            "hex":"#C4CFDC",
-            "hsv":"hsv(212.5, 10.91%, 86.27%)",
+            "color": "Gray",
+            "description": "Produced between 1951 and 1959, Fiesta Gray offers versatile design opportunities. Its neutral yet sophisticated shade serves as a foundation for various tablescapes. Pair Gray with vibrant hues like deep red or royal blue for a striking contrast, or create an elegant monochromatic theme by combining it with different shades of gray and silver.",
+            "sku": "N/A",
+            "hex": "#C4CFDC",
+            "hsv": "hsv(212.5, 10.91%, 86.27%)",
             "produced": "1951-1959",
             "prodStart": 1951,
             "prodEnd": 1959,
-            "shadeOf":"White",
-            "image":"Gray.jpg"
+            "shadeOf": "White",
+            "image": "Gray.jpg",
+            "notes": "Gray is the one from 1951 that looks most modern today. It's a cool, blue-leaning gray — not a warm putty — and against the Chartreuse and Rose it launched with, it was clearly meant as the calm one. Eight years, gone by 1959. It's also the closest thing the vintage line has to a true neutral, which makes it the easiest vintage color to work into a table of modern pieces. Be careful with the name in listings: the Post 86 Pearl Gray is a different, slightly warmer color, and the two sit only a few ΔE apart. Production years are the reliable way to tell which you're looking at."
         },
         {
-            "color":"Medium Green",
-            "description":"Crafted between 1959 and 1969 - this iconic color choice opens the door to creative table arrangements, as its balanced green hue adds a refreshing touch to your dining setting. Combine Medium Green with complementary colors like crisp white or sunny yellow for a lively and cheerful ambiance, or create a nature-inspired theme by pairing it with earthy browns and subtle creams. ",
-            "sku":"N/A",
-            "hex":"#4E9F51",
-            "hsv":"hsv(122.22, 50.94%, 62.35%)",
+            "color": "Medium Green",
+            "description": "Crafted between 1959 and 1969 - this iconic color choice opens the door to creative table arrangements, as its balanced green hue adds a refreshing touch to your dining setting. Combine Medium Green with complementary colors like crisp white or sunny yellow for a lively and cheerful ambiance, or create a nature-inspired theme by pairing it with earthy browns and subtle creams. ",
+            "sku": "N/A",
+            "hex": "#4E9F51",
+            "hsv": "hsv(122.22, 50.94%, 62.35%)",
             "produced": "1959-1969",
             "prodStart": 1959,
             "prodEnd": 1969,
-            "shadeOf":"Green",
-            "image":"MediumGreen.jpg"
+            "shadeOf": "Green",
+            "image": "MediumGreen.jpg",
+            "notes": "If you only learn one vintage color, make it this one. Medium Green arrived in 1959 and ran a decade to 1969 — but it was produced in far smaller quantities than the colors around it, and among collectors it's consistently the hardest vintage Fiesta color to find. A single Medium Green piece can be worth more than a full set of something common. It's a clean, mid-depth green, brighter and warmer than the Forest Green it followed. Modern Meadow is the closest thing Fiesta makes now and sits only a few ΔE away, which makes it useful for filling out a table — and worth being alert to in a mislabelled listing."
         },
         {
-            "color":"Red",
-            "description":"Bright, bold, and a shade lighter than current day's Scarlet - meet Red.  Produced from 1959 to 1972 by The Fiesta Tableware Company, it can evoke a range of emotions, but is commonly associated with hunger. ",
-            "sku":"N/A",
-            "hex":"#D2042D",
-            "hsv":"hsv(348.06, 98.1%, 82.35%)",
+            "color": "Red",
+            "description": "Bright, bold, and a shade lighter than current day's Scarlet - meet Red.  Produced from 1959 to 1972 by The Fiesta Tableware Company, it can evoke a range of emotions, but is commonly associated with hunger. ",
+            "sku": "N/A",
+            "hex": "#D2042D",
+            "hsv": "hsv(348.06, 98.1%, 82.35%)",
             "produced": "1959-1972",
             "prodStart": 1959,
             "prodEnd": 1972,
-            "shadeOf":"Red",
-            "image":"Red.jpg"
+            "shadeOf": "Red",
+            "image": "Red.jpg",
+            "notes": "This is Red's second run. The original went off the shelf in 1943 when wartime uranium restrictions ended the glaze, and it took sixteen years to come back — reformulated, and here from 1959 until the line was retired in 1972. Visually it's very close to the 1936 version, close enough that color alone won't date a piece; shape and backstamp will. It arrived the same year as Medium Green and outlasted it by three years, making it one of the last colors standing at the end of the original run. It's also a shade lighter and brighter than modern Scarlet, which is the closest thing in production now."
         },
         {
-            "color":"Antique Gold",
-            "description":"Retired decades ago, but a fan favorite to this day - introducing Antique Gold. One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  A whimsical shade of yellow, Antique Gold brought a certain contrast and happiness to ever table it touched.",
-            "sku":"N/A",
-            "hex":"#FAC752",
-            "hsv":"hsv(41.79, 67.2%, 98.04%)",
+            "color": "Antique Gold",
+            "description": "Retired decades ago, but a fan favorite to this day - introducing Antique Gold. One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  A whimsical shade of yellow, Antique Gold brought a certain contrast and happiness to ever table it touched.",
+            "sku": "N/A",
+            "hex": "#FAC752",
+            "hsv": "hsv(41.79, 67.2%, 98.04%)",
             "produced": "1969-1972",
             "prodStart": 1969,
             "prodEnd": 1972,
-            "shadeOf":"Yellow",
-            "image":"AntiqueGold.jpg"
+            "shadeOf": "Yellow",
+            "image": "AntiqueGold.jpg",
+            "notes": "Antique Gold is one of the last two colors Fiesta introduced before the original line ended — in 1969, with only three years left to run. That short window is the whole story: it's genuinely scarce compared to the vintage colors that had decades on the shelf. It's a warm, slightly aged yellow, lighter and softer than the original Yellow it replaced, and it arrived the same year Yellow and Turquoise were retired. Of everything Fiesta makes today, Daffodil and Sunflower sit closest to it. If you're building a table around late-run vintage, this and Turf Green are the pair that date it precisely to 1969–1972."
         },
         {
-            "color":"Turf Green",
-            "description":"Similar to the color of a fresh cut lawn, meet Turf Green.  One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  Turf Green is a rich and saturated shade of green that is often used in sports fields, golf courses, and other landscapes where a lush, green appearance is desired. ",
-            "sku":"N/A",
-            "hex":"#7F843C",
-            "hsv":"hsv(64.17, 54.55%, 51.76%)",
+            "color": "Turf Green",
+            "description": "Similar to the color of a fresh cut lawn, meet Turf Green.  One of the final colors to be introduced before production stopped on Fiesta in 1972, it was only produced for three years by The Fiesta Tableware Company.  Turf Green is a rich and saturated shade of green that is often used in sports fields, golf courses, and other landscapes where a lush, green appearance is desired. ",
+            "sku": "N/A",
+            "hex": "#7F843C",
+            "hsv": "hsv(64.17, 54.55%, 51.76%)",
             "produced": "1969-1972",
             "prodStart": 1969,
             "prodEnd": 1972,
-            "shadeOf":"Green",
-            "image":"TurfGreen.jpg"
+            "shadeOf": "Green",
+            "image": "TurfGreen.jpg",
+            "notes": "Turf Green arrived in 1969 with Antique Gold, the last two colors of the original run, and like its partner it only had three years before Fiesta was retired in 1973 — which makes it one of the scarcer vintage colors simply because so little of it was made. The name is accurate: it's a muted, slightly olive green, noticeably more muted than the Medium Green it followed. It reads as very much of its moment, and it's the color that most obviously places a vintage table at the tail end of the original line rather than its middle. Nothing Fiesta makes today is especially close to it."
         },
         {
-            "color":"White",
-            "description":"Introducing White, made by The Fiesta Tableware Company from 1986 to current production. It's a pristine shade of white that brings elegance and versatility to every tablescape. Mix and match it with any other Fiesta color, such as Scarlet and Lapis, to create timeless and sophisticated table settings for any occasion.",
-            "sku":"100",
-            "hex":"#FFFFFF",
-            "hsv":"hsv(0, 0%, 100%)",
+            "color": "White",
+            "description": "Introducing White, made by The Fiesta Tableware Company from 1986 to current production. It's a pristine shade of white that brings elegance and versatility to every tablescape. Mix and match it with any other Fiesta color, such as Scarlet and Lapis, to create timeless and sophisticated table settings for any occasion.",
+            "sku": "100",
+            "hex": "#FFFFFF",
+            "hsv": "hsv(0, 0%, 100%)",
             "produced": "1986-current",
             "prodStart": 1986,
             "prodEnd": "current",
-            "shadeOf":"White",
-            "image":"0100.jpg"
+            "shadeOf": "White",
+            "image": "0100.jpg",
+            "notes": "White has been in continuous production since the relaunch in March 1986, which makes it the longest-running Fiesta color there's ever been. It was one of the three colors Fiesta came back with, alongside Black and Apricot, and it's been the backbone of the line ever since. It's also a true white, with no warmth in it at all, which matters: Ivory, Old Ivory and Linen all read cream next to it, and putting White beside any of them usually looks accidental rather than intentional. If you're starting a collection and want one color you'll never regret buying more of, this is it."
         },
         {
-            "color":"Black",
-            "description":"Introducing Black, made by The Fiesta Tableware Company from 1986 to 2014. It's a sleek and sophisticated hue that adds a touch of modernity to any tablescape. Pair it with White and Slate for a contemporary monochrome look or mix it with Poppy and Sunflower for a striking contrast.",
-            "sku":"101",
-            "hex":"#000000",
-            "hsv":"hsv(0, 0%, 0%)",
+            "color": "Black",
+            "description": "Introducing Black, made by The Fiesta Tableware Company from 1986 to 2014. It's a sleek and sophisticated hue that adds a touch of modernity to any tablescape. Pair it with White and Slate for a contemporary monochrome look or mix it with Poppy and Sunflower for a striking contrast.",
+            "sku": "101",
+            "hex": "#000000",
+            "hsv": "hsv(0, 0%, 0%)",
             "produced": "1986-2014",
             "prodStart": 1986,
             "prodEnd": 2014,
-            "shadeOf":"Black",
-            "image":"0101.jpg"
+            "shadeOf": "Black",
+            "image": "0101.jpg",
+            "notes": "Black launched with the 1986 relaunch alongside White and Apricot, and ran twenty-eight years before retiring in 2014. It's the darkest glaze Fiesta has ever made — a true black, not a charcoal — and it's the most dramatic surface in the line. Pale food reads sharply on it; anything dark disappears completely. It works better as a charger under a bright color than as a whole setting, where it can feel a bit severe. Foundry, which arrived in 2016 with a cast-iron texture, is the closest thing Fiesta makes now, though the company doesn't count Foundry as an official Fiesta color."
         },
         {
             "color": "Rose",
             "description": "Introducing Rose, made by The Fiesta Tableware Company from 1987 to 2005. It's a soft, delicate pink often associated with femininity, love, and romance. Mix and match Rose with colors like Ivory and Claret for a classic and elegant table setting, or combine it with Sage and Slate for a contemporary twist on traditional charm.",
             "sku": "103",
             "hex": "#E5908D",
-            "hsv":"hsv(2.05, 38.43%, 89.8%)",
+            "hsv": "hsv(2.05, 38.43%, 89.8%)",
             "produced": "1987-2005",
             "prodStart": 1987,
             "prodEnd": 2005,
             "shadeOf": "Red",
-            "image": "0103.jpg"
+            "image": "0103.jpg",
+            "notes": "Post 86 Rose ran eighteen years, from 1987 to 2005, which makes it one of the more common retired colors — you'll find it without much hunting. It's a soft, dusty pink that leans warm, and it reuses the name of the 1951 vintage color. The two are genuinely close, so listings need reading carefully; the color number (No. 103) is the reliable tell. It's a good bridge color: soft enough to sit between two stronger pieces without picking a fight. If you like it and want something current, Peony is only a few ΔE away and mixes with it happily."
         },
         {
-            "color":"Apricot",
-            "description":"Introducing Apricot, made by The Fiesta Tableware Company from 1986 to 1998. It's a warm and inviting hue reminiscent of ripe apricots, perfect for adding a touch of sunny charm to any tablescape. Mix and match Apricot with colors like Sunflower and Paprika for a vibrant and cheerful table setting, or pair it with Slate and Sage for a more subdued yet sophisticated look.",
-            "sku":"104",
-            "hex":"#EBBCA2",
-            "hsv":"hsv(21.37, 31.06%, 92.16%)",
+            "color": "Apricot",
+            "description": "Introducing Apricot, made by The Fiesta Tableware Company from 1986 to 1998. It's a warm and inviting hue reminiscent of ripe apricots, perfect for adding a touch of sunny charm to any tablescape. Mix and match Apricot with colors like Sunflower and Paprika for a vibrant and cheerful table setting, or pair it with Slate and Sage for a more subdued yet sophisticated look.",
+            "sku": "104",
+            "hex": "#EBBCA2",
+            "hsv": "hsv(21.37, 31.06%, 92.16%)",
             "produced": "1986-1998",
             "prodStart": 1986,
             "prodEnd": 1998,
-            "shadeOf":"Orange",
-            "image":"0104.jpg"
+            "shadeOf": "Orange",
+            "image": "0104.jpg",
+            "notes": "Apricot was the third color of the 1986 relaunch, and it's the one that dates that moment most precisely — a soft, pale peach that belongs unmistakably to late-eighties interiors. Twelve years on the shelf, retired in 1998. It carries very little color for an orange, which makes it behave more like a warm neutral than an accent: it'll sit next to almost anything without competing. That also makes it easy to miss in a photograph, where it can read as a pinkish Ivory. If you're hunting one down, it's the first Post 86 orange, and nothing since has been anywhere near as quiet."
         },
         {
-            "color":"Cobalt",
-            "description":"Introducing Cobalt, made by The Fiesta Tableware Company from 1987 to 2021. It's a rich and vibrant shade of blue, reminiscent of the deep blue hues of the ocean. Cobalt adds a bold and striking touch to any tablescape. Mix and match Cobalt with colors like White and Turquoise for a refreshing and nautical-themed table setting, or pair it with Poppy and Sunflower for a dynamic and energetic combination.",
-            "sku":"105",
-            "hex":"#13294B",
-            "hsv":"hsv(216.43, 74.67%, 29.41%)",
+            "color": "Cobalt",
+            "description": "Introducing Cobalt, made by The Fiesta Tableware Company from 1987 to 2021. It's a rich and vibrant shade of blue, reminiscent of the deep blue hues of the ocean. Cobalt adds a bold and striking touch to any tablescape. Mix and match Cobalt with colors like White and Turquoise for a refreshing and nautical-themed table setting, or pair it with Poppy and Sunflower for a dynamic and energetic combination.",
+            "sku": "105",
+            "hex": "#13294B",
+            "hsv": "hsv(216.43, 74.67%, 29.41%)",
             "produced": "1987-2021",
             "prodStart": 1987,
             "prodEnd": 2021,
-            "shadeOf":"Blue",
-            "image":"0105.jpg"
+            "shadeOf": "Blue",
+            "image": "0105.jpg",
+            "notes": "Post 86 Cobalt arrived in 1987 with Rose and Yellow, reviving the name from the original 1936 palette, and it ran thirty-four years before retiring in 2021 — one of the longest runs in the line. It's a deep, near-navy blue that anchors a table the way nothing else in the modern palette does. Worth knowing: this and the vintage Cobalt are close enough that a photo won't separate them, so if you're buying online, the color number is what settles it. Post 86 pieces carry No. 105; vintage ones predate numbering entirely. Twilight, introduced in 2021, is the closest modern replacement."
         },
         {
-            "color":"Yellow",
-            "description":"Introducing Yellow, made by The Fiesta Tableware Company from 1987 to 2002. It's a sunny and cheerful hue that brightens up any tablescape with its warmth and vibrancy. Yellow evokes feelings of happiness and positivity, making it perfect for both casual gatherings and special occasions. Mix and match Yellow with colors like Cobalt and Shamrock for a vibrant and energetic table setting, or pair it with Scarlet and Paprika for a bold and fiery combination.",
-            "sku":"106",
-            "hex":"#EAD881",
-            "hsv":"hsv(49.71, 44.87%, 91.76%)",
+            "color": "Yellow",
+            "description": "Introducing Yellow, made by The Fiesta Tableware Company from 1987 to 2002. It's a sunny and cheerful hue that brightens up any tablescape with its warmth and vibrancy. Yellow evokes feelings of happiness and positivity, making it perfect for both casual gatherings and special occasions. Mix and match Yellow with colors like Cobalt and Shamrock for a vibrant and energetic table setting, or pair it with Scarlet and Paprika for a bold and fiery combination.",
+            "sku": "106",
+            "hex": "#EAD881",
+            "hsv": "hsv(49.71, 44.87%, 91.76%)",
             "produced": "1987-2002",
             "prodStart": 1987,
             "prodEnd": 2002,
-            "shadeOf":"Yellow",
-            "image":"0106.jpg"
+            "shadeOf": "Yellow",
+            "image": "0106.jpg",
+            "notes": "Post 86 Yellow ran fifteen years from 1987 to 2002, and it's a much lighter, softer yellow than the vintage color that shares its name — closer to butter than to mustard. It was one of the three colors introduced in 1987 as Fiesta built its palette back out after the relaunch. When it retired in 2002, Sunflower had already arrived to take over yellow duty, and the two are close enough (ΔE 4) that they mix without any awkwardness at all. That makes this one of the easier retired colors to work into a modern table."
         },
         {
-            "color":"Turquoise",
-            "description":"Introducing Turquoise, made by The Fiesta Tableware Company from 1988 to current production. It's a refreshing and vibrant shade of blue-green, reminiscent of tropical waters and summer skies. Turquoise adds a pop of color and a sense of tranquility to any tablescape. Mix and match Turquoise with colors like White and Sunflower for a fresh and summery table setting, or pair it with Scarlet and Shamrock for a lively and festive combination.",
-            "sku":"107",
-            "hex":"#56B1BD",
-            "hsv":"hsv(186.99, 54.5%, 74.12%)",
+            "color": "Turquoise",
+            "description": "Introducing Turquoise, made by The Fiesta Tableware Company from 1988 to current production. It's a refreshing and vibrant shade of blue-green, reminiscent of tropical waters and summer skies. Turquoise adds a pop of color and a sense of tranquility to any tablescape. Mix and match Turquoise with colors like White and Sunflower for a fresh and summery table setting, or pair it with Scarlet and Shamrock for a lively and festive combination.",
+            "sku": "107",
+            "hex": "#56B1BD",
+            "hsv": "hsv(186.99, 54.5%, 74.12%)",
             "produced": "1988-current",
             "prodStart": 1988,
             "prodEnd": "current",
-            "shadeOf":"Blue",
-            "image":"0107.jpg"
+            "shadeOf": "Blue",
+            "image": "0107.jpg",
+            "notes": "Turquoise is the connective tissue of the whole line. It first appeared in 1937, ran to 1969, then came back in 1988 — and it's still in production, which makes it the only color Fiesta has made in both eras that you can still buy today. On this run alone it has outlasted every color except White. It's a soft blue-green that works with nearly everything, which is presumably why it keeps surviving palette changes. The vintage and Post 86 versions are close but not identical; if you're mixing them on one table, expect a visible but not unpleasant difference."
         },
         {
-            "color":"Periwinkle Blue",
-            "description":"Introducing Periwinkle Blue, made by The Fiesta Tableware Company from 1989 to 2006. It's a charming and delicate shade of blue with hints of purple, reminiscent of blooming periwinkle flowers. Periwinkle Blue adds a touch of whimsy and sophistication to any tablescape. Mix and match Periwinkle Blue with colors like White and Ivory for a soft and romantic table setting, or pair it with Paprika and Sage for a cozy and inviting combination.",
-            "sku":"108",
-            "hex":"#7FB1D7",
-            "hsv":"hsv(205.91, 40.93%, 84.31%)",
+            "color": "Periwinkle Blue",
+            "description": "Introducing Periwinkle Blue, made by The Fiesta Tableware Company from 1989 to 2006. It's a charming and delicate shade of blue with hints of purple, reminiscent of blooming periwinkle flowers. Periwinkle Blue adds a touch of whimsy and sophistication to any tablescape. Mix and match Periwinkle Blue with colors like White and Ivory for a soft and romantic table setting, or pair it with Paprika and Sage for a cozy and inviting combination.",
+            "sku": "108",
+            "hex": "#7FB1D7",
+            "hsv": "hsv(205.91, 40.93%, 84.31%)",
             "produced": "1989-2006",
             "prodStart": 1989,
             "prodEnd": 2006,
-            "shadeOf":"Blue",
-            "image":"0108.jpg"
+            "shadeOf": "Blue",
+            "image": "0108.jpg",
+            "notes": "Periwinkle Blue arrived in 1989 and ran seventeen years to 2006 — a long, quiet run for a color most people don't think of first. It's a pale blue with a distinct lavender cast, softer and cooler than Turquoise, and it sits close enough to the modern Sky that the two are worth comparing before you buy either. It's very much a color of its moment: periwinkle was everywhere in early-nineties interiors. As a table color it's a bridge rather than a lead, good for softening the gap between a strong blue and a neutral."
         },
         {
-            "color":"Sea Mist Green",
-            "description":"Introducing Sea Mist Green, made by The Fiesta Tableware Company from 1991 to 2005. It's a tranquil and soothing shade of green, reminiscent of gentle sea breezes and coastal landscapes. Sea Mist Green adds a touch of freshness and serenity to any tablescape. Mix and match Sea Mist Green with colors like White and Turquoise for a beach-inspired table setting, or pair it with Plum and Slate for a sophisticated and earthy combination.",
-            "sku":"109",
-            "hex":"#9ADFC1",
-            "hsv":"hsv(153.91, 30.94%, 87.45%)",
+            "color": "Sea Mist Green",
+            "description": "Introducing Sea Mist Green, made by The Fiesta Tableware Company from 1991 to 2005. It's a tranquil and soothing shade of green, reminiscent of gentle sea breezes and coastal landscapes. Sea Mist Green adds a touch of freshness and serenity to any tablescape. Mix and match Sea Mist Green with colors like White and Turquoise for a beach-inspired table setting, or pair it with Plum and Slate for a sophisticated and earthy combination.",
+            "sku": "109",
+            "hex": "#9ADFC1",
+            "hsv": "hsv(153.91, 30.94%, 87.45%)",
             "produced": "1991-2005",
             "prodStart": 1991,
             "prodEnd": 2005,
-            "shadeOf":"Green",
-            "image":"0109.jpg"
+            "shadeOf": "Green",
+            "image": "0109.jpg",
+            "notes": "Sea Mist Green ran fourteen years, 1991 to 2005, and it's one of the palest greens Fiesta has made — a soft mint that reads almost as a neutral in daylight. It arrived a full twenty-two years after the previous green, Turf Green, which tells you how completely the palette had been rebuilt after the relaunch. It's a genuinely useful color to own: light enough to work as a ground, green enough to count as color. Nothing currently in production sits especially close to it, which is part of why it still gets hunted."
         },
         {
-            "color":"Lilac",
-            "description":"Introducing Lilac, made by The Fiesta Tableware Company from 1993 to 1995. It's a delicate and enchanting shade of purple, reminiscent of blooming lilac flowers in springtime. Lilac adds a touch of elegance and romance to any tablescape. Mix and match Lilac with colors like White and Sunflower for a soft and feminine table setting, or pair it with Shamrock and Tangerine for a vibrant and playful combination.",
-            "sku":"113",
-            "hex":"#7F68A1",
-            "hsv":"hsv(264.21, 35.4%, 63.14%)",
+            "color": "Lilac",
+            "description": "Introducing Lilac, made by The Fiesta Tableware Company from 1993 to 1995. It's a delicate and enchanting shade of purple, reminiscent of blooming lilac flowers in springtime. Lilac adds a touch of elegance and romance to any tablescape. Mix and match Lilac with colors like White and Sunflower for a soft and feminine table setting, or pair it with Shamrock and Tangerine for a vibrant and playful combination.",
+            "sku": "113",
+            "hex": "#7F68A1",
+            "hsv": "hsv(264.21, 35.4%, 63.14%)",
             "produced": "1993-1995",
             "prodStart": 1993,
             "prodEnd": 1995,
-            "shadeOf":"Purple",
-            "image":"0113.jpg"
+            "shadeOf": "Purple",
+            "image": "0113.jpg",
+            "notes": "Lilac is the one to know about. It was Fiesta's first purple, introduced in 1993 — nearly sixty years into the line — and it lasted only two years before being retired in 1995. That short run makes it one of the hardest Post 86 colors to assemble a full set in, and prices reflect it. It's a mid-depth purple with real blue in it, more muted than you might expect from the name. Lavender, the 2026 anniversary color, is the closest thing Fiesta has made since, and it's noticeably lighter. If you find Lilac in the wild at a reasonable price, that's a good day."
         },
         {
-            "color":"Persimmon",
-            "description":"Introducing Persimmon, made by The Fiesta Tableware Company from 1995 to 2008. It's a warm and inviting shade of orange, reminiscent of ripe persimmon fruits. Persimmon adds a pop of color and a sense of warmth to any tablescape. Mix and match Persimmon with colors like Ivory and Turquoise for a vibrant and eclectic table setting, or pair it with Slate and Plum for a rich and sophisticated combination.",
-            "sku":"114",
-            "hex":"#EC7B5F",
-            "hsv":"hsv(11.91, 59.75%, 92.55%)",
+            "color": "Persimmon",
+            "description": "Introducing Persimmon, made by The Fiesta Tableware Company from 1995 to 2008. It's a warm and inviting shade of orange, reminiscent of ripe persimmon fruits. Persimmon adds a pop of color and a sense of warmth to any tablescape. Mix and match Persimmon with colors like Ivory and Turquoise for a vibrant and eclectic table setting, or pair it with Slate and Plum for a rich and sophisticated combination.",
+            "sku": "114",
+            "hex": "#EC7B5F",
+            "hsv": "hsv(11.91, 59.75%, 92.55%)",
             "produced": "1995-2008",
             "prodStart": 1995,
             "prodEnd": 2008,
-            "shadeOf":"Orange",
-            "image":"0114.jpg"
+            "shadeOf": "Orange",
+            "image": "0114.jpg",
+            "notes": "Persimmon ran thirteen years, 1995 to 2008, and it replaced Lilac on the shelf the year it arrived. It's a warm coral-orange with real punch — considerably more saturated than the Apricot it overlapped with, and enough color to lead a table by itself. It sits very close to Flamingo and reasonably close to Tangerine, which came along in 2003 and eventually took over the orange slot. If you're building around it, it's a lead color: use it for the plates and let quieter pieces do the rest."
         },
         {
-            "color":"Sapphire",
-            "description":"Introducing Sapphire, made by The Fiesta Tableware Company from 1996 to 1997. It's a deep and luxurious shade of blue, reminiscent of the precious gemstone it's named after. Sapphire adds a touch of opulence and sophistication to any tablescape. Mix and match Sapphire with colors like White and Shamrock for a classic and elegant table setting, or pair it with Sunflower and Tangerine for a bold and dynamic combination.",
-            "sku":"116",
-            "hex":"#1F44B2",
-            "hsv":"hsv(224.9, 82.58%, 69.8%)",
+            "color": "Sapphire",
+            "description": "Introducing Sapphire, made by The Fiesta Tableware Company from 1996 to 1997. It's a deep and luxurious shade of blue, reminiscent of the precious gemstone it's named after. Sapphire adds a touch of opulence and sophistication to any tablescape. Mix and match Sapphire with colors like White and Shamrock for a classic and elegant table setting, or pair it with Sunflower and Tangerine for a bold and dynamic combination.",
+            "sku": "116",
+            "hex": "#1F44B2",
+            "hsv": "hsv(224.9, 82.58%, 69.8%)",
             "produced": "1996-1997",
             "prodStart": 1996,
             "prodEnd": 1997,
-            "shadeOf":"Blue",
-            "image":"0116.jpg"
+            "shadeOf": "Blue",
+            "image": "0116.jpg",
+            "notes": "Sapphire had the shortest run of any regular Fiesta color — introduced in 1996, gone in 1997. One year. That alone makes it one of the most sought-after Post 86 colors, and it's the one people are most often surprised to learn existed. It's a deep, genuinely vivid blue, much brighter and more saturated than Cobalt, which is what makes it striking. Lapis, introduced in 2013, is the closest thing Fiesta has made since, though Lapis is calmer. If you see Sapphire listed cheaply, look twice — it's frequently confused with the more common Cobalt."
         },
         {
-            "color":"Raspberry",
-            "description":"Introducing Raspberry, made by The Fiesta Tableware Company in December 1997. It's a rich and vibrant shade of red, reminiscent of ripe raspberries bursting with flavor. Raspberry adds a bold and energetic touch to any tablescape. Mix and match Raspberry with colors like White and Sunflower for a cheerful and festive table setting, or pair it with Slate and Plum for a sophisticated and elegant combination.",
-            "sku":"4465",
-            "hex":"#892A33",
-            "hsv":"hsv(354.32, 69.34%, 53.73%)",
+            "color": "Raspberry",
+            "description": "Introducing Raspberry, made by The Fiesta Tableware Company in December 1997. It's a rich and vibrant shade of red, reminiscent of ripe raspberries bursting with flavor. Raspberry adds a bold and energetic touch to any tablescape. Mix and match Raspberry with colors like White and Sunflower for a cheerful and festive table setting, or pair it with Slate and Plum for a sophisticated and elegant combination.",
+            "sku": "4465",
+            "hex": "#892A33",
+            "hsv": "hsv(354.32, 69.34%, 53.73%)",
             "produced": "December 1997",
             "prodStart": 1997,
             "prodEnd": 1997,
-            "shadeOf":"Red",
-            "image":"4465.jpg"
+            "shadeOf": "Red",
+            "image": "4465.jpg",
+            "notes": "Raspberry barely counts as a production color, and that's exactly why collectors care. In December 1997, to mark the 500 millionth piece of Fiesta made since 1936, the company produced just 500 Raspberry presentation bowls. That's the entire run. It's a deep, slightly purple red — much darker than any other Fiesta red, closer to Cinnabar than to Scarlet. Fifteen of the bowls were later donated to charity auctions in the Newell and East Liverpool area, raising over $75,000. If you own one, you own one of 500. Most collectors will never see one in person."
         },
         {
-            "color":"Chartreuse",
-            "description":"Introducing Chartreuse, made by The Fiesta Tableware Company from 1997 to 1999. It's a vibrant and refreshing shade of green with yellow undertones, reminiscent of the citrusy hue of chartreuse liqueur. Chartreuse adds a pop of color and a sense of zest to any tablescape. Mix and match Chartreuse with colors like White and Turquoise for a lively and summery table setting, or pair it with Plum and Slate for a sophisticated and modern combination.",
-            "sku":"117",
-            "hex":"#A1D63D",
-            "hsv":"hsv(80.78, 71.5%, 83.92%)",
+            "color": "Chartreuse",
+            "description": "Introducing Chartreuse, made by The Fiesta Tableware Company from 1997 to 1999. It's a vibrant and refreshing shade of green with yellow undertones, reminiscent of the citrusy hue of chartreuse liqueur. Chartreuse adds a pop of color and a sense of zest to any tablescape. Mix and match Chartreuse with colors like White and Turquoise for a lively and summery table setting, or pair it with Plum and Slate for a sophisticated and modern combination.",
+            "sku": "117",
+            "hex": "#A1D63D",
+            "hsv": "hsv(80.78, 71.5%, 83.92%)",
             "produced": "1997-1999",
             "prodStart": 1997,
             "prodEnd": 1999,
-            "shadeOf":"Green",
-            "image":"0117.jpg"
+            "shadeOf": "Green",
+            "image": "0117.jpg",
+            "notes": "Post 86 Chartreuse ran two years, 1997 to 1999, and it is nothing like the vintage color of the same name. Where the 1951 Chartreuse was a soft yellow-green, this one is genuinely acid — one of the most saturated glazes in the whole line. It arrived the same year as the Raspberry presentation bowls and displaced Sapphire on the shelf. Two years is a short run, so it's not easy to find. Lemongrass, which came along in 2009, is the closest Fiesta has come to repeating it. If you're searching listings, filter by the years — the name alone will give you both eras."
         },
         {
-            "color":"Pearl Gray",
-            "description":"Introducing Pearl Gray, made by The Fiesta Tableware Company from 1999 to 2001. It's a subtle and sophisticated shade of gray with hints of pearl-like shimmer, reminiscent of soft moonlight on a cloudy night. Pearl Gray adds a touch of elegance and refinement to any tablescape. Mix and match Pearl Gray with colors like White and Turquoise for a classic and timeless table setting, or pair it with Plum and Slate for a contemporary and chic combination.",
-            "sku":"118",
-            "hex":"#C9CECF",
-            "hsv":"hsv(190, 2.9%, 81.18%)",
+            "color": "Pearl Gray",
+            "description": "Introducing Pearl Gray, made by The Fiesta Tableware Company from 1999 to 2001. It's a subtle and sophisticated shade of gray with hints of pearl-like shimmer, reminiscent of soft moonlight on a cloudy night. Pearl Gray adds a touch of elegance and refinement to any tablescape. Mix and match Pearl Gray with colors like White and Turquoise for a classic and timeless table setting, or pair it with Plum and Slate for a contemporary and chic combination.",
+            "sku": "118",
+            "hex": "#C9CECF",
+            "hsv": "hsv(190, 2.9%, 81.18%)",
             "produced": "1999-2001",
             "prodStart": 1999,
             "prodEnd": 2001,
-            "shadeOf":"White",
-            "image":"0118.jpg"
+            "shadeOf": "White",
+            "image": "0118.jpg",
+            "notes": "Pearl Gray ran two years, 1999 to 2001, and it's the most genuinely neutral color Fiesta has ever made — almost no color in it at all, just a cool, soft gray. That short run makes it scarce, and its quietness makes it easy to overlook in a listing photo, where it can pass for White in poor light. It replaced Chartreuse on the shelf when it arrived. If you like the idea of it, vintage Gray is the closest relative, and the two sit only a few ΔE apart — near enough to mix, far enough to notice."
         },
         {
-            "color":"Juniper",
-            "description":"Introducing Juniper color, made by The Fiesta Tableware Company from 2000 to 2001. It's a rich and earthy shade of blue-green, reminiscent of the aromatic juniper berries found in nature. Juniper adds a touch of rustic charm and tranquility to any tablescape. Mix and match Juniper with colors like White and Sunflower for a fresh and natural table setting, or pair it with Plum and Slate for a cozy and inviting combination.",
-            "sku":"119",
-            "hex":"#2C6672",
-            "hsv":"hsv(190.29, 61.4%, 44.71%)",
+            "color": "Juniper",
+            "description": "Introducing Juniper color, made by The Fiesta Tableware Company from 2000 to 2001. It's a rich and earthy shade of blue-green, reminiscent of the aromatic juniper berries found in nature. Juniper adds a touch of rustic charm and tranquility to any tablescape. Mix and match Juniper with colors like White and Sunflower for a fresh and natural table setting, or pair it with Plum and Slate for a cozy and inviting combination.",
+            "sku": "119",
+            "hex": "#2C6672",
+            "hsv": "hsv(190.29, 61.4%, 44.71%)",
             "produced": "2000-2001",
             "prodStart": 2000,
             "prodEnd": 2001,
-            "shadeOf":"Blue",
-            "image":"0119.jpg"
+            "shadeOf": "Blue",
+            "image": "0119.jpg",
+            "notes": "Juniper managed one year — introduced in 2000 alongside Cinnabar, retired in 2001 — which puts it among the scarcest Post 86 colors. It's a muted blue-green, quite dark and quite gray, and genuinely hard to categorize: it sits about equally close to Evergreen and Lapis, and it reads differently depending on what's next to it. That ambiguity is probably part of why it didn't last. It's a color that rewards being used sparingly, as one piece in a table of neutrals rather than a full setting."
         },
         {
-            "color":"Cinnabar",
-            "description":"Introducing Cinnabar, made by The Fiesta Tableware Company from 2000 to 2010. It's a warm and inviting shade of red, reminiscent of the rich tones of cinnabar mineral. Cinnabar adds a bold and luxurious touch to any tablescape. Mix and match Cinnabar with colors like White and Sunflower for a vibrant and festive table setting, or pair it with Slate and Plum for a sophisticated and elegant combination.",
-            "sku":"102",
-            "hex":"#5F1111",
-            "hsv":"hsv(0, 82.11%, 37.25%)",
+            "color": "Cinnabar",
+            "description": "Introducing Cinnabar, made by The Fiesta Tableware Company from 2000 to 2010. It's a warm and inviting shade of red, reminiscent of the rich tones of cinnabar mineral. Cinnabar adds a bold and luxurious touch to any tablescape. Mix and match Cinnabar with colors like White and Sunflower for a vibrant and festive table setting, or pair it with Slate and Plum for a sophisticated and elegant combination.",
+            "sku": "102",
+            "hex": "#5F1111",
+            "hsv": "hsv(0, 82.11%, 37.25%)",
             "produced": "2000-2010",
             "prodStart": 2000,
             "prodEnd": 2010,
-            "shadeOf":"Red",
-            "image":"0102.jpg"
+            "shadeOf": "Red",
+            "image": "0102.jpg",
+            "notes": "Cinnabar ran a decade, 2000 to 2010, and it's the darkest red Fiesta has made — deep enough that in low light it reads brown rather than red. It arrived alongside Juniper in 2000 and took over from the very short-lived Raspberry. That depth makes it behave unlike any other red in the line: it's an accent rather than a lead, and it works best against something pale. It sits close to Chocolate and Claret, both also retired, which makes a dark-toned Fiesta table surprisingly hard to build from current production alone."
         },
         {
-            "color":"Sunflower",
-            "description":"Introducing Sunflower, made by The Fiesta Tableware Company from 2001 to 2026. It's a cheerful and vibrant shade of yellow, reminiscent of bright sunflowers swaying in the summer breeze. Sunflower adds a burst of energy and warmth to any tablescape. Mix and match Sunflower with colors like Cobalt and Shamrock for a lively and dynamic table setting, or pair it with Plum and Slate for a more subdued yet sophisticated combination.",
-            "sku":"320",
-            "hex":"#F8DA6D",
-            "hsv":"hsv(47.05, 56.05%, 97.25%)",
+            "color": "Sunflower",
+            "description": "Introducing Sunflower, made by The Fiesta Tableware Company from 2001 to 2026. It's a cheerful and vibrant shade of yellow, reminiscent of bright sunflowers swaying in the summer breeze. Sunflower adds a burst of energy and warmth to any tablescape. Mix and match Sunflower with colors like Cobalt and Shamrock for a lively and dynamic table setting, or pair it with Plum and Slate for a more subdued yet sophisticated combination.",
+            "sku": "320",
+            "hex": "#F8DA6D",
+            "hsv": "hsv(47.05, 56.05%, 97.25%)",
             "produced": "2001-2026",
             "prodStart": 2001,
             "prodEnd": 2026,
-            "shadeOf":"Yellow",
-            "image":"0320.jpg"
+            "shadeOf": "Yellow",
+            "image": "0320.jpg",
+            "notes": "Sunflower had a twenty-five-year run, 2001 to 2026, making it one of the longest-lived colors in the modern line — and it only just retired, alongside Twilight, when Lavender arrived for the ninetieth anniversary. It's a warm, bright yellow with real saturation. Because it was made for so long, it's easy to find second-hand and will stay that way, which makes it one of the safest retired colors to build around. It's also close enough to the Post 86 Yellow it replaced (ΔE 4) that the two mix without any visible seam."
         },
         {
-            "color":"Plum",
-            "description":"Introducing Plum, made by The Fiesta Tableware Company from 2001 to 2015. It's a deep and luscious shade of purple, reminiscent of ripe plums at the peak of their sweetness. Plum adds a touch of richness and sophistication to any tablescape. Mix and match Plum with colors like White and Sunflower for a vibrant and eclectic table setting, or pair it with Slate and Sage for a more subdued yet elegant combination.",
-            "sku":"323",
-            "hex":"#351D54",
-            "hsv":"hsv(266.18, 65.48%, 32.94%)",
+            "color": "Plum",
+            "description": "Introducing Plum, made by The Fiesta Tableware Company from 2001 to 2015. It's a deep and luscious shade of purple, reminiscent of ripe plums at the peak of their sweetness. Plum adds a touch of richness and sophistication to any tablescape. Mix and match Plum with colors like White and Sunflower for a vibrant and eclectic table setting, or pair it with Slate and Sage for a more subdued yet elegant combination.",
+            "sku": "323",
+            "hex": "#351D54",
+            "hsv": "hsv(266.18, 65.48%, 32.94%)",
             "produced": "2001-2015",
             "prodStart": 2001,
             "prodEnd": 2015,
-            "shadeOf":"Purple",
-            "image":"0323.jpg"
+            "shadeOf": "Purple",
+            "image": "0323.jpg",
+            "notes": "Plum ran fourteen years, 2001 to 2015, which is a long run for a purple in this line — the family only has five colors total. It's very dark, with a lot of blue in it, and it functions more like a near-black than a purple on most tables. It arrived alongside Sunflower and pushed Pearl Gray and Juniper off the shelf. Mulberry, introduced in 2018, is close enough (ΔE 5) that the two are genuinely difficult to tell apart side by side, which is worth knowing if you're buying either second-hand."
         },
         {
-            "color":"Shamrock",
-            "description":"Introducing Shamrock, made by The Fiesta Tableware Company from 2002 to 2021. It's a vibrant and refreshing shade of green, reminiscent of the lushness of shamrock fields. Shamrock adds a lively and festive touch to any tablescape. Mix and match Shamrock with colors like White and Sunflower for a cheerful and vibrant table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
-            "sku":"324",
-            "hex":"#49AB07",
-            "hsv":"hsv(95.85, 95.91%, 67.06%)",
+            "color": "Shamrock",
+            "description": "Introducing Shamrock, made by The Fiesta Tableware Company from 2002 to 2021. It's a vibrant and refreshing shade of green, reminiscent of the lushness of shamrock fields. Shamrock adds a lively and festive touch to any tablescape. Mix and match Shamrock with colors like White and Sunflower for a cheerful and vibrant table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
+            "sku": "324",
+            "hex": "#49AB07",
+            "hsv": "hsv(95.85, 95.91%, 67.06%)",
             "produced": "2002-2021",
             "prodStart": 2002,
             "prodEnd": 2021,
-            "shadeOf":"Green",
-            "image":"0324.jpg"
+            "shadeOf": "Green",
+            "image": "0324.jpg",
+            "notes": "Shamrock ran nineteen years, 2002 to 2021, and it's one of the most saturated greens Fiesta has ever made — a clean, bright grass green with nothing muddy about it. It took over from the acid Post 86 Chartreuse and pushed Yellow off the shelf the year it arrived. It's a lead color: strong enough to carry a table on its own, and strong enough to overwhelm a delicate one. It sits close to the vintage Medium Green, which makes it a genuinely useful modern stand-in for anyone building a vintage-look table without vintage prices."
         },
         {
-            "color":"Tangerine",
-            "description":"Introducing Tangerine, made by The Fiesta Tableware Company from 2003 to 2017. It's a vibrant and juicy shade of orange, reminiscent of ripe tangerines bursting with flavor. Tangerine adds a bold and energetic touch to any tablescape. Mix and match Tangerine with colors like White and Sunflower for a cheerful and summery table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
-            "sku":"325",
-            "hex":"#F37B39",
-            "hsv":"hsv(21.29, 76.54%, 95.29%)",
+            "color": "Tangerine",
+            "description": "Introducing Tangerine, made by The Fiesta Tableware Company from 2003 to 2017. It's a vibrant and juicy shade of orange, reminiscent of ripe tangerines bursting with flavor. Tangerine adds a bold and energetic touch to any tablescape. Mix and match Tangerine with colors like White and Sunflower for a cheerful and summery table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
+            "sku": "325",
+            "hex": "#F37B39",
+            "hsv": "hsv(21.29, 76.54%, 95.29%)",
             "produced": "2003-2017",
             "prodStart": 2003,
             "prodEnd": 2017,
-            "shadeOf":"Orange",
-            "image":"0325.jpg"
+            "shadeOf": "Orange",
+            "image": "0325.jpg",
+            "notes": "Tangerine ran fourteen years, 2003 to 2017, and it's the orange most people picture when they think of modern Fiesta — bright, warm and unmistakable. It overlapped Persimmon for five years and is noticeably more vivid than it. When Tangerine retired in 2017, Poppy had already been in production since 2014 and took over the orange slot; the two are close but Poppy is redder and more saturated. Because of the long run, Tangerine is easy to find second-hand, which makes it one of the better retired colors to fill a table out with."
         },
         {
-            "color":"Scarlet",
-            "description":"Introducing Scarlet, made by The Fiesta Tableware Company from 2004 to current production. It's a bold and vibrant shade of red, reminiscent of rich scarlet blooms. Scarlet adds a touch of passion and drama to any tablescape. Mix and match Scarlet with colors like White and Sunflower for a classic and striking table setting, or pair it with Plum and Slate for a more sophisticated and dramatic combination.",
-            "sku":"326",
-            "hex":"#Cf2C20",
-            "hsv":"hsv(4.11, 84.54%, 81.18%)",
+            "color": "Scarlet",
+            "description": "Introducing Scarlet, made by The Fiesta Tableware Company from 2004 to current production. It's a bold and vibrant shade of red, reminiscent of rich scarlet blooms. Scarlet adds a touch of passion and drama to any tablescape. Mix and match Scarlet with colors like White and Sunflower for a classic and striking table setting, or pair it with Plum and Slate for a more sophisticated and dramatic combination.",
+            "sku": "326",
+            "hex": "#Cf2C20",
+            "hsv": "hsv(4.11, 84.54%, 81.18%)",
             "produced": "2004-current",
             "prodStart": 2004,
             "prodEnd": "current",
-            "shadeOf":"Red",
-            "image":"0326.jpg"
+            "shadeOf": "Red",
+            "image": "0326.jpg",
+            "notes": "Scarlet arrived in 2004 and is still in production, which puts it among the longest runs in the modern line. It's the closest thing current Fiesta has to the famous vintage Red — only about ΔE 6 apart, near enough that the two mix on a table without looking like a mistake, which is genuinely useful if you're supplementing vintage pieces. It's a lead color and behaves like one: two or three settings go a long way, and it wants quieter pieces around it. If you want one red that will still be buyable in five years, this is the safe bet."
         },
         {
-            "color":"Peacock",
-            "description":"Introducing Peacock, made by The Fiesta Tableware Company from 2005 to 2014. It's a captivating and elegant shade of blue, reminiscent of the iridescent feathers of a majestic peacock. Peacock adds a touch of sophistication and allure to any tablescape. Mix and match Peacock with colors like White and Sunflower for a vibrant and luxurious table setting, or pair it with Plum and Slate for a more subdued yet elegant combination.",
-            "sku":"327",
-            "hex":"#3792D7",
-            "hsv":"hsv(205.88, 74.42%, 84.31%)",
+            "color": "Peacock",
+            "description": "Introducing Peacock, made by The Fiesta Tableware Company from 2005 to 2014. It's a captivating and elegant shade of blue, reminiscent of the iridescent feathers of a majestic peacock. Peacock adds a touch of sophistication and allure to any tablescape. Mix and match Peacock with colors like White and Sunflower for a vibrant and luxurious table setting, or pair it with Plum and Slate for a more subdued yet elegant combination.",
+            "sku": "327",
+            "hex": "#3792D7",
+            "hsv": "hsv(205.88, 74.42%, 84.31%)",
             "produced": "2005-2014",
             "prodStart": 2005,
             "prodEnd": 2014,
-            "shadeOf":"Blue",
-            "image":"0327.jpg"
+            "shadeOf": "Blue",
+            "image": "0327.jpg",
+            "notes": "Peacock ran nine years, 2005 to 2014, and it's a clean mid-blue with real brightness to it — noticeably lighter and more vivid than the Juniper it replaced. It arrived the same year Rose and Sea Mist Green both retired, which was a fairly dramatic clear-out. It sits close to Periwinkle Blue, and if you're comparing listings for the two, Peacock is the stronger, less lavender of the pair. Lapis took over the blue slot in 2013 and is darker again. Peacock's nine-year run means there's plenty of it about, which makes it one of the easier retired blues to collect."
         },
         {
-            "color":"Heather",
-            "description":"Introducing Heather, made by The Fiesta Tableware Company from 2006 to 2008. It's a soft and subtle shade of purple, reminiscent of blooming heather flowers in a tranquil meadow. Heather adds a touch of tranquility and elegance to any tablescape. Mix and match Heather with colors like White and Sunflower for a delicate and romantic table setting, or pair it with Plum and Slate for a more sophisticated and serene combination.",
-            "sku":"328",
-            "hex":"#62374E",
-            "hsv":"hsv(327.91, 43.88%, 38.43%)",
+            "color": "Heather",
+            "description": "Introducing Heather, made by The Fiesta Tableware Company from 2006 to 2008. It's a soft and subtle shade of purple, reminiscent of blooming heather flowers in a tranquil meadow. Heather adds a touch of tranquility and elegance to any tablescape. Mix and match Heather with colors like White and Sunflower for a delicate and romantic table setting, or pair it with Plum and Slate for a more sophisticated and serene combination.",
+            "sku": "328",
+            "hex": "#62374E",
+            "hsv": "hsv(327.91, 43.88%, 38.43%)",
             "produced": "2006-2008",
             "prodStart": 2006,
             "prodEnd": 2008,
-            "shadeOf":"Purple",
-            "image":"0328.jpg"
+            "shadeOf": "Purple",
+            "image": "0328.jpg",
+            "notes": "Heather managed two years, 2006 to 2008, which puts it among the scarcer Post 86 colors. It's a muted, grayish purple — much softer and lighter than the Plum it overlapped with, and genuinely hard to photograph accurately, which is why listings for it vary so wildly. It replaced Periwinkle Blue on the shelf. Claret, which arrived eight years later, is the closest Fiesta has come to it since. If you like quiet, complicated colors rather than bright ones, this is one of the more interesting things the company has made, and it doesn't come up often."
         },
         {
-            "color":"Evergreen",
-            "description":"Introducing Evergreen, made by The Fiesta Tableware Company from 2007 to 2010. It's a deep and lush shade of green, reminiscent of the dense foliage of evergreen trees. Evergreen adds a touch of natural elegance and serenity to any tablescape. Mix and match Evergreen with colors like White and Sunflower for a refreshing and woodland-inspired table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
-            "sku":"329",
-            "hex":"#0B4041",
-            "hsv":"hsv(181.11, 83.08%, 25.49%)",
+            "color": "Evergreen",
+            "description": "Introducing Evergreen, made by The Fiesta Tableware Company from 2007 to 2010. It's a deep and lush shade of green, reminiscent of the dense foliage of evergreen trees. Evergreen adds a touch of natural elegance and serenity to any tablescape. Mix and match Evergreen with colors like White and Sunflower for a refreshing and woodland-inspired table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
+            "sku": "329",
+            "hex": "#0B4041",
+            "hsv": "hsv(181.11, 83.08%, 25.49%)",
             "produced": "2007-2010",
             "prodStart": 2007,
             "prodEnd": 2010,
-            "shadeOf":"Green",
-            "image":"0329.jpg"
+            "shadeOf": "Green",
+            "image": "0329.jpg",
+            "notes": "Evergreen ran three years, 2007 to 2010, and it's one of the darkest greens in the line — deep enough that it reads almost black-green in anything but direct light. It arrived just as Fiesta was moving into bakeware and lifestyle ranges, where a darker, more serious color made sense. The contrast with Shamrock, which it overlapped, is stark: nearly ΔE 46 apart, which is about as far as two colors in the same family get. Jade, introduced in 2023, is the closest thing currently in production if you want that depth without hunting."
         },
         {
-            "color":"Ivory",
-            "description":"Introducing Ivory, made by The Fiesta Tableware Company from 2008 to 2024. It's a classic and timeless shade of off-white, reminiscent of the smooth texture of ivory. Ivory adds an understated elegance to any tablescape. Mix and match Ivory with colors like Scarlet and Sunflower for a sophisticated and vibrant table setting, or pair it with Plum and Slate for a more subdued yet refined combination.",
-            "sku":"330",
-            "hex":"#F2E7C0",
-            "hsv":"hsv(46.8, 20.66%, 94.9%)",
+            "color": "Ivory",
+            "description": "Introducing Ivory, made by The Fiesta Tableware Company from 2008 to 2024. It's a classic and timeless shade of off-white, reminiscent of the smooth texture of ivory. Ivory adds an understated elegance to any tablescape. Mix and match Ivory with colors like Scarlet and Sunflower for a sophisticated and vibrant table setting, or pair it with Plum and Slate for a more subdued yet refined combination.",
+            "sku": "330",
+            "hex": "#F2E7C0",
+            "hsv": "hsv(46.8, 20.66%, 94.9%)",
             "produced": "2008-2024",
             "prodStart": 2008,
             "prodEnd": 2024,
-            "shadeOf":"White",
-            "image":"0330.jpg"
+            "shadeOf": "White",
+            "image": "0330.jpg",
+            "notes": "Ivory ran sixteen years, 2008 to 2024, which makes it one of the most common retired colors — you'll have no trouble finding it. It's a warm cream, distinctly yellower than White, and it was the everyday neutral for most of the 2010s. It's also the middle of a confusing trio: Old Ivory from 1936, Ivory from 2008, and Linen from 2025 all sit within a few ΔE of each other. Linen, which arrived the year after Ivory retired, is effectively its replacement and is slightly cooler. If you have Ivory and want to extend a set, Linen is the natural continuation."
         },
         {
-            "color":"Chocolate",
-            "description":"Introducing Chocolate, made by The Fiesta Tableware Company from 2008 to 2011. It's a rich and decadent shade of brown, reminiscent of velvety smooth chocolate. Chocolate adds a warm and inviting touch to any tablescape. Mix and match Chocolate with colors like Ivory and Sunflower for a cozy and rustic table setting, or pair it with Plum and Slate for a more refined and sophisticated combination.",
-            "sku":"331",
-            "hex":"#481C0A",
-            "hsv":"hsv(17.42, 86.11%, 28.24%)",
+            "color": "Chocolate",
+            "description": "Introducing Chocolate, made by The Fiesta Tableware Company from 2008 to 2011. It's a rich and decadent shade of brown, reminiscent of velvety smooth chocolate. Chocolate adds a warm and inviting touch to any tablescape. Mix and match Chocolate with colors like Ivory and Sunflower for a cozy and rustic table setting, or pair it with Plum and Slate for a more refined and sophisticated combination.",
+            "sku": "331",
+            "hex": "#481C0A",
+            "hsv": "hsv(17.42, 86.11%, 28.24%)",
             "produced": "2008-2011",
             "prodStart": 2008,
             "prodEnd": 2011,
-            "shadeOf":"Brown",
-            "image":"0331.jpg"
+            "shadeOf": "Brown",
+            "image": "0331.jpg",
+            "notes": "Chocolate was Fiesta's first brown, arriving in 2008 as one of three colors introduced that year — the first time the company had ever done three at once, for its 75th anniversary push. It ran three years. It's a genuinely dark brown with red in it, close enough to Cinnabar that the two are easy to confuse in a photograph. Brown is the shortest chapter in Fiesta's palette: only two colors ever, and neither is still made. It arrived during the move into bakeware, where a warm dark neutral made more sense than it did on a dinner plate."
         },
         {
-            "color":"Lemongrass",
-            "description":"Introducing Lemongrass, made by The Fiesta Tableware Company from 2009 to 2024. It's a fresh and vibrant shade of green, reminiscent of the zesty aroma of lemongrass. Lemongrass adds a lively and energetic touch to any tablescape. Mix and match Lemongrass with colors like Ivory and Sunflower for a cheerful and summery table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
-            "sku":"332",
-            "hex":"#CDE651",
-            "hsv":"hsv(70.07, 64.78%, 90.2%)",
+            "color": "Lemongrass",
+            "description": "Introducing Lemongrass, made by The Fiesta Tableware Company from 2009 to 2024. It's a fresh and vibrant shade of green, reminiscent of the zesty aroma of lemongrass. Lemongrass adds a lively and energetic touch to any tablescape. Mix and match Lemongrass with colors like Ivory and Sunflower for a cheerful and summery table setting, or pair it with Plum and Slate for a more sophisticated and earthy combination.",
+            "sku": "332",
+            "hex": "#CDE651",
+            "hsv": "hsv(70.07, 64.78%, 90.2%)",
             "produced": "2009-2024",
             "prodStart": 2009,
             "prodEnd": 2024,
-            "shadeOf":"Green",
-            "image":"0332.jpg"
+            "shadeOf": "Green",
+            "image": "0332.jpg",
+            "notes": "Lemongrass ran fifteen years, 2009 to 2024, and it's one of the brightest things Fiesta has ever made — a light, acid yellow-green with enormous saturation. It sits very close to both the vintage and Post 86 Chartreuses, effectively continuing that idea for a much longer run. It's a lead color and an assertive one: it will dominate whatever you put next to it, which is either the point or the problem depending on the table. It retired in 2024 alongside Mulberry and Butterscotch, in one of the bigger clear-outs of recent years."
         },
         {
-            "color":"Marigold",
-            "description":"Introducing Marigold, made by The Fiesta Tableware Company from 2008 to 2012. It's a vibrant and sunny shade of yellow, reminiscent of the cheerful blooms of marigold flowers. Marigold adds a burst of energy and warmth to any tablescape. Mix and match Marigold with colors like Ivory and Lemongrass for a bright and summery table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
-            "sku":"333",
-            "hex":"#F8AB03",
-            "hsv":"hsv(41.14, 98.79%, 97.25%)",
+            "color": "Marigold",
+            "description": "Introducing Marigold, made by The Fiesta Tableware Company from 2008 to 2012. It's a vibrant and sunny shade of yellow, reminiscent of the cheerful blooms of marigold flowers. Marigold adds a burst of energy and warmth to any tablescape. Mix and match Marigold with colors like Ivory and Lemongrass for a bright and summery table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
+            "sku": "333",
+            "hex": "#F8AB03",
+            "hsv": "hsv(41.14, 98.79%, 97.25%)",
             "produced": "2008-2012",
             "prodStart": 2008,
             "prodEnd": 2012,
-            "shadeOf":"Yellow",
-            "image":"0333.jpg"
+            "shadeOf": "Yellow",
+            "image": "0333.jpg",
+            "notes": "Marigold started life as a limited-edition color — it was introduced in 2008 on a 3-piece baking bowl set for the company's 75th anniversary, one of three colors that year, and later became the anniversary color for the full 2011 celebration. It ran to 2012. It's a deep, saturated golden orange-yellow, noticeably darker and richer than the Sunflower it overlapped with. That anniversary connection makes it a color collectors seek out for reasons beyond the shade itself. Daffodil, which arrived in 2017, sits fairly close and is still in production."
         },
         {
-            "color":"Paprika",
-            "description":"Introducing Paprika, made by The Fiesta Tableware Company from 2010 to 2016. It's a warm and spicy shade of brown, reminiscent of the rich hue of paprika spice. Paprika adds a cozy and inviting touch to any tablescape. Mix and match Paprika with colors like Ivory and Lemongrass for a rustic and earthy table setting, or pair it with Plum and Slate for a more refined and elegant combination.",
-            "sku":"334",
-            "hex":"#A14121",
-            "hsv":"hsv(15, 79.5%, 63.14%)",
+            "color": "Paprika",
+            "description": "Introducing Paprika, made by The Fiesta Tableware Company from 2010 to 2016. It's a warm and spicy shade of brown, reminiscent of the rich hue of paprika spice. Paprika adds a cozy and inviting touch to any tablescape. Mix and match Paprika with colors like Ivory and Lemongrass for a rustic and earthy table setting, or pair it with Plum and Slate for a more refined and elegant combination.",
+            "sku": "334",
+            "hex": "#A14121",
+            "hsv": "hsv(15, 79.5%, 63.14%)",
             "produced": "2010-2016",
             "prodStart": 2010,
             "prodEnd": 2016,
-            "shadeOf":"Brown",
-            "image":"0334.jpg"
+            "shadeOf": "Brown",
+            "image": "0334.jpg",
+            "notes": "Paprika ran six years, 2010 to 2016, and it's classed as a brown but honestly reads as a burnt orange-red — it sits closer to Scarlet than to Chocolate, the only other brown Fiesta made. It arrived the year the company bought Hall China, and it's the longer-lasting of the two browns by a factor of two. It's a lead color with real warmth, and it's one of the better retired colors for an autumn table. If you're trying to place it against current production, it lands between Poppy and Scarlet."
         },
         {
-            "color":"Flamingo",
-            "description":"Introducing Flamingo, made by The Fiesta Tableware Company from 2012 to 2013. It's a vibrant and playful shade of red, reminiscent of the bright plumage of flamingo birds. Flamingo adds a bold and energetic touch to any tablescape. Mix and match Flamingo with colors like Ivory and Lemongrass for a fun and whimsical table setting, or pair it with Plum and Slate for a more sophisticated and dramatic combination.",
-            "sku":"335",
-            "hex":"#E37468",
-            "hsv":"hsv(5.85, 54.19%, 89.02%)",
-            "produced":"2012-2013",
+            "color": "Flamingo",
+            "description": "Introducing Flamingo, made by The Fiesta Tableware Company from 2012 to 2013. It's a vibrant and playful shade of red, reminiscent of the bright plumage of flamingo birds. Flamingo adds a bold and energetic touch to any tablescape. Mix and match Flamingo with colors like Ivory and Lemongrass for a fun and whimsical table setting, or pair it with Plum and Slate for a more sophisticated and dramatic combination.",
+            "sku": "335",
+            "hex": "#E37468",
+            "hsv": "hsv(5.85, 54.19%, 89.02%)",
+            "produced": "2012-2013",
             "prodStart": 2012,
             "prodEnd": 2013,
-            "shadeOf":"Red",
-            "image":"0335.jpg"
+            "shadeOf": "Red",
+            "image": "0335.jpg",
+            "notes": "Flamingo lasted one year — 2012 to 2013 — which makes it one of the shortest runs in the whole line and one of the harder modern colors to find. It's a soft coral-pink, lighter and gentler than Scarlet, and it displaced Marigold on the shelf when it arrived. If you like it, the good news is that Peony, introduced in 2022 and still in production, is only about ΔE 4 away — close enough that most people wouldn't spot the difference across a table. That makes Flamingo one of the few scarce colors with a genuinely viable modern substitute."
         },
         {
-            "color":"Lapis",
-            "description":"Introducing Lapis, made by The Fiesta Tableware Company from 2013 to current production. It's a deep and majestic shade of blue, reminiscent of the rich hue of lapis lazuli gemstones. Lapis adds a touch of elegance and sophistication to any tablescape. Mix and match Lapis with colors like Ivory and Lemongrass for a classic and refined table setting, or pair it with Plum and Slate for a more subdued yet luxurious combination.",
-            "sku":"337",
-            "hex":"#2B64A1",
-            "hsv":"hsv(211.02, 73.29%, 63.14%)",
+            "color": "Lapis",
+            "description": "Introducing Lapis, made by The Fiesta Tableware Company from 2013 to current production. It's a deep and majestic shade of blue, reminiscent of the rich hue of lapis lazuli gemstones. Lapis adds a touch of elegance and sophistication to any tablescape. Mix and match Lapis with colors like Ivory and Lemongrass for a classic and refined table setting, or pair it with Plum and Slate for a more subdued yet luxurious combination.",
+            "sku": "337",
+            "hex": "#2B64A1",
+            "hsv": "hsv(211.02, 73.29%, 63.14%)",
             "produced": "2013-current",
             "prodStart": 2013,
             "prodEnd": "current",
-            "shadeOf":"Blue",
-            "image":"0337.jpg"
+            "shadeOf": "Blue",
+            "image": "0337.jpg",
+            "notes": "Lapis arrived in 2013 and is still in production, which makes it one of the modern line's anchors. It's a deep, slightly muted blue — darker than the Peacock it overlapped with, and calmer than Sapphire, the one-year color from 1996 it most resembles. It arrived the same year Elizabeth McIlvain took over as president. It's an accent rather than a lead: strong enough to matter on a table, restrained enough not to run it. If you want a dark blue you can still buy in quantity, this is the one, now that Cobalt and Twilight have both gone."
         },
         {
-            "color":"Poppy",
-            "description":"Introducing Poppy, made by The Fiesta Tableware Company from 2014 to current production. It's a vibrant and fiery shade of orange, reminiscent of the bold hue of poppy flowers. Poppy adds a lively and energetic touch to any tablescape. Mix and match Poppy with colors like Ivory and Lemongrass for a bright and cheerful table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
-            "sku":"338",
-            "hex":"#F24B21",
-            "hsv":"hsv(12.06, 86.36%, 94.9%)",
+            "color": "Poppy",
+            "description": "Introducing Poppy, made by The Fiesta Tableware Company from 2014 to current production. It's a vibrant and fiery shade of orange, reminiscent of the bold hue of poppy flowers. Poppy adds a lively and energetic touch to any tablescape. Mix and match Poppy with colors like Ivory and Lemongrass for a bright and cheerful table setting, or pair it with Plum and Slate for a more sophisticated and autumnal combination.",
+            "sku": "338",
+            "hex": "#F24B21",
+            "hsv": "hsv(12.06, 86.36%, 94.9%)",
             "produced": "2014-current",
             "prodStart": 2014,
             "prodEnd": "current",
-            "shadeOf":"Orange",
-            "image":"0338.jpg"
+            "shadeOf": "Orange",
+            "image": "0338.jpg",
+            "notes": "Poppy is the most saturated glaze Fiesta has ever produced — nothing else in sixty-one colors carries as much pure color. It arrived in 2014, the same year Black and Peacock both retired and the Bistro shape family launched, and it's still in production. It's a fiery orange-red, darker and considerably more intense than the Tangerine it took over from. Use it carefully: it's a lead color in the strongest sense, and two or three settings will carry an entire table. Put it next to neutrals and it sings; put it next to another saturated color and they fight."
         },
         {
-            "color":"Slate",
-            "description":"Introducing Slate, made by The Fiesta Tableware Company from 2015 to 2022. It's a sleek and sophisticated shade of black, reminiscent of smooth slate stone. Slate adds a touch of modernity and elegance to any tablescape. Mix and match Slate with colors like Ivory and Lemongrass for a contemporary and chic table setting, or pair it with Plum and Poppy for a dramatic and striking combination.",
-            "sku":"339",
-            "hex":"#2f2f2f",
-            "hsv":"hsv(0, 0%, 18.43%)",
+            "color": "Slate",
+            "description": "Introducing Slate, made by The Fiesta Tableware Company from 2015 to 2022. It's a sleek and sophisticated shade of black, reminiscent of smooth slate stone. Slate adds a touch of modernity and elegance to any tablescape. Mix and match Slate with colors like Ivory and Lemongrass for a contemporary and chic table setting, or pair it with Plum and Poppy for a dramatic and striking combination.",
+            "sku": "339",
+            "hex": "#2f2f2f",
+            "hsv": "hsv(0, 0%, 18.43%)",
             "produced": "2015-2022",
             "prodStart": 2015,
             "prodEnd": 2022,
-            "shadeOf":"Black",
-            "image":"0339.jpg"
+            "shadeOf": "Black",
+            "image": "0339.jpg",
+            "notes": "Slate ran seven years, 2015 to 2022, arriving alongside Sage in one of the few double-introduction years. It's a soft charcoal rather than a true black — noticeably lighter than the Black it succeeded, and warmer in feel than either Black or Foundry. That makes it the most usable of Fiesta's dark colors for a full setting: dramatic without being severe. It retired in 2022 when Peony arrived. If you want the same effect from current production, Foundry is the only option, and it's considerably darker."
         },
         {
-            "color":"Sage",
-            "description":"Introducing Sage, made by The Fiesta Tableware Company from 2015 to 2018. It's a soft and earthy shade of green, reminiscent of the aromatic herb sage. Sage adds a touch of natural elegance and tranquility to any tablescape. Mix and match Sage with colors like Ivory and Lemongrass for a fresh and calming table setting, or pair it with Plum and Poppy for a more vibrant and eclectic combination.",
-            "sku":"340",
-            "hex":"#4B5320",
-            "hsv":"hsv(69.41, 61.45%, 32.55%)",
+            "color": "Sage",
+            "description": "Introducing Sage, made by The Fiesta Tableware Company from 2015 to 2018. It's a soft and earthy shade of green, reminiscent of the aromatic herb sage. Sage adds a touch of natural elegance and tranquility to any tablescape. Mix and match Sage with colors like Ivory and Lemongrass for a fresh and calming table setting, or pair it with Plum and Poppy for a more vibrant and eclectic combination.",
+            "sku": "340",
+            "hex": "#4B5320",
+            "hsv": "hsv(69.41, 61.45%, 32.55%)",
             "produced": "2015-2018",
             "prodStart": 2015,
             "prodEnd": 2018,
-            "shadeOf":"Green",
-            "image":"0340.jpg"
+            "shadeOf": "Green",
+            "image": "0340.jpg",
+            "notes": "Sage ran three years, 2015 to 2018, arriving alongside Slate — one of the rare years Fiesta introduced two colors in the same season. It's a soft, dusty olive green, and the contrast with Lemongrass, which it overlapped, is about as extreme as the green family gets. It's a quiet, earthy color that behaves more like a neutral than an accent. Jade, introduced in 2023, is the closest thing currently in production, though Jade is darker and cleaner. Three years is a short run, so Sage doesn't come up often."
         },
         {
-            "color":"Foundry",
-            "description":"Introducing Foundry, not an official Fiesta color but made by The Fiesta Tableware Company from 2016 to current production. It's a bold and industrial shade of black, with the rugged texture of cast iron. Foundry adds a touch of modernity and sophistication to any tablescape. Mix and match Foundry with colors like Ivory and Lemongrass for a contemporary and chic table setting, or pair it with Plum and Poppy for a dramatic and striking combination.",
-            "sku":"20000",
-            "hex":"#111111",
-            "hsv":"hsv(0, 0%, 6.67%)",
+            "color": "Foundry",
+            "description": "Introducing Foundry, not an official Fiesta color but made by The Fiesta Tableware Company from 2016 to current production. It's a bold and industrial shade of black, with the rugged texture of cast iron. Foundry adds a touch of modernity and sophistication to any tablescape. Mix and match Foundry with colors like Ivory and Lemongrass for a contemporary and chic table setting, or pair it with Plum and Poppy for a dramatic and striking combination.",
+            "sku": "20000",
+            "hex": "#111111",
+            "hsv": "hsv(0, 0%, 6.67%)",
             "produced": "2016-current",
             "prodStart": 2016,
             "prodEnd": "current",
-            "shadeOf":"Black",
-            "image":"20000.jpg"
+            "shadeOf": "Black",
+            "image": "20000.jpg",
+            "notes": "Foundry is the odd one out. Introduced in 2016 for Fiesta's 80th anniversary, it isn't counted as an official Fiesta color by the company — it's a separate line with a distinctly different surface, a rugged cast-iron texture rather than the usual gloss. It's near-black and it's still in production, which makes it the only dark option currently available since Black and Slate both retired. As a charger under a bright color it's excellent; as a full setting it's a commitment. If you're cataloguing a collection, be aware it carries No. 20000 rather than a standard number in the 300s."
         },
         {
-            "color":"Claret",
-            "description":"Introducing Claret, made by The Fiesta Tableware Company from 2016 to 2017. It's a rich and luxurious shade of red, reminiscent of the deep hue of claret wine. Claret adds a touch of elegance and sophistication to any tablescape. Mix and match Claret with colors like Ivory and Lemongrass for a refined and romantic table setting, or pair it with Plum and Poppy for a more dramatic and festive combination.",
-            "sku":"341",
-            "hex":"#5C2432",
-            "hsv":"hsv(345, 60.87%, 36.08%)",
+            "color": "Claret",
+            "description": "Introducing Claret, made by The Fiesta Tableware Company from 2016 to 2017. It's a rich and luxurious shade of red, reminiscent of the deep hue of claret wine. Claret adds a touch of elegance and sophistication to any tablescape. Mix and match Claret with colors like Ivory and Lemongrass for a refined and romantic table setting, or pair it with Plum and Poppy for a more dramatic and festive combination.",
+            "sku": "341",
+            "hex": "#5C2432",
+            "hsv": "hsv(345, 60.87%, 36.08%)",
             "produced": "2016-2017",
             "prodStart": 2016,
             "prodEnd": 2017,
-            "shadeOf":"Red",
-            "image":"0341.jpg"
+            "shadeOf": "Red",
+            "image": "0341.jpg",
+            "notes": "Claret lasted one year — 2016 to 2017 — introduced for Fiesta's 80th anniversary and the company's 145th, then gone. That makes it genuinely scarce. It's a deep wine red with a lot of purple in it, dark enough that it sits closer to Heather than to any other red in the palette. It's one of the more sophisticated colors Fiesta has made and one of the least understood: it photographs badly, reading almost brown in poor light. If you're building a dark, moody table, Claret and Cinnabar together are hard to beat — but you'll be hunting for both."
         },
         {
-            "color":"Daffodil",
-            "description":"Introducing Daffodil, made by The Fiesta Tableware Company from 2017 to current production. It's a bright and cheerful shade of yellow, reminiscent of the sunny blooms of daffodil flowers. Daffodil adds a burst of energy and warmth to any tablescape. Mix and match Daffodil with colors like Ivory and Lemongrass for a vibrant and summery table setting, or pair it with Plum and Poppy for a more dynamic and festive combination.",
-            "sku":"342",
-            "hex":"#F7C308",
-            "hsv":"hsv(46.95, 96.76%, 96.86%)",
+            "color": "Daffodil",
+            "description": "Introducing Daffodil, made by The Fiesta Tableware Company from 2017 to current production. It's a bright and cheerful shade of yellow, reminiscent of the sunny blooms of daffodil flowers. Daffodil adds a burst of energy and warmth to any tablescape. Mix and match Daffodil with colors like Ivory and Lemongrass for a vibrant and summery table setting, or pair it with Plum and Poppy for a more dynamic and festive combination.",
+            "sku": "342",
+            "hex": "#F7C308",
+            "hsv": "hsv(46.95, 96.76%, 96.86%)",
             "produced": "2017-current",
             "prodStart": 2017,
             "prodEnd": "current",
-            "shadeOf":"Yellow",
-            "image":"0342.jpg"
+            "shadeOf": "Yellow",
+            "image": "0342.jpg",
+            "notes": "Daffodil arrived in 2017 and is still in production, taking over yellow duty from Marigold. It's a bright, clean yellow with enormous saturation — one of the most vivid glazes in the line — and it's noticeably sharper than the Sunflower it eventually outlived. It arrived the same year Claret and Tangerine both retired. Being very light and very saturated makes it tricky: dark food looks spectacular against it, pale food vanishes. It's the closest current color to the vintage Antique Gold, only about ΔE 5 away, which makes it useful for extending a late-vintage table."
         },
         {
-            "color":"Mulberry",
-            "description":"Introducing Mulberry, made by The Fiesta Tableware Company from 2018 to 2024. It's a rich and luxurious shade of purple, reminiscent of the deep hue of ripe mulberries. Mulberry adds a touch of elegance and sophistication to any tablescape. Mix and match Mulberry with colors like Ivory and Lemongrass for a refined and romantic table setting, or pair it with Plum and Poppy for a more dramatic and festive combination.",
-            "sku":"343",
-            "hex":"#381943",
-            "hsv":"hsv(284.29, 62.69%, 26.27%)",
+            "color": "Mulberry",
+            "description": "Introducing Mulberry, made by The Fiesta Tableware Company from 2018 to 2024. It's a rich and luxurious shade of purple, reminiscent of the deep hue of ripe mulberries. Mulberry adds a touch of elegance and sophistication to any tablescape. Mix and match Mulberry with colors like Ivory and Lemongrass for a refined and romantic table setting, or pair it with Plum and Poppy for a more dramatic and festive combination.",
+            "sku": "343",
+            "hex": "#381943",
+            "hsv": "hsv(284.29, 62.69%, 26.27%)",
             "produced": "2018-2024",
             "prodStart": 2018,
             "prodEnd": 2024,
-            "shadeOf":"Purple",
-            "image":"0343.jpg"
+            "shadeOf": "Purple",
+            "image": "0343.jpg",
+            "notes": "Mulberry ran six years, 2018 to 2024, and it's a deep, dark purple with a lot of red in it. It arrived the year Fiesta opened its Atlanta showroom, replacing Sage on the shelf. The thing to know: it sits only ΔE 5 from Plum, which retired in 2015 — close enough that side by side most people can't reliably separate them, and close enough that they shouldn't really share a table. It retired in 2024 with Lemongrass and Butterscotch. Lavender, the 2026 color, is much lighter and represents a complete change of direction for the purple family."
         },
         {
-            "color":"Meadow",
-            "description":"Introducing Meadow, made by The Fiesta Tableware Company from 2019 to current production. It's a serene and refreshing shade of green, reminiscent of the lush meadows of springtime. Meadow adds a touch of natural elegance and tranquility to any tablescape. Mix and match Meadow with colors like Ivory and Daffodil for a fresh and calming table setting, or pair it with Plum and Poppy for a more vibrant and dynamic combination.",
-            "sku":"344",
-            "hex":"#5B9565",
-            "hsv":"hsv(130.34, 38.93%, 58.43%)",
+            "color": "Meadow",
+            "description": "Introducing Meadow, made by The Fiesta Tableware Company from 2019 to current production. It's a serene and refreshing shade of green, reminiscent of the lush meadows of springtime. Meadow adds a touch of natural elegance and tranquility to any tablescape. Mix and match Meadow with colors like Ivory and Daffodil for a fresh and calming table setting, or pair it with Plum and Poppy for a more vibrant and dynamic combination.",
+            "sku": "344",
+            "hex": "#5B9565",
+            "hsv": "hsv(130.34, 38.93%, 58.43%)",
             "produced": "2019-current",
             "prodStart": 2019,
             "prodEnd": "current",
-            "shadeOf":"Green",
-            "image":"0344.jpg"
+            "shadeOf": "Green",
+            "image": "0344.jpg",
+            "notes": "Meadow arrived in 2019 and is still in production. It's a soft, mid-depth green with a slightly grayish cast — considerably lighter than the Sage it replaced. The interesting thing about it is what it's close to: Medium Green, the famously scarce vintage color from 1959, sits only about ΔE 7 away. That makes Meadow the most practical modern stand-in for the single hardest vintage color to find, which is worth knowing if you're building a vintage-look table and would rather not pay vintage-Medium-Green prices."
         },
         {
-            "color":"Butterscotch",
-            "description":"Introducing Butterscotch, made by The Fiesta Tableware Company from 2020 to 2024. It's a warm and inviting shade of orange, reminiscent of the sweet and creamy flavor of butterscotch candy. Butterscotch adds a cozy and nostalgic touch to any tablescape. Mix and match Butterscotch with colors like Ivory and Meadow for a cheerful and autumnal table setting, or pair it with Plum and Poppy for a more vibrant and festive combination.",
-            "sku":"345",
-            "hex":"#F98300",
-            "hsv":"hsv(31.57, 100%, 97.65%)",
+            "color": "Butterscotch",
+            "description": "Introducing Butterscotch, made by The Fiesta Tableware Company from 2020 to 2024. It's a warm and inviting shade of orange, reminiscent of the sweet and creamy flavor of butterscotch candy. Butterscotch adds a cozy and nostalgic touch to any tablescape. Mix and match Butterscotch with colors like Ivory and Meadow for a cheerful and autumnal table setting, or pair it with Plum and Poppy for a more vibrant and festive combination.",
+            "sku": "345",
+            "hex": "#F98300",
+            "hsv": "hsv(31.57, 100%, 97.65%)",
             "produced": "2020-2024",
             "prodStart": 2020,
             "prodEnd": 2024,
-            "shadeOf":"Orange",
-            "image":"0345.jpg"
+            "shadeOf": "Orange",
+            "image": "0345.jpg",
+            "notes": "Butterscotch ran four years, 2020 to 2024, and it's a warm, deep golden orange — lighter than Poppy, which it overlapped, and closer to the retired Tangerine than to anything currently made. It arrived the year the company sold off its foodservice divisions and refocused entirely on dinnerware for the home, which makes it a marker of a real turning point. It retired in 2024 alongside Lemongrass and Mulberry. Of the recently retired colors, this is the one people ask about most, and a short run means it's already getting harder to find."
         },
         {
-            "color":"Twilight",
-            "description":"Introducing Twilight, made by The Fiesta Tableware Company from 2021 to 2026. It's a deep and enchanting shade of blue, reminiscent of the captivating hues of twilight sky. Twilight adds a touch of elegance and sophistication to any tablescape. Mix and match Twilight with colors like Ivory and Meadow for a serene and romantic table setting, or pair it with Plum and Poppy for a more dramatic and luxurious combination.",
-            "sku":"346",
-            "hex":"#120F71",
-            "hsv":"hsv(241.84, 86.73%, 44.31%)",
+            "color": "Twilight",
+            "description": "Introducing Twilight, made by The Fiesta Tableware Company from 2021 to 2026. It's a deep and enchanting shade of blue, reminiscent of the captivating hues of twilight sky. Twilight adds a touch of elegance and sophistication to any tablescape. Mix and match Twilight with colors like Ivory and Meadow for a serene and romantic table setting, or pair it with Plum and Poppy for a more dramatic and luxurious combination.",
+            "sku": "346",
+            "hex": "#120F71",
+            "hsv": "hsv(241.84, 86.73%, 44.31%)",
             "produced": "2021-2026",
             "prodStart": 2021,
             "prodEnd": 2026,
-            "shadeOf":"Blue",
-            "image":"0346.jpg"
+            "shadeOf": "Blue",
+            "image": "0346.jpg",
+            "notes": "Twilight ran five years, 2021 to 2026, and it's the darkest, most intense blue Fiesta has ever made — a near-navy with genuine saturation behind it, quite different from the muted depth of Cobalt. It arrived for the company's 150th anniversary and Fiesta's 85th, and it displaced both Cobalt and Shamrock on the shelf. It only just retired, when Lavender arrived for the 90th, so it's still easy to find second-hand — but that won't last. If you want a dramatic dark blue, this is the one to grab while it's still around."
         },
         {
-            "color":"Peony",
-            "description":"Introducing Peony, made by The Fiesta Tableware Company from 2022 to current production. It's a soft and delicate shade of red, reminiscent of the graceful petals of peony flowers. Peony adds a touch of romance and elegance to any tablescape. Mix and match Peony with colors like Ivory and Meadow for a charming and whimsical table setting, or pair it with Twilight and Butterscotch for a more sophisticated and luxurious combination.",
-            "sku":"347",
-            "hex":"#D57C74",
-            "hsv":"hsv(4.95, 45.54%, 83.53%)",
+            "color": "Peony",
+            "description": "Introducing Peony, made by The Fiesta Tableware Company from 2022 to current production. It's a soft and delicate shade of red, reminiscent of the graceful petals of peony flowers. Peony adds a touch of romance and elegance to any tablescape. Mix and match Peony with colors like Ivory and Meadow for a charming and whimsical table setting, or pair it with Twilight and Butterscotch for a more sophisticated and luxurious combination.",
+            "sku": "347",
+            "hex": "#D57C74",
+            "hsv": "hsv(4.95, 45.54%, 83.53%)",
             "produced": "2022-current",
             "prodStart": 2022,
             "prodEnd": "current",
-            "shadeOf":"Red",
-            "image":"0347.jpg"
+            "shadeOf": "Red",
+            "image": "0347.jpg",
+            "notes": "Peony arrived in 2022, replacing Slate on the shelf, and is still in production. It's a soft, dusty rose — much lighter and gentler than the Claret it followed, which is about as sharp a turn as the red family has taken. It's the closest current color to the retired Flamingo (ΔE 4) and to both Roses, vintage and Post 86, which makes it genuinely useful: if you have any of those three and want to extend a set with pieces you can still buy, this is the answer. As an accent it's easy to place; as a full setting it's very soft."
         },
         {
-            "color":"Jade",
-            "description":"Introducing Jade, made by The Fiesta Tableware Company from 2023 to current production. It's a rich and vibrant shade of green, reminiscent of the luscious hue of jade gemstones. Jade adds a touch of natural beauty and sophistication to any tablescape. Mix and match Jade with colors like Ivory and Meadow for a fresh and elegant table setting, or pair it with Twilight and Butterscotch for a more dynamic and luxurious combination.",
-            "sku":"348",
-            "hex":"#1D4729",
-            "hsv":"hsv(137.14, 59.15%, 27.84%)",
+            "color": "Jade",
+            "description": "Introducing Jade, made by The Fiesta Tableware Company from 2023 to current production. It's a rich and vibrant shade of green, reminiscent of the luscious hue of jade gemstones. Jade adds a touch of natural beauty and sophistication to any tablescape. Mix and match Jade with colors like Ivory and Meadow for a fresh and elegant table setting, or pair it with Twilight and Butterscotch for a more dynamic and luxurious combination.",
+            "sku": "348",
+            "hex": "#1D4729",
+            "hsv": "hsv(137.14, 59.15%, 27.84%)",
             "produced": "2023-current",
             "prodStart": 2023,
             "prodEnd": "current",
-            "shadeOf":"Green",
-            "image":"0348.jpg"
+            "shadeOf": "Green",
+            "image": "0348.jpg",
+            "notes": "Jade arrived in 2023 and is still in production. It's a deep, cool green — considerably darker than the Meadow it overlapped with, and one of the few genuinely dark colors currently available. That depth makes it behave more like a neutral anchor than an accent: pale food reads beautifully on it. It's the closest thing in current production to the original 1936 Light Green (ΔE 10), which makes it a reasonable modern partner for vintage pieces. With Evergreen long retired, Jade is the only dark green Fiesta currently makes."
         },
         {
-            "color":"Sky",
-            "description":"Introducing Sky, made by The Fiesta Tableware Company from 2024 to current production. It's a serene and calming shade of blue, reminiscent of the vast expanse of the sky on a clear day. Sky adds a touch of tranquility and elegance to any tablescape. Mix and match Sky with colors like Ivory and Meadow for a peaceful and sophisticated table setting, or pair it with Twilight and Butterscotch for a more vibrant and dynamic combination.",
-            "sku":"349",
-            "hex":"#B4D6DF",
-            "hsv":"hsv(192.56, 19.28%, 87.45%)",
+            "color": "Sky",
+            "description": "Introducing Sky, made by The Fiesta Tableware Company from 2024 to current production. It's a serene and calming shade of blue, reminiscent of the vast expanse of the sky on a clear day. Sky adds a touch of tranquility and elegance to any tablescape. Mix and match Sky with colors like Ivory and Meadow for a peaceful and sophisticated table setting, or pair it with Twilight and Butterscotch for a more vibrant and dynamic combination.",
+            "sku": "349",
+            "hex": "#B4D6DF",
+            "hsv": "hsv(192.56, 19.28%, 87.45%)",
             "produced": "2024-current",
             "prodStart": 2024,
             "prodEnd": "current",
-            "shadeOf":"Blue",
-            "image":"0349.jpg"
+            "shadeOf": "Blue",
+            "image": "0349.jpg",
+            "notes": "Sky arrived in 2024 and is still in production. It's a pale, soft blue with very little saturation — a quiet color, closer in behavior to a neutral than to Turquoise or Lapis. The swing from Twilight, the near-navy it overlapped, is the largest jump the blue family has ever made: about ΔE 71. It arrived in a big year of change, with Lemongrass, Mulberry and Butterscotch all retiring at once. Because it carries so little color, it will sit next to almost anything, which makes it one of the easier current colors to add to an existing collection."
         },
         {
-            "color":"Linen",
-            "description":"Introducing Linen, Fiesta's new color for 2025, continuing into current production. This light cream hue offers a quiet sophistication, echoing the charm of Ivory with a modern twist. Linen is ideal for a serene tablescape; pair it with colors like Sage for calm, or Scarlet for a bold contrast, perfect for all dining occasions.",
-            "sku":"350",
-            "hex":"#EBE4D2",
-            "hsv":"hsv(45, 11%, 92%)",
+            "color": "Linen",
+            "description": "Introducing Linen, Fiesta's new color for 2025, continuing into current production. This light cream hue offers a quiet sophistication, echoing the charm of Ivory with a modern twist. Linen is ideal for a serene tablescape; pair it with colors like Sage for calm, or Scarlet for a bold contrast, perfect for all dining occasions.",
+            "sku": "350",
+            "hex": "#EBE4D2",
+            "hsv": "hsv(45, 11%, 92%)",
             "produced": "2025-current",
             "prodStart": 2025,
             "prodEnd": "current",
-            "shadeOf":"White",
-            "image":"0350.png"
+            "shadeOf": "White",
+            "image": "0350.png",
+            "notes": "Linen arrived in 2025 and is still in production, taking over as the warm neutral after Ivory retired the year before. It's a light cream, slightly cooler and more muted than Ivory was. The thing worth knowing: it sits only ΔE 3 from Old Ivory, one of the original 1936 colors — which makes Linen the closest thing you can currently buy to the neutral Fiesta launched with ninety years ago. If you're building a vintage-look table with modern pieces, that's a genuinely useful fact. As a ground color it takes any accent you put on it."
         },
         {
-            "color":"Lavender",
-            "description":"Meet Lavender, Fiesta’s new color for 2026, and 90th anniversary color, continuing into current production. Inspired by the soft and delicate beauty, this gentle tone adds a sense of calm to everyday dining and creates a kitchen atmosphere that feels fresh, welcoming, and effortlessly timeless. Pair Lavender with colors like Linen or Sky for a soft, harmonious look - for a more striking contrast try Plum or Mulberry.",
-            "sku":"351",
-            "hex":"#9694B8",
-            "hsv":"hsv(243, 20%, 72%)",
+            "color": "Lavender",
+            "description": "Meet Lavender, Fiesta’s new color for 2026, and 90th anniversary color, continuing into current production. Inspired by the soft and delicate beauty, this gentle tone adds a sense of calm to everyday dining and creates a kitchen atmosphere that feels fresh, welcoming, and effortlessly timeless. Pair Lavender with colors like Linen or Sky for a soft, harmonious look - for a more striking contrast try Plum or Mulberry.",
+            "sku": "351",
+            "hex": "#9694B8",
+            "hsv": "hsv(243, 20%, 72%)",
             "produced": "2026-current",
             "prodStart": 2026,
             "prodEnd": "current",
-            "shadeOf":"Purple",
-            "image":"0351.png"
+            "shadeOf": "Purple",
+            "image": "0351.png",
+            "notes": "Lavender is Fiesta's ninetieth-anniversary color, introduced in 2026, and it's the newest thing in the line. It's a soft, grayed purple with very little saturation — a complete change of direction from the deep Mulberry it followed, about ΔE 42 away. Purple is Fiesta's rarest family, only five colors in ninety years, and this is the lightest of them by a distance. It arrived as Sunflower and Twilight both retired. It's a quiet color that works as a bridge between stronger pieces, and it sits closest to Lilac, the scarce 1993 purple, of anything the company has made."
         }
     ],
-    "products":[
+    "products": [
         {
-            "prod":"Accessories",
-            "desc":"Bring style and function to your kitchen with accessories made in the USA by The Fiesta Tableware Company. Our handcrafted American-made accessories are designed to make your daily cooking tasks easier and more efficient. From Fiesta Dancing Lady cookie jars to soap dishes and everything in between, our accessories are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home decorator, our accessories will elevate every experience. "
+            "prod": "Accessories",
+            "desc": "Bring style and function to your kitchen with accessories made in the USA by The Fiesta Tableware Company. Our handcrafted American-made accessories are designed to make your daily cooking tasks easier and more efficient. From Fiesta Dancing Lady cookie jars to soap dishes and everything in between, our accessories are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home decorator, our accessories will elevate every experience. "
         },
         {
-            "prod":"Bar Ware",
-            "desc":"Add a pop of color to your bar with bar ware made in the USA by The Fiesta Tableware Company. Our handcrafted American-made bar ware is designed to bring a touch of fun and style to your next cocktail party or dinner gathering. From glasses to shakers, our Fiesta bar ware collection is made with your favorite vibrant colors and durable materials, ensuring they will last for years to come. Our barware is perfect for adding a touch of color to any occasion. "
+            "prod": "Bar Ware",
+            "desc": "Add a pop of color to your bar with bar ware made in the USA by The Fiesta Tableware Company. Our handcrafted American-made bar ware is designed to bring a touch of fun and style to your next cocktail party or dinner gathering. From glasses to shakers, our Fiesta bar ware collection is made with your favorite vibrant colors and durable materials, ensuring they will last for years to come. Our barware is perfect for adding a touch of color to any occasion. "
         },
         {
-            "prod":"Bakeware",
-            "desc":"Bakeware made in the USA by The Fiesta Tableware Company is a top choice for home bakers and professional chefs alike. These high-quality products are crafted with attention to detail and a commitment to excellence, and they are designed to withstand the rigors of everyday use. From baking trays and loaf pans to covered casseroles and pie dishes, you can find a wide range of options and colors to choose from."
+            "prod": "Bakeware",
+            "desc": "Bakeware made in the USA by The Fiesta Tableware Company is a top choice for home bakers and professional chefs alike. These high-quality products are crafted with attention to detail and a commitment to excellence, and they are designed to withstand the rigors of everyday use. From baking trays and loaf pans to covered casseroles and pie dishes, you can find a wide range of options and colors to choose from."
         },
         {
-            "prod":"Bouillon & Ramekins",
-            "desc":"Bouillons and ramekins are essential kitchen tools that are perfect for a wide range of cooking and serving needs. Bouillons, also known as broth cups or consommé cups, are small, shallow dishes that are typically used for serving broth or other liquids. Ramekins, on the other hand, are small, cylindrical dishes that are often used for baking and serving individual portions of food, such as creme brulee or baked eggs. The Fiesta Tableware Company proudly produces both in a wide range of sizes, colors, and styles, making them suitable for use in a variety of settings."
+            "prod": "Bouillon & Ramekins",
+            "desc": "Bouillons and ramekins are essential kitchen tools that are perfect for a wide range of cooking and serving needs. Bouillons, also known as broth cups or consommé cups, are small, shallow dishes that are typically used for serving broth or other liquids. Ramekins, on the other hand, are small, cylindrical dishes that are often used for baking and serving individual portions of food, such as creme brulee or baked eggs. The Fiesta Tableware Company proudly produces both in a wide range of sizes, colors, and styles, making them suitable for use in a variety of settings."
         },
         {
-            "prod":"Bowls & Dishes",
-            "desc":"From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to bowls and dishes made in the USA by The Fiesta Tableware Company. So whether you are looking for a simple, elegant design or something bold and striking, you can find the perfect option to suit your needs!"
+            "prod": "Bowls & Dishes",
+            "desc": "From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to bowls and dishes made in the USA by The Fiesta Tableware Company. So whether you are looking for a simple, elegant design or something bold and striking, you can find the perfect option to suit your needs!"
         },
         {
-            "prod":"Canisters & Crocks",
-            "desc":"Canisters and crocks made in the USA by The Fiesta Tableware Company are high-quality products that are perfect for a wide range of kitchen storage needs.  Whether you are looking for Fiesta canisters to store dry goods like flour, sugar, and coffee, or crocks to hold utensils, gadgets, and other kitchen tools, you can find a wide range of options to choose from."
+            "prod": "Canisters & Crocks",
+            "desc": "Canisters and crocks made in the USA by The Fiesta Tableware Company are high-quality products that are perfect for a wide range of kitchen storage needs.  Whether you are looking for Fiesta canisters to store dry goods like flour, sugar, and coffee, or crocks to hold utensils, gadgets, and other kitchen tools, you can find a wide range of options to choose from."
         },
         {
-            "prod":"Drinkware",
-            "desc":"From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to American-made drinkware by The Fiesta Tableware Company.  Whether you are looking for mugs for your morning coffee, glasses for your evening cocktail, or tumblers for your daily hydration - you can find a wide range of options to choose from when it comes to our high-quality drinkware."
+            "prod": "Drinkware",
+            "desc": "From classic and traditional styles to modern and contemporary designs, there is a wide range of options to choose from when it comes to American-made drinkware by The Fiesta Tableware Company.  Whether you are looking for mugs for your morning coffee, glasses for your evening cocktail, or tumblers for your daily hydration - you can find a wide range of options to choose from when it comes to our high-quality drinkware."
         },
         {
-            "prod":"Ornaments",
-            "desc":"Ceramic Christmas tree ornaments made in the USA by The Fiesta Tableware Company are high-quality, handcrafted products that are perfect for adding a touch of holiday cheer to your home. Whether you are looking for a specific theme, color scheme, or style, you can trust that these ornaments are made with the same attention to detail and a commitment to excellence we've had since 1871."
+            "prod": "Ornaments",
+            "desc": "Ceramic Christmas tree ornaments made in the USA by The Fiesta Tableware Company are high-quality, handcrafted products that are perfect for adding a touch of holiday cheer to your home. Whether you are looking for a specific theme, color scheme, or style, you can trust that these ornaments are made with the same attention to detail and a commitment to excellence we've had since 1871."
         },
         {
-            "prod":"Pitchers & Carafes",
-            "desc":"An icon of the Fiesta Tableware Company - our Disk Pitchers, regular pitchers, and carafes are high-quality, handcrafted products that are perfect for serving a wide range of beverages. Many of our Fiesta fans love to collect the mini disks for every new color that is released. Our pitchers and carafes can be used to celebrate holidays, mark special occasions, or simply add a touch of beauty to any space."
+            "prod": "Pitchers & Carafes",
+            "desc": "An icon of the Fiesta Tableware Company - our Disk Pitchers, regular pitchers, and carafes are high-quality, handcrafted products that are perfect for serving a wide range of beverages. Many of our Fiesta fans love to collect the mini disks for every new color that is released. Our pitchers and carafes can be used to celebrate holidays, mark special occasions, or simply add a touch of beauty to any space."
         },
         {
-            "prod":"Plates",
-            "desc":"Made by The Fiesta Tableware Company since 1871, and created with the finest materials and techniques, our plates are designed to be durable and long-lasting for generations to come. From classic and traditional styles to modern and contemporary designs, you can find a wide range of sizes, capacities, and colors to choose from for your table. "
+            "prod": "Plates",
+            "desc": "Made by The Fiesta Tableware Company since 1871, and created with the finest materials and techniques, our plates are designed to be durable and long-lasting for generations to come. From classic and traditional styles to modern and contemporary designs, you can find a wide range of sizes, capacities, and colors to choose from for your table. "
         },
         {
-            "prod":"Platters & Trays",
-            "desc":"Enhance your dining experience with beautifully crafted ceramic platters and trays made in the USA by The Fiesta Tableware Company. Our hand-finished ceramic pieces are designed with durability and style in mind, ensuring that they will be a staple in your kitchen for years to come. Whether you're hosting a dinner party or simply looking to elevate your everyday meals, our American-made ceramic platters and trays are the perfect addition to your table setting. Shop now and bring a touch of elegance to your table!"
+            "prod": "Platters & Trays",
+            "desc": "Enhance your dining experience with beautifully crafted ceramic platters and trays made in the USA by The Fiesta Tableware Company. Our hand-finished ceramic pieces are designed with durability and style in mind, ensuring that they will be a staple in your kitchen for years to come. Whether you're hosting a dinner party or simply looking to elevate your everyday meals, our American-made ceramic platters and trays are the perfect addition to your table setting. Shop now and bring a touch of elegance to your table!"
         },
         {
-            "prod":"Square Dinnerware",
-            "desc":"Elevate your dining experience with unique square-shaped ceramic plates and bowls made in the USA by The Fiesta Tableware Company.  The square shape of our plates and bowls offers a modern and contemporary look that will add a touch of elegance to any table setting. Whether you're hosting a dinner party or simply enjoying a meal at home, our square-shaped ceramic plates and bowls are the perfect addition to your collection. Shop now and add a touch of sophistication to your table."
+            "prod": "Square Dinnerware",
+            "desc": "Elevate your dining experience with unique square-shaped ceramic plates and bowls made in the USA by The Fiesta Tableware Company.  The square shape of our plates and bowls offers a modern and contemporary look that will add a touch of elegance to any table setting. Whether you're hosting a dinner party or simply enjoying a meal at home, our square-shaped ceramic plates and bowls are the perfect addition to your collection. Shop now and add a touch of sophistication to your table."
         },
         {
-            "prod":"3 Piece Place Settings",
-            "desc":"Transform your table setting with a beautiful ceramic 3-piece place setting made in the USA by The Fiesta Tableware Company. Our handcrafted American-made ceramic pieces include a dinner plate, salad plate, and bowl - perfect for creating a cohesive and elegant look at your table. Made with durability in mind, these pieces are sure to be a staple in your kitchen for years to come. Whether you're hosting a formal dinner party or simply enjoying a meal at home, our ceramic 3-piece place settings are the perfect choice."
+            "prod": "3 Piece Place Settings",
+            "desc": "Transform your table setting with a beautiful ceramic 3-piece place setting made in the USA by The Fiesta Tableware Company. Our handcrafted American-made ceramic pieces include a dinner plate, salad plate, and bowl - perfect for creating a cohesive and elegant look at your table. Made with durability in mind, these pieces are sure to be a staple in your kitchen for years to come. Whether you're hosting a formal dinner party or simply enjoying a meal at home, our ceramic 3-piece place settings are the perfect choice."
         },
         {
-            "prod":"4 Piece Place Settings",
-            "desc":"Complete your table setting with a stunning 4-piece place setting made in the USA by The Fiesta Tableware Company. Each of our handcrafted American-made sets include a dinner plate, salad plate, mug, and a bowl - perfect for setting a table for your next special occasion or for everyday dining. These pieces are made with durability and style in mind, ensuring that they will be a staple in your home for years to come. The elegant and timeless design of our 4-piece place settings will elevate any dining experience."
+            "prod": "4 Piece Place Settings",
+            "desc": "Complete your table setting with a stunning 4-piece place setting made in the USA by The Fiesta Tableware Company. Each of our handcrafted American-made sets include a dinner plate, salad plate, mug, and a bowl - perfect for setting a table for your next special occasion or for everyday dining. These pieces are made with durability and style in mind, ensuring that they will be a staple in your home for years to come. The elegant and timeless design of our 4-piece place settings will elevate any dining experience."
         },
         {
-            "prod":"5 Piece Place Settings",
-            "desc":"Experience luxury dining with our handcrafted ceramic 5-piece place settings made in the USA by The Fiesta Tableware Company. Each set includes a dinner plate, salad plate, salad bowl, soup bowl, and mug - providing everything you need for a complete table setting. Made with an attention to detail, these pieces are not only durable but also an elegant addition to any table setting. Our American-made 5-piece place settings are the epitome of sophistication that will elevate your dining experience. "
+            "prod": "5 Piece Place Settings",
+            "desc": "Experience luxury dining with our handcrafted ceramic 5-piece place settings made in the USA by The Fiesta Tableware Company. Each set includes a dinner plate, salad plate, salad bowl, soup bowl, and mug - providing everything you need for a complete table setting. Made with an attention to detail, these pieces are not only durable but also an elegant addition to any table setting. Our American-made 5-piece place settings are the epitome of sophistication that will elevate your dining experience. "
         },
         {
-            "prod":"Utensils",
-            "desc":"Upgrade your cooking experience with kitchen utensils made in the USA by The Fiesta Tableware Company. From bread knives to ladles and everything in between, our utensils are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home cook, our utensils are perfect for all your kitchen needs. With a wide range of styles, sizes, colors, and designs, you'll find the perfect utensils to suit your cooking style."
+            "prod": "Utensils",
+            "desc": "Upgrade your cooking experience with kitchen utensils made in the USA by The Fiesta Tableware Company. From bread knives to ladles and everything in between, our utensils are made with the best materials to ensure they are long-lasting and easy to use. Whether you're a professional chef or a home cook, our utensils are perfect for all your kitchen needs. With a wide range of styles, sizes, colors, and designs, you'll find the perfect utensils to suit your cooking style."
         },
         {
-            "prod":"The Fiesta Vault",
-            "desc":"An American icon since its introduction in 1936, Fiesta has adorned tables across the country in a multitude of colors.  The popular appeal lies in its colors, durability, affordability, and design.  The retired Fiesta wares offered here on USA Dinnerware Direct are a variety of shapes and colors no longer in production. Due to limited availability, these won't last long!"
+            "prod": "The Fiesta Vault",
+            "desc": "An American icon since its introduction in 1936, Fiesta has adorned tables across the country in a multitude of colors.  The popular appeal lies in its colors, durability, affordability, and design.  The retired Fiesta wares offered here on USA Dinnerware Direct are a variety of shapes and colors no longer in production. Due to limited availability, these won't last long!"
         }
     ],
-    "history":[
+    "history": [
         {
-            "date":"1840s",
-            "desc":"The pottery industry in East Liverpool begins with the manufacture of yellow ware from the rich deposits of local clay; utilizing the Ohio River to transport products throughout the region."
+            "date": "1840s",
+            "desc": "The pottery industry in East Liverpool begins with the manufacture of yellow ware from the rich deposits of local clay; utilizing the Ohio River to transport products throughout the region."
         },
         {
-            "date":"1870-1879",
-            "desc":"Public preference shifts to a more sophisticated white ware imported from England. East Liverpool City Council offered $5,000 in seed money to someone who would build and operate a pottery for the production of white ware."
+            "date": "1870-1879",
+            "desc": "Public preference shifts to a more sophisticated white ware imported from England. East Liverpool City Council offered $5,000 in seed money to someone who would build and operate a pottery for the production of white ware."
         },
         {
-            "date":"1871",
-            "desc":"The Laughlin Brothers (Homer and Shakespeare) form a partnership to sell pottery to which their proposal is accepted by the East Liverpool city council. They build a two-kiln plant on the banks of the Ohio River to produce white ware as the alternative to yellow."
+            "date": "1871",
+            "desc": "The Laughlin Brothers (Homer and Shakespeare) form a partnership to sell pottery to which their proposal is accepted by the East Liverpool city council. They build a two-kiln plant on the banks of the Ohio River to produce white ware as the alternative to yellow."
         },
         {
-            "date":"1877",
-            "desc":"Shakespeare pursues other interests; the business continues under Homer’s direction and becomes: The Homer Laughlin China Works."
+            "date": "1877",
+            "desc": "Shakespeare pursues other interests; the business continues under Homer’s direction and becomes: The Homer Laughlin China Works."
         },
         {
-            "date":"1880-1889",
-            "desc":"Homer Laughlin becomes one of the better-known manufacturers of ceramic dinnerware and toilet ware in the country. In 1889 a young bookkeeper from Steubenville, Ohio, William Edwin Wells, is hired to manage the books and eventually, the business."
+            "date": "1880-1889",
+            "desc": "Homer Laughlin becomes one of the better-known manufacturers of ceramic dinnerware and toilet ware in the country. In 1889 a young bookkeeper from Steubenville, Ohio, William Edwin Wells, is hired to manage the books and eventually, the business."
         },
         {
-            "date":"1897-1899",
-            "desc":"Homer Laughlin retires and sells the business to Wells and a financial partner, Louis I. Aaron of Pittsburgh. Two more plants are built to support operations. A key customer contributing to the company's rapid growth included the F.W. Woolworth Company, the country's fastest growing variety (5 & 10 cent) store chain and the American Cereal Company of Chicago, who was packing oatmeal bowls in Mother's Oats boxes."
+            "date": "1897-1899",
+            "desc": "Homer Laughlin retires and sells the business to Wells and a financial partner, Louis I. Aaron of Pittsburgh. Two more plants are built to support operations. A key customer contributing to the company's rapid growth included the F.W. Woolworth Company, the country's fastest growing variety (5 & 10 cent) store chain and the American Cereal Company of Chicago, who was packing oatmeal bowls in Mother's Oats boxes."
         },
         {
-            "date":"1902-1909",
-            "desc":"A tract of land on the opposite side of the Ohio River (today known as Newell, W.Va.) is purchased from the Newell family. A subsidiary company, the North American Manufacturing Company, is formed to develop the town. Lots are laid out, water and sewer systems are installed, electric power is secured, and a suspension bridge is built across the Ohio River, connecting the new community with East Liverpool and a trolley line is built to transport workers across the river. Plant No. 4 is constructed in 1905-1906, the largest pottery plant ever built, bringing production to 300,000 pieces per day, (10% of the U. S. production capacity). The company officially moves its headquarters and operations to the Newell location."
+            "date": "1902-1909",
+            "desc": "A tract of land on the opposite side of the Ohio River (today known as Newell, W.Va.) is purchased from the Newell family. A subsidiary company, the North American Manufacturing Company, is formed to develop the town. Lots are laid out, water and sewer systems are installed, electric power is secured, and a suspension bridge is built across the Ohio River, connecting the new community with East Liverpool and a trolley line is built to transport workers across the river. Plant No. 4 is constructed in 1905-1906, the largest pottery plant ever built, bringing production to 300,000 pieces per day, (10% of the U. S. production capacity). The company officially moves its headquarters and operations to the Newell location."
         },
         {
-            "date":"1910-1914",
-            "desc":"Louis Aaron retires and is succeeded as president by his son, Marcus Aaron, as rapid growth continues. Plant No. 5 opens with 16 additional kilns—78 ware and 60 decorating."
+            "date": "1910-1914",
+            "desc": "Louis Aaron retires and is succeeded as president by his son, Marcus Aaron, as rapid growth continues. Plant No. 5 opens with 16 additional kilns—78 ware and 60 decorating."
         },
         {
-            "date":"1917",
-            "desc":"W.E. Wells writes to the Woolworth Company “...this is the first time in history that the purchases of any one concern from any one pottery firm have reached the million mark in one year.”"
+            "date": "1917",
+            "desc": "W.E. Wells writes to the Woolworth Company “...this is the first time in history that the purchases of any one concern from any one pottery firm have reached the million mark in one year.”"
         },
         {
-            "date":"1920-1928",
-            "desc":"The early 1920’s marked the most revolutionary change that had ever hit the pottery industry. Homer Laughlin replaces intermittent kilns with continuous firing tunnel kilns at Plant Nos. 4 and 5 to increase production. New Plant Nos. 6 and 7 open. Plants on the East End are phased out in favor of the largest Homer Laughlin plant, No. 8. with 800 employees and a total capacity equal to 160 upright kilns, all for making ware for Woolworth’s, at an average price of 72 cents per dozen. That amounts to 16.7 million pieces of ware sold to one customer in one year."
+            "date": "1920-1928",
+            "desc": "The early 1920’s marked the most revolutionary change that had ever hit the pottery industry. Homer Laughlin replaces intermittent kilns with continuous firing tunnel kilns at Plant Nos. 4 and 5 to increase production. New Plant Nos. 6 and 7 open. Plants on the East End are phased out in favor of the largest Homer Laughlin plant, No. 8. with 800 employees and a total capacity equal to 160 upright kilns, all for making ware for Woolworth’s, at an average price of 72 cents per dozen. That amounts to 16.7 million pieces of ware sold to one customer in one year."
         },
         {
-            "date":"1927",
-            "desc":"Frederick Hurten Rhead is hired as design director in 1927. Rhead's 15-year reign proved to be the most prolific period of new product introductions in the company's history. Rhead designed Virginia Rose as well as the several Eggshell shapes. Rhead's most noted accomplishment was Fiesta®. Fiesta shapes were created in an Art Deco style with concentric circles highlighting the bright colors."
+            "date": "1927",
+            "desc": "Frederick Hurten Rhead is hired as design director in 1927. Rhead's 15-year reign proved to be the most prolific period of new product introductions in the company's history. Rhead designed Virginia Rose as well as the several Eggshell shapes. Rhead's most noted accomplishment was Fiesta®. Fiesta shapes were created in an Art Deco style with concentric circles highlighting the bright colors."
         },
         {
-            "date":"1930",
-            "desc":"W.E. Wells retires, and is replaced by his eldest son, Joseph M. Wells, Sr."
+            "date": "1930",
+            "desc": "W.E. Wells retires, and is replaced by his eldest son, Joseph M. Wells, Sr."
         },
         {
-            "date":"1936",
-            "desc":"With great fanfare, The Homer Laughlin China Company introduces Fiesta at the Pittsburgh China & Glass Show in January 1936. Shapes are created in an Art Deco style with concentric circles highlighting the bright colors. Color pallet includes Red, Yellow, Cobalt Blue, Green, and Ivory – at the Pittsburgh China & Glass Show."
+            "date": "1936",
+            "desc": "With great fanfare, The Homer Laughlin China Company introduces Fiesta at the Pittsburgh China & Glass Show in January 1936. Shapes are created in an Art Deco style with concentric circles highlighting the bright colors. Color pallet includes Red, Yellow, Cobalt Blue, Green, and Ivory – at the Pittsburgh China & Glass Show."
         },
         {
-            "date":"1937",
-            "desc":"Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family."
+            "date": "1937",
+            "desc": "Following the successful release of the 5 originals, Frederick Hurten Rhead introduced Turquoise to add a sense of flair and playfulness to the growing Fiesta family."
         },
         {
-            "date":"1938",
-            "desc":"One million dozen pieces of Fiesta are produced!"
+            "date": "1938",
+            "desc": "One million dozen pieces of Fiesta are produced!"
         },
         {
-            "date":"1939",
-            "desc":"Automatic jiggering replaces hand jiggering, further revolutionizing production."
+            "date": "1939",
+            "desc": "Automatic jiggering replaces hand jiggering, further revolutionizing production."
         },
         {
-            "date":"1940-1949",
-            "desc":"World War II begins. Homer Laughlin produces china for the armed forces, post-war production peaks. The company employs 3,000 and produces over 10 million dozen pieces of ware."
+            "date": "1940-1949",
+            "desc": "World War II begins. Homer Laughlin produces china for the armed forces, post-war production peaks. The company employs 3,000 and produces over 10 million dozen pieces of ware."
         },
         {
-            "date":"1940",
-            "desc":"Marcus Aaron retires as president and is succeeded by his son, Marcus Lester Aaron (M. L. Aaron) who serves as president for 48 years."
+            "date": "1940",
+            "desc": "Marcus Aaron retires as president and is succeeded by his son, Marcus Lester Aaron (M. L. Aaron) who serves as president for 48 years."
         },
         {
-            "date":"1943",
-            "desc":"One of the original colors, Red, is officially retired. "
+            "date": "1943",
+            "desc": "One of the original colors, Red, is officially retired. "
         },
         {
-            "date":"1950",
-            "desc":"The 1950s sees a large increase in imported dinnerware produced in countries with very low labor costs. This competition takes its toll on the American industry; many potteries do not survive the decade. Homer Laughlin's management decides to shift its emphasis from consumer dinnerware to commercial ware for the hotel and restaurant trade, introducing the “Best China” brand of vitrified hotel china. Fashion dictates a change in Fiesta’s color palette; softer pastels emerge. In 1959 J.M. Wells, Sr., retires, turning over the management of the company to the third generation of his family, Joe Wells, Jr.  "
+            "date": "1950",
+            "desc": "The 1950s sees a large increase in imported dinnerware produced in countries with very low labor costs. This competition takes its toll on the American industry; many potteries do not survive the decade. Homer Laughlin's management decides to shift its emphasis from consumer dinnerware to commercial ware for the hotel and restaurant trade, introducing the “Best China” brand of vitrified hotel china. Fashion dictates a change in Fiesta’s color palette; softer pastels emerge. In 1959 J.M. Wells, Sr., retires, turning over the management of the company to the third generation of his family, Joe Wells, Jr.  "
         },
         {
-            "date":"1951",
-            "desc":"Two of the original colors, Cobalt and White Old Ivory are retired.  Gray, Chartreuse, and Rose are officially introduced."
+            "date": "1951",
+            "desc": "Two of the original colors, Cobalt and White Old Ivory are retired.  Gray, Chartreuse, and Rose are officially introduced."
         },
         {
-            "date":"1959",
-            "desc":"Just a short 8 years after introduction - Green, Chartreuse, and Rose are officially retired. "
+            "date": "1959",
+            "desc": "Just a short 8 years after introduction - Green, Chartreuse, and Rose are officially retired. "
         },
         {
-            "date":"1960-1970",
-            "desc":"Color trends move back to brighter colors and Fiesta follows. Homer Laughlin continues its hospitality push."
+            "date": "1960-1970",
+            "desc": "Color trends move back to brighter colors and Fiesta follows. Homer Laughlin continues its hospitality push."
         },
         {
-            "date":"1969",
-            "desc":"Two of the original colors, Yellow and Turquoise, are retired."
+            "date": "1969",
+            "desc": "Two of the original colors, Yellow and Turquoise, are retired."
         },
         {
-            "date":"1973",
-            "desc":"Fiesta retires after 37 years of production."
+            "date": "1973",
+            "desc": "Fiesta retires after 37 years of production."
         },
         {
-            "date":"1980-1985",
-            "desc":"The company begins to produce lead-free china for the hospitality industry, setting an industry standard and the stage for today’s Fiesta."
+            "date": "1980-1985",
+            "desc": "The company begins to produce lead-free china for the hospitality industry, setting an industry standard and the stage for today’s Fiesta."
         },
         {
-            "date":"1983",
-            "desc":"Produced the last semi-vitrified supermarket promotion for Alpha Beta in California."
+            "date": "1983",
+            "desc": "Produced the last semi-vitrified supermarket promotion for Alpha Beta in California."
         },
         {
-            "date":"1986",
-            "desc":"Fiesta is reintroduced in March of 1986 at the Charleston, WV, as a Cultural Center as a vitrified body, lead-free, in new updated colors: White, Black, and Apricot.  Joe Wells, Jr., retires and is replaced as executive vice president by his son, Joe Wells, III.  Limited collections are produced in Lilac and Chartreuse. Sapphire is produced for 16 months exclusively for Bloomingdales and to local West Virginia retailers.  M.L. Aaron retires as president and is succeeded by his son, Marcus (Pete) Aaron, II. The company is now in the hands of both families’ 4th generation."
+            "date": "1986",
+            "desc": "Fiesta is reintroduced in March of 1986 at the Charleston, WV, as a Cultural Center as a vitrified body, lead-free, in new updated colors: White, Black, and Apricot.  Joe Wells, Jr., retires and is replaced as executive vice president by his son, Joe Wells, III.  Limited collections are produced in Lilac and Chartreuse. Sapphire is produced for 16 months exclusively for Bloomingdales and to local West Virginia retailers.  M.L. Aaron retires as president and is succeeded by his son, Marcus (Pete) Aaron, II. The company is now in the hands of both families’ 4th generation."
         },
         {
-            "date":"1987",
-            "desc":"Post 86 Cobalt, Rose, and Yellow are introduced"
+            "date": "1987",
+            "desc": "Post 86 Cobalt, Rose, and Yellow are introduced"
         },
         {
-            "date":"1988",
-            "desc":"Post 86 Turquoise is introduced. "
+            "date": "1988",
+            "desc": "Post 86 Turquoise is introduced. "
         },
         {
-            "date":"1989",
-            "desc":"Periwinkle Blue is introduced. "
+            "date": "1989",
+            "desc": "Periwinkle Blue is introduced. "
         },
         {
-            "date":"1991",
-            "desc":"Sea Mist Green is introduced."
+            "date": "1991",
+            "desc": "Sea Mist Green is introduced."
         },
         {
-            "date":"1993",
-            "desc":"Lilac is introduced."
+            "date": "1993",
+            "desc": "Lilac is introduced."
         },
         {
-            "date":"1995",
-            "desc":"Persimmon is introduced, Lilac is retired."
+            "date": "1995",
+            "desc": "Persimmon is introduced, Lilac is retired."
         },
         {
-            "date":"1996",
-            "desc":"Sapphire is introduced"
+            "date": "1996",
+            "desc": "Sapphire is introduced"
         },
         {
-            "date":"1997",
-            "desc":"In 1997, to celebrate the 500 millionth piece of Fiesta produced since 1936, The Fiesta Tableware Company produced 500 Raspberry Presentation Bowls. The bowls were presented to owners and shareholders of the privately held company, and this color will never again be reproduced for public sale. Chartreuse is introduced; and after one year of production, Sapphire is retired. "
+            "date": "1997",
+            "desc": "In 1997, to celebrate the 500 millionth piece of Fiesta produced since 1936, The Fiesta Tableware Company produced 500 Raspberry Presentation Bowls. The bowls were presented to owners and shareholders of the privately held company, and this color will never again be reproduced for public sale. Chartreuse is introduced; and after one year of production, Sapphire is retired. "
         },
         {
-            "date":"1998",
-            "desc":"Fifteen Raspberry Bowls are donated to three charity auctions held in the Newell/East Liverpool area in June and August of 1998. The $75,000+ proceeds of these auctions go to designated educational scholarship funds. Apricot retires. "
+            "date": "1998",
+            "desc": "Fifteen Raspberry Bowls are donated to three charity auctions held in the Newell/East Liverpool area in June and August of 1998. The $75,000+ proceeds of these auctions go to designated educational scholarship funds. Apricot retires. "
         },
         {
-            "date":"1999",
-            "desc":"Pearl Gray is introduced, Chartreuse is retired."
+            "date": "1999",
+            "desc": "Pearl Gray is introduced, Chartreuse is retired."
         },
         {
-            "date":"2000s",
-            "desc":"As Fiesta begins to flourish in the retail sector and Homer Laughlin becomes a leading force in the foodservice china industry, the aging factories undergo many changes. In 2002-2005 state-of-the- art computerized kilns are installed throughout plants 6, 7 and 8. Much-needed new forming and glazing equipment is installed and a self-contained 'plant within a plant' is built at Plant #8. Homer Laughlin prepares to enter the new millennium as the industry leader in both the foodservice and retail businesses."
+            "date": "2000s",
+            "desc": "As Fiesta begins to flourish in the retail sector and Homer Laughlin becomes a leading force in the foodservice china industry, the aging factories undergo many changes. In 2002-2005 state-of-the- art computerized kilns are installed throughout plants 6, 7 and 8. Much-needed new forming and glazing equipment is installed and a self-contained 'plant within a plant' is built at Plant #8. Homer Laughlin prepares to enter the new millennium as the industry leader in both the foodservice and retail businesses."
         },
         {
-            "date":"2000",
-            "desc":"Juniper and Cinnabar are introduced."
+            "date": "2000",
+            "desc": "Juniper and Cinnabar are introduced."
         },
         {
-            "date":"2001",
-            "desc":"Sunflower and Plum are introduced. Pearl Grey and Juniper retire."
+            "date": "2001",
+            "desc": "Sunflower and Plum are introduced. Pearl Grey and Juniper retire."
         },
         {
-            "date":"2002",
-            "desc":"Joe Wells, III, with his sisters, Jean Wicks and Elizabeth McIlvain, with the purchase of the Aaron’s stockholder interests, end a 104-year partnership with the Aaron family. Joe Wells, III, is elected president and chief executive officer.  Shamrock is introduced, Yellow retires."
+            "date": "2002",
+            "desc": "Joe Wells, III, with his sisters, Jean Wicks and Elizabeth McIlvain, with the purchase of the Aaron’s stockholder interests, end a 104-year partnership with the Aaron family. Joe Wells, III, is elected president and chief executive officer.  Shamrock is introduced, Yellow retires."
         },
         {
-            "date":"2003",
-            "desc":"Tangerine is introduced."
+            "date": "2003",
+            "desc": "Tangerine is introduced."
         },
         {
-            "date":"2004",
-            "desc":"Scarlet is introduced."
+            "date": "2004",
+            "desc": "Scarlet is introduced."
         },
         {
-            "date":"2005",
-            "desc":"Peacock is introduced, Rose and Sea Mist Green retire."
+            "date": "2005",
+            "desc": "Peacock is introduced, Rose and Sea Mist Green retire."
         },
         {
-            "date":"2006",
-            "desc":"Heather is introduced, Periwinkle Blue retires."
+            "date": "2006",
+            "desc": "Heather is introduced, Periwinkle Blue retires."
         },
         {
-            "date":"2007",
-            "desc":"Evergreen emerges on the Fiesta color palette. Fiesta makes the transition to a lifestyle brand with new items like bakeware, adding licensing partners in glassware, table linens, cutlery, gadgets, and more.  Fiesta opens its first Fiesta branded showroom in the Tabletop Market building, 41 Madison Ave, NY, NY, 16th Floor."
+            "date": "2007",
+            "desc": "Evergreen emerges on the Fiesta color palette. Fiesta makes the transition to a lifestyle brand with new items like bakeware, adding licensing partners in glassware, table linens, cutlery, gadgets, and more.  Fiesta opens its first Fiesta branded showroom in the Tabletop Market building, 41 Madison Ave, NY, NY, 16th Floor."
         },
         {
-            "date":"2008",
-            "desc":"Homer Laughlin gears up for its 75th Anniversary year with a new item and color, 3-Piece Baking Bowl Set in Marigold.  It’s the first year that three colors are introduced to define a color statement with Ivory making a comeback! Heather and Persimmon retire. Chocolate debuts in the fall. New shape “Square” is introduced. Fiesta® Christmas Tree Collection is introduced, ushering in a prolific period beginning of decaled decorating."
+            "date": "2008",
+            "desc": "Homer Laughlin gears up for its 75th Anniversary year with a new item and color, 3-Piece Baking Bowl Set in Marigold.  It’s the first year that three colors are introduced to define a color statement with Ivory making a comeback! Heather and Persimmon retire. Chocolate debuts in the fall. New shape “Square” is introduced. Fiesta® Christmas Tree Collection is introduced, ushering in a prolific period beginning of decaled decorating."
         },
         {
-            "date":"2009",
-            "desc":"Lemongrass is introduced, Heather retires.  The second item in the 75th Anniversary series is unveiled: a Large Oval Serving Platter."
+            "date": "2009",
+            "desc": "Lemongrass is introduced, Heather retires.  The second item in the 75th Anniversary series is unveiled: a Large Oval Serving Platter."
         },
         {
-            "date":"2010",
-            "desc":"Homer Laughlin China purchases The Hall China Company, East Liverpool, Ohio, to expand its food service and Fiesta production.  Homer Laughlin introduces a new collection: America’s Diner/Bistro, based on its original checked and banded patterns produced in the mid-1900s. The third item in the 75th Anniversary series is introduced: 2PC Prep Baking Bowl Set. Paprika is introduced. Evergreen and Cinnabar retire."
+            "date": "2010",
+            "desc": "Homer Laughlin China purchases The Hall China Company, East Liverpool, Ohio, to expand its food service and Fiesta production.  Homer Laughlin introduces a new collection: America’s Diner/Bistro, based on its original checked and banded patterns produced in the mid-1900s. The third item in the 75th Anniversary series is introduced: 2PC Prep Baking Bowl Set. Paprika is introduced. Evergreen and Cinnabar retire."
         },
         {
-            "date":"2011",
-            "desc":"The official 75th Anniversary year! The dinnerware collection is available in limited edition anniversary color, Marigold, as well as limited edition Soup Tureen. Chocolate retires."
+            "date": "2011",
+            "desc": "The official 75th Anniversary year! The dinnerware collection is available in limited edition anniversary color, Marigold, as well as limited edition Soup Tureen. Chocolate retires."
         },
         {
-            "date":"2012",
-            "desc":"Flamingo is introduced, Marigold retires."
+            "date": "2012",
+            "desc": "Flamingo is introduced, Marigold retires."
         },
         {
-            "date":"2013",
-            "desc":"Lapis is the new color for 2013. After one year of production, Flamingo retires.  Elizabeth McIlvain succeeds her brother, Joe Wells, III, as the new president of Homer Laughlin. After 50 years of service, Wells takes his father’s place as chairman of the board."
+            "date": "2013",
+            "desc": "Lapis is the new color for 2013. After one year of production, Flamingo retires.  Elizabeth McIlvain succeeds her brother, Joe Wells, III, as the new president of Homer Laughlin. After 50 years of service, Wells takes his father’s place as chairman of the board."
         },
         {
-            "date":"2014",
-            "desc":"Poppy is introduced as the new color of 2014; Black and Peacock retire. New shape family “Bistro Collection” is introduced, including Dinner and Salad Plates."
+            "date": "2014",
+            "desc": "Poppy is introduced as the new color of 2014; Black and Peacock retire. New shape family “Bistro Collection” is introduced, including Dinner and Salad Plates."
         },
         {
-            "date":"2015",
-            "desc":"Two colors are introduced in the same year, in the same season: Sage and Slate. Plum retires."
+            "date": "2015",
+            "desc": "Two colors are introduced in the same year, in the same season: Sage and Slate. Plum retires."
         },
         {
-            "date":"2016",
-            "desc":"Fiesta celebrates its 80th Anniversary and Homer Laughlin China Company celebrates its 145th year! New color Claret is introduced; Paprika and Plum retire.  A new and unique glazing process is introduced to produce Foundry. "
+            "date": "2016",
+            "desc": "Fiesta celebrates its 80th Anniversary and Homer Laughlin China Company celebrates its 145th year! New color Claret is introduced; Paprika and Plum retire.  A new and unique glazing process is introduced to produce Foundry. "
         },
         {
-            "date":"2017",
-            "desc":"Daffodil is introduced as the new color of 2017. Claret and Tangerine retire. Fiesta introduces the Floral Bouquet pattern - becomes #11th ranking bridal pattern consisting of a 9” Luncheon Plate and Java Mug."
+            "date": "2017",
+            "desc": "Daffodil is introduced as the new color of 2017. Claret and Tangerine retire. Fiesta introduces the Floral Bouquet pattern - becomes #11th ranking bridal pattern consisting of a 9” Luncheon Plate and Java Mug."
         },
         {
-            "date":"2018",
-            "desc":"Fiesta first opens the 2nd exclusive showroom in the Atlanta’s AmericasMart Market building, Bldg. 2, 9th floor.  Mulberry is introduced as the 2018 new color, marking the 50th Fiesta color. Sage retires."
+            "date": "2018",
+            "desc": "Fiesta first opens the 2nd exclusive showroom in the Atlanta’s AmericasMart Market building, Bldg. 2, 9th floor.  Mulberry is introduced as the 2018 new color, marking the 50th Fiesta color. Sage retires."
         },
         {
-            "date":"2019",
-            "desc":"Meadow is introduced as the new color of 2019."
+            "date": "2019",
+            "desc": "Meadow is introduced as the new color of 2019."
         },
         {
-            "date":"2020",
-            "desc":"The Homer Laughlin China Company takes a bold step and returns to its roots, focusing solely on manufacturing dinnerware for the home. The foodservice divisions and brand names of The Homer Laughlin China Company (HLC) and the Hall China Company are acquired by Steelite International. The Homer Laughlin China Company is renamed and is henceforth known as The Fiesta® Tableware Company.  Butterscotch is introduced as the new color of 2020. The Dinner Bowl Plate is introduced."
+            "date": "2020",
+            "desc": "The Homer Laughlin China Company takes a bold step and returns to its roots, focusing solely on manufacturing dinnerware for the home. The foodservice divisions and brand names of The Homer Laughlin China Company (HLC) and the Hall China Company are acquired by Steelite International. The Homer Laughlin China Company is renamed and is henceforth known as The Fiesta® Tableware Company.  Butterscotch is introduced as the new color of 2020. The Dinner Bowl Plate is introduced."
         },
         {
-            "date":"2021",
-            "desc":"The Fiesta Tableware Company celebrates 150 Years of American Craftsmanship 1871-2021. Fiesta celebrates its 85th Anniversary, bringing to market the Pedestal Cake Plate in Twilight. Twilight is introduced as the new color of 2021; Cobalt and Shamrock retire.  Luncheon Bowl Plate and Stackable Mugs are introduced."
+            "date": "2021",
+            "desc": "The Fiesta Tableware Company celebrates 150 Years of American Craftsmanship 1871-2021. Fiesta celebrates its 85th Anniversary, bringing to market the Pedestal Cake Plate in Twilight. Twilight is introduced as the new color of 2021; Cobalt and Shamrock retire.  Luncheon Bowl Plate and Stackable Mugs are introduced."
         },
         {
-            "date":"2022",
-            "desc":"The Fiesta Tableware Company opens its third outlet at The Hartville Marketplace in Hartville, Ohio. Peony is introduced; Slate retires."
+            "date": "2022",
+            "desc": "The Fiesta Tableware Company opens its third outlet at The Hartville Marketplace in Hartville, Ohio. Peony is introduced; Slate retires."
         },
         {
-            "date":"2023",
-            "desc":"Jade is introduced as the new color of 2023."
+            "date": "2023",
+            "desc": "Jade is introduced as the new color of 2023."
         },
         {
-            "date":"2024",
-            "desc":"Sky is introduced as the new color of 2024. Three colors are retired - Lemongrass, Mulberry, and Butterscotch. "
+            "date": "2024",
+            "desc": "Sky is introduced as the new color of 2024. Three colors are retired - Lemongrass, Mulberry, and Butterscotch. "
         },
         {
-            "date":"2025",
-            "desc":"Linen is introduced as the new color of 2025.  The outlet store in Hartville, Ohio is closed after two years of operation. "
+            "date": "2025",
+            "desc": "Linen is introduced as the new color of 2025.  The outlet store in Hartville, Ohio is closed after two years of operation. "
         },
         {
-            "date":"2026",
-            "desc":"Lavender is introduced as the new color of 2026, and Fiesta celebrates it's 90th Anniversary. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
+            "date": "2026",
+            "desc": "Lavender is introduced as the new color of 2026, and Fiesta celebrates it's 90th Anniversary. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
         }
-    ]
+    ],
+    "shadeNotes": {
+        "Red": "Red is the color Fiesta launched with in 1936 and the one it keeps returning to: ten of them since, more than any family except green. A saturated red is the hardest color on a table to ignore, and the association with appetite and occasion runs deep enough in Western table setting that a red plate reads as celebration before you have put anything on it. Fiesta's reds have covered an unusually wide range, from the near-black Cinnabar to the soft, almost pink Peony, so \"red\" here spans a formal Christmas table and a summer picnic equally. Scarlet and Peony are the two in production now.",
+        "Orange": "Orange is Fiesta's smallest bright family and its most reliably cheerful: five colors since Apricot in 1986, of which only Poppy is still made. Orange sits between red's urgency and yellow's brightness without fully committing to either, which is why it tends to work better as an accent than as a whole setting. Fiesta's oranges have ranged from Apricot's pale, almost peach cast through to Poppy, which is the most saturated glaze the company has ever put on a plate. Butterscotch, retired in 2024, is the one people most often ask after.",
+        "Yellow": "Yellow is the brightest thing on a Fiesta table, and that is measurable rather than poetic: of all the saturated hues, yellow is the lightest, which is why it catches the eye first and why it is the conventional choice for warning signage. On a plate that brightness cuts both ways. A yellow charger lifts a dim winter table and can flatten a delicate one. Fiesta has made six, from the original Yellow of 1936 through to Daffodil, which arrived in 2017 and is the only one currently in production.",
+        "Green": "Green is Fiesta's largest family — thirteen colors, more than any other — running from the original Light Green in 1936 to Jade in 2023. That is not an accident. Green sits comfortably beside warm and cool colors alike in a way no other hue quite manages, and its associations with growth and the outdoors make it an easy color to put food on. Fiesta's greens have swung from the acid Chartreuse and Lemongrass to the near-black Evergreen and Jade. Medium Green, retired in 1969, is widely regarded among collectors as the hardest vintage color to find.",
+        "Blue": "Blue is the family Fiesta has treated most seriously. Eleven colors since Cobalt in 1936, and three in production simultaneously — Turquoise, Lapis and Sky — which is more than any other family currently holds. Blue is the most widely preferred color in most cross-cultural surveys, and it does something specific on a table: it is the one common hue that rarely appears in food, so whatever you serve reads as separate from the plate beneath it. Fiesta's blues run the full range, from Twilight's near-navy to Sky's pale wash. Turquoise is the only color made in both the vintage and Post 86 eras that is still in production today.",
+        "Purple": "Purple is the newest family Fiesta committed to — Lilac arrived in 1993, more than fifty years after the original five — and it remains the rarest, with just five colors. Lilac itself lasted only two years, which makes it one of the hardest Post 86 colors to assemble a set in. Purple's association with luxury is not a marketing invention: Tyrian purple was genuinely ruinous to produce in the ancient world, and the color carried that cost as status for centuries afterwards. On a table it still reads as deliberate rather than casual. Lavender, the 2026 ninetieth-anniversary color, is the one now in production.",
+        "White": "White is the family that does the work. Six colors since Old Ivory in 1936, and White itself has run continuously since the 1986 relaunch — the longest unbroken production of any Fiesta color at forty years. A white or near-white plate is the ground a table is built on: it takes any accent, it never competes, and food reads against it more clearly than against anything else. Fiesta's whites are not interchangeable, though. Old Ivory and Ivory are frankly warm, Pearl Gray is cool, and Linen sits between them — putting two of them on one table usually looks like an accident rather than a choice.",
+        "Black": "Black is Fiesta's smallest and most dramatic family: three colors, all Post 86, beginning with Black in 1986. It is the highest-contrast surface the company makes, and that is the point of it. Pale food — rice, pasta, a poached egg — reads sharply against a black plate in a way it does against nothing else, while dark food disappears. As a full setting it can feel severe; as a charger under a bright color it makes the bright color look brighter. Foundry, introduced in 2016 with the rugged texture of cast iron, is the one still made, though the company does not count it as an official Fiesta color.",
+        "Brown": "Brown is the shortest chapter in Fiesta's palette: two colors, Chocolate in 2008 and Paprika in 2010, neither still made. That brevity says something about how brown behaves on a table. It is the one family that reads as earth rather than as color, and it tends to compete with food instead of setting it off — a brown plate under a brown stew does neither any favors. Both arrived during Fiesta's push into lifestyle and bakeware ranges, where a warm neutral made more sense than it did on a dinner plate. Paprika, the redder of the two, ran twice as long."
+    }
 }

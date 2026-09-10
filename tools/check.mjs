@@ -18,6 +18,7 @@ import { join, dirname, resolve, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { loadData } from '../src/lib/data.mjs';
+import { buildGraph } from './link-graph.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -93,6 +94,9 @@ async function main() {
   for (const file of files) {
     const name = rel(file);
     const html = await readFile(file, 'utf8');
+    const mainRegion = html.includes('<main')
+      ? html.slice(html.indexOf('<main'), html.indexOf('</main>'))
+      : html;
 
     /* --- head ---------------------------------------------------------- */
     const title = (html.match(/<title>([\s\S]*?)<\/title>/) || [])[1];
@@ -263,6 +267,39 @@ async function main() {
       }
     }
 
+    /* --- link text ------------------------------------------------------
+       WCAG 2.4.4. Five color names exist in both eras, and a shade family
+       shares its name with a color, so the same visible text can point at
+       different pages. Someone navigating by a list of links needs them to be
+       distinguishable, which is what the visually-hidden years and "family"
+       suffixes are for. */
+    const linkTargets = new Map();
+    for (const m of mainRegion.matchAll(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)) {
+      const label = m[2]
+        .replace(/<[^>]+>/g, '')
+        .replace(/&[a-z]+;|&#\d+;/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+      if (!label) continue;
+      if (!linkTargets.has(label)) linkTargets.set(label, new Set());
+      linkTargets.get(label).add(m[1]);
+    }
+    for (const [label, targets] of linkTargets) {
+      if (targets.size > 1) {
+        fail(name, `link text "${label.slice(0, 30)}" points at ${targets.size} different URLs`);
+      }
+    }
+
+    /* --- external links -------------------------------------------------
+       A new tab opening unannounced is disorienting, especially with a screen
+       reader or magnifier. */
+    for (const m of html.matchAll(/<a[^>]*target="_blank"[^>]*>([\s\S]*?)<\/a>/g)) {
+      if (!/new tab|new window/i.test(m[1].replace(/<[^>]+>/g, ' '))) {
+        fail(name, 'target="_blank" link does not say it opens a new tab');
+      }
+    }
+
     /* --- assets -------------------------------------------------------- */
     for (const m of html.matchAll(/(?:src|srcset)="([^"]+)"/g)) {
       for (const part of m[1].split(',')) {
@@ -301,6 +338,24 @@ async function main() {
     }
   });
 
+  /* --- internal link graph -----------------------------------------------
+     A page nothing links to is invisible to anything following links, however
+     neatly it sits in the sitemap; and a page buried several clicks deep is
+     treated as less important than a shallow one. Both are silent failures, so
+     they are checked rather than assumed. */
+  const graph = await buildGraph(ROOT);
+  for (const node of graph) {
+    if (node.path === '404.html' || node.path === 'index.html') continue;
+    if (node.inbound === 0 && !node.viaChrome) {
+      fail(node.path, 'orphan: no other page links to it from its body or the site chrome');
+    }
+    if (node.depth === Infinity) {
+      fail(node.path, 'unreachable: no path of links from the homepage reaches it');
+    } else if (node.depth > 3) {
+      warn(node.path, `is ${node.depth} clicks from the homepage`);
+    }
+  }
+
   /* --- sitemap ----------------------------------------------------------- */
   const sitemap = await readFile(join(ROOT, 'sitemap.xml'), 'utf8');
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
@@ -311,9 +366,23 @@ async function main() {
     if (!existsSync(join(ROOT, target))) fail('sitemap.xml', `lists a URL with no file: ${loc}`);
   }
 
-  const indexable = files.filter((f) => !/404\.html$/.test(f));
-  if (locs.length !== indexable.length) {
-    warn('sitemap.xml', `${locs.length} URLs but ${indexable.length} indexable pages`);
+  /* A noindex page is deliberately absent from the sitemap; only a page that
+     invites indexing and is then missing from it is a mistake. */
+  let indexable = 0;
+  let missing = 0;
+  for (const file of files) {
+    const html = await readFile(file, 'utf8');
+    if (/<meta name="robots" content="noindex/.test(html)) continue;
+    indexable++;
+    const path = rel(file).replace(/index\.html$/, '').replace(/^\.\//, '');
+    const url = `${site.baseUrl}/${path}`;
+    if (!locs.includes(url)) {
+      missing++;
+      warn('sitemap.xml', `indexable page not listed: ${path || '/'}`);
+    }
+  }
+  if (!missing && locs.length !== indexable) {
+    warn('sitemap.xml', `${locs.length} URLs but ${indexable} indexable pages`);
   }
 
   /* --- report ------------------------------------------------------------ */

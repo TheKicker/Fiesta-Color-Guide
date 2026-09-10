@@ -7,7 +7,10 @@ import { esc } from './layout.mjs';
 
 /** "1936-1943" or "2026-present" -- never the raw "current" string. */
 export function producedLabel(color) {
-  return color.current ? `${color.startYear}–present` : `${color.startYear}–${color.endYear}`;
+  if (color.current) return `${color.startYear}–present`;
+  // A color that arrived and left inside one year should say the year once.
+  if (color.endYear === color.startYear) return String(color.startYear);
+  return `${color.startYear}–${color.endYear}`;
 }
 
 export function statusPill(color) {
@@ -79,7 +82,7 @@ export function colorCard(color, base, currentYear, { index = 0, eager = false }
             </picture>
           </div>
           <div class="color-card__body">
-            <h3 class="color-card__name"><a href="${esc(href)}">${esc(color.color)}</a></h3>
+            <h3 class="color-card__name"><a href="${esc(href)}">${esc(color.color)}${disambiguate(color)}</a></h3>
             <p class="color-card__meta">
               <span>${producedLabel(color)}</span><span class="dot-sep mono">${esc(color.hex)}</span>
             </p>
@@ -125,7 +128,7 @@ export function relatedCard(color, base, metaHtml) {
           <a class="related-card" href="${base}colors/${esc(color.slug)}/">
             <span class="related-card__swatch" style="background-color:${esc(color.hex)}"></span>
             <span class="related-card__body">
-              <span class="related-card__name">${esc(color.color)}</span>
+              <span class="related-card__name">${esc(color.color)}${disambiguate(color)}</span>
               <span class="related-card__meta">${metaHtml}</span>
             </span>
           </a>
@@ -133,6 +136,19 @@ export function relatedCard(color, base, metaHtml) {
 }
 
 /** "No. 337", or an honest note for the vintage colors that predate numbering. */
+/**
+ * Years appended, invisibly, when a color name is not unique.
+ *
+ * There are two Reds, two Roses, two Yellows, two Turquoises, two Chartreuses
+ * and two Cobalts. Sighted readers get the years from the card underneath;
+ * anyone navigating by a list of links needs them in the link itself.
+ */
+export function disambiguate(color) {
+  return color.ambiguousName
+    ? `<span class="visually-hidden">, ${producedLabel(color)}</span>`
+    : '';
+}
+
 export function skuLabel(color) {
   return color.sku ? `No.&nbsp;${esc(color.sku)}` : 'Vintage line';
 }
@@ -150,7 +166,7 @@ export function paletteBlock(palette, owned, base) {
       const ink = c.derived.text.color;
       const isOwned = c.slug === owned.slug;
       const status = c.current ? 'In production' : `Retired ${c.endYear}`;
-      const inner = `<span class="palette__band-name">${esc(c.color)}</span>
+      const inner = `<span class="palette__band-name">${esc(c.color)}${disambiguate(c)}</span>
                 <span class="palette__band-meta">${skuLabel(c)} &middot; ${status}</span>`;
 
       // No self-link: on Scarlet's page, Scarlet's band is not a link.
@@ -180,4 +196,90 @@ export function paletteBlock(palette, owned, base) {
 ${bands}
           </ol>
         </article>`;
+}
+
+/**
+ * "Where this color sits in the line" -- the narrative a spec table cannot give.
+ *
+ * Every clause is conditional. A color with no predecessor, no superlative and
+ * an unremarkable run gets two sentences, and that is correct: padding it out
+ * would produce the same paragraph on 61 pages, which is the thing this section
+ * exists to avoid.
+ */
+export function contextProse(color, ctx, base) {
+  const link = (c) =>
+    `<a href="${base}colors/${esc(c.slug)}/">${esc(c.color)}${disambiguate(c)}</a>`;
+  const list = (items) =>
+    items.length <= 1
+      ? items.join('')
+      : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+  const family = color.shadeOf.toLowerCase();
+  const sentences = [];
+
+  if (ctx.predecessor) {
+    const p = ctx.predecessor;
+    // Only claim succession when the earlier color had actually stopped.
+    const relation = p.succeeded
+      ? `took over from ${link(p.color)} as Fiesta's ${family}`
+      : `arrived while ${link(p.color)} was still in production`;
+    sentences.push(
+      `${esc(color.color)} ${relation}, and is ${p.phrase} than it &mdash; ` +
+        `${p.separation} rather than a reformulation (&Delta;E&nbsp;${p.delta.toFixed(1)}).`
+    );
+  } else if (ctx.familySize > 1) {
+    sentences.push(
+      `${esc(color.color)} was the first ${family} Fiesta made; ${ctx.familySize - 1} more ` +
+        `have followed it.`
+    );
+  }
+
+  if (ctx.longevity === 'long') {
+    sentences.push(
+      `It has been in production ${ctx.run} years against a median of ${ctx.median} for its era &mdash; ` +
+        `one of the colors the company kept.`
+    );
+  } else if (ctx.longevity === 'short') {
+    sentences.push(
+      `It lasted ${ctx.run} year${ctx.run === 1 ? '' : 's'} where the median for its era is ${ctx.median}, ` +
+        `which is why it turns up so rarely.`
+    );
+  }
+
+  if (ctx.superlatives.length) {
+    // "one of the shortest runs" describes the run, not the color.
+    const verb = color.current ? 'is' : 'was';
+    sentences.push(`It ${verb} ${list(ctx.superlatives)}.`);
+  }
+
+  // What a collector would actually have seen change on the shelf that year.
+  const swaps = [];
+  if (ctx.sameYear.length) {
+    swaps.push(`arrived alongside ${list(ctx.sameYear.map(link))}`);
+  }
+  if (ctx.retiredThatYear.length) {
+    swaps.push(`took the place of ${list(ctx.retiredThatYear.map(link))} on the shelf`);
+  }
+  if (swaps.length) {
+    sentences.push(
+      `In ${color.startYear} it ${list(swaps)}.` +
+        (ctx.history
+          ? ` <a href="${base}history.html#${esc(ctx.history.id)}">What else happened in ${color.startYear} &rarr;</a>`
+          : '')
+    );
+  } else if (ctx.history) {
+    sentences.push(
+      `<a href="${base}history.html#${esc(ctx.history.id)}">What else happened at the company in ${color.startYear} &rarr;</a>`
+    );
+  }
+
+  if (!sentences.length) return '';
+
+  return `        <section class="wrap wrap--narrow section--tight" aria-labelledby="context-heading">
+          <div class="section-head">
+            <div><h2 id="context-heading">Where ${esc(color.color)} sits in the line</h2></div>
+          </div>
+          <div class="prose">
+            <p>${sentences.join(' ')}</p>
+          </div>
+        </section>`;
 }

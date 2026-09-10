@@ -18,8 +18,11 @@
     "build": "node build.mjs",
     "check": "node tools/check.mjs",
     "test:color": "node tools/test-color.mjs",
-    "test": "node tools/test-color.mjs && node build.mjs && node tools/check.mjs",
+    "test": "node tools/verify-facts.mjs && node tools/test-color.mjs && node build.mjs && node tools/check.mjs",
     "images": "python tools/optimize-images.py",
-    "serve": "node build.mjs && npx --yes http-server . -p 8080 -c-1 -o"
+    "serve": "node build.mjs && npx --yes http-server . -p 8080 -c-1 -o",
+    "content": "node tools/content-report.mjs",
+    "verify": "node tools/verify-facts.mjs",
+    "links": "node tools/link-graph.mjs"
   }
 }

@@ -139,7 +139,10 @@ for (const c of data.colors) {
   const start = Number(c.prodStart);
   const end = c.prodEnd === 'current' ? currentYear : Number(c.prodEnd);
   ok(`${label} start year is sane`, start >= 1930 && start <= currentYear + 1, String(start));
-  ok(`${label} ends on or after it starts`, end >= start, `${start} -> ${end}`);
+  // A color announced for next spring starts in a year that has not arrived
+  // yet, which is a normal state for this dataset every autumn.
+  const effectiveEnd = c.prodEnd === 'current' ? Math.max(currentYear, start) : end;
+  ok(`${label} ends on or after it starts`, effectiveEnd >= start, `${start} -> ${effectiveEnd}`);
 
   // `produced` is prose shown to readers; it must agree with the numeric fields
   // it sits next to, or the page contradicts itself.

@@ -162,6 +162,25 @@ export function adSlot(site, { format = 'leaderboard', slot } = {}) {
       </aside>`;
 }
 
+
+/**
+ * Tell people when a link leaves the site.
+ *
+ * Every outbound link here opens in a new tab, and a new tab appearing without
+ * warning is disorienting for screen reader and screen magnifier users in
+ * particular. Applied as one pass over the finished document rather than at
+ * ~40 call sites, so it cannot be forgotten when a link is added.
+ */
+function annotateExternalLinks(html) {
+  return html.replace(
+    /(<a[^>]*target="_blank"[^>]*>)([\s\S]*?)(<\/a>)/g,
+    (match, open, inner, close) => {
+      if (inner.includes('opens in a new tab')) return match;
+      return `${open}${inner}<span class="visually-hidden"> (opens in a new tab)</span>${close}`;
+    }
+  );
+}
+
 /**
  * Full document.
  *
@@ -242,7 +261,7 @@ export function page(o) {
     </script>`
     : '';
 
-  return `<!doctype html>
+  return annotateExternalLinks(`<!doctype html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
@@ -315,5 +334,5 @@ ${scripts.map((s) => `    <script src="${base}${s}" defer></script>`).join('\n')
   }
   </body>
 </html>
-`;
+`);
 }

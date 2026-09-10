@@ -15,6 +15,31 @@ export const VINTAGE_END = 1972;
 /** Fiesta was reintroduced for its 50th anniversary in 1986. */
 export const POST86_START = 1986;
 
+/**
+ * Words of genuinely original writing about a colour.
+ *
+ * This is the number AdSense's "enough unique content" bar is really about,
+ * and the only text on a colour page that is not produced by a template: the
+ * description, plus whatever has been written into `notes`. Everything else --
+ * the spec rows, the pairing rationales, the disclaimer -- is the same shape on
+ * all 61 pages and does not count, however many words it adds up to.
+ */
+export function originalWordCount(color) {
+  const parts = [color.description || '', ...notesParagraphs(color)];
+  return parts
+    .join(' ')
+    .split(/\s+/)
+    .filter((w) => /[a-z0-9]/i.test(w)).length;
+}
+
+/** `notes` may be one string or an array of paragraphs. */
+export function notesParagraphs(color) {
+  if (!color.notes) return [];
+  return (Array.isArray(color.notes) ? color.notes : [color.notes])
+    .map((p) => String(p).trim())
+    .filter(Boolean);
+}
+
 export function slugify(s) {
   return String(s)
     .toLowerCase()
@@ -40,8 +65,17 @@ function assignSlugs(colors) {
   });
 }
 
+/**
+ * The last year this color was (or is) made.
+ *
+ * A color still in production ends "now" -- except that Fiesta announces the
+ * next year's color ahead of time, so an entry can legitimately start in a year
+ * that has not arrived yet. Clamping to the start year keeps a colour announced
+ * for next spring from appearing to end before it began.
+ */
 export function endYear(color, currentYear) {
-  return color.prodEnd === 'current' ? currentYear : Number(color.prodEnd);
+  if (color.prodEnd !== 'current') return Number(color.prodEnd);
+  return Math.max(currentYear, Number(color.prodStart));
 }
 
 export function isCurrent(color) {
@@ -75,8 +109,7 @@ export function overlaps(a, b, currentYear) {
 }
 
 export function yearsInProduction(color, currentYear) {
-  const span = endYear(color, currentYear) - Number(color.prodStart);
-  return Math.max(1, span);
+  return Math.max(0, endYear(color, currentYear) - Number(color.prodStart));
 }
 
 export async function loadData(jsonPath, { currentYear = new Date().getFullYear() } = {}) {
@@ -99,8 +132,18 @@ export async function loadData(jsonPath, { currentYear = new Date().getFullYear(
       startYear: Number(c.prodStart),
       decades: decadesActive(c, currentYear),
       years: yearsInProduction(c, currentYear),
+      notes: notesParagraphs(c),
     };
   });
+
+  // Attach after construction so the count sees the normalised notes.
+  for (const c of colors) c.originalWords = originalWordCount(c);
+
+  // Names reused across the two eras need their years in the accessible name,
+  // or a list of links reads "Red, Red" with no way to tell them apart.
+  const nameCounts = new Map();
+  for (const c of colors) nameCounts.set(c.color, (nameCounts.get(c.color) || 0) + 1);
+  for (const c of colors) c.ambiguousName = nameCounts.get(c.color) > 1;
 
   // Chronological, then alphabetical -- the order the ribbon and timeline use.
   const timeline = [...colors].sort(
@@ -170,6 +213,9 @@ export async function loadData(jsonPath, { currentYear = new Date().getFullYear(
     products: raw.products || [],
     decades,
     shades,
+    // Optional hand-written intro per shade family, keyed by shade name.
+    // A hub without one has nothing original to say and stays out of the index.
+    shadeNotes: raw.shadeNotes || {},
     currentYear,
     firstYear,
     eras,

@@ -15,6 +15,12 @@
   "_comment_googleSiteVerification": "This token belongs to the old thekicker.github.io Search Console property and will NOT verify fiesta-color-guide.com. Either paste the token for the new property here, or verify the domain by DNS TXT record (which covers every subdomain and survives template changes) and set this to \"\".",
   "googleSiteVerification": "MIr6g1JGCFPrUQBIekqgeLUGX-2HAP2S31UZnubSfO4",
 
+  "_comment_content": "Two separate dials, because the two page types fail differently. `minOriginalWords` withholds a COLOR page from the index until its description plus `notes` reach that many words; it is 0 by default because colour pages are distinct product pages that already earn search traffic, and withholding them costs impressions without helping anything. Raise it once notes are written and you want to enforce a floor. `requireShadeNotes` withholds a SHADE HUB until `shadeNotes` in fiesta.json has an entry for it -- those hubs are a filtered view of the homepage and have nothing original to say until you write it, so this defaults to true. Withheld pages are still built, linked and browsable; they just ship noindex,follow and stay out of sitemap.xml.",
+  "content": {
+    "minOriginalWords": 0,
+    "requireShadeNotes": true
+  },
+
   "analytics": {
     "ga4": "G-7E26HLBVC6"
   },

@@ -289,7 +289,7 @@ function analogousRecipe(color, all) {
   return {
     id: 'analogous',
     name: 'Next-door hues',
-    why: `These sit within about 55° of ${color.color} on the color wheel. Neighbouring hues blend instead of competing, which suits a table you want to feel warm rather than graphic.`,
+    why: `These sit within about 55° of ${color.color} on the color wheel. Neighboring hues blend instead of competing, which suits a table you want to feel warm rather than sharp.`,
     colors,
   };
 }
@@ -363,7 +363,7 @@ function neutralLadderRecipe(color, all) {
   return {
     id: 'neutral-ladder',
     name: 'Nothing but neutrals',
-    why: `Every color here is a white, grey or black, stepped from lightest to darkest. No hue anywhere, so the shapes and the food do the work.`,
+    why: `Every color here is a white, gray or black, stepped from lightest to darkest. No hue anywhere, so the shapes and the food do the work.`,
     colors,
   };
 }
