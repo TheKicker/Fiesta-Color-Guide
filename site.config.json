@@ -12,6 +12,14 @@
   },
   "buyMeACoffee": "cavlemasters",
 
+  "_comment_shop": "The Buy Fiesta call to action. One URL drives the nav item, the home hero button and the buy strip on every color page. Change it here and all three follow. Set url to an empty string and all three disappear -- nothing else needs touching.",
+  "shop": {
+    "url": "https://fiestafactorydirect.com",
+    "seller": "Fiesta Factory Direct",
+    "label": "Buy Fiesta",
+    "navLabel": "Shop Online"
+  },
+
   "_comment_googleSiteVerification": "This token belongs to the old thekicker.github.io Search Console property and will NOT verify fiesta-color-guide.com. Either paste the token for the new property here, or verify the domain by DNS TXT record (which covers every subdomain and survives template changes) and set this to \"\".",
   "googleSiteVerification": "MIr6g1JGCFPrUQBIekqgeLUGX-2HAP2S31UZnubSfO4",
 
@@ -19,6 +27,13 @@
   "content": {
     "minOriginalWords": 0,
     "requireShadeNotes": true
+  },
+
+  "_comment_contact": "Where the contact form posts. `netlify` emits Netlify Forms markup (data-netlify, honeypot, hidden form-name) and ONLY works if Netlify serves the site - on GitHub Pages the POST hits a 404 and the message is lost with no error. `action` posts to any absolute URL instead (Formspree, Web3Forms, Formspark) and works on any host; put the endpoint in `action`. `none` replaces the form with an email line. Change provider when the hosting changes, not before.",
+  "contact": {
+    "provider": "netlify",
+    "action": "",
+    "formName": "fiesta-color-guide"
   },
 
   "analytics": {

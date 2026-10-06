@@ -89,7 +89,7 @@ async function main() {
   console.log(`  shade families with an intro   ${shadeNoteCount}/${data.shades.length}`);
 
   if (thin.length) {
-    console.log(`\n  Below the bar, thinnest first — these ship noindex:`);
+    console.log(`\n  Below the bar, thinnest first - these ship noindex:`);
     for (const c of thin.slice(0, 20)) {
       const need = threshold - c.originalWords;
       console.log(
@@ -127,13 +127,14 @@ async function main() {
         !p.includes('/rainbow/'),
     ],
     ['ROYGBIV', (p) => p.includes('colors/rainbow/')],
+    ['Guides', (p) => p.startsWith('guides/') && p !== 'guides/index.html'],
     ['Shade hubs', (p) => p.includes('colors/shade/')],
     ['Era hubs', (p) => p.includes('colors/era/')],
     ['History', (p) => p === 'history.html'],
     ['About', (p) => p === 'about.html'],
   ];
 
-  console.log('\n\nRENDERED PAGES — how much text is unique to that page\n');
+  console.log('\n\nRENDERED PAGES - how much text is unique to that page\n');
   console.log('  group          pages   avg words   unique %   unique words');
   console.log('  ' + '-'.repeat(62));
   for (const [name, test] of groups) {

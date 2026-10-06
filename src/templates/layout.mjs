@@ -40,6 +40,8 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.1 4.7 18.1 5 18.1 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>',
   arrowLeft:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
+  cart:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 11.4a1.6 1.6 0 0 0 1.6 1.3h8.9a1.6 1.6 0 0 0 1.6-1.3L22 7H5.3"/></svg>',
 };
 
 export function icon(name, extra = '') {
@@ -58,12 +60,19 @@ function brandMark(markColors) {
 
 function siteHeader({ site, base, nav, markColors }) {
   const links = nav
-    .map(
-      (n) =>
-        `<a href="${esc(base + n.href || './')}"${
-          n.exact ? ' aria-current="page"' : n.current ? ' data-section="true"' : ''
-        }>${esc(n.label)}</a>`
-    )
+    .map((n) => {
+      // The shop link leaves the site, so it takes an absolute href and a new
+      // tab -- the guide stays open behind it. It also gets its own class, so
+      // it reads as a button rather than as another section of this site.
+      if (n.external) {
+        return `<a class="site-nav__shop" href="${esc(n.href)}" rel="noopener" target="_blank">${icon(
+          'cart'
+        )}${esc(n.label)}</a>`;
+      }
+      return `<a href="${esc(base + n.href || './')}"${
+        n.exact ? ' aria-current="page"' : n.current ? ' data-section="true"' : ''
+      }>${esc(n.label)}</a>`;
+    })
     .join('\n            ');
 
   return `<header class="site-header">
@@ -104,7 +113,6 @@ function siteFooter({ site, base, year }) {
               <li><a href="${base}about.html">How the data is built</a></li>
               <li><a href="${base}about.html#sources">Sources</a></li>
               <li><a href="${base}privacy.html">Privacy &amp; cookies</a></li>
-              <li><a href="${base}fiesta.json">Open data (JSON)</a></li>
               <li><a href="${base}sitemap.xml">Sitemap</a></li>
             </ul>
           </div>
@@ -112,15 +120,14 @@ function siteFooter({ site, base, year }) {
             <h2>The Fiesta Tableware Company</h2>
             <ul>
               <li><a href="https://fiestatableware.com" rel="noopener nofollow" target="_blank">Company site</a></li>
-              <li><a href="https://fiestafactorydirect.com" rel="noopener nofollow" target="_blank">Fiesta Factory Direct</a></li>
-              <li><a href="https://usadinnerwaredirect.com" rel="noopener nofollow" target="_blank">USA Dinnerware Direct</a></li>
+              <li><a href="${esc(site.shop?.url || 'https://fiestafactorydirect.com')}" rel="noopener" target="_blank">${esc(site.shop?.seller || 'Fiesta Factory Direct')} - buy Fiesta</a></li>
             </ul>
           </div>
           <div>
             <h2>This project</h2>
             <ul>
               <li><a href="https://github.com/TheKicker/Fiesta-Color-Guide" rel="noopener" target="_blank">Source on GitHub</a></li>
-              <li><a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">Report a correction</a></li>
+              <li><a href="${base}contact/">Contact / report a correction</a></li>
               <li><a href="https://cavlemasters.com" rel="noopener" target="_blank">Made by Cav</a></li>
               <li><a href="https://www.buymeacoffee.com/${esc(site.buyMeACoffee)}" rel="noopener nofollow" target="_blank">Buy me a coffee</a></li>
             </ul>
@@ -225,7 +232,14 @@ export function page(o) {
     { label: 'Colors', href: '', key: 'colors' },
     { label: 'History', href: 'history.html', key: 'history' },
     { label: 'About', href: 'about.html', key: 'about' },
+    { label: 'Guides', href: 'guides/', key: 'guides' },
     { label: 'ROYGBIV', href: 'colors/rainbow/', key: 'rainbow' },
+    // Last in the bar, and the only item that leaves the site. It appears only
+    // when site.config.json carries a shop URL, so removing the shop link from
+    // every page is a one-line config change rather than a template edit.
+    ...(site.shop?.url
+      ? [{ label: site.shop.navLabel || 'Shop', href: site.shop.url, key: 'shop', external: true }]
+      : []),
   ].map((n) => ({ ...n, current: n.key === navKey, exact: n.key === navKey && navExact }));
 
   const graph =
@@ -290,7 +304,7 @@ export function page(o) {
     <link rel="icon" type="image/png" sizes="32x32" href="${base}assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="${base}assets/images/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="${base}assets/images/apple-touch-icon.png">
-    <link rel="mask-icon" href="${base}assets/images/safari-pinned-tab.svg" color="#ff813f">
+    <link rel="mask-icon" href="${base}assets/images/safari-pinned-tab.svg" color="#2f2f2f">
     <link rel="manifest" href="${base}assets/images/site.webmanifest">
 
     <meta property="og:site_name" content="${esc(site.siteName)}">

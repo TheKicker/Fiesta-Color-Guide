@@ -27,6 +27,60 @@ const n = (x, d = 0) => x.toFixed(d);
    ---------------------------------------------------------------------- */
 
 /**
+ * The "buy it" call to action, in its two shapes.
+ *
+ * Both read from site.config.json -> shop, so there is exactly one URL to
+ * change and no template edits when the store moves. An empty `url` makes
+ * every one of these vanish, which is also how you turn the whole thing off.
+ *
+ * This site is not the shop and says so in the footer, so the wording always
+ * names who you are being sent to. "Buy Fiesta" on its own would read like
+ * this site sells it.
+ */
+function buyButton(site, { variant = 'buy', indent = '              ' } = {}) {
+  const shop = site.shop;
+  if (!shop?.url) return '';
+  const label = variant === 'shop' ? `Shop ${esc(shop.seller)}` : esc(shop.label || 'Buy Fiesta');
+  return (
+    `${indent}<a class="btn btn--buy" href="${esc(shop.url)}" rel="noopener" target="_blank">` +
+    `${icon('cart')}${label}</a>\n`
+  );
+}
+
+/**
+ * The strip that sits on a colour page.
+ *
+ * `inProduction` decides the sentence, and that is the whole point: a retired
+ * colour must never imply you can still buy it. The button is the same either
+ * way, because the store is still where you go - you are just going there for
+ * something else.
+ */
+function buyStrip(site, { colorName, inProduction, startYear, endYear, currentYear }) {
+  const shop = site.shop;
+  if (!shop?.url) return '';
+  const seller = esc(shop.seller || 'the factory store');
+  const name = esc(colorName);
+
+  // A colour announced for next year is `current` in the data from the day it
+  // is added, which is correct everywhere else on the site but would read as a
+  // lie here. Catch it before the in-production sentence does.
+  const line = !inProduction
+    ? `<strong>${name} was retired in ${endYear}</strong>, so it is a hunt for secondhand pieces
+            now. ${seller} is where the colors still being made are, if you are filling a set.`
+    : startYear > currentYear
+      ? `<strong>${name} arrives in ${startYear}.</strong> It is not on shelves yet. ${seller} is
+            the factory's own store and is where it will turn up first.`
+      : `<strong>${name} is in production right now.</strong> ${seller} is the factory's own
+            store, in Newell, West Virginia - the same plant that made the piece.`;
+  return `        <section class="wrap wrap--narrow section--tight">
+          <div class="buy-strip">
+            <p>${line}</p>
+${buyButton(site, { variant: inProduction ? 'buy' : 'shop', indent: '            ' })}          </div>
+        </section>
+`;
+}
+
+/**
  * Repeated on every colour page and hub, so it is kept to one sentence and a
  * link. The long version lives once, on the About page, where it can be read
  * properly instead of skimmed 61 times.
@@ -171,7 +225,7 @@ export function home({ site, data, base = '' }) {
             <div class="hero__actions">
               <a class="btn btn--primary" href="#colors">Browse the palette</a>
               <a class="btn btn--ghost" href="${base}history.html">90 years of history</a>
-            </div>
+${buyButton(site, { variant: 'buy' })}            </div>
           </div>
           <div>
             <dl class="stats">
@@ -436,7 +490,12 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
     [
       'Years in production',
       color.current
-        ? `${currentYear - color.startYear}+ and counting`
+        ? // A colour introduced this year has not run a year yet, and "0+ and
+          // counting" reads like a bug - especially now that Production is the
+          // first thing on the page.
+          currentYear - color.startYear < 1
+          ? 'Its first year'
+          : `${currentYear - color.startYear}+ and counting`
         : `${Math.max(1, color.endYear - color.startYear)}`,
     ],
     ['Color number', color.sku ? `No. ${color.sku}` : 'None - predates Fiesta color numbering'],
@@ -527,7 +586,7 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
                 <source type="image/webp" srcset="${base}assets/opt/colors/${esc(webpName(color.image))}">
                 <img src="${base}assets/colors/${esc(color.image)}" width="${photo.w}" height="${photo.h}"
                      fetchpriority="high" decoding="async"
-                     alt="A piece of Fiesta dinnerware glazed in ${esc(color.color)}">
+                     alt="A Fiesta place setting glazed in ${esc(color.color)}: dinner plate, salad plate, bowl and mug">
               </picture>
               <figcaption>
                 Photographed ware in ${esc(color.color)}. Fired glaze varies between runs - the flat
@@ -537,6 +596,22 @@ export function colorPage({ site, data, color, base = '../../', images = {} }) {
           </div>
         </div>
 
+        <section class="wrap section--tight" aria-labelledby="facts-heading">
+          <div class="section-head">
+            <div><h2 id="facts-heading">Production</h2></div>
+          </div>
+          <div class="spec-grid">
+${facts}
+          </div>
+        </section>
+
+${buyStrip(site, {
+  colorName: color.color,
+  inProduction: color.current,
+  startYear: color.startYear,
+  endYear: color.endYear,
+  currentYear,
+})}
 ${
           color.notes.length
             ? `        <section class="wrap wrap--narrow section--tight" aria-labelledby="notes-heading">
@@ -566,14 +641,6 @@ ${paletteHtml}
 
         ${adSlot(site, { format: 'leaderboard' })}
 
-        <section class="wrap section--tight" aria-labelledby="facts-heading">
-          <div class="section-head">
-            <div><h2 id="facts-heading">Production</h2></div>
-          </div>
-          <div class="spec-grid">
-${facts}
-          </div>
-        </section>
 
 ${contextProse(color, ctx, base)}
 
@@ -814,9 +881,19 @@ export function history({ site, data, base = '' }) {
         decadeSeen.add(decade);
         jump.push({ decade, id });
       }
+      // `desc` stays plain text so linkColorNames and verify-facts can both
+      // read it. Anything that needs a URL goes in `links` instead.
+      const refs = (e.links || []).length
+        ? `\n            <ul class="timeline__links">${(e.links || [])
+            .map(
+              (l) =>
+                `<li><a href="${esc(l.url)}" rel="noopener" target="_blank">${esc(l.label)}</a></li>`
+            )
+            .join('')}</ul>`
+        : '';
       return `          <li id="${esc(id)}">
             <h3 class="timeline__date"><a href="#${esc(id)}">${esc(e.date)}</a></h3>
-            <p>${linkColorNames(e.desc, y, data.colors, base, data.currentYear)}</p>
+            <p>${linkColorNames(e.desc, y, data.colors, base, data.currentYear)}</p>${refs}
           </li>`;
     })
     .join('\n');
@@ -837,8 +914,7 @@ export function history({ site, data, base = '' }) {
           </p>
           <p class="muted">
             Compiled from public company material, collector references and press coverage. It is a work in
-            progress; if you spot an error,
-            <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">open an issue</a>.
+            progress; if you spot an error, <a href="${base}contact/">tell me about it</a>.
           </p>
         </div>
       </section>
@@ -967,16 +1043,17 @@ export function about({ site, data, base = '' }) {
             but it is a genuinely useful first pass when you are trying to tell two blues apart.
           </p>
 
-          <h2 id="data">Use the data</h2>
+          <h2 id="data">How this site is built</h2>
           <p>
-            The whole dataset is one file: <a href="${base}fiesta.json"><code>fiesta.json</code></a>. Colors,
-            production years, shade families, descriptions and the company timeline all live there, and this
-            site is generated from it. You are welcome to use it - a link back is appreciated.
+            Every page here is generated from a single dataset I maintain by hand - colors,
+            production years, color numbers, shade families and the company timeline. Nothing on
+            this site is typed twice, which is the only reason the dates stay consistent across
+            ${data.colors.length} colors.
           </p>
           <p>
-            Corrections are genuinely welcome. If a date or a color looks wrong to you, please
-            <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">open an issue</a>
-            or <a href="https://github.com/TheKicker/Fiesta-Color-Guide" rel="noopener" target="_blank">send a pull request</a>.
+            Corrections are genuinely welcome, and they are the fastest way to make this better.
+            If a date or a color looks wrong to you,
+            <a href="${base}contact/">send it to me</a>.
           </p>
 
           <h2 id="accessibility">Accessibility</h2>
@@ -989,7 +1066,7 @@ export function about({ site, data, base = '' }) {
           </p>
           <p>
             If something here does not work with your assistive technology, that is a bug I want to hear about
-            - please <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">report it</a>.
+            - please <a href="${base}contact/">report it</a>.
           </p>
 
           <h2 id="sources">Sources</h2>
@@ -1054,8 +1131,8 @@ export function privacy({ site, base = '', updated }) {
         <h1>Privacy</h1>
         <p class="hero__lede" style="margin-top:1rem">
           The short version: this is a hobby site about dinnerware. It has no accounts, no
-          newsletter, no contact form and nothing to sell you. It does not want your data and has
-          no use for it.
+          newsletter and nothing to sell you. There is one contact form, and it only sees what you
+          choose to type into it. Otherwise this site does not want your data and has no use for it.
         </p>
       </section>
 
@@ -1140,6 +1217,12 @@ export function privacy({ site, base = '', updated }) {
             Pages here link to retailers, collector organizations and the company's own sites. Those
             sites have their own privacy policies, and this one does not cover them.
           </p>
+          <p>
+            That includes the "Buy Fiesta" links. They are plain links to the factory's own store -
+            no affiliate code, no referral tag, nothing that tells them you came from here and
+            nothing that pays me if you buy. They are there because I would rather the pottery
+            stayed open.
+          </p>
 
           <h2 id="children">Children</h2>
           <p>
@@ -1157,9 +1240,8 @@ export function privacy({ site, base = '', updated }) {
 
           <h2 id="questions">Questions</h2>
           <p>
-            Reach me through <a href="${esc(site.author.url)}" rel="noopener" target="_blank">${esc(site.author.url)}</a>
-            or by opening an issue on
-            <a href="https://github.com/TheKicker/Fiesta-Color-Guide/issues/new" rel="noopener" target="_blank">GitHub</a>.
+            <a href="${base}contact/">Send me a message</a>, or reach me through
+            <a href="${esc(site.author.url)}" rel="noopener" target="_blank">${esc(site.author.url)}</a>.
           </p>
         </div>
       </section>`;
@@ -1746,5 +1828,397 @@ ${data.shades
         ],
       },
     ],
+  };
+}
+
+/* -------------------------------------------------------------------------
+   Guides
+
+   Long-form articles. These are the pages where a person is talking rather
+   than a template, which is the whole reason they exist: a site built from a
+   dataset reads like a dataset, however good the dataset is.
+
+   Nothing here is generated from fiesta.json. A guide is one file in
+   src/content/guides/, and adding another is one file and nothing else.
+   ---------------------------------------------------------------------- */
+
+export function guidePage({ site, data, guide, base = '../../' }) {
+  const path = `guides/${guide.slug}/`;
+
+  const toc = guide.sections
+    .map((s) => `            <li><a href="#${esc(s.id)}">${esc(s.heading)}</a></li>`)
+    .join('\n');
+
+  const sections = guide.sections
+    .map(
+      (s) => `        <section class="wrap wrap--narrow section--tight" aria-labelledby="${esc(s.id)}">
+          <h2 id="${esc(s.id)}">${esc(s.heading)}</h2>
+          <div class="prose">${s.html}</div>
+        </section>`
+    )
+    .join('\n');
+
+  const sources = guide.sources?.length
+    ? `        <section class="wrap wrap--narrow section--tight" aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Sources</h2>
+          <div class="prose">
+            <ul>
+${guide.sources
+  .map(
+    (s) =>
+      `              <li><a href="${esc(s.url)}" rel="noopener nofollow" target="_blank">${esc(
+        s.label
+      )}</a></li>`
+  )
+  .join('\n')}
+            </ul>
+          </div>
+        </section>`
+    : '';
+
+  const body = `      <div class="wrap breadcrumb">
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="${base}">Colors</a></li>
+            <li><a href="${base}guides/">Guides</a></li>
+            <li aria-current="page">${esc(guide.navTitle || guide.title)}</li>
+          </ol>
+        </nav>
+      </div>
+
+      <article>
+        <section class="wrap wrap--narrow section--tight">
+          <p class="eyebrow">Guide &middot; ${guide.readingMinutes} min read &middot; updated ${esc(
+            guide.updated
+          )}</p>
+          <h1>${esc(guide.title)}</h1>
+          <p class="hero__lede" style="margin-top:1rem">${esc(guide.standfirst.replace(/\s+/g, ' ').trim())}</p>
+          <p class="muted" style="margin-top:1rem">
+            By <a href="${esc(site.author.url)}" rel="noopener" target="_blank">${esc(site.author.name)}</a>,
+            who worked at The Fiesta Tableware Company from 2014 to 2024.
+          </p>
+        </section>
+
+        <section class="wrap wrap--narrow section--tight" aria-labelledby="contents-heading">
+          <div class="callout">
+            <h2 id="contents-heading" style="font-size:var(--step-0);margin-bottom:0.5rem">On this page</h2>
+            <ol style="margin:0;padding-left:1.2rem">
+${toc}
+            </ol>
+          </div>
+        </section>
+
+${sections}
+
+        ${adSlot(site, { format: 'leaderboard' })}
+
+${sources}
+
+        <section class="wrap wrap--narrow section--tight">
+          <div class="callout">
+            <p><strong>Spotted something wrong?</strong> Corrections are genuinely welcome, dates
+            and marks especially.
+            <a href="${base}contact/">Tell me</a> and I will fix it.</p>
+          </div>
+        </section>
+      </article>`;
+
+  return {
+    title: guide.title,
+    description: guide.description,
+    body,
+    navKey: 'guides',
+    depth: 2,
+    path,
+    scripts: ['assets/js/app.js'],
+    schema: [
+      {
+        '@type': 'Article',
+        '@id': `${site.baseUrl}/${path}#article`,
+        url: `${site.baseUrl}/${path}`,
+        headline: guide.title,
+        description: guide.description,
+        dateModified: guide.updated,
+        inLanguage: 'en-US',
+        isPartOf: { '@id': `${site.baseUrl}/#website` },
+        author: { '@id': `${site.baseUrl}/#person` },
+        publisher: { '@id': `${site.baseUrl}/#person` },
+        mainEntityOfPage: `${site.baseUrl}/${path}`,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${site.baseUrl}/${path}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Colors', item: `${site.baseUrl}/` },
+          { '@type': 'ListItem', position: 2, name: 'Guides', item: `${site.baseUrl}/guides/` },
+          { '@type': 'ListItem', position: 3, name: guide.navTitle || guide.title },
+        ],
+      },
+    ],
+  };
+}
+
+export function guideIndex({ site, data, guides, base = '../' }) {
+  const path = 'guides/';
+
+  const cards = guides
+    .map(
+      (g) => `          <li>
+            <a class="related-card" href="${base}guides/${esc(g.slug)}/" style="padding:1.1rem 1.2rem">
+              <span class="related-card__name" style="font-size:var(--step-1)">${esc(g.title)}</span>
+              <span class="related-card__meta" style="margin-top:0.5rem">${esc(
+                g.description
+              )}</span>
+              <span class="related-card__meta" style="margin-top:0.6rem">${
+                g.readingMinutes
+              } min read &middot; updated ${esc(g.updated)}</span>
+            </a>
+          </li>`
+    )
+    .join('\n');
+
+  const body = `      <div class="wrap breadcrumb">
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="${base}">Colors</a></li>
+            <li aria-current="page">Guides</li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="wrap wrap--narrow section--tight">
+        <p class="eyebrow">Written, not generated</p>
+        <h1>Guides</h1>
+        <p class="hero__lede" style="margin-top:1rem">
+          The rest of this site is a database: ${data.colors.length} colors, their years, their
+          numbers and how they relate. These are the pages where someone who worked at the pottery
+          explains the things a database cannot.
+        </p>
+      </section>
+
+      <section class="wrap wrap--narrow section--tight">
+        <ul class="related-strip" style="grid-template-columns:1fr">
+${cards}
+        </ul>
+      </section>`;
+
+  return {
+    title: 'Fiesta Guides: Identifying, Dating and Collecting',
+    description: `Long-form guides to Fiesta dinnerware from someone who worked at the pottery: how to read a backstamp, date a piece and tell the eras apart.`,
+    body,
+    navKey: 'guides',
+    navExact: true,
+    depth: 1,
+    path,
+    scripts: ['assets/js/app.js'],
+    schema: [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${site.baseUrl}/${path}#webpage`,
+        url: `${site.baseUrl}/${path}`,
+        name: 'Fiesta guides',
+        isPartOf: { '@id': `${site.baseUrl}/#website` },
+        inLanguage: 'en-US',
+      },
+    ],
+  };
+}
+
+/* -------------------------------------------------------------------------
+   Contact
+
+   This replaced a set of "open an issue on GitHub" links. Those were fine for
+   the handful of people who know what GitHub is and useless to everyone else,
+   which on a dinnerware site is almost everyone.
+
+   The form markup depends on site.config.json -> contact.provider, because the
+   right answer depends on who is serving the site. Netlify Forms are handled by
+   Netlify's edge; on any other host the POST goes nowhere and the message is
+   lost silently, which is worse than no form at all.
+   ---------------------------------------------------------------------- */
+
+export function contact({ site, data, base = '../' }) {
+  const path = 'contact/';
+  const cfg = site.contact || {};
+  const provider = cfg.provider || 'none';
+  const formName = cfg.formName || 'contact';
+
+  const topics = [
+    ['correction', 'A correction - something here is wrong'],
+    ['question', 'A question about a color or a piece'],
+    ['accessibility', 'Something does not work with my assistive technology'],
+    ['other', 'Something else'],
+  ];
+
+  let formAttrs = '';
+  let hiddenFields = '';
+
+  if (provider === 'netlify') {
+    formAttrs =
+      ` name="${esc(formName)}" method="POST" action="${base}contact/thanks/"` +
+      ` data-netlify="true" netlify-honeypot="bot-field"`;
+    // Netlify matches the submission to the form by this hidden field.
+    hiddenFields = `          <input type="hidden" name="form-name" value="${esc(formName)}">\n`;
+  } else if (provider === 'action' && cfg.action) {
+    formAttrs = ` name="${esc(formName)}" method="POST" action="${esc(cfg.action)}"`;
+  }
+
+  // A honeypot has to be hidden from people and from screen readers, but still
+  // submitted, so it is moved off-screen rather than display:none and taken out
+  // of the tab order and the accessibility tree.
+  const honeypot =
+    provider === 'netlify'
+      ? `          <p class="honeypot" aria-hidden="true">
+            <label>Leave this field empty<input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>\n`
+      : '';
+
+  const form =
+    provider === 'none'
+      ? `        <div class="callout">
+          <p>The form is not switched on yet. In the meantime, reach me through
+          <a href="${esc(site.author.url)}" rel="noopener" target="_blank">${esc(site.author.url)}</a>.</p>
+        </div>`
+      : `        <form class="contact-form"${formAttrs}>
+${hiddenFields}${honeypot}
+          <div class="field-block">
+            <label for="contact-topic">What is this about?</label>
+            <span class="select select--block"><select id="contact-topic" name="topic">
+${topics
+  .map(([v, label]) => `              <option value="${esc(v)}">${esc(label)}</option>`)
+  .join('\n')}
+            </select></span>
+          </div>
+
+          <div class="field-block">
+            <label for="contact-subject">Which color or page?</label>
+            <input type="text" id="contact-subject" name="subject" autocomplete="off"
+                   placeholder="Lavender, the history page, No. 351...">
+            <span class="field-hint">Optional, but it saves me hunting for it.</span>
+          </div>
+
+          <div class="field-block">
+            <label for="contact-message">Your message <span class="field-req">(required)</span></label>
+            <textarea id="contact-message" name="message" rows="7" required
+                      aria-describedby="message-hint"></textarea>
+            <span class="field-hint" id="message-hint">
+              For a correction, tell me what it says now and what it should say. If you know where
+              the right answer came from, even better.
+            </span>
+          </div>
+
+          <div class="field-block">
+            <label for="contact-email">Your email</label>
+            <input type="email" id="contact-email" name="email" autocomplete="email"
+                   aria-describedby="email-hint">
+            <span class="field-hint" id="email-hint">
+              Optional. Only needed if you want a reply, and only ever used for that.
+            </span>
+          </div>
+
+          <div class="field-block">
+            <label for="contact-name">Your name</label>
+            <input type="text" id="contact-name" name="name" autocomplete="name"
+                   aria-describedby="name-hint">
+            <span class="field-hint" id="name-hint">
+              Optional. Handy if you would like credit for a correction.
+            </span>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send it</button>
+        </form>`;
+
+  const body = `      <div class="wrap breadcrumb">
+        <nav aria-label="Breadcrumb">
+          <ol>
+            <li><a href="${base}">Colors</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="wrap wrap--narrow section--tight">
+        <p class="eyebrow">Corrections especially welcome</p>
+        <h1>Get in touch</h1>
+        <p class="hero__lede" style="margin-top:1rem">
+          This guide is one person's work and it has mistakes in it. If you have handled more
+          Fiesta than I have, or you own a piece that contradicts something here, I would genuinely
+          rather know.
+        </p>
+      </section>
+
+      <section class="wrap wrap--narrow section--tight">
+${form}
+      </section>
+
+      <section class="wrap wrap--narrow section--tight">
+        <div class="prose">
+          <h2>What I am most hoping to hear</h2>
+          <ul>
+            <li><strong>A date that is wrong.</strong> Production years are the hardest thing to
+              pin down and the easiest thing to get wrong. If you have a piece or a catalogue that
+              disagrees with a year here, that is the most useful message you can send.</li>
+            <li><strong>A color number I have mislabelled.</strong> These are checkable against the
+              bottom of a piece, which makes them the part of this site that has no excuse.</li>
+            <li><strong>Something that does not work with your assistive technology.</strong> This
+              site aims at WCAG 2.2 AA and I test what I can, but I am one person without a screen
+              reader habit. If something is broken for you it is a bug, not a limitation.</li>
+          </ul>
+          <p>
+            If you would rather file it technically, the whole site including the dataset is
+            <a href="https://github.com/TheKicker/Fiesta-Color-Guide" rel="noopener" target="_blank">open
+            on GitHub</a>.
+          </p>
+        </div>
+      </section>`;
+
+  return {
+    title: 'Contact - The Unofficial Fiesta Color Guide',
+    description:
+      'Send a correction, ask about a color, or report something that does not work. Production years and color numbers are the most useful things to tell me about.',
+    body,
+    navKey: 'contact',
+    navExact: true,
+    depth: 1,
+    path,
+    scripts: ['assets/js/app.js'],
+    schema: [
+      {
+        '@type': 'ContactPage',
+        '@id': `${site.baseUrl}/${path}#webpage`,
+        url: `${site.baseUrl}/${path}`,
+        name: 'Contact',
+        isPartOf: { '@id': `${site.baseUrl}/#website` },
+        inLanguage: 'en-US',
+      },
+    ],
+  };
+}
+
+export function contactThanks({ site, data, base = '../../' }) {
+  const body = `      <section class="wrap wrap--narrow section" style="text-align:center">
+        <p class="eyebrow">Sent</p>
+        <h1>Thank you</h1>
+        <p class="hero__lede" style="margin:1rem auto 0">
+          That has reached me. If you left an email and the message needs an answer, you will get
+          one. If you sent a correction, it will show up in the data rather than in a reply, and
+          the page you flagged will change.
+        </p>
+        <p style="margin-top:1.75rem">
+          <a class="btn btn--primary" href="${base}">Back to the colors</a>
+        </p>
+      </section>`;
+
+  return {
+    title: 'Thank you - The Unofficial Fiesta Color Guide',
+    description:
+      'Your message has been sent to the Unofficial Fiesta Color Guide. Corrections show up in the data rather than in a reply.',
+    body,
+    navKey: 'contact',
+    depth: 2,
+    path: 'contact/thanks/',
+    // A post-submission page has nothing to offer a searcher.
+    noindex: true,
+    scripts: ['assets/js/app.js'],
   };
 }

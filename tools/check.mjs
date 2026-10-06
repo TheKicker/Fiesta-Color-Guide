@@ -239,9 +239,23 @@ async function main() {
 
     /* --- controls ------------------------------------------------------ */
     const labelFor = new Set([...html.matchAll(/<label[^>]*for="([^"]+)"/g)].map((m) => m[1]));
+
+    /* A control wrapped in its own <label> is implicitly labelled, which is
+       valid HTML and valid for assistive tech. A control inside an aria-hidden
+       subtree is not in the accessibility tree at all, which is precisely how a
+       spam honeypot is meant to work. Neither counts as unlabelled. */
+    const exempt = new Set();
+    for (const m of html.matchAll(/<label\b[^>]*>([\s\S]*?)<\/label>/g)) {
+      for (const c of m[1].matchAll(/<(input|select|textarea)\b[^>]*>/g)) exempt.add(c[0]);
+    }
+    for (const m of html.matchAll(/aria-hidden="true"[\s\S]{0,400}?<\/(?:p|div|span|li)>/g)) {
+      for (const c of m[0].matchAll(/<(input|select|textarea)\b[^>]*>/g)) exempt.add(c[0]);
+    }
+
     for (const m of html.matchAll(/<(input|select|textarea)\b[^>]*>/g)) {
       const tag = m[0];
       if (attr(tag, 'type') === 'hidden') continue;
+      if (exempt.has(tag)) continue;
       const id = attr(tag, 'id');
       const labelled =
         (id && labelFor.has(id)) || attr(tag, 'aria-label') || attr(tag, 'aria-labelledby');
@@ -360,9 +374,18 @@ async function main() {
      neatly it sits in the sitemap; and a page buried several clicks deep is
      treated as less important than a shallow one. Both are silent failures, so
      they are checked rather than assumed. */
+  const noindexPaths = new Set();
+  for (const file of files) {
+    const html = await readFile(file, 'utf8');
+    if (/<meta name="robots" content="noindex/.test(html)) noindexPaths.add(rel(file));
+  }
+
   const graph = await buildGraph(ROOT);
   for (const node of graph) {
-    if (node.path === '404.html' || node.path === 'index.html') continue;
+    if (node.path === 'index.html') continue;
+    /* A noindex page (404, a form's thank-you) is reached by other means, so
+       nothing linking to it is the intended state rather than a fault. */
+    if (noindexPaths.has(node.path)) continue;
     if (node.inbound === 0 && !node.viaChrome) {
       fail(node.path, 'orphan: no other page links to it from its body or the site chrome');
     }

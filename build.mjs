@@ -14,7 +14,7 @@
 import { mkdir, readFile, writeFile, rm, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { loadData } from './src/lib/data.mjs';
 import { page } from './src/templates/layout.mjs';
@@ -29,6 +29,10 @@ import {
   eraHub,
   eraMeta,
   rainbow,
+  guidePage,
+  guideIndex,
+  contact,
+  contactThanks,
 } from './src/templates/pages.mjs';
 import { createHash } from 'node:crypto';
 
@@ -191,6 +195,39 @@ async function main() {
     );
   }
 
+  await route('contact/index.html', 'contact/', shell(contact({ site, data, base: '../' })), {
+    changefreq: 'yearly',
+    priority: '0.5',
+  });
+  await emit('contact/thanks/index.html', shell(contactThanks({ site, data, base: '../../' })));
+
+  /* Guides: long-form articles, one module each in src/content/guides/.
+     Discovered rather than listed, so adding one is a single new file. */
+  const guideDir = p('src', 'content', 'guides');
+  const guides = [];
+  if (existsSync(guideDir)) {
+    for (const entry of (await readdir(guideDir)).sort()) {
+      if (!entry.endsWith('.mjs')) continue;
+      const mod = await import(pathToFileURL(join(guideDir, entry)).href);
+      guides.push(mod.default);
+    }
+  }
+
+  if (guides.length) {
+    await route('guides/index.html', 'guides/', shell(guideIndex({ site, data, guides, base: '../' })), {
+      changefreq: 'monthly',
+      priority: '0.8',
+    });
+    for (const guide of guides) {
+      await route(
+        `guides/${guide.slug}/index.html`,
+        `guides/${guide.slug}/`,
+        shell(guidePage({ site, data, guide, base: '../../' })),
+        { changefreq: 'yearly', priority: '0.9' }
+      );
+    }
+  }
+
   await route(
     'colors/rainbow/index.html',
     'colors/rainbow/',
@@ -314,7 +351,9 @@ Sitemap: ${site.baseUrl}/sitemap.xml
         id: '/',
         display: 'standalone',
         background_color: '#ffffff',
-        theme_color: '#ff813f',
+        // Slate, matching --brand. The interface carries no hue; the only
+        // colour in the chrome is the six-glaze mark in the header.
+        theme_color: '#2f2f2f',
         icons: [
           { src: 'android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
           { src: 'android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
@@ -379,7 +418,7 @@ Sitemap: ${site.baseUrl}/sitemap.xml
   const changed = Object.values(lastmod).filter((v) => v.date === stamp).length;
 
   console.log(`\nBuilt ${written.length} files (${(totalBytes / 1024).toFixed(0)} KB)`);
-  console.log(`  ${data.colors.length} color pages, ${hubs} facet hubs`);
+  console.log(`  ${data.colors.length} color pages, ${hubs} facet hubs, ${guides.length} guide(s)`);
   console.log(`  ${changed} page(s) whose content changed today`);
   console.log(
     `  ${withNotes}/${data.colors.length} colors have notes` +

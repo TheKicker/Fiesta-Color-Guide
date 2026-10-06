@@ -63,7 +63,8 @@
         },
         {
             "name": "USA Dinnerware Direct",
-            "url": "https://usadinnerwaredirect.com"
+            "status": "discontinued",
+            "note": "Retail site for the company's other dinnerware lines, including Vale, Cottage Blue, American Rose, Checkers and Terrace. Discontinued."
         }
     ],
     "socialMedia": [
@@ -1026,7 +1027,7 @@
         },
         {
             "prod": "The Fiesta Vault",
-            "desc": "An American icon since its introduction in 1936, Fiesta has adorned tables across the country in a multitude of colors.  The popular appeal lies in its colors, durability, affordability, and design.  The retired Fiesta wares offered here on USA Dinnerware Direct are a variety of shapes and colors no longer in production. Due to limited availability, these won't last long!"
+            "desc": "An American icon since its introduction in 1936, Fiesta has adorned tables across the country in a multitude of colors.  The popular appeal lies in its colors, durability, affordability, and design.  The retired Fiesta wares offered here are a variety of shapes and colors no longer in production. Due to limited availability, these won't last long!"
         }
     ],
     "history": [
@@ -1127,8 +1128,28 @@
             "desc": "Two of the original colors, Yellow and Turquoise, are retired."
         },
         {
+            "date": "1972",
+            "desc": "Harker Pottery closes in Chester, West Virginia, the next town north of Newell. Harker had been working out of the former E.M. Knowles plant there since 1931. It is the first of the valley's big potteries to go dark, and it is not the last.",
+            "links": [
+                {
+                    "label": "Harker Pottery at the Museum of Ceramics",
+                    "url": "https://themuseumofceramics.com/harker"
+                }
+            ]
+        },
+        {
             "date": "1973",
             "desc": "Fiesta retires after 37 years of production."
+        },
+        {
+            "date": "1981",
+            "desc": "Taylor, Smith & Taylor closes at the end of the year. Anchor Hocking had bought the Chester, West Virginia plant in 1972 and ran it nine more years. Chester had two big potteries at the start of the 1970s. Now it has none.",
+            "links": [
+                {
+                    "label": "Taylor, Smith & Taylor at the Museum of Ceramics",
+                    "url": "https://themuseumofceramics.com/tst"
+                }
+            ]
         },
         {
             "date": "1980-1985",
@@ -1200,7 +1221,13 @@
         },
         {
             "date": "2003",
-            "desc": "Tangerine is introduced."
+            "desc": "Tangerine is introduced. Downriver in Wellsville, Ohio, Sterling China closes at the end of the year, after eighty-six years of making hotel and restaurant ware.",
+            "links": [
+                {
+                    "label": "Sterling China at the Museum of Ceramics",
+                    "url": "https://themuseumofceramics.com/sterling"
+                }
+            ]
         },
         {
             "date": "2004",
@@ -1272,7 +1299,13 @@
         },
         {
             "date": "2021",
-            "desc": "The Fiesta Tableware Company celebrates 150 Years of American Craftsmanship 1871-2021. Fiesta celebrates its 85th Anniversary, bringing to market the Pedestal Cake Plate in Twilight. Twilight is introduced as the new color of 2021; Cobalt and Shamrock retire.  Luncheon Bowl Plate and Stackable Mugs are introduced."
+            "desc": "The Fiesta Tableware Company celebrates 150 Years of American Craftsmanship 1871-2021. Fiesta celebrates its 85th Anniversary, bringing to market the Pedestal Cake Plate in Twilight. Twilight is introduced as the new color of 2021; Cobalt and Shamrock retire.  Luncheon Bowl Plate and Stackable Mugs are introduced. On February 28, the Hall China plant in East Liverpool closes for good, a year after the brand went to Steelite. Hall had been making china in East Liverpool since 1903. Of the big potteries that once worked this stretch of the Ohio, the plant in Newell is the one still running.",
+            "links": [
+                {
+                    "label": "The Hall China Company on Wikipedia",
+                    "url": "https://en.wikipedia.org/wiki/The_Hall_China_Company"
+                }
+            ]
         },
         {
             "date": "2022",
@@ -1292,7 +1325,7 @@
         },
         {
             "date": "2026",
-            "desc": "Lavender is introduced as the new color of 2026, and Fiesta celebrates it's 90th Anniversary. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters."
+            "desc": "Lavender is introduced as the new color of 2026, and Fiesta celebrates its 90th Anniversary. Two colors are retired - Sunflower, and Twilight. Various shapes are retired as well including the Oval Baker, Mini Canister, Covered Box (aka Belk Box), Sugar and Cream Tray Set, Classic Rim Appetizer Plate, Teapot, Shell Plate, and Chevron Crock/Canisters. USA Dinnerware Direct, the retail site that carried the company's other dinnerware lines - Vale, Cottage Blue, American Rose, Checkers, Terrace and more - is discontinued."
         }
     ],
     "shadeNotes": {

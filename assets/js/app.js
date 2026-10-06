@@ -70,6 +70,20 @@
     }
   }
 
+  /* ------------------------------------------------------------ nav scroll */
+
+  /* On a narrow screen the nav row scrolls sideways. If the page you are on is
+     one of the links that starts off-screen, bring it into view so the header
+     tells you where you are rather than hiding it. */
+  var navRow = document.querySelector('.site-nav');
+  if (navRow) {
+    var here = navRow.querySelector('[aria-current="page"], [data-section="true"]');
+    if (here && navRow.scrollWidth > navRow.clientWidth) {
+      var overshoot = here.offsetLeft + here.offsetWidth - navRow.clientWidth;
+      if (overshoot > 0) navRow.scrollLeft = overshoot + 12;
+    }
+  }
+
   /* --------------------------------------------------------------- filter */
 
   var grid = document.getElementById('color-grid');

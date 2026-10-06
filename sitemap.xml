@@ -3,109 +3,127 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fiesta-color-guide.com/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/history.html</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/about.html</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/privacy.html</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-06T00:58:43+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/black/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/blue/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/brown/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/green/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/orange/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/purple/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/red/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/white/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shade/yellow/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://fiesta-color-guide.com/contact/</loc>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://fiesta-color-guide.com/guides/</loc>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fiesta-color-guide.com/guides/identifying-fiesta/</loc>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://fiesta-color-guide.com/colors/rainbow/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/era/vintage/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/era/post-86/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/era/in-production/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/red-1936/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -115,7 +133,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/blue-cobalt/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -125,7 +143,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/green-light/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -135,7 +153,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/yellow-1936/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -145,7 +163,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/old-ivory/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -155,7 +173,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/turquoise-1937/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -165,7 +183,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/forest-green/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -175,7 +193,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/rose-1951/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -185,7 +203,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/chartreuse-1951/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -195,7 +213,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/gray/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -205,7 +223,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/medium-green/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -215,7 +233,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/red-1959/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -225,7 +243,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/antique-gold/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -235,7 +253,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/turf-green/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -245,7 +263,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/white/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -255,7 +273,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/black/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -265,7 +283,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/rose-1987/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -275,7 +293,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/apricot/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -285,7 +303,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/cobalt/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -295,7 +313,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/yellow-1987/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -305,7 +323,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/turquoise-1988/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -315,7 +333,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/periwinkle-blue/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -325,7 +343,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/sea-mist-green/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -335,7 +353,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/lilac/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -345,7 +363,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/persimmon/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -355,7 +373,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/sapphire/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -365,7 +383,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/raspberry/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -375,7 +393,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/chartreuse-1997/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -385,7 +403,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/pearl-gray/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -395,7 +413,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/juniper/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -405,7 +423,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/cinnabar/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -415,7 +433,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/sunflower/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -425,7 +443,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/plum/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -435,7 +453,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/shamrock/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -445,7 +463,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/tangerine/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -455,7 +473,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/scarlet/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -465,7 +483,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/peacock/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -475,7 +493,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/heather/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -485,7 +503,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/evergreen/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -495,7 +513,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/ivory/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -505,7 +523,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/chocolate/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -515,7 +533,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/lemongrass/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -525,7 +543,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/marigold/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -535,7 +553,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/paprika/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -545,7 +563,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/flamingo/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -555,7 +573,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/lapis/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -565,7 +583,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/poppy/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -575,7 +593,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/slate/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -585,7 +603,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/sage/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -595,7 +613,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/foundry/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -605,7 +623,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/claret/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -615,7 +633,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/daffodil/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -625,7 +643,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/mulberry/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -635,7 +653,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/meadow/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -645,7 +663,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/butterscotch/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -655,7 +673,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/twilight/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -665,7 +683,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/peony/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -675,7 +693,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/jade/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -685,7 +703,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/sky/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -695,7 +713,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/linen/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -705,7 +723,7 @@
   </url>
   <url>
     <loc>https://fiesta-color-guide.com/colors/lavender/</loc>
-    <lastmod>2026-09-09T22:30:00-04:00</lastmod>
+    <lastmod>2026-10-05T12:00:00-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>

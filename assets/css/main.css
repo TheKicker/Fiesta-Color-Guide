@@ -38,17 +38,42 @@
   --text-muted: #5d5347;
   --text-faint: #786d5f;
 
-  /* --brand is Buy Me a Coffee's orange, used as a fill only: at 2.5:1 on
-     white it can never carry text. --accent is the darkened version that can
-     (6.4:1), so links and small text use that and fills use --brand. */
-  --brand: #ff813f;
-  --brand-hover: #f2701f;
-  --brand-ink: #2b1000;
+  /* THE CHROME IS ACHROMATIC ON PURPOSE.
+     This site's whole subject is colour, so every colour on the page should be
+     a Fiesta glaze and nothing else. A branded orange competes with 61 glazes
+     for the same job and wins none of them. So the interface is built from
+     Fiesta's own neutrals, which are real colours in the dataset with real
+     production years, not greys someone picked:
 
-  --accent: #9e4310;
-  --accent-hover: #83370c;
+       White      #FFFFFF  1986-current
+       Old Ivory  #F2EFDE  1936-1951
+       Linen      #EBE4D2  2025-current
+       Pearl Gray #C9CECF  1999-2001
+       Slate      #2F2F2F  2015-2022
+       Foundry    #111111  2016-current
+       Black      #000000  1986-2014
+
+     Nothing in here is hue. Hierarchy is carried by depth and by fill, which
+     is why the buy button is the one pure black on the page. */
+
+  /* Slate: the primary action. */
+  --brand: #2f2f2f;
+  --brand-hover: #111111;
+  --brand-ink: #ffffff;
+
+  /* Black: the buy action, and the only pure black in the interface, so it is
+     the darkest thing on any page it appears on. */
+  --buy: #000000;
+  --buy-hover: #2f2f2f;
+  --buy-ink: #ffffff;
+
+  /* Links are Slate and lighter than body text, so colour cannot be what marks
+     them. The underline does that (WCAG 1.4.1), which is why no rule in this
+     file removes it from prose links. */
+  --accent: #2f2f2f;
+  --accent-hover: #000000;
   --accent-contrast: #ffffff;
-  --accent-wash: #fdf2ea;
+  --accent-wash: #f2efde;
 
   /* The black third of the palette: footer ground in light mode. */
   --ink: #17130f;
@@ -63,8 +88,10 @@
      light page -- and a near-black one still has an edge on a dark page. */
   --swatch-edge: rgb(0 0 0 / 0.12);
 
-  --ok: #1d6b3f;
-  --ok-wash: #e9f4ed;
+  /* "In production" was green. It is Slate on Linen now; the word in the pill
+     carries the meaning, and the retired pill has no ring. */
+  --ok: #2f2f2f;
+  --ok-wash: #ebe4d2;
   --retired-wash: #efece7;
 
   --shadow-sm: 0 1px 2px rgb(23 21 15 / 0.06), 0 1px 3px rgb(23 21 15 / 0.08);
@@ -110,14 +137,20 @@
     --text-muted: #aaa093;
     --text-faint: #968b7e;
 
-    --brand: #ff813f;
-    --brand-hover: #ff9761;
-    --brand-ink: #2b1000;
 
-    --accent: #ff9761;
-    --accent-hover: #ffb184;
-    --accent-contrast: #2b1000;
-    --accent-wash: #2c1a10;
+    /* Inverted on a dark ground: the light glazes become the fills. */
+    --brand: #ebe4d2;
+    --brand-hover: #f2efde;
+    --brand-ink: #111111;
+
+    --buy: #ffffff;
+    --buy-hover: #f2efde;
+    --buy-ink: #000000;
+
+    --accent: #c9cecf;
+    --accent-hover: #ffffff;
+    --accent-contrast: #111111;
+    --accent-wash: #26231f;
 
     --ink: #1b1917;
     --ink-text: #f7f3ee;
@@ -127,8 +160,8 @@
     --focus: #8ab4f8;
     --swatch-edge: rgb(255 255 255 / 0.18);
 
-    --ok: #6cc48d;
-    --ok-wash: #16281e;
+    --ok: #c9cecf;
+    --ok-wash: #232320;
     --retired-wash: #232019;
 
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
@@ -151,14 +184,20 @@
   --text-muted: #aaa093;
   --text-faint: #968b7e;
 
-  --brand: #ff813f;
-  --brand-hover: #ff9761;
-  --brand-ink: #2b1000;
 
-  --accent: #ff9761;
-  --accent-hover: #ffb184;
-  --accent-contrast: #2b1000;
-  --accent-wash: #2c1a10;
+  /* Inverted on a dark ground: the light glazes become the fills. */
+  --brand: #ebe4d2;
+  --brand-hover: #f2efde;
+  --brand-ink: #111111;
+
+  --buy: #ffffff;
+  --buy-hover: #f2efde;
+  --buy-ink: #000000;
+
+  --accent: #c9cecf;
+  --accent-hover: #ffffff;
+  --accent-contrast: #111111;
+  --accent-wash: #26231f;
 
   --ink: #1b1917;
   --ink-text: #f7f3ee;
@@ -168,8 +207,8 @@
   --focus: #8ab4f8;
   --swatch-edge: rgb(255 255 255 / 0.18);
 
-  --ok: #6cc48d;
-  --ok-wash: #16281e;
+  --ok: #c9cecf;
+  --ok-wash: #232320;
   --retired-wash: #232019;
 
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
@@ -408,6 +447,9 @@ a:hover { color: var(--accent-hover); }
   text-decoration: none;
   font-weight: 550;
   font-size: var(--step--1);
+  /* "Shop Online" is two words and would otherwise break across lines at the
+     tablet widths where the header is still a single row. */
+  white-space: nowrap;
 }
 
 .site-nav a:hover {
@@ -419,6 +461,42 @@ a:hover { color: var(--accent-hover); }
 .site-nav a[data-section="true"] {
   color: var(--text);
   background: var(--surface-2);
+}
+
+/* The shop link is the only nav item that leaves the site, so it is the only
+   one that looks like a button: a pill, because every other button here is a
+   pill and the theme toggle beside it is a circle, and 2.35rem tall, because
+   that is the toggle's height and the header should have only one.
+
+   The selector must be `.site-nav a.site-nav__shop`, not `.site-nav__shop`.
+   `.site-nav a` above is (0,1,1) and a lone class is (0,1,0), so it would win
+   colour, radius, padding and weight -- which it did, leaving muted text on a
+   black pill at 2.8:1 and only legible on hover, because the hover rule was
+   the one selector here specific enough to land. */
+.site-nav a.site-nav__shop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.35rem;
+  margin-left: 0.55rem;
+  padding: 0 1rem;
+  border-radius: var(--radius-pill);
+  background: var(--buy);
+  color: var(--buy-ink);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+/* The same cart as the hero button, so the two buy actions speak once. */
+.site-nav__shop svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  flex: none;
+}
+
+.site-nav a.site-nav__shop:hover {
+  background: var(--buy-hover);
+  color: var(--buy-ink);
 }
 
 .theme-toggle {
@@ -472,17 +550,39 @@ a:hover { color: var(--accent-hover); }
     gap: 0.5rem;
   }
 
+  /* Six labels need ~440px and a 320px phone offers 288. Rather than wrap to a
+     third row - the header is already two, and a sticky 135px masthead on a
+     667px screen is most of the thing people came for - the row scrolls. The
+     item cut off at the right edge is its own affordance, and app.js scrolls
+     the current page's link into view so you can always see where you are. */
   .site-nav {
     order: 3;
     width: 100%;
-    justify-content: space-between;
     gap: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
   }
 
-  /* Four labels have to fit 288px at the narrowest supported width. */
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
   .site-nav a {
-    padding-inline: 0.4rem;
+    padding-inline: 0.5rem;
     white-space: nowrap;
+    flex: none;
+  }
+
+  /* The row above tightens every item to fit a phone. A pill pinched to 0.5rem
+     looks squeezed rather than tight, and this is the one item that has to
+     stay inviting, so it keeps its shoulders and a slightly shorter height. */
+  .site-nav a.site-nav__shop {
+    height: 2.1rem;
+    padding-inline: 0.85rem;
+    margin-left: 0.4rem;
   }
 
   /* Repeated verbatim in the footer on every page, so nothing is lost. */
@@ -979,7 +1079,7 @@ a:hover { color: var(--accent-hover); }
   inset: 0;
 }
 
-.color-card__name a:hover { color: var(--accent); }
+.color-card__name a:hover { color: var(--accent); text-decoration: underline; }
 
 .color-card__meta {
   font-size: var(--step--1);
@@ -1065,7 +1165,7 @@ a:hover { color: var(--accent-hover); }
 }
 
 .breadcrumb a { color: var(--text-muted); }
-.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
 
 .color-hero {
   display: grid;
@@ -1510,8 +1610,29 @@ a:hover { color: var(--accent-hover); }
   display: inline-block;
   padding-block: 0.15rem;
 }
-.timeline__date a:hover { color: var(--accent); }
+.timeline__date a:hover { color: var(--accent); text-decoration: underline; }
 .timeline p { color: var(--text-muted); max-width: var(--measure); }
+
+/* Outbound reading for a timeline entry. Kept small and under the prose so it
+   reads as a footnote rather than as part of the entry. */
+.timeline__links {
+  list-style: none;
+  margin: 0.45rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  font-size: var(--step--1);
+}
+
+.timeline__links a {
+  color: var(--accent);
+  /* Slate is too close to body text to mark a link on its own. */
+  text-decoration: underline;
+  /* Padding gets these to a 24px target (SC 2.5.8). */
+  display: inline-block;
+  padding-block: 0.2rem;
+}
 
 .jump-nav {
   display: flex;
@@ -1642,6 +1763,40 @@ a:hover { color: var(--accent-hover); }
 
 .btn svg { width: 1rem; height: 1rem; flex: none; }
 
+/* The buy button. Deliberately the one green on the site: it has to read as a
+   different kind of action from "browse" or "read", and Fiesta orange is
+   already the brand colour doing other work. */
+.btn--buy {
+  background: var(--buy);
+  color: var(--buy-ink);
+  border-color: transparent;
+}
+
+.btn--buy:hover { background: var(--buy-hover); color: var(--buy-ink); }
+
+/* The strip under Production on a colour page. */
+.buy-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  padding: 1.1rem 1.35rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--buy);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.buy-strip p {
+  margin: 0;
+  max-width: 46ch;
+  color: var(--text-muted);
+  font-size: var(--step--1);
+}
+
+.buy-strip strong { color: var(--text); }
+
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
@@ -1649,6 +1804,96 @@ a:hover { color: var(--accent-hover); }
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* 11b. Contact form ------------------------------------------------------- */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  max-width: var(--measure);
+}
+
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field-block > label {
+  font-weight: 600;
+  font-size: var(--step-0);
+  color: var(--text);
+}
+
+.field-req {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.field-hint {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  max-width: var(--measure);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 9rem;
+  line-height: 1.5;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: var(--border-strong);
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form select:focus-visible {
+  box-shadow: var(--focus-ring);
+  border-color: transparent;
+}
+
+/* A select that fills the column, unlike the pill-shaped filter selects. */
+.select--block {
+  display: flex;
+  width: 100%;
+}
+
+.select--block select {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  padding-block: 0.7rem;
+}
+
+.contact-form button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+/* The honeypot has to be invisible to people and to assistive technology while
+   still being submitted, so it is moved off-screen rather than display:none -
+   a hidden input is not always posted, and a bot reading the DOM sees both. */
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* 12. Footer -------------------------------------------------------------- */
@@ -1699,9 +1944,9 @@ a:hover { color: var(--accent-hover); }
 }
 
 .site-footer a { color: var(--ink-muted); text-decoration: none; }
-.site-footer a:hover { color: var(--brand); text-decoration: underline; }
+.site-footer a:hover { color: var(--ink-text); text-decoration: underline; }
 .site-footer p { color: var(--ink-muted); }
-.site-footer :focus-visible { box-shadow: 0 0 0 2px var(--ink), 0 0 0 4px var(--brand); }
+.site-footer :focus-visible { box-shadow: 0 0 0 2px var(--ink), 0 0 0 4px var(--ink-text); }
 
 .site-footer__legal {
   border-top: 1px solid var(--ink-border);
