@@ -70,19 +70,126 @@
     }
   }
 
-  /* ------------------------------------------------------------ nav scroll */
+  /* ----------------------------------------------------------- phone menu */
+  /* A disclosure, not a modal: no focus trap, no scroll lock, no inert
+     background. The panel is the real <nav>, so there is one set of links in
+     the document and `aria-controls` points at the thing it actually opens.
+     Escape closes it and hands focus back, a click outside closes it, and the
+     shop link and theme toggle are never inside it. */
+  var menuToggle = document.getElementById('menu-toggle');
+  var siteNav = document.getElementById('site-nav');
+  var menuOpen = false;
 
-  /* On a narrow screen the nav row scrolls sideways. If the page you are on is
-     one of the links that starts off-screen, bring it into view so the header
-     tells you where you are rather than hiding it. */
-  var navRow = document.querySelector('.site-nav');
-  if (navRow) {
-    var here = navRow.querySelector('[aria-current="page"], [data-section="true"]');
-    if (here && navRow.scrollWidth > navRow.clientWidth) {
-      var overshoot = here.offsetLeft + here.offsetWidth - navRow.clientWidth;
-      if (overshoot > 0) navRow.scrollLeft = overshoot + 12;
-    }
+  function setMenu(open) {
+    if (!menuToggle || !siteNav) return;
+    menuOpen = open;
+    siteNav.classList.toggle('is-open', open);
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
+
+  if (menuToggle && siteNav) {
+    var phoneMq = window.matchMedia('(max-width: 768px)');
+
+    var syncMenu = function () {
+      if (phoneMq.matches) {
+        menuToggle.hidden = false;
+        if (!menuOpen) setMenu(false);
+      } else {
+        menuToggle.hidden = true;
+        setMenu(false); // the panel class must not survive into the wide layout
+      }
+    };
+
+    menuToggle.addEventListener('click', function () {
+      setMenu(!menuOpen);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && menuOpen) {
+        setMenu(false);
+        menuToggle.focus();
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!menuOpen) return;
+      if (siteNav.contains(event.target) || menuToggle.contains(event.target)) return;
+      setMenu(false);
+    });
+
+    if (phoneMq.addEventListener) phoneMq.addEventListener('change', syncMenu);
+    else if (phoneMq.addListener) phoneMq.addListener(syncMenu);
+    syncMenu();
+  }
+
+  /* ------------------------------------------------------ tucking header */
+  /* Scroll down and the header slides away; scroll up and it comes straight
+     back. Phones only - a desktop has the vertical room to spare.
+
+     Three rules keep it from being annoying. It never tucks near the top of
+     the page, where the header is part of the furniture. It needs a few
+     pixels of deliberate movement to change its mind, so a thumb resting on
+     a scrolling page does not make it flicker. And it always comes back if
+     focus lands inside it, because a keyboard user tabbing into a header
+     they cannot see is a trap. */
+  (function tuckingHeader() {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+
+    var phone = window.matchMedia('(max-width: 768px)');
+    var root = document.documentElement;
+    var last = window.pageYOffset;
+    var pending = null;
+    var FLOOR = 140; // leave it alone until past the hero's first screenful
+    var SLOP = 6; // movement below this is noise, not a decision
+
+    function tuck(on) {
+      root.classList.toggle('nav-tucked', on);
+    }
+
+    function read() {
+      pending = null;
+      var y = window.pageYOffset;
+      var dy = y - last;
+
+      // Sliding the header away while its own menu is open would take the
+      // menu with it.
+      if (!phone.matches || y < FLOOR || menuOpen) {
+        tuck(false);
+        last = y;
+        return;
+      }
+      if (Math.abs(dy) < SLOP) return;
+      tuck(dy > 0);
+      last = y;
+    }
+
+    /* Trailing-edge throttle on a timer, deliberately not requestAnimationFrame.
+       A "skip if one is queued" guard around rAF deadlocks permanently the
+       first time rAF does not fire - background the tab mid-scroll and the
+       flag stays set, so every later scroll is ignored and the header never
+       moves again. setTimeout always fires. 60ms is well under the time it
+       takes to notice. */
+    window.addEventListener(
+      'scroll',
+      function () {
+        if (pending) return;
+        pending = setTimeout(read, 60);
+      },
+      { passive: true }
+    );
+
+    // Tab into anything in the header and it has to be on screen.
+    header.addEventListener('focusin', function () {
+      tuck(false);
+    });
+
+    var onWidthChange = function () {
+      if (!phone.matches) tuck(false);
+    };
+    if (phone.addEventListener) phone.addEventListener('change', onWidthChange);
+    else if (phone.addListener) phone.addListener(onWidthChange);
+  })();
 
   /* --------------------------------------------------------------- filter */
 
@@ -100,6 +207,10 @@
   var emptyState = document.getElementById('empty-state');
   var resetBtn = document.getElementById('reset');
   var chipButtons = Array.prototype.slice.call(document.querySelectorAll('[data-filter-shade]'));
+  var panel = document.getElementById('filters-panel');
+  var panelToggle = document.getElementById('filters-toggle');
+  var badge = document.getElementById('filter-badge');
+  var badgeSr = document.getElementById('filter-badge-sr');
 
   var cards = Array.prototype.slice.call(grid.children).map(function (el) {
     return {
@@ -159,6 +270,57 @@
     return count;
   }
 
+  /* ---------------------------------------------------------------------
+     The collapsible filter panel.
+
+     Phone only. On a short phone the open toolbar is the whole first screen,
+     so the selects and chips fold away behind a button and the search stays
+     visible. The button ships with `hidden` in the HTML and is revealed only
+     here, which means a browser with JS off never sees a control that cannot
+     do anything - it just gets the panel, open, the way it always was.
+     --------------------------------------------------------------------- */
+  var narrow = window.matchMedia('(max-width: 768px)');
+  // Once someone opens or closes it themselves, stop deciding for them.
+  var panelTouched = false;
+
+  function setPanel(open) {
+    if (!panel || !panelToggle) return;
+    panel.hidden = !open;
+    panelToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function syncFilterPanel() {
+    if (!panel || !panelToggle) return;
+    if (narrow.matches) {
+      panelToggle.hidden = false;
+      if (!panelTouched) setPanel(false);
+    } else {
+      panelToggle.hidden = true;
+      setPanel(true);
+    }
+  }
+
+  /* The number on the button, so a closed panel still says it is filtering.
+     The badge is aria-hidden and a sibling span carries the same count in
+     words, because "Filters 2" read aloud is not a sentence. */
+  function syncFilterBadge() {
+    if (!badge) return;
+    var n = activeFilterCount();
+    badge.hidden = n === 0;
+    badge.textContent = String(n);
+    if (badgeSr) badgeSr.textContent = n === 0 ? '' : ', ' + n + ' active';
+  }
+
+  if (panelToggle) {
+    panelToggle.addEventListener('click', function () {
+      panelTouched = true;
+      setPanel(panel.hidden);
+    });
+    if (narrow.addEventListener) narrow.addEventListener('change', syncFilterPanel);
+    else if (narrow.addListener) narrow.addListener(syncFilterPanel);
+    syncFilterPanel();
+  }
+
   function apply() {
     var visible = [];
     for (var i = 0; i < cards.length; i++) {
@@ -179,6 +341,7 @@
     if (emptyState) emptyState.hidden = visible.length > 0;
     if (clearBtn) clearBtn.hidden = !state.q;
     if (resetBtn) resetBtn.hidden = activeFilterCount() === 0;
+    syncFilterBadge();
 
     if (resultCount) {
       var text =

@@ -463,17 +463,17 @@ a:hover { color: var(--accent-hover); }
   background: var(--surface-2);
 }
 
-/* The shop link is the only nav item that leaves the site, so it is the only
-   one that looks like a button: a pill, because every other button here is a
-   pill and the theme toggle beside it is a circle, and 2.35rem tall, because
-   that is the toggle's height and the header should have only one.
+/* The shop link sits in the header row, beside the theme toggle and outside
+   .site-nav, so that collapsing the nav on a phone never hides it. A pill,
+   because every other button here is a pill, and 2.35rem tall, because that
+   is the toggle's height and the header should have only one.
 
-   The selector must be `.site-nav a.site-nav__shop`, not `.site-nav__shop`.
-   `.site-nav a` above is (0,1,1) and a lone class is (0,1,0), so it would win
-   colour, radius, padding and weight -- which it did, leaving muted text on a
-   black pill at 2.8:1 and only legible on hover, because the hover rule was
-   the one selector here specific enough to land. */
-.site-nav a.site-nav__shop {
+   It used to live inside .site-nav, where `.site-nav a` at (0,1,1) beat a lone
+   class at (0,1,0) and quietly won colour, radius, padding and weight -- muted
+   text on a black pill at 2.8:1, legible only on hover. Out here nothing
+   styles a bare `a`, so the class alone is enough. check-contrast.mjs holds
+   the line either way. */
+.site-header .site-nav__shop {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -488,13 +488,13 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* The same cart as the hero button, so the two buy actions speak once. */
-.site-nav__shop svg {
+.site-header .site-nav__shop svg {
   width: 0.95rem;
   height: 0.95rem;
   flex: none;
 }
 
-.site-nav a.site-nav__shop:hover {
+.site-header .site-nav__shop:hover {
   background: var(--buy-hover);
   color: var(--buy-ink);
 }
@@ -537,52 +537,16 @@ a:hover { color: var(--accent-hover); }
    it so the sticky toolbar, which pins itself directly under the header, keeps
    landing in the right place. */
 @media (max-width: 700px) {
-  /* Two rows: the toggle sets row one, a nav link sets row two. 6rem clears
-     the ~93px they actually need, so the sticky toolbar -- which pins itself
-     to --header-h -- cannot tuck under the header edge. */
+  /* One row now that the nav folds into the menu panel, so the header is
+     back to the default height and the sticky toolbar follows it up. */
   :root {
-    --header-h: 6.25rem;
+    --header-h: 4rem;
   }
 
   .site-header__inner {
     flex-wrap: wrap;
     row-gap: 0.25rem;
     gap: 0.5rem;
-  }
-
-  /* Six labels need ~440px and a 320px phone offers 288. Rather than wrap to a
-     third row - the header is already two, and a sticky 135px masthead on a
-     667px screen is most of the thing people came for - the row scrolls. The
-     item cut off at the right edge is its own affordance, and app.js scrolls
-     the current page's link into view so you can always see where you are. */
-  .site-nav {
-    order: 3;
-    width: 100%;
-    gap: 0;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overscroll-behavior-x: contain;
-  }
-
-  .site-nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .site-nav a {
-    padding-inline: 0.5rem;
-    white-space: nowrap;
-    flex: none;
-  }
-
-  /* The row above tightens every item to fit a phone. A pill pinched to 0.5rem
-     looks squeezed rather than tight, and this is the one item that has to
-     stay inviting, so it keeps its shoulders and a slightly shorter height. */
-  .site-nav a.site-nav__shop {
-    height: 2.1rem;
-    padding-inline: 0.85rem;
-    margin-left: 0.4rem;
   }
 
   /* Repeated verbatim in the footer on every page, so nothing is lost. */
@@ -789,11 +753,280 @@ a:hover { color: var(--accent-hover); }
   .toolbar { background: var(--bg); }
 }
 
-.toolbar__row {
+/* On a wide screen the toolbar is one wrapping row: search, then the four
+   selects, then the chips on a line of their own. The head/panel/row wrappers
+   exist only so a phone can collapse part of it, so here they dissolve with
+   `display: contents` and their children join this one flex container. */
+.toolbar__form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.6rem;
+}
+
+.toolbar__head,
+.toolbar__panel:not([hidden]),
+.toolbar__row {
+  display: contents;
+}
+
+.toolbar__form .chips {
+  flex: 1 0 100%;
+  padding-top: 0;
+}
+
+/* Revealed by app.js at phone widths only. */
+.toolbar__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.6rem;
+  padding: 0 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+  flex: none;
+}
+
+.toolbar__toggle[hidden] { display: none; }
+.toolbar__toggle:hover { border-color: var(--border-strong); background: var(--surface-2); }
+.toolbar__toggle svg { width: 1.05rem; height: 1.05rem; flex: none; }
+
+/* The count of active filters, so a collapsed panel still says it is doing
+   something. The screen-reader text next to it carries the same fact in words. */
+.toolbar__badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.3rem;
+  border-radius: var(--radius-pill);
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.toolbar__badge[hidden] { display: none; }
+
+@media (max-width: 768px) {
+  /* ---------------------------------------------------------------------
+     The toolbar on a phone.
+
+     Open, this block was about 500px: a search field, four full-width
+     selects and nine chips wrapping to five rows. On a 667px iPhone SE,
+     after a 100px header, that is the entire first screen - you arrive at a
+     guide to 61 colours and cannot see one. So the four selects and the
+     chips fold behind a Filters button, and the search stays out because it
+     is the fastest route to a specific colour and costs one row.
+
+     Collapsed this is roughly 130px, which puts the first row of colours
+     above the fold on the shortest phone sold. Open it is about 300px,
+     because the two changes below are worth keeping either way:
+     a two-column grid for the selects, and chips on one scrolling row
+     instead of five stacked ones.
+     --------------------------------------------------------------------- */
+  .toolbar__form { display: block; }
+
+  .toolbar__head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .toolbar__panel:not([hidden]) { display: block; padding-top: 0.7rem; }
+
+  /* Two across rather than four down, with the label above its control so the
+     control gets the full column width. */
+  .toolbar__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+
+  .field > label { padding-left: 0.2rem; }
+  .field .select { display: flex; }
+  .field .select select { width: 100%; }
+
+  /* One scrolling row, the same affordance the nav already uses up top, so
+     nine families cost one row instead of five. */
+  .toolbar__form .chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overscroll-behavior-x: contain;
+    padding-top: 0.7rem;
+    /* The gutter keeps the last chip clear of the screen edge when scrolled. */
+    padding-right: var(--gutter);
+  }
+
+  .toolbar__form .chips::-webkit-scrollbar { display: none; }
+  .chips > li { flex: none; }
+}
+
+/* -------------------------------------------------------------------------
+   The header tucks away while you scroll down.
+
+   On a 667px phone the header (101px) and the sticky toolbar (159px) together
+   hold 39% of the screen for as long as you are reading. The usual fix is a
+   hamburger, but the nav row is only 37px of that 101px, so folding six links
+   behind a button buys 6% of the screen and costs the Shop button its place on
+   every page.
+
+   Hiding the whole header on the way down returns 101px instead - two and a
+   half times as much - and hides nothing, because scrolling up is already the
+   gesture for "I want the controls back". The toolbar rides up with it so the
+   search and filters never leave.
+   ---------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* No will-change: both already carry a backdrop-filter, which promotes them
+     to their own layer anyway, and a permanent will-change is just memory. */
+  .site-header,
+  .toolbar {
+    transition: transform 0.22s ease, top 0.22s ease;
+  }
+
+  .nav-tucked .site-header { transform: translateY(-100%); }
+
+  /* The header's transform is visual only - its sticky box still reserves the
+     space - so the toolbar has to be told where the top is now. */
+  .nav-tucked .toolbar { top: 1px; }
+}
+
+/* -------------------------------------------------------------------------
+   The phone menu.
+
+   Below 769px the five section links fold into a panel behind a labelled
+   Menu button, which kills the half-cut link at the right edge and gives the
+   header a single row. Two things deliberately stay out of the panel: the
+   shop link, because burying the one link that sends people to the pottery
+   would be the wrong thing to hide, and the theme toggle, because it is one
+   tap and people hunt for it.
+
+   The rows inside are 3rem tall and full width. This audience skews older and
+   a 24px minimum is a floor, not a target.
+   ---------------------------------------------------------------------- */
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.35rem;
+  padding: 0 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 600;
+  cursor: pointer;
+  flex: none;
+}
+
+.menu-toggle[hidden] { display: none; }
+.menu-toggle:hover { border-color: var(--border-strong); background: var(--surface-2); }
+.menu-toggle svg { width: 1.15rem; height: 1.15rem; flex: none; }
+
+/* The short label only exists below the width where the full one fits. */
+.site-nav__shop-short { display: none; }
+
+@media (max-width: 768px) {
+  /* One row now. The 1rem gap costs 48px across four items, which is what
+     pushed the menu button onto a second line at 320px and 430px. */
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: 0;
+    column-gap: 0.55rem;
+  }
+
+  .menu-toggle { padding: 0 0.7rem; }
+
+  .site-nav {
+    order: 4;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    overflow: visible;
+    margin: 0 calc(var(--gutter) * -1);
+    width: calc(100% + var(--gutter) * 2);
+    border-top: 1px solid var(--border);
+  }
+
+  .site-nav.is-open { display: flex; }
+
+  .site-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+    padding: 0 var(--gutter);
+    border-radius: 0;
+    border-bottom: 1px solid var(--border);
+    font-size: var(--step-0);
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .site-nav a[aria-current="page"],
+  .site-nav a[data-section="true"] {
+    background: var(--surface-2);
+    box-shadow: inset 3px 0 0 var(--brand);
+  }
+
+  /* Keep the shop pill in the header row and shrink its label to fit. */
+  .site-nav__shop { order: 2; }
+  .site-nav__shop-full { display: none; }
+  .site-nav__shop-short { display: inline; }
+  .theme-toggle { order: 3; }
+  .menu-toggle { order: 3; }
+}
+
+/* The wordmark is what has to give, and 480px is where the measurements put
+   the line: below it, brand + shop + toggle + menu cannot share a row without
+   wrapping. The six-glaze mark carries the identity on its own, and it is the
+   part people recognise anyway. */
+@media (max-width: 480px) {
+  .brand__name { display: none; }
+}
+
+/* Below 360px the word "Menu" is the last thing that fits, and a wrapped
+   two-row header is worse than a bare hamburger. The button keeps its
+   accessible name; only the visible word goes. This is 320px territory -
+   an SE 1 or an old Android, not anything sold now. */
+@media (max-width: 359px) {
+  .menu-toggle__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .menu-toggle { padding: 0 0.55rem; }
+}
+
+/* A tucking header that also slides is two motions. Respect the setting and
+   keep the position change without the animation. */
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .toolbar { transition: none; }
 }
 
 .search {

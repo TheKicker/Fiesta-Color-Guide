@@ -262,16 +262,28 @@ ${buyButton(site, { variant: 'buy' })}            </div>
 
         <div class="toolbar" id="toolbar">
           <div class="wrap">
-            <form class="toolbar__row" id="filters" role="search" aria-label="Filter Fiesta colors">
-              <div class="search">
-                ${icon('search')}
-                <label class="visually-hidden" for="q">Search colors by name, number or hex code</label>
-                <input type="search" id="q" name="q" autocomplete="off" placeholder="Search ${colors.length} colors - try &quot;lapis&quot;, &quot;337&quot; or &quot;#2B64A1&quot;">
-                <button type="button" class="search__clear" id="q-clear" hidden>
-                  ${icon('close')}<span class="visually-hidden">Clear search</span>
+            <form class="toolbar__form" id="filters" role="search" aria-label="Filter Fiesta colors">
+              <div class="toolbar__head">
+                <div class="search">
+                  ${icon('search')}
+                  <label class="visually-hidden" for="q">Search colors by name, number or hex code</label>
+                  <input type="search" id="q" name="q" autocomplete="off" placeholder="Search ${colors.length} colors - try &quot;lapis&quot;, &quot;337&quot; or &quot;#2B64A1&quot;">
+                  <button type="button" class="search__clear" id="q-clear" hidden>
+                    ${icon('close')}<span class="visually-hidden">Clear search</span>
+                  </button>
+                </div>
+
+                <!-- Ships hidden. app.js reveals it only at phone widths, so with
+                     JS off there is no button that does nothing and the panel is
+                     simply open, exactly as it was. -->
+                <button type="button" class="toolbar__toggle" id="filters-toggle" hidden
+                        aria-expanded="true" aria-controls="filters-panel">
+                  ${icon('sliders')}<span>Filters</span><span class="toolbar__badge" id="filter-badge" hidden aria-hidden="true"></span><span class="visually-hidden" id="filter-badge-sr"></span>
                 </button>
               </div>
 
+              <div class="toolbar__panel" id="filters-panel">
+                <div class="toolbar__row">
               <div class="field">
                 <label for="status">Status</label>
                 <span class="select"><select id="status" name="status">
@@ -308,11 +320,13 @@ ${buyButton(site, { variant: 'buy' })}            </div>
                   <option value="light">Light to dark</option>
                 </select></span>
               </div>
-            </form>
+                </div>
 
-            <ul class="chips" aria-label="Filter by shade family">
+                <ul class="chips" aria-label="Filter by shade family">
 ${chips}
-            </ul>
+                </ul>
+              </div>
+            </form>
 
             <p class="toolbar__status">
               <span id="result-count" role="status"><strong>${colors.length}</strong> colors</span>

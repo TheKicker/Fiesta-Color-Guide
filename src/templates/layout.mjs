@@ -42,6 +42,10 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
   cart:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 11.4a1.6 1.6 0 0 0 1.6 1.3h8.9a1.6 1.6 0 0 0 1.6-1.3L22 7H5.3"/></svg>',
+  menu:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>',
+  sliders:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>',
 };
 
 export function icon(name, extra = '') {
@@ -59,34 +63,47 @@ function brandMark(markColors) {
 }
 
 function siteHeader({ site, base, nav, markColors }) {
-  const links = nav
-    .map((n) => {
-      // The shop link leaves the site, so it takes an absolute href and a new
-      // tab -- the guide stays open behind it. It also gets its own class, so
-      // it reads as a button rather than as another section of this site.
-      if (n.external) {
-        return `<a class="site-nav__shop" href="${esc(n.href)}" rel="noopener" target="_blank">${icon(
-          'cart'
-        )}${esc(n.label)}</a>`;
-      }
-      return `<a href="${esc(base + n.href || './')}"${
-        n.exact ? ' aria-current="page"' : n.current ? ' data-section="true"' : ''
-      }>${esc(n.label)}</a>`;
-    })
+  /* The shop link is deliberately NOT one of the nav links. On a phone the nav
+     collapses behind the menu button, and burying the one link that sends
+     people to the pottery would be the wrong thing to hide. It sits in the
+     header row instead, visible on every page at every width. */
+  const shop = nav.find((n) => n.external);
+  const sections = nav.filter((n) => !n.external);
+
+  const links = sections
+    .map(
+      (n) =>
+        `<a href="${esc(base + n.href || './')}"${
+          n.exact ? ' aria-current="page"' : n.current ? ' data-section="true"' : ''
+        }>${esc(n.label)}</a>`
+    )
     .join('\n            ');
+
+  const shopLink = shop
+    ? `
+        <a class="site-nav__shop" href="${esc(shop.href)}" rel="noopener" target="_blank">${icon(
+          'cart'
+        )}<span class="site-nav__shop-full">${esc(shop.label)}</span><span class="site-nav__shop-short" aria-hidden="true">Shop</span></a>`
+    : '';
 
   return `<header class="site-header">
       <div class="wrap site-header__inner">
         <a class="brand" href="${esc(base || './')}">
           ${brandMark(markColors)}
-          <span>Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936-today</span></span>
+          <span class="brand__name">Fiesta Color Guide<span class="brand__sub">Unofficial &middot; 1936-today</span></span>
         </a>
-        <nav class="site-nav" aria-label="Main">
+        <nav class="site-nav" id="site-nav" aria-label="Main">
             ${links}
-        </nav>
+        </nav>${shopLink}
         <button type="button" class="theme-toggle" id="theme-toggle">
           <span class="visually-hidden">Switch to dark theme</span>
           ${icon('sun')}${icon('moon')}
+        </button>
+        <!-- Ships hidden; app.js reveals it only at phone widths, so with JS
+             off the nav stays a plain visible row and nothing is unreachable. -->
+        <button type="button" class="menu-toggle" id="menu-toggle" hidden
+                aria-expanded="false" aria-controls="site-nav">
+          ${icon('menu')}<span class="menu-toggle__label">Menu</span>
         </button>
       </div>
     </header>`;

@@ -243,13 +243,28 @@ const footerChain = [
 ];
 
 const CONTROLS = [
+  // The shop link is a child of the header row, NOT of .site-nav -- it was
+  // moved out so the phone menu could collapse the nav without hiding it.
+  // Keep this chain matching the real DOM or the check silently tests nothing.
   {
-    name: 'Shop Online, nav',
-    chain: [...navChain, { tag: 'a', classes: ['site-nav__shop'] }],
+    name: 'Shop Online',
+    chain: [...header, { tag: 'a', classes: ['site-nav__shop'] }],
   },
   {
-    name: 'Shop Online, nav (hover)',
-    chain: [...navChain, { tag: 'a', classes: ['site-nav__shop'], states: ['hover'] }],
+    name: 'Shop Online (hover)',
+    chain: [...header, { tag: 'a', classes: ['site-nav__shop'], states: ['hover'] }],
+  },
+  {
+    name: 'Menu button',
+    chain: [...header, { tag: 'button', classes: ['menu-toggle'] }],
+  },
+  {
+    name: 'Menu button (hover)',
+    chain: [...header, { tag: 'button', classes: ['menu-toggle'], states: ['hover'] }],
+  },
+  {
+    name: 'Menu panel link',
+    chain: [...navChain, { tag: 'a', classes: [] }],
   },
   {
     name: 'Nav link',
